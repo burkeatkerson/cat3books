@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import {
+  Bebas_Neue,
+  Barlow_Condensed,
+  Barlow,
+  Share_Tech_Mono,
+} from "next/font/google";
 import type { WebSite, WithContext } from "schema-dts";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
@@ -7,15 +12,34 @@ import "./globals.css";
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cat3books.com";
 const SITE_NAME = "Cat3 Books";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const bebasNeue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas-neue",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const barlowCondensed = Barlow_Condensed({
+  weight: ["300", "400", "600", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-barlow-condensed",
+  display: "swap",
+});
+
+const barlow = Barlow({
+  weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-barlow",
+  display: "swap",
+});
+
+const shareTechMono = Share_Tech_Mono({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-share-tech-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,14 +47,14 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
     default: SITE_NAME,
   },
-  description: "Discover and explore books at Cat3 Books.",
+  description:
+    "The only bookkeeping firm built exclusively for restoration contractors. Job costing, supplement recovery, expense management, fractional CFO — restoration only, always.",
   metadataBase: new URL(BASE_URL),
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   openGraph: {
     title: SITE_NAME,
-    description: "Discover and explore books at Cat3 Books.",
+    description:
+      "The only bookkeeping firm built exclusively for restoration contractors.",
     url: BASE_URL,
     siteName: SITE_NAME,
     type: "website",
@@ -38,15 +62,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: SITE_NAME,
-    description: "Discover and explore books at Cat3 Books.",
+    description:
+      "The only bookkeeping firm built exclusively for restoration contractors.",
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
+    googleBot: { index: true, follow: true },
   },
 };
 
@@ -68,13 +90,11 @@ const websiteSchema: WithContext<WebSite> = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bebasNeue.variable} ${barlowCondensed.variable} ${barlow.variable} ${shareTechMono.variable} bg-c3-black text-c3-text font-body font-light leading-relaxed min-h-screen overflow-x-hidden`}
       >
         <JsonLd schema={websiteSchema} />
         {children}
