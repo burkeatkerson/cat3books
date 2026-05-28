@@ -7,6 +7,7 @@ import {
 } from "next/font/google";
 import type { WebSite, WithContext } from "schema-dts";
 import JsonLd from "@/components/JsonLd";
+import MotionProvider from "@/components/motion/MotionProvider";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -94,7 +95,7 @@ export default function RootLayout({
         className={`${bebasNeue.variable} ${barlowCondensed.variable} ${barlow.variable} ${shareTechMono.variable} bg-c3-black text-c3-text font-body font-light leading-relaxed min-h-screen overflow-x-hidden`}
       >
         <JsonLd schema={websiteSchema} />
-        {children}
+        <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
   );

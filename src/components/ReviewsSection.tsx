@@ -1,4 +1,7 @@
 import Overline from "./Overline";
+import FadeUp from "./motion/FadeUp";
+import StaggerGroup from "./motion/StaggerGroup";
+import StaggerItem from "./motion/StaggerItem";
 
 const reviews = [
   {
@@ -75,25 +78,30 @@ const trustChips = [
 export default function ReviewsSection() {
   return (
     <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark">
-      <Overline>Other Owners. Other Books. Same Story.</Overline>
-      <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
-        Three more{" "}
-        <span className="text-c3-yellow">restoration owners</span>
-        <br />
-        who&rsquo;ve been on the wrong side
-        <br />
-        of bad books.
-      </h2>
-      <p className="font-body font-light text-[17px] text-c3-mid mt-[18px] max-w-[720px] leading-[1.7]">
-        Anonymized only on request. Real companies, real numbers, real
-        engagements between 6 and 28 months.
-      </p>
+      <FadeUp>
+        <Overline>Other Owners. Other Books. Same Story.</Overline>
+        <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
+          Three more{" "}
+          <span className="text-c3-yellow">restoration owners</span>
+          <br />
+          who&rsquo;ve been on the wrong side
+          <br />
+          of bad books.
+        </h2>
+      </FadeUp>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[2px] bg-c3-border mt-12">
+      <FadeUp delay={0.1}>
+        <p className="font-body font-light text-[17px] text-c3-mid mt-[18px] max-w-[720px] leading-[1.7]">
+          Anonymized only on request. Real companies, real numbers, real
+          engagements between 6 and 28 months.
+        </p>
+      </FadeUp>
+
+      <StaggerGroup className="grid grid-cols-1 md:grid-cols-3 gap-[2px] bg-c3-border mt-12">
         {reviews.map(({ initials, name, role, quote, stats }) => (
+          <StaggerItem key={name}>
           <div
-            key={name}
-            className="bg-c3-card p-[30px] flex flex-col"
+            className="bg-c3-card p-[30px] flex flex-col h-full"
           >
             <div className="flex items-center gap-[14px]">
               <div className="w-[46px] h-[46px] shrink-0 bg-c3-card border border-c3-yellow text-c3-yellow flex items-center justify-center font-disp text-[18px] tracking-[0.02em]">
@@ -130,9 +138,11 @@ export default function ReviewsSection() {
               ))}
             </div>
           </div>
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerGroup>
 
+      <FadeUp>
       <div className="mt-12 py-6 px-7 bg-c3-card border border-c3-border flex items-center justify-between gap-6 flex-wrap">
         <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-yellow">
           Trusted across the restoration ecosystem
@@ -148,6 +158,7 @@ export default function ReviewsSection() {
           ))}
         </div>
       </div>
+      </FadeUp>
     </section>
   );
 }

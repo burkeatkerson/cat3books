@@ -4,6 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import Overline from "./Overline";
 import { cn } from "@/lib/cn";
+import FadeUp from "./motion/FadeUp";
+import StaggerGroup from "./motion/StaggerGroup";
+import StaggerItem from "./motion/StaggerItem";
 
 function fmt(n: number): string {
   return n.toLocaleString("en-US");
@@ -49,19 +52,25 @@ export default function PricingSection() {
       id="pricing"
       className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark pricing-grid-bg"
     >
-      <Overline>Transparent Pricing</Overline>
-      <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
-        Pricing that
-        <br />
-        <span className="text-c3-yellow">grows with you.</span>
-      </h2>
-      <p className="font-body font-light text-[17px] text-c3-mid mt-[18px] max-w-[720px] leading-[1.7]">
-        One simple formula. You grow, we grow with you. You have a slow quarter,
-        so do we. No flat rates that punish you at scale and no contracts that
-        trap you.
-      </p>
+      <FadeUp>
+        <Overline>Transparent Pricing</Overline>
+        <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
+          Pricing that
+          <br />
+          <span className="text-c3-yellow">grows with you.</span>
+        </h2>
+      </FadeUp>
 
-      {/* Calculator */}
+      <FadeUp delay={0.1}>
+        <p className="font-body font-light text-[17px] text-c3-mid mt-[18px] max-w-[720px] leading-[1.7]">
+          One simple formula. You grow, we grow with you. You have a slow quarter,
+          so do we. No flat rates that punish you at scale and no contracts that
+          trap you.
+        </p>
+      </FadeUp>
+
+      {/* Calculator — no animation on the reactive number displays inside */}
+      <FadeUp delay={0.1}>
       <div className="mt-9 bg-c3-card border border-c3-border p-5 sm:p-7 lg:p-10 relative">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 items-end">
           <div>
@@ -121,11 +130,13 @@ export default function PricingSection() {
           </div>
         </div>
       </div>
+      </FadeUp>
 
       {/* Tier cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[3px] mt-10 bg-c3-border">
+      <StaggerGroup className="grid grid-cols-1 md:grid-cols-2 gap-[3px] mt-10 bg-c3-border">
         {/* Tier 1 */}
-        <div className="bg-c3-card p-5 sm:p-9 border border-c3-border relative">
+        <StaggerItem>
+        <div className="bg-c3-card p-5 sm:p-9 border border-c3-border relative h-full">
           <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim">
             Tier One
           </div>
@@ -158,9 +169,11 @@ export default function PricingSection() {
             Start with Core Bookkeeping →
           </Link>
         </div>
+        </StaggerItem>
 
         {/* Tier 2 — featured */}
-        <div className="bg-c3-card p-5 sm:p-9 border border-c3-yellow relative">
+        <StaggerItem>
+        <div className="bg-c3-card p-5 sm:p-9 border border-c3-yellow relative h-full">
           <span className="absolute top-[-1px] right-[-1px] bg-c3-yellow text-[#111] font-cond font-bold text-[11px] tracking-[0.12em] uppercase py-[7px] px-3">
             MOST VALUE
           </span>
@@ -196,9 +209,11 @@ export default function PricingSection() {
             Start with Full Package →
           </Link>
         </div>
-      </div>
+        </StaggerItem>
+      </StaggerGroup>
 
       {/* Payroll add-on */}
+      <FadeUp>
       <div className="mt-[26px] bg-c3-card border-t border-c3-yellow-dim py-6 px-7 flex items-center gap-6 flex-wrap">
         <div className="flex flex-col gap-1">
           <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-yellow">
@@ -219,6 +234,7 @@ export default function PricingSection() {
           Add Payroll
         </Link>
       </div>
+      </FadeUp>
     </section>
   );
 }

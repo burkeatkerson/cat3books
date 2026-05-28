@@ -30,10 +30,6 @@ const config: Config = {
         disp: ["var(--font-bebas-neue)", "sans-serif"],
       },
       keyframes: {
-        fadeUp: {
-          from: { opacity: "0", transform: "translateY(24px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
         blink: {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.1" },
@@ -55,11 +51,6 @@ const config: Config = {
         },
       },
       animation: {
-        "fadeUp-d1": "fadeUp 0.7s 0.06s both",
-        "fadeUp-d2": "fadeUp 0.7s 0.18s both",
-        "fadeUp-d3": "fadeUp 0.7s 0.30s both",
-        "fadeUp-d4": "fadeUp 0.7s 0.44s both",
-        "fadeUp-d5": "fadeUp 0.7s 0.58s both",
         blink: "blink 0.9s infinite",
         ticker: "ticker 36s linear infinite",
         glowPulse: "glowPulse 4s ease-in-out infinite",

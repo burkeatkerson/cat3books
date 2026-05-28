@@ -1,4 +1,7 @@
 import Overline from "./Overline";
+import FadeUp from "./motion/FadeUp";
+import StaggerGroup from "./motion/StaggerGroup";
+import StaggerItem from "./motion/StaggerItem";
 
 const creds = [
   "QuickBooks ProAdvisor Certified",
@@ -57,67 +60,79 @@ export default function AboutSection() {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16">
         <div>
-          <Overline>Who We Are</Overline>
-          <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
-            Restoration only.
-            <br />
-            <span className="text-c3-yellow">Always.</span>
-          </h2>
-          <p className="font-body font-light text-[15px] text-c3-mid mt-4 leading-[1.85]">
-            Cat3 Books serves restoration companies exclusively. Water, fire,
-            mold, storm — that&rsquo;s our entire world. We didn&rsquo;t add a
-            restoration page to a generalist firm&rsquo;s website. We built this
-            from the ground up for one industry, because restoration bookkeeping
-            is different enough to deserve a firm that thinks about nothing else.
-          </p>
-          <p className="font-body font-light text-[15px] text-c3-mid mt-4 leading-[1.85]">
-            Every bookkeeper on our team is trained on how restoration money
-            moves. The difference between ACV and RCV. Why TPA programs require
-            separate revenue tracking. What a supplement is and why it needs its
-            own line. How equipment billing works. Why cash flow in restoration
-            is so deceptive.
-          </p>
-          <p className="font-body font-light text-[15px] text-c3-mid mt-4 leading-[1.85]">
-            When your books need to support a bank line, a bonding application,
-            a new line of credit, or a serious conversation with your CPA —
-            they&rsquo;re built to hold up under scrutiny.
-          </p>
+          <FadeUp>
+            <Overline>Who We Are</Overline>
+            <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
+              Restoration only.
+              <br />
+              <span className="text-c3-yellow">Always.</span>
+            </h2>
+          </FadeUp>
 
-          <div className="mt-6 bg-c3-card py-1.5">
+          <FadeUp delay={0.08}>
+            <p className="font-body font-light text-[15px] text-c3-mid mt-4 leading-[1.85]">
+              Cat3 Books serves restoration companies exclusively. Water, fire,
+              mold, storm — that&rsquo;s our entire world. We didn&rsquo;t add a
+              restoration page to a generalist firm&rsquo;s website. We built this
+              from the ground up for one industry, because restoration bookkeeping
+              is different enough to deserve a firm that thinks about nothing else.
+            </p>
+          </FadeUp>
+
+          <FadeUp delay={0.12}>
+            <p className="font-body font-light text-[15px] text-c3-mid mt-4 leading-[1.85]">
+              Every bookkeeper on our team is trained on how restoration money
+              moves. The difference between ACV and RCV. Why TPA programs require
+              separate revenue tracking. What a supplement is and why it needs its
+              own line. How equipment billing works. Why cash flow in restoration
+              is so deceptive.
+            </p>
+          </FadeUp>
+
+          <FadeUp delay={0.16}>
+            <p className="font-body font-light text-[15px] text-c3-mid mt-4 leading-[1.85]">
+              When your books need to support a bank line, a bonding application,
+              a new line of credit, or a serious conversation with your CPA —
+              they&rsquo;re built to hold up under scrutiny.
+            </p>
+          </FadeUp>
+
+          <StaggerGroup className="mt-6 bg-c3-card py-1.5">
             {creds.map((item) => (
-              <div
-                key={item}
-                className="py-[13px] px-5 mx-[22px] border-b border-dashed border-c3-border last:border-b-0 border-l-[2px] border-l-c3-yellow [border-left-style:solid] font-body text-[13.5px] text-c3-text leading-relaxed"
-              >
-                {item}
-              </div>
+              <StaggerItem key={item}>
+                <div className="py-[13px] px-5 mx-[22px] border-b border-dashed border-c3-border last:border-b-0 border-l-[2px] border-l-c3-yellow [border-left-style:solid] font-body text-[13.5px] text-c3-text leading-relaxed">
+                  {item}
+                </div>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerGroup>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <StaggerGroup className="flex flex-col gap-6">
           {tagGroups.map(({ label, chips }) => (
-            <div key={label}>
-              <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim mb-3">
-                {label}
+            <StaggerItem key={label}>
+              <div>
+                <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim mb-3">
+                  {label}
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {chips.map(({ label: chip, on }) => (
+                    <span
+                      key={chip}
+                      className={`inline-flex items-center font-mono text-[10px] tracking-[0.18em] uppercase px-[10px] py-[6px] border transition-all duration-200 cursor-default ${
+                        on
+                          ? "border-c3-yellow-dim text-c3-yellow bg-[rgba(240,190,0,0.04)]"
+                          : "border-c3-b2 text-c3-mid hover:border-c3-yellow hover:text-c3-yellow"
+                      }`}
+                    >
+                      {chip}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-wrap gap-1.5">
-                {chips.map(({ label: chip, on }) => (
-                  <span
-                    key={chip}
-                    className={`inline-flex items-center font-mono text-[10px] tracking-[0.18em] uppercase px-[10px] py-[6px] border transition-all duration-200 cursor-default ${
-                      on
-                        ? "border-c3-yellow-dim text-c3-yellow bg-[rgba(240,190,0,0.04)]"
-                        : "border-c3-b2 text-c3-mid hover:border-c3-yellow hover:text-c3-yellow"
-                    }`}
-                  >
-                    {chip}
-                  </span>
-                ))}
-              </div>
-            </div>
+            </StaggerItem>
           ))}
-        </div>
+        </StaggerGroup>
       </div>
     </section>
   );
