@@ -63,7 +63,7 @@ export default function PricingSection() {
 
       {/* Calculator */}
       <div className="mt-9 bg-c3-card border border-c3-border p-5 sm:p-7 lg:p-10 relative">
-        <div className="grid grid-cols-[1fr_auto] gap-6 items-end md:grid-cols-1">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-6 items-end">
           <div>
             <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim">
               Your trailing 12-month revenue
@@ -72,7 +72,7 @@ export default function PricingSection() {
               ${fmt(annual)}
             </div>
           </div>
-          <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim text-right max-w-[220px] md:hidden">
+          <div className="hidden lg:block font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim text-right max-w-[220px]">
             Slide the bar to estimate →
           </div>
         </div>
@@ -208,7 +208,7 @@ export default function PricingSection() {
             Payroll Processing
           </div>
         </div>
-        <div className="font-disp text-[38px] text-c3-yellow leading-none flex-1 text-right">
+        <div className="font-disp text-[38px] text-c3-yellow leading-none lg:flex-1 lg:text-right">
           +$400{" "}
           <small className="font-mono text-[11px] text-c3-mid">/ pay cycle</small>
         </div>

@@ -44,7 +44,7 @@ export default function Hero() {
 
       {/* Left column */}
       <div className="px-5 sm:px-8 lg:px-[52px] py-12 lg:py-20 flex flex-col justify-center relative z-10">
-        <span className="animate-fadeUp-d1 inline-flex items-center gap-2 w-fit font-mono text-[10px] tracking-[0.18em] uppercase px-[10px] py-[6px] border border-[rgba(204,42,0,0.4)] text-[#ff7a55] bg-[rgba(204,42,0,0.08)] mb-6">
+        <span className="animate-fadeUp-d1 inline-flex items-center gap-2 w-fit font-mono text-[10px] tracking-[0.08em] sm:tracking-[0.18em] uppercase px-[10px] py-[6px] border border-[rgba(204,42,0,0.4)] text-[#ff7a55] bg-[rgba(204,42,0,0.08)] mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-current animate-blink" />
           Restoration Bookkeeping · Industry Exclusive
         </span>
