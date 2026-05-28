@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Container from "./Container";
 import Overline from "./Overline";
 import FadeUp from "./motion/FadeUp";
 import StaggerGroup from "./motion/StaggerGroup";
@@ -80,7 +81,8 @@ const pains = [
 
 export default function ProblemSection() {
   return (
-    <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px]">
+    <section className="relative py-16 xl:py-[108px]">
+      <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16">
         <div>
           <FadeUp>
@@ -160,6 +162,7 @@ export default function ProblemSection() {
           ))}
         </StaggerGroup>
       </div>
+      </Container>
     </section>
   );
 }

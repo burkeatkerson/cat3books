@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Container from "./Container";
 import Overline from "./Overline";
 import { cn } from "@/lib/cn";
 import FadeUp from "./motion/FadeUp";
@@ -50,8 +51,9 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark pricing-grid-bg"
+      className="relative py-16 xl:py-[108px] bg-c3-dark pricing-grid-bg"
     >
+      <Container>
       <FadeUp>
         <Overline>Transparent Pricing</Overline>
         <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
@@ -235,6 +237,7 @@ export default function PricingSection() {
         </Link>
       </div>
       </FadeUp>
+      </Container>
     </section>
   );
 }

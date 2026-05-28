@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import Container from "./Container";
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-c3-dark px-5 md:px-8 lg:px-[52px] xl:px-20 pt-10 lg:pt-[60px] pb-8 lg:pb-[30px]">
+    <footer className="bg-c3-dark pt-10 lg:pt-[60px] pb-8 lg:pb-[30px]">
+      <Container>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 lg:gap-12">
         <div>
           <Link
@@ -95,6 +97,7 @@ export default function SiteFooter() {
         <div>© 2026 Cat3 Books · All Rights Reserved · Restoration Bookkeeping Specialists</div>
         <div>QuickBooks ProAdvisor · Xactimate Fluent · RIA Member</div>
       </div>
+      </Container>
     </footer>
   );
 }

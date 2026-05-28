@@ -1,3 +1,4 @@
+import Container from "./Container";
 import Overline from "./Overline";
 import FadeUp from "./motion/FadeUp";
 import StaggerGroup from "./motion/StaggerGroup";
@@ -7,7 +8,8 @@ import { STAGGER_TIGHT } from "@/lib/motion-config";
 export default function AutopsySection() {
   return (
     <>
-      <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px]">
+      <section className="relative py-16 xl:py-[108px]">
+        <Container>
         <FadeUp>
           <Overline>Exhibit A · Last Quarter · Anonymized Client</Overline>
           <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
@@ -24,9 +26,10 @@ export default function AutopsySection() {
             find a six-figure problem.
           </p>
         </FadeUp>
+        </Container>
       </section>
 
-      <div className="px-5 md:px-8 lg:px-[52px] xl:px-20 pb-10 xl:pb-[60px]">
+      <Container className="pb-10 xl:pb-[60px]">
         {/* Table header */}
         <FadeUp>
           <div className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-center py-[18px] lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-b2 font-mono text-[10px] tracking-[0.22em] text-c3-dim uppercase">
@@ -229,7 +232,7 @@ export default function AutopsySection() {
             <span className="text-c3-yellow">We make it impossible not to see.</span>
           </p>
         </FadeUp>
-      </div>
+      </Container>
     </>
   );
 }

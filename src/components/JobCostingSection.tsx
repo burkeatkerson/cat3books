@@ -1,3 +1,4 @@
+import Container from "./Container";
 import Overline from "./Overline";
 import FadeUp from "./motion/FadeUp";
 import StaggerGroup from "./motion/StaggerGroup";
@@ -45,8 +46,9 @@ export default function JobCostingSection() {
   return (
     <section
       id="jobcosting"
-      className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark"
+      className="relative py-16 xl:py-[108px] bg-c3-dark"
     >
+      <Container>
       <FadeUp>
         <Overline>Core Service</Overline>
         <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
@@ -118,6 +120,7 @@ export default function JobCostingSection() {
           </StaggerItem>
         ))}
       </StaggerGroup>
+      </Container>
     </section>
   );
 }

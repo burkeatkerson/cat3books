@@ -1,3 +1,4 @@
+import Container from "./Container";
 import Overline from "./Overline";
 import FadeUp from "./motion/FadeUp";
 import StaggerGroup from "./motion/StaggerGroup";
@@ -13,7 +14,8 @@ const stats = [
 
 export default function TestimonialSection() {
   return (
-    <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] radial-yellow-top">
+    <section className="relative py-16 xl:py-[108px] radial-yellow-top">
+      <Container>
       <div className="max-w-[920px] mx-auto text-center">
         <FadeUp>
           <Overline center>From the Field</Overline>
@@ -53,6 +55,7 @@ export default function TestimonialSection() {
           </StaggerItem>
         ))}
       </StaggerGroup>
+      </Container>
     </section>
   );
 }

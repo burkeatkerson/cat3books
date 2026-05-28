@@ -14,7 +14,7 @@ const diagRows = [
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[calc(100vh-60px)] grid grid-cols-1 md:grid-cols-[55fr_45fr] overflow-hidden"
+      className="relative min-h-[calc(100vh-60px)] overflow-hidden"
       aria-label="Hero"
     >
       {/* Diagonal grid pattern */}
@@ -43,8 +43,10 @@ export default function Hero() {
         )}
       </div>
 
+      {/* Constrained grid — decorative elements above remain full-width via absolute positioning */}
+      <div className="relative z-10 mx-auto w-full max-w-[1660px] grid grid-cols-1 md:grid-cols-[55fr_45fr] min-h-[calc(100vh-60px)]">
       {/* Left column */}
-      <div className="px-5 sm:px-8 lg:px-[52px] py-12 lg:py-20 flex flex-col justify-center relative z-10">
+      <div className="px-5 sm:px-8 lg:px-[52px] xl:px-20 py-12 lg:py-20 flex flex-col justify-center">
         <FadeUp load delay={0.06} className="mb-6">
           <span className="inline-flex items-center gap-2 w-fit font-mono text-[10px] tracking-[0.08em] sm:tracking-[0.18em] uppercase px-[10px] py-[6px] border border-[rgba(204,42,0,0.4)] text-[#ff7a55] bg-[rgba(204,42,0,0.08)]">
             <span className="w-1.5 h-1.5 rounded-full bg-current animate-blink" />
@@ -104,7 +106,7 @@ export default function Hero() {
       </div>
 
       {/* Right column — diagnostic panel */}
-      <div className="px-5 sm:px-8 lg:px-[52px] py-12 lg:py-20 border-t md:border-t-0 md:border-l border-c3-border flex flex-col justify-center relative z-10">
+      <div className="px-5 sm:px-8 lg:px-[52px] xl:px-20 py-12 lg:py-20 border-t md:border-t-0 md:border-l border-c3-border flex flex-col justify-center">
         <FadeUp load delay={0.30}>
           <div className="p-5 sm:p-7 bg-[rgba(255,255,255,0.015)] border border-c3-border max-w-[520px] w-full">
             <div className="flex justify-between items-center pb-[14px] border-b border-c3-border gap-[18px]">
@@ -151,6 +153,7 @@ export default function Hero() {
             </Link>
           </div>
         </FadeUp>
+      </div>
       </div>
     </section>
   );

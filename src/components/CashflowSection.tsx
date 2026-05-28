@@ -1,3 +1,4 @@
+import Container from "./Container";
 import Overline from "./Overline";
 import FadeUp from "./motion/FadeUp";
 import StaggerGroup from "./motion/StaggerGroup";
@@ -55,7 +56,8 @@ const timelineRows = [
 
 export default function CashflowSection() {
   return (
-    <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark">
+    <section className="relative py-16 xl:py-[108px] bg-c3-dark">
+      <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16">
         <div>
           <FadeUp>
@@ -150,6 +152,7 @@ export default function CashflowSection() {
           </FadeUp>
         </div>
       </div>
+      </Container>
     </section>
   );
 }

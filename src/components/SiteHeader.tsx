@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Container from "./Container";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -14,7 +15,8 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 h-[60px] px-4 sm:px-6 lg:px-[52px] flex items-center gap-6 bg-[rgba(9,9,8,0.78)] backdrop-blur-[14px] border-b border-c3-border relative">
+    <header className="sticky top-0 z-50 h-[60px] bg-[rgba(9,9,8,0.78)] backdrop-blur-[14px] border-b border-c3-border relative">
+      <Container className="flex items-center gap-6 h-full px-4 sm:px-6 lg:px-[52px] xl:px-20">
       <Link
         href="#top"
         aria-label="Cat3 Books home"
@@ -101,6 +103,7 @@ export default function SiteHeader() {
           </div>
         </div>
       )}
+      </Container>
     </header>
   );
 }

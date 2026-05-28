@@ -1,3 +1,4 @@
+import Container from "./Container";
 import Overline from "./Overline";
 import FadeUp from "./motion/FadeUp";
 import StaggerGroup from "./motion/StaggerGroup";
@@ -56,8 +57,9 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark"
+      className="relative py-16 xl:py-[108px] bg-c3-dark"
     >
+      <Container>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16">
         <div>
           <FadeUp>
@@ -134,6 +136,7 @@ export default function AboutSection() {
           ))}
         </StaggerGroup>
       </div>
+      </Container>
     </section>
   );
 }
