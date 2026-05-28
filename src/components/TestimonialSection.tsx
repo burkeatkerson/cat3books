@@ -9,7 +9,7 @@ const stats = [
 
 export default function TestimonialSection() {
   return (
-    <section className="relative px-[52px] py-[108px] radial-yellow-top md:px-5 md:py-16">
+    <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] radial-yellow-top">
       <div className="max-w-[920px] mx-auto text-center">
         <Overline center>From the Field</Overline>
         <blockquote className="font-cond font-semibold italic text-[clamp(24px,2.6vw,34px)] text-c3-text leading-[1.4] mt-[18px]">

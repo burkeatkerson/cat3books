@@ -51,8 +51,8 @@ const timelineRows = [
 
 export default function CashflowSection() {
   return (
-    <section className="relative px-[52px] py-[108px] bg-c3-dark md:px-5 md:py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
+    <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16">
         <div>
           <Overline>The Real Risk</Overline>
           <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
@@ -91,19 +91,30 @@ export default function CashflowSection() {
             {timelineRows.map(({ mo, evt, sub, tag, tagClass }) => (
               <div
                 key={mo + tag}
-                className="grid grid-cols-[78px_1fr_110px] gap-[18px] items-center px-[22px] py-4 border-b border-dashed border-c3-border last:border-b-0 hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
+                className="grid grid-cols-[52px_1fr] lg:grid-cols-[78px_1fr_110px] gap-x-[14px] lg:gap-x-[18px] items-center px-4 lg:px-[22px] py-4 border-b border-dashed border-c3-border last:border-b-0 hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
               >
-                <div className="font-disp text-[24px] text-c3-mid tracking-[0.04em] leading-none">
+                <div className="font-disp text-[20px] lg:text-[24px] text-c3-mid tracking-[0.04em] leading-none">
                   {mo}
                 </div>
-                <div className="font-body text-[14px] text-c3-text leading-[1.45]">
-                  {evt}
-                  <small className="block font-mono text-[10px] text-c3-mid tracking-[0.14em] mt-1 uppercase">
-                    {sub}
-                  </small>
+                <div>
+                  <div className="font-body text-[13.5px] lg:text-[14px] text-c3-text leading-[1.45]">
+                    {evt}
+                  </div>
+                  <div className="flex items-center justify-between mt-1 gap-2">
+                    <small className="block font-mono text-[10px] text-c3-mid tracking-[0.14em] uppercase">
+                      {sub}
+                    </small>
+                    {/* Tag shown inline on mobile, hidden on desktop where it's a separate cell */}
+                    <span
+                      className={`lg:hidden shrink-0 font-mono text-[8px] tracking-[0.14em] text-center py-[5px] px-[8px] uppercase ${tagClass}`}
+                    >
+                      {tag}
+                    </span>
+                  </div>
                 </div>
+                {/* Desktop-only standalone tag cell */}
                 <div
-                  className={`font-mono text-[9px] tracking-[0.18em] text-center py-[7px] px-[10px] uppercase ${tagClass}`}
+                  className={`hidden lg:block font-mono text-[9px] tracking-[0.18em] text-center py-[7px] px-[10px] uppercase ${tagClass}`}
                 >
                   {tag}
                 </div>

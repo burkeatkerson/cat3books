@@ -53,9 +53,9 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative px-[52px] py-[108px] bg-c3-dark md:px-5 md:py-16"
+      className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-16">
         <div>
           <Overline>Who We Are</Overline>
           <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">

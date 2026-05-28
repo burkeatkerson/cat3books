@@ -4,7 +4,7 @@ export default function FinalCTA() {
   return (
     <section
       id="contact"
-      className="relative text-center final-cta-bg px-[52px] py-[130px] md:px-5 md:py-20"
+      className="relative text-center final-cta-bg px-5 md:px-8 lg:px-[52px] xl:px-20 py-20 xl:py-[130px]"
     >
       <div className="font-mono text-[10px] tracking-[0.28em] text-c3-yellow uppercase">
         Free · No Obligation · 30 Minutes

@@ -47,7 +47,7 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="relative px-[52px] py-[108px] bg-c3-dark pricing-grid-bg md:px-5 md:py-16"
+      className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark pricing-grid-bg"
     >
       <Overline>Transparent Pricing</Overline>
       <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
@@ -62,13 +62,13 @@ export default function PricingSection() {
       </p>
 
       {/* Calculator */}
-      <div className="mt-9 bg-c3-card border border-c3-border p-10 relative md:p-6">
+      <div className="mt-9 bg-c3-card border border-c3-border p-5 sm:p-7 lg:p-10 relative">
         <div className="grid grid-cols-[1fr_auto] gap-6 items-end md:grid-cols-1">
           <div>
             <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim">
               Your trailing 12-month revenue
             </div>
-            <div className="font-disp text-[88px] text-c3-yellow leading-none mt-[10px] tracking-[0.01em]">
+            <div className="font-disp text-[52px] sm:text-[70px] xl:text-[88px] text-c3-yellow leading-none mt-[10px] tracking-[0.01em]">
               ${fmt(annual)}
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function PricingSection() {
       {/* Tier cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[3px] mt-10 bg-c3-border">
         {/* Tier 1 */}
-        <div className="bg-c3-card p-9 border border-c3-border relative">
+        <div className="bg-c3-card p-5 sm:p-9 border border-c3-border relative">
           <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim">
             Tier One
           </div>
@@ -160,7 +160,7 @@ export default function PricingSection() {
         </div>
 
         {/* Tier 2 — featured */}
-        <div className="bg-c3-card p-9 border border-c3-yellow relative">
+        <div className="bg-c3-card p-5 sm:p-9 border border-c3-yellow relative">
           <span className="absolute top-[-1px] right-[-1px] bg-c3-yellow text-[#111] font-cond font-bold text-[11px] tracking-[0.12em] uppercase py-[7px] px-3">
             MOST VALUE
           </span>

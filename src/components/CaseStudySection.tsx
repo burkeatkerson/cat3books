@@ -27,7 +27,7 @@ const outcomes = [
 
 export default function CaseStudySection() {
   return (
-    <section className="relative px-[52px] py-[108px] md:px-5 md:py-16">
+    <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px]">
       <Overline>A 90-Day Engagement · With Permission</Overline>
       <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
         What an actual

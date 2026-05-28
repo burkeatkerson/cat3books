@@ -3,8 +3,8 @@ import { site } from "@/lib/site";
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-c3-dark px-[52px] pt-[60px] pb-[30px] md:px-5 md:pt-10 md:pb-5">
-      <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr] gap-12 md:grid-cols-2 md:gap-8">
+    <footer className="bg-c3-dark px-5 md:px-8 lg:px-[52px] xl:px-20 pt-10 lg:pt-[60px] pb-8 lg:pb-[30px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 lg:gap-12">
         <div>
           <Link
             href="#top"

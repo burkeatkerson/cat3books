@@ -74,7 +74,7 @@ const trustChips = [
 
 export default function ReviewsSection() {
   return (
-    <section className="relative px-[52px] py-[108px] bg-c3-dark md:px-5 md:py-16">
+    <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px] bg-c3-dark">
       <Overline>Other Owners. Other Books. Same Story.</Overline>
       <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
         Three more{" "}
@@ -89,7 +89,7 @@ export default function ReviewsSection() {
         engagements between 6 and 28 months.
       </p>
 
-      <div className="grid grid-cols-3 md:grid-cols-1 gap-[2px] bg-c3-border mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[2px] bg-c3-border mt-12">
         {reviews.map(({ initials, name, role, quote, stats }) => (
           <div
             key={name}

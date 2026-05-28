@@ -89,7 +89,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative px-[52px] py-[108px] md:px-5 md:py-16"
+      className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px]"
     >
       <Overline>What&rsquo;s Included</Overline>
       <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
@@ -105,7 +105,7 @@ export default function ServicesSection() {
       </p>
 
       {/* Services grid */}
-      <div className="grid grid-cols-3 md:grid-cols-2 gap-[2px] bg-c3-border mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[2px] bg-c3-border mt-10">
         {services.map(({ num, title, body, tag, core }) => (
           <div
             key={num}
@@ -146,7 +146,7 @@ export default function ServicesSection() {
       {/* Expense spotlight */}
       <div
         id="expense"
-        className="mt-12 bg-c3-dark border-l-[3px] border-c3-yellow p-10 grid grid-cols-1 md:grid-cols-2 gap-12 md:p-7"
+        className="mt-12 bg-c3-dark border-l-[3px] border-c3-yellow p-5 sm:p-7 lg:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12"
       >
         <div>
           <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-yellow">

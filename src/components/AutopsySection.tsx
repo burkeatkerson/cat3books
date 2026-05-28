@@ -50,7 +50,7 @@ export default function AutopsySection() {
 
   return (
     <>
-      <section className="relative px-[52px] py-[108px] md:px-5 md:py-16">
+      <section className="relative px-5 md:px-8 lg:px-[52px] xl:px-20 py-16 xl:py-[108px]">
         <Overline>Exhibit A · Last Quarter · Anonymized Client</Overline>
         <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
           The jobs that made you money.
@@ -64,21 +64,24 @@ export default function AutopsySection() {
         </p>
       </section>
 
-      <div ref={containerRef} className="px-[52px] pb-[60px] md:px-5 md:pb-10">
+      <div ref={containerRef} className="px-5 md:px-8 lg:px-[52px] xl:px-20 pb-10 xl:pb-[60px]">
         {/* Table header */}
-        <div className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-b border-c3-b2 font-mono text-[10px] tracking-[0.22em] text-c3-dim uppercase">
+        <div className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-center py-[18px] lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-b2 font-mono text-[10px] tracking-[0.22em] text-c3-dim uppercase">
           <div>#</div>
-          <div>Job</div>
-          <div className="text-right">Revenue</div>
-          <div className="text-right">Gross Margin</div>
+          <div className="flex justify-between lg:block">
+            <span>Job</span>
+            <span className="lg:hidden">Revenue / Margin</span>
+          </div>
+          <div className="hidden lg:block text-right">Revenue</div>
+          <div className="hidden lg:block text-right">Gross Margin</div>
         </div>
 
         {/* Green row 01 */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-start lg:items-center py-4 lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
         >
-          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em]">01</div>
+          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em] pt-1">01</div>
           <div>
             <div className="font-cond font-semibold text-[16px] text-c3-text tracking-[0.04em] uppercase">
               Smith Residence
@@ -86,11 +89,15 @@ export default function AutopsySection() {
             <span className="block font-body font-light text-[12px] text-c3-mid mt-1">
               Water · Cat 2 · 14-day mitigation · Geico
             </span>
+            <div className="flex gap-6 mt-2 lg:hidden">
+              <span className="font-disp text-[22px] text-c3-text tracking-[0.02em]">$38,400</span>
+              <span className="font-disp text-[22px] text-c3-green tracking-[0.02em]">+34%</span>
+            </div>
           </div>
-          <div className="font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
             $38,400
           </div>
-          <div className="font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
             +34%
           </div>
         </div>
@@ -98,9 +105,9 @@ export default function AutopsySection() {
         {/* Green row 02 */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-start lg:items-center py-4 lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
         >
-          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em]">02</div>
+          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em] pt-1">02</div>
           <div>
             <div className="font-cond font-semibold text-[16px] text-c3-text tracking-[0.04em] uppercase">
               Riverside Hotel
@@ -108,11 +115,15 @@ export default function AutopsySection() {
             <span className="block font-body font-light text-[12px] text-c3-mid mt-1">
               Fire &amp; smoke · 8-week reconstruction · State Farm
             </span>
+            <div className="flex gap-6 mt-2 lg:hidden">
+              <span className="font-disp text-[22px] text-c3-text tracking-[0.02em]">$214,000</span>
+              <span className="font-disp text-[22px] text-c3-green tracking-[0.02em]">+28%</span>
+            </div>
           </div>
-          <div className="font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
             $214,000
           </div>
-          <div className="font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
             +28%
           </div>
         </div>
@@ -120,9 +131,9 @@ export default function AutopsySection() {
         {/* Red row 03 */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-b border-c3-border bg-[rgba(204,42,0,0.05)] hover:bg-[rgba(204,42,0,0.07)] transition-colors duration-200"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-start lg:items-center py-4 lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-border bg-[rgba(204,42,0,0.05)] hover:bg-[rgba(204,42,0,0.07)] transition-colors duration-200"
         >
-          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em]">03</div>
+          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em] pt-1">03</div>
           <div>
             <div className="font-cond font-semibold text-[16px] text-[#ff7a55] tracking-[0.04em] uppercase">
               Garcia Rebuild
@@ -133,11 +144,15 @@ export default function AutopsySection() {
                 3 missed supplements
               </strong>
             </span>
+            <div className="flex gap-6 mt-2 lg:hidden">
+              <span className="font-disp text-[22px] text-c3-text tracking-[0.02em]">$91,500</span>
+              <span className="font-disp text-[22px] text-c3-red tracking-[0.02em]">−4%</span>
+            </div>
           </div>
-          <div className="font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
             $91,500
           </div>
-          <div className="font-disp text-[26px] text-c3-red text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-red text-right tracking-[0.02em]">
             −4%
           </div>
         </div>
@@ -145,10 +160,10 @@ export default function AutopsySection() {
         {/* Callout 01 */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr] items-start gap-6 py-[18px] px-[26px] pb-6 border-b border-c3-border"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr] items-start gap-4 lg:gap-6 py-[18px] px-4 lg:px-[26px] pb-6 border-b border-c3-border"
         >
-          <div className="font-disp text-[32px] text-c3-yellow leading-none">↑</div>
-          <p className="font-cond font-normal text-[19px] leading-[1.5] text-c3-text">
+          <div className="font-disp text-[28px] lg:text-[32px] text-c3-yellow leading-none">↑</div>
+          <p className="font-cond font-normal text-[17px] lg:text-[19px] leading-[1.5] text-c3-text">
             This job <em>looked</em> profitable. It wasn&rsquo;t. Three approved
             supplements never made it into the books — that&rsquo;s a{" "}
             <strong className="text-c3-yellow font-semibold">
@@ -160,9 +175,9 @@ export default function AutopsySection() {
         {/* Green row 04 */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-start lg:items-center py-4 lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
         >
-          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em]">04</div>
+          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em] pt-1">04</div>
           <div>
             <div className="font-cond font-semibold text-[16px] text-c3-text tracking-[0.04em] uppercase">
               Anderson Loss
@@ -170,11 +185,15 @@ export default function AutopsySection() {
             <span className="block font-body font-light text-[12px] text-c3-mid mt-1">
               Mold + contents · Cat 3 bathroom · Travelers
             </span>
+            <div className="flex gap-6 mt-2 lg:hidden">
+              <span className="font-disp text-[22px] text-c3-text tracking-[0.02em]">$22,800</span>
+              <span className="font-disp text-[22px] text-c3-green tracking-[0.02em]">+41%</span>
+            </div>
           </div>
-          <div className="font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
             $22,800
           </div>
-          <div className="font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
             +41%
           </div>
         </div>
@@ -182,9 +201,9 @@ export default function AutopsySection() {
         {/* Red row 05 */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-b border-c3-border bg-[rgba(204,42,0,0.05)] hover:bg-[rgba(204,42,0,0.07)] transition-colors duration-200"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-start lg:items-center py-4 lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-border bg-[rgba(204,42,0,0.05)] hover:bg-[rgba(204,42,0,0.07)] transition-colors duration-200"
         >
-          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em]">05</div>
+          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em] pt-1">05</div>
           <div>
             <div className="font-cond font-semibold text-[16px] text-[#ff7a55] tracking-[0.04em] uppercase">
               TPA Program · Code Blue × 6
@@ -192,11 +211,15 @@ export default function AutopsySection() {
             <span className="block font-body font-light text-[12px] text-c3-mid mt-1">
               Six small water jobs routed by program · 17% takedown
             </span>
+            <div className="flex gap-6 mt-2 lg:hidden">
+              <span className="font-disp text-[22px] text-c3-text tracking-[0.02em]">$58,200</span>
+              <span className="font-disp text-[22px] text-c3-red tracking-[0.02em]">−11%</span>
+            </div>
           </div>
-          <div className="font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
             $58,200
           </div>
-          <div className="font-disp text-[26px] text-c3-red text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-red text-right tracking-[0.02em]">
             −11%
           </div>
         </div>
@@ -204,10 +227,10 @@ export default function AutopsySection() {
         {/* Callout 02 — red */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr] items-start gap-6 py-[18px] px-[26px] pb-6 border-b border-c3-border"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr] items-start gap-4 lg:gap-6 py-[18px] px-4 lg:px-[26px] pb-6 border-b border-c3-border"
         >
-          <div className="font-disp text-[32px] text-c3-red leading-none">↑</div>
-          <p className="font-cond font-normal text-[19px] leading-[1.5] text-c3-text">
+          <div className="font-disp text-[28px] lg:text-[32px] text-c3-red leading-none">↑</div>
+          <p className="font-cond font-normal text-[17px] lg:text-[19px] leading-[1.5] text-c3-text">
             The whole Code Blue program is unprofitable. Six jobs, $58K of
             revenue,{" "}
             <strong className="text-c3-red font-semibold">losing $6,402.</strong>{" "}
@@ -219,9 +242,9 @@ export default function AutopsySection() {
         {/* Green row 06 */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-start lg:items-center py-4 lg:py-[22px] px-4 lg:px-[26px] border-b border-c3-border hover:bg-[rgba(255,255,255,0.015)] transition-colors duration-200"
         >
-          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em]">06</div>
+          <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em] pt-1">06</div>
           <div>
             <div className="font-cond font-semibold text-[16px] text-c3-text tracking-[0.04em] uppercase">
               Crestwood Apts.
@@ -229,11 +252,15 @@ export default function AutopsySection() {
             <span className="block font-body font-light text-[12px] text-c3-mid mt-1">
               Storm · large-loss · 22-day mitigation · Liberty Mutual
             </span>
+            <div className="flex gap-6 mt-2 lg:hidden">
+              <span className="font-disp text-[22px] text-c3-text tracking-[0.02em]">$184,600</span>
+              <span className="font-disp text-[22px] text-c3-green tracking-[0.02em]">+19%</span>
+            </div>
           </div>
-          <div className="font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-text text-right tracking-[0.02em]">
             $184,600
           </div>
-          <div className="font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-green text-right tracking-[0.02em]">
             +19%
           </div>
         </div>
@@ -241,9 +268,9 @@ export default function AutopsySection() {
         {/* Total row */}
         <div
           data-reveal
-          className="grid grid-cols-[48px_1fr_150px_130px] items-center py-[22px] px-[26px] border-t border-c3-yellow-dim bg-[rgba(240,190,0,0.05)]"
+          className="grid grid-cols-[36px_1fr] lg:grid-cols-[48px_1fr_150px_130px] items-start lg:items-center py-4 lg:py-[22px] px-4 lg:px-[26px] border-t border-c3-yellow-dim bg-[rgba(240,190,0,0.05)]"
         >
-          <div className="font-mono text-[9px] text-c3-yellow tracking-[0.2em]">∑</div>
+          <div className="font-mono text-[9px] text-c3-yellow tracking-[0.2em] pt-1">∑</div>
           <div>
             <div className="font-cond font-semibold text-[16px] text-c3-yellow tracking-[0.04em] uppercase">
               Quarter Total
@@ -251,17 +278,21 @@ export default function AutopsySection() {
             <span className="block font-body font-light text-[12px] text-c3-mid mt-1">
               Blended margin · all jobs · before remediation
             </span>
+            <div className="flex gap-6 mt-2 lg:hidden">
+              <span className="font-disp text-[22px] text-c3-yellow tracking-[0.02em]">$609,500</span>
+              <span className="font-disp text-[22px] text-c3-yellow tracking-[0.02em]">+18.2%</span>
+            </div>
           </div>
-          <div className="font-disp text-[26px] text-c3-yellow text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-yellow text-right tracking-[0.02em]">
             $609,500
           </div>
-          <div className="font-disp text-[26px] text-c3-yellow text-right tracking-[0.02em]">
+          <div className="hidden lg:block font-disp text-[26px] text-c3-yellow text-right tracking-[0.02em]">
             +18.2%
           </div>
         </div>
 
         {/* Found grid */}
-        <div className="grid grid-cols-3 gap-[18px] mt-9 md:grid-cols-1">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-[18px] mt-9">
           <div className="bg-c3-card border-l-[3px] border-c3-red py-[22px] px-6">
             <div className="font-mono text-[9px] text-c3-dim tracking-[0.2em]">
               FOUND // 01
@@ -300,7 +331,7 @@ export default function AutopsySection() {
           </div>
         </div>
 
-        <p className="font-cond font-semibold text-[24px] text-c3-text mt-10 leading-[1.4] max-w-[780px]">
+        <p className="font-cond font-semibold text-[20px] lg:text-[24px] text-c3-text mt-10 leading-[1.4] max-w-[780px]">
           Two of six jobs were losing money. You can&rsquo;t see that without
           job costing.{" "}
           <span className="text-c3-yellow">

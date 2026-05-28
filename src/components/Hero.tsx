@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
 
       {/* Left column */}
-      <div className="px-[52px] py-20 flex flex-col justify-center relative z-10 md:px-5">
+      <div className="px-5 sm:px-8 lg:px-[52px] py-12 lg:py-20 flex flex-col justify-center relative z-10">
         <span className="animate-fadeUp-d1 inline-flex items-center gap-2 w-fit font-mono text-[10px] tracking-[0.18em] uppercase px-[10px] py-[6px] border border-[rgba(204,42,0,0.4)] text-[#ff7a55] bg-[rgba(204,42,0,0.08)] mb-6">
           <span className="w-1.5 h-1.5 rounded-full bg-current animate-blink" />
           Restoration Bookkeeping · Industry Exclusive
@@ -93,8 +93,8 @@ export default function Hero() {
       </div>
 
       {/* Right column — diagnostic panel */}
-      <div className="px-[52px] py-20 border-t md:border-t-0 md:border-l border-c3-border flex flex-col justify-center relative z-10 md:px-[52px]">
-        <div className="animate-fadeUp-d3 p-7 bg-[rgba(255,255,255,0.015)] border border-c3-border max-w-[520px] w-full">
+      <div className="px-5 sm:px-8 lg:px-[52px] py-12 lg:py-20 border-t md:border-t-0 md:border-l border-c3-border flex flex-col justify-center relative z-10">
+        <div className="animate-fadeUp-d3 p-5 sm:p-7 bg-[rgba(255,255,255,0.015)] border border-c3-border max-w-[520px] w-full">
           <div className="flex justify-between items-center pb-[14px] border-b border-c3-border gap-[18px]">
             <span className="font-mono text-[10px] tracking-[0.22em] uppercase text-c3-dim">
               Financial Diagnostic Scan
