@@ -9,6 +9,7 @@ type OptimizedImageProps = Omit<ImageProps, "placeholder"> & {
 };
 
 export default function OptimizedImage({
+  alt,
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
   loading = "lazy",
   blurDataURL = DEFAULT_BLUR_DATA_URL,
@@ -16,6 +17,7 @@ export default function OptimizedImage({
 }: OptimizedImageProps) {
   return (
     <Image
+      alt={alt}
       sizes={sizes}
       loading={loading}
       placeholder="blur"
