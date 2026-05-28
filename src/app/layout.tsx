@@ -7,10 +7,8 @@ import {
 } from "next/font/google";
 import type { WebSite, WithContext } from "schema-dts";
 import JsonLd from "@/components/JsonLd";
+import { site } from "@/lib/site";
 import "./globals.css";
-
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cat3books.com";
-const SITE_NAME = "Cat3 Books";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -44,24 +42,23 @@ const shareTechMono = Share_Tech_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${SITE_NAME}`,
-    default: SITE_NAME,
+    template: `%s | ${site.name}`,
+    default: site.name,
   },
-  description:
-    "The only bookkeeping firm built exclusively for restoration contractors. Job costing, supplement recovery, expense management, fractional CFO — restoration only, always.",
-  metadataBase: new URL(BASE_URL),
+  description: site.description,
+  metadataBase: new URL(site.url),
   alternates: { canonical: "/" },
   openGraph: {
-    title: SITE_NAME,
+    title: site.name,
     description:
       "The only bookkeeping firm built exclusively for restoration contractors.",
-    url: BASE_URL,
-    siteName: SITE_NAME,
+    url: site.url,
+    siteName: site.name,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: SITE_NAME,
+    title: site.name,
     description:
       "The only bookkeeping firm built exclusively for restoration contractors.",
   },
@@ -75,13 +72,13 @@ export const metadata: Metadata = {
 const websiteSchema: WithContext<WebSite> = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: SITE_NAME,
-  url: BASE_URL,
+  name: site.name,
+  url: site.url,
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: `${BASE_URL}/search?q={search_term_string}`,
+      urlTemplate: `${site.url}/search?q={search_term_string}`,
     },
     // @ts-expect-error schema-dts doesn't model query-input as a string literal
     "query-input": "required name=search_term_string",

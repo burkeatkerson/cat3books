@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { AccountingService, WithContext } from "schema-dts";
 import { generateMetadata } from "@/lib/metadata";
+import { site } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -18,8 +19,6 @@ import CaseStudySection from "@/components/CaseStudySection";
 import AboutSection from "@/components/AboutSection";
 import FinalCTA from "@/components/FinalCTA";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cat3books.com";
-
 export const metadata: Metadata = generateMetadata(
   "Cat3 Books — Restoration Bookkeeping. Restoration only.",
   "The only bookkeeping firm built exclusively for restoration contractors. Job costing, supplement recovery, expense management, fractional CFO — restoration only, always."
@@ -31,8 +30,8 @@ const businessSchema: WithContext<AccountingService> = {
   name: "Cat3 Books",
   description:
     "The only bookkeeping firm built exclusively for restoration contractors. Job costing, supplement recovery, TPA channel AR, fractional CFO — restoration only, always.",
-  url: BASE_URL,
-  email: "hello@cat3books.com",
+  url: site.url,
+  email: site.email,
   areaServed: { "@type": "Country", name: "United States" },
   knowsAbout: [
     "restoration bookkeeping",

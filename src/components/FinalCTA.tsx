@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { site } from "@/lib/site";
 
 export default function FinalCTA() {
   return (
@@ -23,13 +24,13 @@ export default function FinalCTA() {
       </p>
       <div className="mt-[34px] flex gap-[14px] justify-center flex-wrap">
         <a
-          href="mailto:hello@cat3books.com"
+          href={`mailto:${site.email}`}
           className="inline-flex items-center gap-2 font-cond font-bold text-[14px] tracking-[0.10em] uppercase px-[22px] py-[14px] bg-c3-yellow text-[#111] hover:bg-c3-yellow-2 hover:-translate-y-0.5 hover:shadow-[0_10px_32px_rgba(240,190,0,0.15)] transition-all duration-[220ms]"
         >
           Schedule Free Assessment →
         </a>
         <a
-          href="tel:+15551234567"
+          href={`tel:${site.phone}`}
           className="inline-flex items-center gap-2 font-cond font-bold text-[14px] tracking-[0.10em] uppercase px-[22px] py-[14px] border border-c3-b2 text-c3-mid hover:border-c3-mid hover:text-c3-text transition-all duration-[220ms]"
         >
           Call Us Directly

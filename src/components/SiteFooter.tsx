@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { site } from "@/lib/site";
 
 export default function SiteFooter() {
   return (
@@ -69,10 +70,10 @@ export default function SiteFooter() {
             Get in Touch
           </h5>
           <a
-            href="mailto:hello@cat3books.com"
+            href={`mailto:${site.email}`}
             className="block font-mono text-[11px] text-c3-mid py-[7px] hover:text-c3-text transition-colors duration-200"
           >
-            hello@cat3books.com
+            {site.email}
           </a>
           {[
             ["Schedule a Call", "#contact"],

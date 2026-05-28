@@ -109,7 +109,7 @@ export default function ReviewsSection() {
               </div>
             </div>
 
-            <blockquote className="font-cond font-semibold italic text-[18px] text-c3-text leading-[1.5] mt-5 flex-1 not-italic">
+            <blockquote className="font-cond font-semibold italic text-[18px] text-c3-text leading-[1.5] mt-5 flex-1">
               {quote}
             </blockquote>
 

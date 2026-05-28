@@ -1,27 +1,28 @@
 import type { Metadata } from "next";
+import { site } from "./site";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cat3books.com";
-const SITE_NAME = "Cat3 Books";
 const DEFAULT_OG_IMAGE = "/og-default.png";
 
 export function generateMetadata(
   title: string,
   description: string,
-  ogImagePath?: string
+  ogImagePath?: string,
+  canonicalPath = "/"
 ): Metadata {
-  const image = `${BASE_URL}${ogImagePath ?? DEFAULT_OG_IMAGE}`;
+  const image = `${site.url}${ogImagePath ?? DEFAULT_OG_IMAGE}`;
+  const canonical = `${site.url}${canonicalPath}`;
 
   return {
     title,
     description,
     alternates: {
-      canonical: BASE_URL,
+      canonical,
     },
     openGraph: {
       title,
       description,
-      url: BASE_URL,
-      siteName: SITE_NAME,
+      url: canonical,
+      siteName: site.name,
       type: "website",
       images: [{ url: image, width: 1200, height: 630, alt: title }],
     },

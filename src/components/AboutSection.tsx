@@ -87,7 +87,7 @@ export default function AboutSection() {
             {creds.map((item) => (
               <div
                 key={item}
-                className="py-[13px] px-5 mx-[22px] border-b border-dashed border-c3-border last:border-b-0 border-l-[2px] border-l-c3-yellow font-body text-[13.5px] text-c3-text leading-relaxed"
+                className="py-[13px] px-5 mx-[22px] border-b border-dashed border-c3-border last:border-b-0 border-l-[2px] border-l-c3-yellow [border-left-style:solid] font-body text-[13.5px] text-c3-text leading-relaxed"
               >
                 {item}
               </div>

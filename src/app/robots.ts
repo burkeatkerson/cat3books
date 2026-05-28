@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cat3books.com";
+import { site } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -12,6 +11,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "PerplexityBot", allow: "/" },
       { userAgent: "anthropic-ai", allow: "/" },
     ],
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: `${site.url}/sitemap.xml`,
   };
 }

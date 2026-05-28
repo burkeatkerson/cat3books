@@ -82,8 +82,9 @@ export default function JobCostingSection() {
               <li
                 key={item}
                 className="font-body text-[14px] text-c3-text py-[10px] border-b border-dashed border-c3-border last:border-b-0 leading-[1.5] before:content-['+_'] before:text-c3-green"
-                dangerouslySetInnerHTML={{ __html: item.replace("P&L", "P&amp;L") }}
-              />
+              >
+                {item}
+              </li>
             ))}
           </ul>
         </div>

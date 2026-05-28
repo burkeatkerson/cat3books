@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Overline from "./Overline";
+import { cn } from "@/lib/cn";
 
 function fmt(n: number): string {
   return n.toLocaleString("en-US");
@@ -144,7 +145,7 @@ export default function PricingSection() {
             {tier1Features.map(({ text, bold }) => (
               <li
                 key={text}
-                className={`font-body font-light text-[13.5px] text-c3-mid py-[9px] border-b border-dashed border-c3-border last:border-b-0 leading-[1.5] before:content-['▸_'] before:text-c3-yellow ${bold ? "font-medium !text-c3-text" : ""}`}
+                className={cn("font-body font-light text-[13.5px] py-[9px] border-b border-dashed border-c3-border last:border-b-0 leading-[1.5] before:content-['▸_'] before:text-c3-yellow", bold ? "font-medium text-c3-text" : "text-c3-mid")}
               >
                 {text}
               </li>
@@ -182,7 +183,7 @@ export default function PricingSection() {
             {tier2Features.map(({ text, bold }) => (
               <li
                 key={text}
-                className={`font-body font-light text-[13.5px] text-c3-mid py-[9px] border-b border-dashed border-c3-border last:border-b-0 leading-[1.5] before:content-['▸_'] before:text-c3-yellow ${bold ? "font-medium !text-c3-text" : ""}`}
+                className={cn("font-body font-light text-[13.5px] py-[9px] border-b border-dashed border-c3-border last:border-b-0 leading-[1.5] before:content-['▸_'] before:text-c3-yellow", bold ? "font-medium text-c3-text" : "text-c3-mid")}
               >
                 {text}
               </li>
