@@ -12,6 +12,17 @@ coverSub: "Cash forecast template"
 issueNumber: "№ 039"
 readTime: "10 min"
 featured: false
+howToSteps:
+  - name: "Identify your five restoration collection horizons"
+    text: "Map the five inflow types specific to restoration: ACV payment (30–60 days), TPA reconciliation (30–45 days), supplement payments (60–90 days), RCV holdback release (60–120 days), and final supplement payments (90–180 days)."
+  - name: "Build inflows by source and expected date"
+    text: "Create one row per open job per inflow type. Use carrier-specific payment history to set the lag assumption for each, not a generic 30-day assumption."
+  - name: "Build outflows by category and due date"
+    text: "Map payroll by pay cycle, subcontractor invoices by due date, materials by card statement cycle, fixed overhead monthly, and debt service monthly."
+  - name: "Add a credit availability buffer column"
+    text: "Track available line-of-credit balance week by week. When projected outflows exceed inflows and the buffer drops below your minimum threshold, that is a scheduled draw event."
+  - name: "Calibrate assumptions from your own payment history"
+    text: "Build carrier-specific payment lag averages from 12 months of actual collection data. Use 70% of submitted supplement value as the expected inflow based on your historical approval rate."
 ---
 
 A standard 13-week cash forecast assumes a relatively simple AR model: invoice → 30-day collection → deposit. Apply that template to a restoration company and it will be wrong by 40–60% in any given week, not because the math is wrong, but because the underlying model of how restoration revenue arrives is wrong.

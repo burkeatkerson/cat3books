@@ -27,6 +27,7 @@ export const metadata: Metadata = generateMetadata(
 const businessSchema: WithContext<AccountingService> = {
   "@context": "https://schema.org",
   "@type": "AccountingService",
+  "@id": `${site.url}/#service`,
   name: "Cat3 Books",
   description:
     "The only bookkeeping firm built exclusively for restoration contractors. Job costing, supplement recovery, TPA channel AR, fractional CFO — restoration only, always.",

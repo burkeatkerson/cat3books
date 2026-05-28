@@ -4,10 +4,16 @@ import matter from "gray-matter";
 
 const POSTS_DIR = path.join(process.cwd(), "src/content/field-notes");
 
+export interface HowToStep {
+  name: string;
+  text: string;
+}
+
 export interface PostMeta {
   slug: string;
   title: string;
   date: string;
+  updatedDate?: string;
   excerpt: string;
   tags: string[];
   author?: string;
@@ -19,6 +25,7 @@ export interface PostMeta {
   issueNumber: string;
   readTime: string;
   featured?: boolean;
+  howToSteps?: HowToStep[];
 }
 
 export interface Post extends PostMeta {
@@ -54,6 +61,8 @@ export function getAllPosts(): PostMeta[] {
         issueNumber: (data.issueNumber as string) ?? "",
         readTime: (data.readTime as string) ?? "5 min",
         featured: (data.featured as boolean) ?? false,
+        updatedDate: data.updatedDate as string | undefined,
+        howToSteps: data.howToSteps as HowToStep[] | undefined,
       };
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -80,6 +89,8 @@ export function getPost(slug: string): Post {
     issueNumber: (data.issueNumber as string) ?? "",
     readTime: (data.readTime as string) ?? "5 min",
     featured: (data.featured as boolean) ?? false,
+    updatedDate: data.updatedDate as string | undefined,
+    howToSteps: data.howToSteps as HowToStep[] | undefined,
     content,
   };
 }

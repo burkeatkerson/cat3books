@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { BlogPosting, WithContext } from "schema-dts";
+import type { BlogPosting, BreadcrumbList, HowTo, Organization, WithContext } from "schema-dts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
     const post = getPost(params.slug);
     const canonical = `${site.url}/field-notes/${post.slug}`;
+    const modifiedTime = new Date(post.updatedDate ?? post.date).toISOString();
     return {
       title: `${post.title} | Field Notes · Cat3 Books`,
       description: post.excerpt,
@@ -33,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         siteName: site.name,
         type: "article",
         publishedTime: new Date(post.date).toISOString(),
+        modifiedTime,
         authors: [post.author ?? site.name],
         tags: post.tags,
       },
@@ -55,43 +57,96 @@ export default function FieldNotePost({ params }: Props) {
     notFound();
   }
 
-  const schema: WithContext<BlogPosting> = {
+  const postUrl = `${site.url}/field-notes/${post.slug}`;
+  const datePublished = new Date(post.date).toISOString();
+  const dateModified = new Date(post.updatedDate ?? post.date).toISOString();
+
+  const blogPostingSchema: WithContext<BlogPosting> = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
+    "@id": postUrl,
     headline: post.title,
     description: post.excerpt,
-    datePublished: new Date(post.date).toISOString(),
+    datePublished,
+    dateModified,
     author: {
       "@type": "Organization",
+      "@id": `${site.url}/#organization`,
       name: post.author ?? site.name,
       url: site.url,
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${site.url}/#organization`,
       name: site.name,
       url: site.url,
-    },
-    url: `${site.url}/field-notes/${post.slug}`,
+    } as Organization,
+    url: postUrl,
     keywords: post.tags.join(", "),
+    articleSection: post.categoryLabel,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${site.url}/field-notes/${post.slug}`,
+      "@id": postUrl,
     },
   };
 
+  const breadcrumbSchema: WithContext<BreadcrumbList> = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: site.url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Field Notes",
+        item: `${site.url}/field-notes`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: postUrl,
+      },
+    ],
+  };
+
+  const howToSchema: WithContext<HowTo> | null =
+    post.howToSteps && post.howToSteps.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: post.title,
+          description: post.excerpt,
+          step: post.howToSteps.map((s, i) => ({
+            "@type": "HowToStep" as const,
+            position: i + 1,
+            name: s.name,
+            text: s.text,
+          })),
+        }
+      : null;
+
   return (
     <>
-      <JsonLd schema={schema} />
+      <JsonLd schema={blogPostingSchema} />
+      <JsonLd schema={breadcrumbSchema} />
+      {howToSchema && <JsonLd schema={howToSchema} />}
       <SiteHeader />
       <main className="min-h-screen bg-c3-black text-c3-text">
         <Container className="py-16 xl:py-[108px]">
-          {/* Back link */}
-          <Link
-            href="/field-notes"
-            className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-c3-dim hover:text-c3-yellow transition-colors duration-200 mb-12"
-          >
-            ← Field Notes
-          </Link>
+          {/* Breadcrumb nav */}
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-[10px] tracking-[0.18em] uppercase text-c3-dim mb-12">
+            <Link href="/" className="hover:text-c3-yellow transition-colors duration-200">Home</Link>
+            <span>/</span>
+            <Link href="/field-notes" className="hover:text-c3-yellow transition-colors duration-200">Field Notes</Link>
+            <span>/</span>
+            <span className="text-c3-mid truncate max-w-[260px]">{post.categoryLabel}</span>
+          </nav>
 
           {/* Header */}
           <header className="max-w-[860px]">
@@ -133,8 +188,8 @@ export default function FieldNotePost({ params }: Props) {
               ← All Field Notes
             </Link>
             <Link
-              href="#contact"
-              className="inline-flex items-center gap-2 font-cond font-bold text-[13px] tracking-[0.10em] uppercase px-[18px] py-3 bg-c3-yellow text-[#111] hover:bg-c3-yellow-2 hover:-translate-y-0.5 transition-all duration-[220ms]"
+              href="/#contact"
+              className="inline-flex items-center gap-2 font-cond font-bold text-[13px] tracking-[0.10em] uppercase px-[18px] py-3 bg-c3-yellow text-[#111] hover:bg-[#FFD000] hover:-translate-y-0.5 transition-all duration-[220ms]"
             >
               Free Assessment →
             </Link>

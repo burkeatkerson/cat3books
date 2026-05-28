@@ -5,7 +5,7 @@ import {
   Barlow,
   Share_Tech_Mono,
 } from "next/font/google";
-import type { WebSite, WithContext } from "schema-dts";
+import type { Organization, WebSite, WithContext } from "schema-dts";
 import JsonLd from "@/components/JsonLd";
 import MotionProvider from "@/components/motion/MotionProvider";
 import { site } from "@/lib/site";
@@ -73,8 +73,10 @@ export const metadata: Metadata = {
 const websiteSchema: WithContext<WebSite> = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": `${site.url}/#website`,
   name: site.name,
   url: site.url,
+  publisher: { "@id": `${site.url}/#organization` } as Organization,
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -86,6 +88,28 @@ const websiteSchema: WithContext<WebSite> = {
   },
 };
 
+const organizationSchema: WithContext<Organization> = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${site.url}/#organization`,
+  name: site.name,
+  url: site.url,
+  email: site.email,
+  description: site.description,
+  areaServed: { "@type": "Country", name: "United States" },
+  knowsAbout: [
+    "restoration bookkeeping",
+    "job costing",
+    "supplement recovery",
+    "TPA billing programs",
+    "QuickBooks Online",
+    "fractional CFO",
+    "insurance restoration accounting",
+    "Xactimate reconciliation",
+  ],
+  // sameAs: [] — add LinkedIn, Google Business, RIA directory URLs once available
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -95,6 +119,7 @@ export default function RootLayout({
         className={`${bebasNeue.variable} ${barlowCondensed.variable} ${barlow.variable} ${shareTechMono.variable} bg-c3-black text-c3-text font-body font-light leading-relaxed min-h-screen overflow-x-hidden`}
       >
         <JsonLd schema={websiteSchema} />
+        <JsonLd schema={organizationSchema} />
         <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
