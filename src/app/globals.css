@@ -87,6 +87,134 @@
     transform: translateY(0);
   }
 
+  /* ========== Cover art backgrounds (blog post cards) ========== */
+  .cv-tape {
+    background: repeating-linear-gradient(135deg, #0c0c0a 0 18px, rgba(240,190,0,.07) 18px 19px, #0c0c0a 19px 38px);
+  }
+  .cv-grid {
+    background-image: linear-gradient(rgba(240,190,0,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(240,190,0,.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+    background-color: #0a0a09;
+  }
+  .cv-glow { background: radial-gradient(circle at 70% 35%, rgba(240,190,0,.18), transparent 55%), #0a0a09; }
+  .cv-red  { background: radial-gradient(circle at 30% 70%, rgba(204,42,0,.18), transparent 55%), #0a0a09; }
+  .cv-vert { background: repeating-linear-gradient(90deg, #0c0c0a 0 8px, rgba(255,255,255,.018) 8px 9px); }
+  .cv-dots {
+    background-image: radial-gradient(rgba(240,190,0,.25) 1px, transparent 1.5px);
+    background-size: 18px 18px;
+    background-color: #0a0a09;
+  }
+  .cv-stripe { background: linear-gradient(180deg, #0a0a09 0 60%, #f0be00 60% 62%, #0a0a09 62% 100%); }
+  .cv-pl    { background: #0a0a09; }
+
+  /* Blog post body prose styles */
+  .prose-field-notes h2 {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 700;
+    font-size: clamp(22px, 2.4vw, 30px);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #f5f5f3;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.15;
+  }
+
+  .prose-field-notes h3 {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 600;
+    font-size: clamp(18px, 1.8vw, 24px);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #f5f5f3;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-field-notes p {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.85;
+    color: #8a8a82;
+    margin-bottom: 1.25rem;
+  }
+
+  .prose-field-notes strong {
+    color: #f0be00;
+    font-weight: 500;
+  }
+
+  .prose-field-notes em {
+    color: #f5f5f3;
+    font-style: italic;
+  }
+
+  .prose-field-notes ul,
+  .prose-field-notes ol {
+    margin: 1rem 0 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .prose-field-notes ul li {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #8a8a82;
+    list-style: none;
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  .prose-field-notes ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #f0be00;
+  }
+
+  .prose-field-notes ol li {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #8a8a82;
+    list-style: decimal;
+  }
+
+  .prose-field-notes blockquote {
+    border-left: 3px solid #f0be00;
+    padding: 1rem 1.25rem;
+    margin: 1.75rem 0;
+    background: rgba(240, 190, 0, 0.03);
+  }
+
+  .prose-field-notes blockquote p {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    color: #f5f5f3;
+    margin: 0;
+  }
+
+  .prose-field-notes hr {
+    border-color: #2a2a28;
+    margin: 2rem 0;
+  }
+
+  .prose-field-notes code {
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 12px;
+    color: #f0be00;
+    background: rgba(240, 190, 0, 0.06);
+    padding: 2px 6px;
+    letter-spacing: 0.06em;
+  }
+
   /* Range input styling for pricing calculator */
   .range-slider {
     -webkit-appearance: none;

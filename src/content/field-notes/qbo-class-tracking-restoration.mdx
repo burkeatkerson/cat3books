@@ -1,0 +1,74 @@
+---
+title: "Class Tracking for Restoration Jobs in QuickBooks Online — The Right Way"
+date: "2026-05-14"
+excerpt: "Classes are powerful and unforgiving. Set them up wrong and you've baked the wrong taxonomy into a year of transactions. Here's the exact class structure we deploy on every Cat3 cleanup engagement."
+tags: ["quickbooks", "job costing", "software"]
+author: "Cat3 Books"
+category: "qb"
+categoryLabel: "QuickBooks Guides"
+coverStyle: "cv-vert"
+coverGlyph: "QBO"
+coverSub: "Class tracking, properly"
+issueNumber: "№ 044"
+readTime: "11 min"
+featured: false
+---
+
+QuickBooks Online's class tracking feature is one of the most powerful tools available to a restoration bookkeeper — and one of the most commonly misconfigured. We see the same three mistakes on nearly every engagement where class tracking is already in place:
+
+1. Classes are set up around job type instead of revenue channel
+2. Classes aren't applied consistently across both income and expense transactions
+3. The class list has grown organically into a mess of 60+ entries that nobody can audit
+
+Here's how we set it up when we start fresh.
+
+## The Right Architecture: Revenue Channel First
+
+The temptation is to use QBO classes to track job types — "Water Mitigation," "Fire Restoration," "Mold," etc. That's useful, but it's not the highest-leverage way to structure classes for a restoration company.
+
+The highest-leverage structure is by **revenue channel**, because that's what determines pricing power, margin profile, and business development strategy.
+
+Our standard class structure for a restoration company:
+
+- **Direct Carrier** — claims where you're working direct with the insurer, no TPA
+- **[Program Name]** (one class per TPA program) — Code Blue, Contractor Connection, Alacrity, Sedgwick, etc.
+- **Property Management** — repeat commercial relationships with PM companies
+- **Retail / Out-of-Pocket** — jobs where the homeowner is paying directly, no insurance
+- **Internal** — remediation for owned or managed properties
+
+When every transaction hits one of these classes, your P&L becomes a segmented margin report. You can see, in one report, the gross margin contribution from each channel — not just in aggregate, but as a percentage of revenue for each channel. That's the data that drives your business development decisions.
+
+## Applying Classes to Expenses
+
+This is where most setups fall apart. Companies apply classes to income transactions (the job invoice) but forget to apply them to direct cost transactions (the labor, materials, subcontractor invoices).
+
+If your direct costs don't carry a class, your class-based P&L will show revenue by channel but show costs as unclassified — which makes the gross margin calculation impossible at the class level.
+
+The rule is: every transaction that flows through Cost of Goods Sold must carry a class. This includes:
+
+- Payroll journal entries (allocate by job, which maps to class)
+- Materials purchases (receipt captures the job, which maps to class)
+- Subcontractor invoices (job number must be on every sub bill)
+- Equipment rental invoices (job + class required)
+
+We enforce this at the data-entry level with a QBO setting that makes class a required field on every COGS-category transaction. If it's missing, the transaction won't save. That one setting eliminates 80% of the missing-class problem.
+
+## Handling Jobs That Span Multiple Classes
+
+Some jobs start as TPA-referred but get supplemented directly with the carrier — which means the initial revenue is Code Blue revenue, but the supplement revenue might be direct carrier revenue. How do you classify that?
+
+The rule we follow: **classify by how the original job was acquired, not by how it was ultimately paid.** The revenue channel classification is about business development accountability, not payment source. If Code Blue sent you the job, the entire job — including all supplements — is Code Blue revenue.
+
+This matters when you're running the TPA program profitability analysis. You want to see the full value of a Code Blue engagement, including all supplement revenue, against the full TPA fee charged on that job.
+
+## Cleaning Up an Existing Class List
+
+If you're taking over a QBO file with an existing class list, the cleanup process follows a specific sequence:
+
+1. Export all existing classes to a spreadsheet
+2. Map each existing class to one of your new standard classes
+3. Run a bulk reclassification using the QBO reclassification tool (Accountant Tools → Reclassify Transactions)
+4. Archive (don't delete) the old class entries so historical reports still work
+5. Enable the "required field" setting going forward
+
+The reclassification step takes 2–4 hours for a typical file with 12–18 months of history. It's tedious work, but it's also the moment where historical data becomes useful for the first time. Owners are often surprised by what the recategorized data shows them — revenue channels they thought were profitable that weren't, and ones they were undervaluing.

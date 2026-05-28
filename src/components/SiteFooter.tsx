@@ -27,14 +27,14 @@ export default function SiteFooter() {
 
         <div>
           <h5 className="font-mono text-[10px] tracking-[0.22em] text-c3-dim mb-[18px] uppercase">
-            Services
+            Field Notes
           </h5>
           {[
-            ["Job Costing", "#services"],
-            ["Supplement Recovery", "#services"],
-            ["TPA Channel AR", "#services"],
-            ["Expense Management", "#expense"],
-            ["Fractional CFO", "#pricing"],
+            ["Job Costing", "/field-notes"],
+            ["P&L Management", "/field-notes"],
+            ["Software Reviews", "/field-notes"],
+            ["Supplements & TPAs", "/field-notes"],
+            ["The Cleanup Playbook", "/field-notes"],
           ].map(([label, href]) => (
             <Link
               key={label}
@@ -48,14 +48,13 @@ export default function SiteFooter() {
 
         <div>
           <h5 className="font-mono text-[10px] tracking-[0.22em] text-c3-dim mb-[18px] uppercase">
-            Company
+            Cat3 Books
           </h5>
           {[
-            ["About", "#about"],
-            ["Pricing", "#pricing"],
-            ["Contact", "#contact"],
-            ["Case Studies", "#"],
-            ["Blog", "#"],
+            ["Services", "/#services"],
+            ["Pricing", "/#pricing"],
+            ["About", "/#about"],
+            ["Contact", "/#contact"],
           ].map(([label, href]) => (
             <Link
               key={label}
