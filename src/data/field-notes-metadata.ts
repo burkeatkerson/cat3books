@@ -247,4 +247,42 @@ export const fieldNotesMeta: Record<
     excerpt:
       "Canonical definitions for every tax and legal term a restoration business owner encounters — from entity types and depreciation elections to lien laws, payroll taxes, workers' comp classification, surety bonds, and public adjuster regulations.",
   },
+
+  // ── Software Reviews ─────────────────────────────────────────────────────
+  "dash-cotality-restoration-review": {
+    title: "Dash (Cotality) Review for Restoration Companies: What It Does — And What It Doesn't Do for Your Books",
+    categoryLabel: "Software Reviews",
+    excerpt:
+      "Dash is the most mature TPA management platform in restoration and a reliable job workflow tool. The QBO integration works — but it's not a bookkeeping replacement, and the one-way data flow leaves more accounting work than most owners expect.",
+  },
+  "albi-vs-quickbooks-restoration": {
+    title: "Albi vs. QuickBooks for Restoration: Does Albi Replace My Bookkeeping?",
+    categoryLabel: "Software Reviews",
+    excerpt:
+      "Albi is the best restoration-native job management platform on the market. It doesn't replace QuickBooks — it feeds it. Here's exactly what transfers, what doesn't, and where the accounting work still lives.",
+  },
+  "encircle-review-restoration": {
+    title: "Encircle Review: Documentation Tool or Accounting Replacement? What Restoration Owners Need to Know",
+    categoryLabel: "Software Reviews",
+    excerpt:
+      "Encircle is the best field documentation tool in restoration — photos, drying logs, moisture maps, equipment tracking. It has no accounting functionality. Understanding what it does and doesn't do prevents a specific, common mistake.",
+  },
+  "psa-canam-vs-quickbooks-restoration": {
+    title: "PSA (Canam) vs. QuickBooks Online for Restoration: When Does Switching Make Sense?",
+    categoryLabel: "Software Reviews",
+    excerpt:
+      "PSA by Canam is one of the few platforms built to handle the insurance payment cycle natively. It's also complex, expensive, and right-sized for $7M+ multi-location operations. Below that threshold, the switch cost rarely pays off.",
+  },
+  "best-apps-restoration-quickbooks": {
+    title: "Best Apps for Restoration Companies That Integrate with QuickBooks Online",
+    categoryLabel: "Software Reviews",
+    excerpt:
+      "A categorized guide to every app category a restoration company needs around QuickBooks Online — job management, documentation, time tracking, payroll, AP, and expense management. What integrates, what doesn't, and what works at each revenue stage.",
+  },
+  "symbility-vs-xactimate-bookkeeping": {
+    title: "Symbility vs. Xactimate: Does the Estimating Platform Affect Your Bookkeeping?",
+    categoryLabel: "Software Reviews",
+    excerpt:
+      "Your estimating platform choice does affect your bookkeeping workflow — but probably less than you think. The core accounting steps are the same. The differences are in export quality, supplement tracking, and manual mapping work.",
+  },
 };

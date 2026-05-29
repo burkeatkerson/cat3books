@@ -18,6 +18,7 @@ import DefinedTerm from "@/components/field-notes/DefinedTerm";
 import GlossaryNav from "@/components/field-notes/GlossaryNav";
 import MidPostCTA from "@/components/field-notes/MidPostCTA";
 import QuickAnswer from "@/components/field-notes/QuickAnswer";
+import ReviewBlock from "@/components/field-notes/ReviewBlock";
 import Stat from "@/components/field-notes/Stat";
 import TableOfContents from "@/components/field-notes/TableOfContents";
 
@@ -32,6 +33,7 @@ const mdxComponents = {
   GlossaryNav,
   MidPostCTA,
   QuickAnswer,
+  ReviewBlock,
   Stat,
   TableOfContents,
 };

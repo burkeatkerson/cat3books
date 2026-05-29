@@ -162,3 +162,65 @@ Only the tax-legal glossary (post 5) has an explicit BlogImage. The other 4 exis
 ---
 
 *Total images to create (all files): 15 images across 11 posts. Priority by citation value: Pillar Guide 2 (Job Costing Framework staircase) > Pillar Guide 5 (M&A landscape) > Thesis Post 1 (Generic vs. Specialized comparison) > Thesis Post 2 (True cost stacked bar) > Glossary 5 (entity decision tree).*
+
+---
+
+## Software Review Series
+
+### Post 1: Dash Review
+**Slug:** `dash-cotality-restoration-review`
+
+**Image: Dash Decision Flow**
+**Filename:** `dash-cotality-restoration-review-decision.jpg`
+**Alt text:** "Decision flow for choosing Dash: start with TPA program volume — 5+ active programs points strongly toward Dash; below that, evaluate whether TPA workflow depth or modern UX is the higher priority"
+**Size:** 780×320px
+**Notes:** Simple decision flowchart. Two main paths: high TPA volume → Dash; lower TPA volume → evaluate Albi. Minimal, clean.
+
+### Post 2: Albi vs QBO
+**Slug:** `albi-vs-quickbooks-restoration`
+
+**Image: Three-Layer Stack Diagram**
+**Filename:** `albi-vs-quickbooks-restoration-stack.jpg`
+**Alt text:** "Three-layer restoration software stack showing Albi as the job management layer feeding data to QuickBooks Online as the accounting layer, both operated by a specialized restoration bookkeeper who configures the integration, performs month-end close, and manages AR staging"
+**Size:** 780×320px
+**Notes:** Three stacked horizontal layers. Layer 1 (top): Albi — job management, dispatch, field docs, cost tracking. Layer 2 (middle): QuickBooks Online — accounting, AR, payroll, financial close. Layer 3 (bottom): Specialized bookkeeper — integration configuration, month-end close, AR staging.
+
+### Post 3: Encircle Review
+**Slug:** `encircle-review-restoration`
+
+**Image: Documentation-to-Accounting Workflow**
+**Filename:** `encircle-review-restoration-workflow.jpg`
+**Alt text:** "Workflow showing how Encircle field documentation connects to accounting: Encircle captures equipment days and drying logs → data supports Xactimate estimate line items → adjuster approves the estimate → invoice generated and posted to QBO → payment collected"
+**Size:** 780×260px
+**Notes:** Horizontal flow with 5 steps. Encircle is highlighted at step 1. QBO appears at step 4. The arrow from step 1 to step 2 passes through Xactimate (labeled). Simple, linear.
+
+### Post 4: PSA vs QBO
+**Slug:** `psa-canam-vs-quickbooks-restoration`
+
+**Image: PSA vs QBO Decision Matrix**
+**Filename:** `psa-canam-vs-quickbooks-restoration-decision.jpg`
+**Alt text:** "Decision matrix showing the QBO vs PSA recommendation: single location under $7M revenue points to QBO with specialist; multiple locations over $7M with internal accounting team points to PSA evaluation"
+**Size:** 780×300px
+**Notes:** 2×2 grid with axes: Revenue (under $7M / over $7M) × Locations (single / multiple). QBO in three quadrants, PSA eval in the high-revenue multi-location quadrant.
+
+### Post 5: Best Apps Roundup
+**Slug:** `best-apps-restoration-quickbooks`
+
+**Image: QBO-Centered Stack Diagram**
+**Filename:** `best-apps-restoration-quickbooks-stack.jpg`
+**Alt text:** "QBO-centered restoration software stack diagram showing QuickBooks Online in the center with five categories of apps connecting to it: job management (Albi, Dash) at top, field documentation (Encircle, CompanyCam) at right, time tracking (QuickBooks Time) at bottom-right, payroll (Gusto, ADP) at bottom, and AP/expense management (BILL, Hubdoc) at left"
+**Size:** 780×440px
+**Notes:** Hub-and-spoke diagram. QBO in center (yellow box). Five labeled categories around it as grouped bubbles. App names listed under each category bubble. Clean, dark background.
+
+### Post 6: Symbility vs Xactimate
+**Slug:** `symbility-vs-xactimate-bookkeeping`
+
+**Image: Parallel Workflow Comparison**
+**Filename:** `symbility-vs-xactimate-bookkeeping-workflow.jpg`
+**Alt text:** "Side-by-side workflow showing Xactimate-to-QBO path versus Symbility-to-QBO path: both follow the same accounting steps (estimate approved, ACV invoiced, holdback, supplement, close) but Xactimate path requires less manual mapping at the initial export step"
+**Size:** 780×340px
+**Notes:** Two parallel horizontal flows (one per platform). Same steps in each. At the "export to QBO" step, mark Xactimate as "clean export" and Symbility as "requires mapping." Converge at QBO for remaining steps.
+
+---
+
+*Total images to create (all files): 22 images across 17 posts. Priority by citation value: Pillar Guide 2 (Job Costing Framework) > Pillar Guide 5 (M&A landscape) > Thesis Post 1 (Generic vs. Specialized) > Post 5 (QBO-centered stack hub diagram) > Thesis Post 2 (True cost stacked bar).*
