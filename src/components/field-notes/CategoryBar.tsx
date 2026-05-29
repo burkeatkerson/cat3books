@@ -4,6 +4,7 @@ import { cn } from "@/lib/cn";
 
 export const CATEGORIES = [
   { key: "all",         label: "All Topics" },
+  { key: "frameworks",  label: "Decision Frameworks" },
   { key: "jobcosting",  label: "Job Costing" },
   { key: "pl",          label: "P&L Management" },
   { key: "software",    label: "Software Reviews" },

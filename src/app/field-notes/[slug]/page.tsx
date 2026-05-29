@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { BlogPosting, BreadcrumbList, HowTo, Organization, WithContext } from "schema-dts";
+import type { BlogPosting, BreadcrumbList, FAQPage, HowTo, Organization, WebPage, WithContext } from "schema-dts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -9,6 +9,14 @@ import JsonLd from "@/components/JsonLd";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Container from "@/components/Container";
+import AnswerBlock from "@/components/field-notes/AnswerBlock";
+import DecisionMatrix from "@/components/field-notes/DecisionMatrix";
+
+/** MDX component map — available in every Field Notes post */
+const mdxComponents = {
+  AnswerBlock,
+  DecisionMatrix,
+};
 
 interface Props {
   params: { slug: string };
@@ -27,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${post.title} | Field Notes · Cat3 Books`,
       description: post.excerpt,
       alternates: { canonical },
+      keywords: post.keywords,
       openGraph: {
         title: post.title,
         description: post.excerpt,
@@ -61,6 +70,7 @@ export default function FieldNotePost({ params }: Props) {
   const datePublished = new Date(post.date).toISOString();
   const dateModified = new Date(post.updatedDate ?? post.date).toISOString();
 
+  // ── BlogPosting ──────────────────────────────────────────────────────────
   const blogPostingSchema: WithContext<BlogPosting> = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -82,39 +92,33 @@ export default function FieldNotePost({ params }: Props) {
       url: site.url,
     } as Organization,
     url: postUrl,
-    keywords: post.tags.join(", "),
+    keywords: post.keywords?.join(", ") ?? post.tags.join(", "),
     articleSection: post.categoryLabel,
+    isPartOf: { "@id": `${site.url}/field-notes#blog` } as BlogPosting,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": postUrl,
+      // Speakable: point at the .speakable-answer element so AI engines can
+      // identify the canonical citable answer for this post.
+      speakable: {
+        "@type": "SpeakableSpecification",
+        cssSelector: [".speakable-answer"],
+      } as WebPage["speakable"],
     },
   };
 
+  // ── BreadcrumbList ───────────────────────────────────────────────────────
   const breadcrumbSchema: WithContext<BreadcrumbList> = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: site.url,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Field Notes",
-        item: `${site.url}/field-notes`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: post.title,
-        item: postUrl,
-      },
+      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+      { "@type": "ListItem", position: 2, name: "Field Notes", item: `${site.url}/field-notes` },
+      { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
     ],
   };
 
+  // ── HowTo (decision criteria as steps) ──────────────────────────────────
   const howToSchema: WithContext<HowTo> | null =
     post.howToSteps && post.howToSteps.length > 0
       ? {
@@ -131,11 +135,29 @@ export default function FieldNotePost({ params }: Props) {
         }
       : null;
 
+  // ── FAQPage ──────────────────────────────────────────────────────────────
+  const faqSchema: WithContext<FAQPage> | null =
+    post.faqItems && post.faqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: post.faqItems.map(({ question, answer }) => ({
+            "@type": "Question" as const,
+            name: question,
+            acceptedAnswer: {
+              "@type": "Answer" as const,
+              text: answer,
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
       <JsonLd schema={blogPostingSchema} />
       <JsonLd schema={breadcrumbSchema} />
       {howToSchema && <JsonLd schema={howToSchema} />}
+      {faqSchema && <JsonLd schema={faqSchema} />}
       <SiteHeader />
       <main className="min-h-screen bg-c3-black text-c3-text">
         <Container className="py-16 xl:py-[108px]">
@@ -156,9 +178,11 @@ export default function FieldNotePost({ params }: Props) {
                 month: "long",
                 day: "numeric",
               })}
+              {" · "}
+              {post.readTime} read
               {post.tags.length > 0 && (
                 <span className="ml-4 text-c3-yellow">
-                  {post.tags.join(" · ")}
+                  {post.tags.slice(0, 3).join(" · ")}
                 </span>
               )}
             </div>
@@ -174,7 +198,7 @@ export default function FieldNotePost({ params }: Props) {
 
           {/* Body */}
           <article className="prose-field-notes max-w-[780px]">
-            <MDXRemote source={post.content} />
+            <MDXRemote source={post.content} components={mdxComponents} />
           </article>
 
           <hr className="border-c3-border mt-16 mb-10" />

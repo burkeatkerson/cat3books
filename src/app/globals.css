@@ -215,6 +215,109 @@
     letter-spacing: 0.06em;
   }
 
+  /* ── Prose table styles (used by DecisionMatrix) ── */
+  .prose-field-notes table,
+  .decision-matrix-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-barlow), sans-serif;
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+
+  .prose-field-notes thead th,
+  .decision-matrix-body thead th {
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #484640;
+    padding: 12px 16px;
+    border-bottom: 1px solid #2a2a28;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .prose-field-notes tbody td,
+  .decision-matrix-body tbody td {
+    padding: 11px 16px;
+    border-bottom: 1px dashed #222220;
+    color: #a09888;
+    vertical-align: top;
+  }
+
+  .prose-field-notes tbody tr:last-child td,
+  .decision-matrix-body tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .prose-field-notes tbody td:first-child,
+  .decision-matrix-body tbody td:first-child {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #f5f5f3;
+  }
+
+  .prose-field-notes tbody tr:hover td,
+  .decision-matrix-body tbody tr:hover td {
+    background: rgba(240, 190, 0, 0.02);
+  }
+
+  /* ── Decision-tree nested list (ol.decision-tree) ── */
+  .prose-field-notes ol.decision-tree {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    border: 1px solid #222220;
+  }
+
+  .prose-field-notes ol.decision-tree > li {
+    padding: 14px 20px 14px 20px;
+    border-bottom: 1px dashed #222220;
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #f5f5f3;
+    position: relative;
+  }
+
+  .prose-field-notes ol.decision-tree > li:last-child {
+    border-bottom: 0;
+  }
+
+  .prose-field-notes ol.decision-tree > li::before {
+    display: none;
+  }
+
+  .prose-field-notes ol.decision-tree span.yes {
+    color: #187a38;
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+
+  .prose-field-notes ol.decision-tree span.no {
+    color: #cc2a00;
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+
+  .prose-field-notes ol.decision-tree span.check {
+    color: #f0be00;
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-right: 8px;
+  }
+
   /* Range input styling for pricing calculator */
   .range-slider {
     -webkit-appearance: none;

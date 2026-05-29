@@ -20,9 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...posts.map((post) => ({
       url: `${site.url}/field-notes/${post.slug}`,
-      lastModified: new Date(post.date),
+      lastModified: new Date(post.updatedDate ?? post.date),
       changeFrequency: "monthly" as const,
-      priority: 0.7,
+      priority: post.priority ?? 0.7,
     })),
   ];
 }

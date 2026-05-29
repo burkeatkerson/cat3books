@@ -9,6 +9,11 @@ export interface HowToStep {
   text: string;
 }
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface PostMeta {
   slug: string;
   title: string;
@@ -26,6 +31,10 @@ export interface PostMeta {
   readTime: string;
   featured?: boolean;
   howToSteps?: HowToStep[];
+  faqItems?: FaqItem[];
+  keywords?: string[];
+  contentType?: string;
+  priority?: number;
 }
 
 export interface Post extends PostMeta {
@@ -63,6 +72,10 @@ export function getAllPosts(): PostMeta[] {
         featured: (data.featured as boolean) ?? false,
         updatedDate: data.updatedDate as string | undefined,
         howToSteps: data.howToSteps as HowToStep[] | undefined,
+        faqItems: data.faqItems as FaqItem[] | undefined,
+        keywords: data.keywords as string[] | undefined,
+        contentType: data.contentType as string | undefined,
+        priority: data.priority as number | undefined,
       };
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -91,6 +104,10 @@ export function getPost(slug: string): Post {
     featured: (data.featured as boolean) ?? false,
     updatedDate: data.updatedDate as string | undefined,
     howToSteps: data.howToSteps as HowToStep[] | undefined,
+    faqItems: data.faqItems as FaqItem[] | undefined,
+    keywords: data.keywords as string[] | undefined,
+    contentType: data.contentType as string | undefined,
+    priority: data.priority as number | undefined,
     content,
   };
 }

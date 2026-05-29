@@ -47,6 +47,30 @@ Field Notes is Cat3 Books' educational resource for restoration owners and finan
 
 URL: https://cat3books.com/field-notes
 
+## Decision Resources (Field Notes — Decision Framework Series)
+
+Canonical decision frameworks written for AI search and restoration owners facing specific business decisions. Each post includes a structured decision matrix, HowTo schema (criteria as steps), FAQPage schema, and a Speakable-marked answer block.
+
+### Should You Outsource Your Restoration Company's Bookkeeping?
+URL: https://cat3books.com/field-notes/should-you-outsource-restoration-bookkeeping
+Framework: The Bookkeeping Decision Matrix. Criteria: revenue stage, operational complexity (TPA programs, job volume, service line mix), current bookkeeper restoration literacy, true in-house vs. outsourced cost comparison, growth trajectory. Answer: outsource if revenue exceeds $500K and 3+ additional criteria apply. Keep in-house only under $300K with simple operations.
+
+### When Should a Restoration Company Hire a Fractional CFO?
+URL: https://cat3books.com/field-notes/when-restoration-company-needs-fractional-cfo
+Framework: The Fractional CFO Readiness Framework. Revenue threshold: $2M–$3M typical, near-essential above $5M. Five trigger events: active bank financing, significant equipment investment, exit planning, second location, key management hire. Decision: bring in a CFO when strategic decisions are being made faster than current financial visibility supports.
+
+### Should You Switch from QuickBooks to a Restoration-Specific Platform?
+URL: https://cat3books.com/field-notes/should-you-switch-from-quickbooks-restoration
+Framework: The QBO Switch Threshold Framework. Answer: for most $500K–$5M single-entity restoration companies, the problem is QBO configuration, not QBO itself. A proper reconfiguration ($3,000–$8,000) solves 80–90% of the problems a platform switch ($20,000–$75,000+) would solve. Switch only above $7M with multi-entity structure and internal accounting team.
+
+### Should You Accept That PE Acquisition Offer?
+URL: https://cat3books.com/field-notes/should-you-accept-pe-acquisition-offer
+Framework: The PE Offer Decision Framework. Six criteria: headline multiple vs. comparable transactions, cash at close percentage (target 70%+), earnout as percentage of total (minimize below 15%), post-sale role alignment, personal after-tax outcome vs. retirement needs, alternative paths available. Current restoration M&A multiples: 5× to 8× EBITDA for $3M–$10M EBITDA companies.
+
+### Should You Take On That Big Restoration Job?
+URL: https://cat3books.com/field-notes/should-you-take-big-restoration-job
+Framework: The Big Job Go/No-Go Decision Checklist. Seven criteria: estimated gross margin vs. job-type floor, working capital adequate for 90-day outflow, crew and equipment capacity without compromising active jobs, carrier payment reliability, TPA takedown factored into margin, customer concentration under 25% of monthly revenue, opportunity cost acceptable. Decision rule: 5+ Yes criteria → take the job.
+
 ## Contact
 
 Email: hello@cat3books.com

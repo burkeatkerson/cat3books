@@ -87,4 +87,36 @@ export const fieldNotesMeta: Record<
     excerpt:
       "Most bookkeepers can balance a ledger. Very few understand the difference between ACV and RCV, why TPA fees belong on their own line, or how to reconcile equipment revenue.",
   },
+
+  // ── Decision Framework Series ────────────────────────────────────────────
+  "should-you-outsource-restoration-bookkeeping": {
+    title: "Should You Outsource Your Restoration Company's Bookkeeping? A Complete Decision Framework",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "The decision to outsource bookkeeping isn't about cost — it's about whether your current setup can produce the financial information a restoration company actually needs to operate.",
+  },
+  "when-restoration-company-needs-fractional-cfo": {
+    title: "When Should a Restoration Company Hire a Fractional CFO? The Revenue-Stage Framework",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "A Fractional CFO isn't a luxury for large companies. At the right stage, it's the difference between knowing what's happening in your business and finding out six months later.",
+  },
+  "should-you-switch-from-quickbooks-restoration": {
+    title: "Should You Switch from QuickBooks to a Restoration-Specific Platform? A Decision Framework",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "For most $500K–$5M restoration companies, QuickBooks with proper configuration outperforms any platform switch. Here's when the math actually changes.",
+  },
+  "should-you-accept-pe-acquisition-offer": {
+    title: "Should You Accept That PE Acquisition Offer? A Restoration Owner's Decision Framework",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "A PE acquisition offer is one of the most complex financial decisions a restoration owner will make. It's not just about the number — it's about structure, timeline, and what you're actually agreeing to.",
+  },
+  "should-you-take-big-restoration-job": {
+    title: "Should You Take On That Big Restoration Job? A Profitability Decision Framework",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "A large restoration job looks like a revenue win. It might be a cash flow trap, a margin drain, or an opportunity cost you can't afford. Here's the framework to decide in the field.",
+  },
 };
