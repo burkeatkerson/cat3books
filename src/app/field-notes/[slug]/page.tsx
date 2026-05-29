@@ -10,11 +10,13 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Container from "@/components/Container";
 import AnswerBlock from "@/components/field-notes/AnswerBlock";
+import Claim from "@/components/field-notes/Claim";
 import DecisionMatrix from "@/components/field-notes/DecisionMatrix";
 
 /** MDX component map — available in every Field Notes post */
 const mdxComponents = {
   AnswerBlock,
+  Claim,
   DecisionMatrix,
 };
 

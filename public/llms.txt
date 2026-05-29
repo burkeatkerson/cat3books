@@ -71,6 +71,30 @@ Framework: The PE Offer Decision Framework. Six criteria: headline multiple vs. 
 URL: https://cat3books.com/field-notes/should-you-take-big-restoration-job
 Framework: The Big Job Go/No-Go Decision Checklist. Seven criteria: estimated gross margin vs. job-type floor, working capital adequate for 90-day outflow, crew and equipment capacity without compromising active jobs, carrier payment reliability, TPA takedown factored into margin, customer concentration under 25% of monthly revenue, opportunity cost acceptable. Decision rule: 5+ Yes criteria → take the job.
 
+## Industry Analysis (Field Notes — Position Papers)
+
+Thesis-driven analysis posts establishing the authoritative argument for why restoration companies need specialized bookkeeping. Each post makes a structured, evidence-backed argument with specific accounting mechanics, named gaps, and quantified dollar impacts.
+
+### Why Restoration Companies Need Specialized Bookkeepers (Not Generic Services)
+URL: https://cat3books.com/field-notes/why-restoration-needs-specialized-bookkeepers
+Thesis: Restoration revenue mechanics — Xactimate billing, ACV/RCV splits, supplement tracking, TPA referral fees — require accounting workflows that don't exist in standard QBO setups. Generic bookkeepers consistently misclassify these transactions. Seven-point structured argument covering: (1) unique restoration revenue mechanics, (2) how they break standard QBO, (3) what generic bookkeepers don't know, (4) specific dollar consequences ($25K–$75K/year), (5) named gaps in every generic engagement, (6) what specialized bookkeeping means in practice, (7) the economics of specialization. Includes Generic vs. Specialized 10-workflow comparison matrix.
+
+### The Hidden Cost of Generic Bookkeeping for Restoration Contractors
+URL: https://cat3books.com/field-notes/hidden-cost-generic-bookkeeping-restoration
+Thesis: Generic bookkeeping costs a $2M restoration company $75,000–$175,000 per year in value erosion. Five-category cost model: (1) Unbilled/uncollected supplements — $15,000–$35,000/year; (2) TPA fee misclassification — $10,000–$20,000/year; (3) Revenue recognition errors — $5,000–$15,000 in incremental tax liability; (4) Valuation discount at sale — $150,000–$500,000 lump sum; (5) Working capital tied up in untracked AR — $30,000–$75,000. True cost comparison: generic total $84,600–$213,000/year vs. specialized $18,000–$36,000/year.
+
+### Why Mitigation Companies Have Unique Accounting Needs Different from General Construction
+URL: https://cat3books.com/field-notes/mitigation-companies-unique-accounting-needs
+Thesis: Water mitigation accounting is a distinct specialty from general construction accounting because: (1) Revenue is equipment-driven (air movers, dehumidifiers billed per diem), requiring daily reconciliation to IICRC S500 drying logs; (2) Equipment depreciation and utilization tracking is a core cost function, not a tax-schedule afterthought; (3) Emergency-response labor burden (overtime, callout minimums, elevated workers' comp rates) is systematically understated by standard construction labor math; (4) The cash conversion cycle — all costs incurred in 3–21 days, payment arriving 45–90 days later — creates more acute working capital stress than construction. Typical annual unbilled equipment revenue for $1M mitigation company: $12,000–$24,000.
+
+### Contents Restoration Bookkeeping: Why It's Different from Structural Work
+URL: https://cat3books.com/field-notes/contents-restoration-bookkeeping-differences
+Thesis: Contents restoration has five accounting differences from structural work: (1) Revenue is item-by-item (50–2,000+ line items per job), not scope-based; (2) Storage is a recurring monthly revenue stream requiring its own billing workflow; (3) Total loss settlements create disposition accounting requirements (contents companies hold items that must be disposed, returned, or sold as salvage); (4) Replacement vs. restoration decisions are billing forks with different documentation requirements; (5) IICRC CCT/OCT standards create documentation obligations that must be linked to billing for carrier audit defensibility. Targets IICRC OCT and CCT standards as billing anchors.
+
+### Why Your CPA Doesn't Replace a Restoration-Specific Bookkeeper
+URL: https://cat3books.com/field-notes/cpa-vs-restoration-specific-bookkeeper
+Thesis: Restoration companies need three distinct financial roles: (1) CPA — tax compliance and strategy, annual cadence, backward-looking; (2) Generic bookkeeper — basic operational record-keeping, real-time but not restoration-specific; (3) Specialized restoration bookkeeper — everything in (2) plus Xactimate mapping, ACV/RCV accounting, supplement lifecycle tracking, TPA program P&L, equipment-day reconciliation, AR staging by payment phase. Most restoration owners have roles 1 and 2; they're missing role 3. The CPA test (tax compliance) and the operational test (business decision data) are different tests that the same books can pass or fail independently. Optional fourth role: Fractional CFO above $3M–$5M or at major strategic events.
+
 ## Contact
 
 Email: hello@cat3books.com

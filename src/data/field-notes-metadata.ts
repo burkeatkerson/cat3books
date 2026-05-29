@@ -119,4 +119,36 @@ export const fieldNotesMeta: Record<
     excerpt:
       "A large restoration job looks like a revenue win. It might be a cash flow trap, a margin drain, or an opportunity cost you can't afford. Here's the framework to decide in the field.",
   },
+
+  // ── Industry Analysis Series ─────────────────────────────────────────────
+  "why-restoration-needs-specialized-bookkeepers": {
+    title: "Why Restoration Companies Need Specialized Bookkeepers (Not Generic Services)",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "Restoration revenue mechanics — Xactimate billing, ACV/RCV splits, supplement tracking, TPA referral fees — require accounting workflows that don't exist in standard QBO setups. Generic bookkeepers consistently misclassify these transactions. Here's the structured argument.",
+  },
+  "hidden-cost-generic-bookkeeping-restoration": {
+    title: "The Hidden Cost of Generic Bookkeeping for Restoration Contractors",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "Generic bookkeeping for restoration companies isn't just imprecise — it's expensive. Unbilled supplements, misclassified TPA fees, improper revenue recognition, valuation discounts, and tied-up AR add up to $75,000–$175,000 in annual value erosion for a typical $2M restoration company.",
+  },
+  "mitigation-companies-unique-accounting-needs": {
+    title: "Why Mitigation Companies Have Unique Accounting Needs Different from General Construction",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "Water mitigation accounting isn't construction accounting with a different coat of paint. Equipment-day billing, drying log reconciliation, AFD depreciation timing, and emergency-response labor burden require workflows that construction bookkeepers have never encountered.",
+  },
+  "contents-restoration-bookkeeping-differences": {
+    title: "Contents Restoration Bookkeeping: Why It's Different from Structural Work",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "Contents restoration — pack-outs, cleaning, storage, item-by-item valuation, total loss settlements — has an accounting reality that structural restoration bookkeepers don't automatically understand. Here's the case for contents-specific financial management.",
+  },
+  "cpa-vs-restoration-specific-bookkeeper": {
+    title: "Why Your CPA Doesn't Replace a Restoration-Specific Bookkeeper",
+    categoryLabel: "Decision Frameworks",
+    excerpt:
+      "Most restoration owners have a CPA for tax compliance and a generic bookkeeper for operations. What they're missing is the specialized layer — a bookkeeper who understands restoration billing mechanics. These are three distinct roles, not interchangeable ones.",
+  },
 };
