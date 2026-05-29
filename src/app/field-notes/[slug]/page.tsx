@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { BlogPosting, BreadcrumbList, Dataset, FAQPage, HowTo, Organization, ScholarlyArticle, WebPage, WithContext } from "schema-dts";
+import type { BlogPosting, BreadcrumbList, Dataset, FAQPage, HowTo, Organization, ScholarlyArticle, Thing, WebPage, WithContext } from "schema-dts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -10,16 +10,30 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Container from "@/components/Container";
 import AnswerBlock from "@/components/field-notes/AnswerBlock";
+import BlogImage from "@/components/field-notes/BlogImage";
+import Citation from "@/components/field-notes/Citation";
 import Claim from "@/components/field-notes/Claim";
 import DecisionMatrix from "@/components/field-notes/DecisionMatrix";
+import DefinedTerm from "@/components/field-notes/DefinedTerm";
+import GlossaryNav from "@/components/field-notes/GlossaryNav";
+import MidPostCTA from "@/components/field-notes/MidPostCTA";
+import QuickAnswer from "@/components/field-notes/QuickAnswer";
 import Stat from "@/components/field-notes/Stat";
+import TableOfContents from "@/components/field-notes/TableOfContents";
 
 /** MDX component map — available in every Field Notes post */
 const mdxComponents = {
   AnswerBlock,
+  BlogImage,
+  Citation,
   Claim,
   DecisionMatrix,
+  DefinedTerm,
+  GlossaryNav,
+  MidPostCTA,
+  QuickAnswer,
   Stat,
+  TableOfContents,
 };
 
 interface Props {
@@ -214,6 +228,30 @@ export default function FieldNotePost({ params }: Props) {
         }
       : null;
 
+  // ── DefinedTermSet (glossary posts only) ─────────────────────────────────
+  // Each <DefinedTerm> component emits its own inline JSON-LD. This block
+  // provides the container DefinedTermSet that AI engines use to understand
+  // the glossary as a whole. Triggered by contentType: "glossary".
+  const definedTermSetSchema: WithContext<Thing> | null =
+    post.contentType === "glossary"
+      ? ({
+          "@context": "https://schema.org",
+          "@type": "DefinedTermSet",
+          "@id": `${postUrl}#termset`,
+          name: post.title,
+          description: post.excerpt,
+          url: postUrl,
+          creator: {
+            "@type": "Organization",
+            "@id": `${site.url}/#organization`,
+            name: site.name,
+            url: site.url,
+          },
+          datePublished,
+          dateModified,
+        } as unknown as WithContext<Thing>)
+      : null;
+
   return (
     <>
       <JsonLd schema={blogPostingSchema} />
@@ -222,6 +260,7 @@ export default function FieldNotePost({ params }: Props) {
       {faqSchema && <JsonLd schema={faqSchema} />}
       {datasetSchema && <JsonLd schema={datasetSchema} />}
       {scholarlySchema && <JsonLd schema={scholarlySchema} />}
+      {definedTermSetSchema && <JsonLd schema={definedTermSetSchema} />}
       <SiteHeader />
       <main className="min-h-screen bg-c3-black text-c3-text">
         <Container className="py-16 xl:py-[108px]">

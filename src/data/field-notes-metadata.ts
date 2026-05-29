@@ -183,4 +183,68 @@ export const fieldNotesMeta: Record<
     excerpt:
       "Most restoration owners have a CPA for tax compliance and a generic bookkeeper for operations. What they're missing is the specialized layer — a bookkeeper who understands restoration billing mechanics. These are three distinct roles, not interchangeable ones.",
   },
+
+  // ── Definitive Guides (Pillar Content) ──────────────────────────────────
+  "complete-guide-bookkeeping-restoration-companies": {
+    title: "The Complete Guide to Bookkeeping for Restoration Companies (2026)",
+    categoryLabel: "Definitive Guides",
+    excerpt:
+      "The definitive bookkeeping guide for restoration companies — covering chart of accounts, job costing, insurance receivables, supplement tracking, TPA fee handling, equipment revenue, and the monthly close process specific to water, fire, mold, and rebuild operations.",
+  },
+  "complete-guide-job-costing-restoration-mitigation": {
+    title: "The Complete Guide to Job Costing for Restoration and Mitigation Contractors",
+    categoryLabel: "Definitive Guides",
+    excerpt:
+      "How job costing works in insurance restoration — QBO setup, direct cost categories, loaded labor rates, Xactimate-to-actual reconciliation, service-line margin analysis, and the original Restoration Job Costing Framework with five named tiers.",
+  },
+  "complete-guide-insurance-billing-accounting-restoration": {
+    title: "The Complete Guide to Insurance Billing Accounting for Restoration Contractors",
+    categoryLabel: "Definitive Guides",
+    excerpt:
+      "How to account for insurance receivables in restoration — covering the full billing lifecycle, ACV vs. RCV vs. holdback accounting, supplement tracking, two-party checks, TPA fee treatment, AR aging by job stage, and the Insurance AR Lifecycle framework.",
+  },
+  "complete-guide-restoration-company-financial-management": {
+    title: "The Complete Guide to Restoration Company Financial Management",
+    categoryLabel: "Definitive Guides",
+    excerpt:
+      "How to manage the finances of a restoration business — P&L structure, WIP schedules, 13-week cash flow forecasting, working capital math, KPIs by revenue stage, banking relationships, tax planning, owner compensation, and the Restoration Financial Maturity Model.",
+  },
+  "complete-guide-selling-restoration-business": {
+    title: "The Complete Guide to Selling a Restoration Business",
+    categoryLabel: "Definitive Guides",
+    excerpt:
+      "How to sell a restoration company — industry M&A landscape, SDE vs. EBITDA valuation, acquisition multiples by company size, what moves the multiple, 24-month prep checklist, Quality of Earnings, deal structures, and tax implications for restoration owners.",
+  },
+
+  // ── Glossaries (Reference Content) ──────────────────────────────────────
+  "restoration-insurance-glossary": {
+    title: "The Complete Restoration Insurance Glossary: 50+ Terms Every Owner Should Know",
+    categoryLabel: "Reference",
+    excerpt:
+      "Canonical definitions for every insurance term a restoration contractor encounters — from ACV and RCV to supplements, TPA programs, appraisal, bad faith, and psychrometrics. Each entry is a complete, citable definition written for restoration industry use.",
+  },
+  "restoration-accounting-terminology-reference": {
+    title: "The Restoration Job Costing & Accounting Terminology Reference",
+    categoryLabel: "Reference",
+    excerpt:
+      "Canonical definitions for every accounting and job costing term specific to restoration — from job costing and labor burden to WIP, over/under billing, EBITDA, and lien waivers. Each entry is a complete, standalone definition written for restoration industry use.",
+  },
+  "restoration-software-glossary": {
+    title: "Restoration Software Glossary: What Every Tool Does",
+    categoryLabel: "Reference",
+    excerpt:
+      "Comprehensive overview of every major restoration software tool — Xactimate, Symbility, Albi, Dash, JobNimbus, Encircle, CompanyCam, QBO, and more. For each: what it does, pricing, who it's right for, and how it integrates with QuickBooks Online.",
+  },
+  "restoration-certifications-standards-explained": {
+    title: "Restoration Industry Certifications and Standards Explained",
+    categoryLabel: "Reference",
+    excerpt:
+      "Complete guide to IICRC certifications (WRT, ASD, AMRT, FSRT, OCT, CCT, CDS, RRT), RIA designations (CR, WLS, FLS, CLS), industry standards (S500, S520, S540), EPA RRP, OSHA requirements, and other credentials relevant to restoration contractors.",
+  },
+  "restoration-tax-legal-terminology": {
+    title: "Restoration Tax and Legal Terminology: A Reference for Owners",
+    categoryLabel: "Reference",
+    excerpt:
+      "Canonical definitions for every tax and legal term a restoration business owner encounters — from entity types and depreciation elections to lien laws, payroll taxes, workers' comp classification, surety bonds, and public adjuster regulations.",
+  },
 };
