@@ -1,0 +1,87 @@
+{/*
+  ═══════════════════════════════════════════════════════════════════════════════
+  NEW POST CHECKLIST — READ BEFORE CREATING A FIELD NOTES POST
+  ═══════════════════════════════════════════════════════════════════════════════
+
+  This file is a template and checklist. It is NOT rendered as a blog post
+  (the underscore prefix excludes it from the content glob). Copy the frontmatter
+  block below when creating a new post.
+
+  ── STEP 1: Create the MDX file ──────────────────────────────────────────────
+  Filename: src/content/field-notes/your-slug-here.mdx
+  - Use kebab-case
+  - The filename IS the URL slug: /field-notes/your-slug-here
+  - Keep it short and descriptive (3–6 words)
+
+  ── STEP 2: Fill in frontmatter (all fields required) ────────────────────────
+  See the frontmatter block below for the complete schema with valid values.
+
+  ── STEP 3: Update the OG image lookup table (REQUIRED) ──────────────────────
+  File: src/data/field-notes-metadata.ts
+  Add an entry to the `fieldNotesMeta` object using the same slug as the key.
+  Copy title, categoryLabel, and excerpt from the frontmatter you just wrote.
+  If you skip this step, the post's social preview image will show a generic
+  fallback instead of the actual post title.
+
+  ── STEP 4: No other files need updating ─────────────────────────────────────
+  - The sitemap auto-includes the post (reads from the content directory)
+  - The blog index auto-includes the post (sorted by date)
+  - generateStaticParams auto-includes the post slug
+  - The OG image route auto-includes the slug (reads from fieldNotesMeta keys)
+
+  ═══════════════════════════════════════════════════════════════════════════════
+  FRONTMATTER SCHEMA — copy this block and fill in the values
+  ═══════════════════════════════════════════════════════════════════════════════
+*/}
+
+---
+title: "Your Post Title Here"
+date: "YYYY-MM-DD"
+# updatedDate: "YYYY-MM-DD"   ← optional; set when you revise a post
+excerpt: "One or two sentences. Used in the post listing, social OG tags, and the BlogPosting schema description. Make it specific and useful — it's the hook."
+tags:
+  - "tag one"
+  - "tag two"
+author: "Cat3 Books"
+# Valid category values (must match exactly — drives the filter bar):
+#   jobcosting | pl | software | qb | profit | supplements | cashflow
+category: "jobcosting"
+# Valid categoryLabel values (display name for the category above):
+#   Job Costing | P&L Management | Software Reviews | QuickBooks Guides
+#   Profitability | Supplements & TPAs | Cash Flow
+categoryLabel: "Job Costing"
+# Valid coverStyle values (controls the post card background art):
+#   cv-tape | cv-grid | cv-glow | cv-red | cv-vert | cv-dots | cv-stripe | cv-pl
+#   cv-pl is special: renders a P&L data table — only use on featured posts
+coverStyle: "cv-grid"
+# coverGlyph: the large text displayed on the card cover.
+# Use \n to separate lines (e.g. "XACT\nVS\nSYMB"). Keep it short.
+coverGlyph: "GLYPH"
+coverSub: "Short subtitle under the glyph"
+issueNumber: "№ 050"
+readTime: "6 min"
+featured: false
+# howToSteps: optional. Add if this post is a step-by-step guide.
+# Adding this generates HowTo schema, which feeds Google AI Overviews
+# and Perplexity answer cards directly. Use for any "how to X" post.
+# howToSteps:
+#   - name: "Step name (short)"
+#     text: "Full explanation of this step, 1–3 sentences."
+#   - name: "Step two name"
+#     text: "Full explanation."
+---
+
+Post body starts here. Use standard Markdown.
+
+## Heading (h2 maps to the styled heading in prose-field-notes CSS)
+
+Paragraph text. **Bold text renders in yellow.** *Italic text renders in white.*
+
+- Bullet list item (renders with yellow ▸ prefix)
+- Another item
+
+> Blockquote renders with a yellow left border and condensed semibold italic type.
+
+---
+
+Horizontal rule renders as a section divider.

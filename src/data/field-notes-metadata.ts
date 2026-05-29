@@ -1,6 +1,21 @@
 /**
- * Static metadata for OG image generation (edge-compatible, no fs).
- * Add an entry here whenever a new MDX post is created in src/content/field-notes/.
+ * ─────────────────────────────────────────────────────────────────────────────
+ * MAINTENANCE INSTRUCTION FOR AI ASSISTANTS
+ * ─────────────────────────────────────────────────────────────────────────────
+ * This file is the OG image lookup table for all Field Notes blog posts.
+ * It exists because the OG image route runs on the edge runtime, which cannot
+ * access the filesystem — so it can't read MDX frontmatter directly.
+ *
+ * WHENEVER A NEW MDX POST IS CREATED in src/content/field-notes/, you MUST
+ * also add a matching entry to the `fieldNotesMeta` object below. Use the
+ * MDX filename (without .mdx) as the key, and copy title, categoryLabel, and
+ * excerpt from the post's frontmatter.
+ *
+ * If this file is not updated, the new post's social preview image will fall
+ * back to a generic "Field Notes" image instead of showing the post title.
+ *
+ * See src/content/field-notes/_template.mdx for the full new-post checklist.
+ * ─────────────────────────────────────────────────────────────────────────────
  */
 export const fieldNotesMeta: Record<
   string,

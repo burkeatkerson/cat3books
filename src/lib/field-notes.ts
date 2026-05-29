@@ -36,7 +36,7 @@ export function getAllPostSlugs(): string[] {
   if (!fs.existsSync(POSTS_DIR)) return [];
   return fs
     .readdirSync(POSTS_DIR)
-    .filter((f) => f.endsWith(".mdx"))
+    .filter((f) => f.endsWith(".mdx") && !f.startsWith("_"))
     .map((f) => f.replace(/\.mdx$/, ""));
 }
 
