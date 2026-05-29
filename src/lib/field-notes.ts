@@ -14,6 +14,19 @@ export interface FaqItem {
   answer: string;
 }
 
+/** Metadata for schema.org Dataset markup — used on industry-report posts. */
+export interface DatasetMeta {
+  name: string;
+  description: string;
+  /** ISO 8601 temporal coverage — e.g. "2025" or "2020/2025" */
+  temporalCoverage?: string;
+  spatialCoverage?: string;
+  /** Short strings describing what is being measured */
+  variableMeasured?: string[];
+  /** SPDX or Creative Commons license URL */
+  license?: string;
+}
+
 export interface PostMeta {
   slug: string;
   title: string;
@@ -35,6 +48,8 @@ export interface PostMeta {
   keywords?: string[];
   contentType?: string;
   priority?: number;
+  /** Present on industry-report posts; drives Dataset schema generation. */
+  dataset?: DatasetMeta;
 }
 
 export interface Post extends PostMeta {
@@ -76,6 +91,7 @@ export function getAllPosts(): PostMeta[] {
         keywords: data.keywords as string[] | undefined,
         contentType: data.contentType as string | undefined,
         priority: data.priority as number | undefined,
+        dataset: data.dataset as DatasetMeta | undefined,
       };
     })
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
@@ -108,6 +124,7 @@ export function getPost(slug: string): Post {
     keywords: data.keywords as string[] | undefined,
     contentType: data.contentType as string | undefined,
     priority: data.priority as number | undefined,
+    dataset: data.dataset as DatasetMeta | undefined,
     content,
   };
 }

@@ -1,0 +1,437 @@
+---
+title: "Insurance Restoration Claims Data: Trends, Frequency, and Severity Analysis"
+date: "2026-05-29"
+excerpt: "Water damage is the single largest non-catastrophe source of insured property losses in the U.S., averaging $12,514 per homeowner claim. Fire claims average $77,000–$84,000. Billion-dollar weather disasters now average 18–20 per year — triple the 1980s rate. This report compiles the claims data that drives restoration industry demand."
+tags:
+  - "insurance claims data"
+  - "water damage claims"
+  - "property damage statistics"
+  - "insurance restoration demand"
+  - "catastrophe data"
+author: "Cat3 Books"
+category: "research"
+categoryLabel: "Industry Research"
+coverStyle: "cv-stripe"
+coverGlyph: "CLM\nDATA"
+coverSub: "Claims frequency and severity"
+issueNumber: "№ 063"
+readTime: "18 min"
+featured: false
+contentType: "industry-report"
+priority: 0.9
+keywords:
+  - "insurance restoration claims data"
+  - "water damage claim statistics"
+  - "fire damage insurance statistics"
+  - "homeowner insurance claims frequency"
+  - "catastrophe restoration demand"
+  - "property damage claim severity"
+  - "billion dollar disasters restoration"
+dataset:
+  name: "U.S. Insurance Restoration Claims Data and Trend Analysis 2026"
+  description: "Compiled data on U.S. property insurance claim frequency, severity, and trends by peril (water, fire, mold, storm), sourced from Triple-I, NOAA NCEI, FEMA, and ISO/Verisk data. Covers claims frequency, average severity, CAT event trends, and geographic distribution."
+  temporalCoverage: "2015/2025"
+  spatialCoverage: "United States"
+  variableMeasured:
+    - "Average homeowner claim severity by peril"
+    - "Claims frequency by cause of loss"
+    - "Annual CAT event count and losses"
+    - "NFIP policy count and claims"
+    - "TPA program volume trends"
+  license: "https://creativecommons.org/licenses/by/4.0/"
+faqItems:
+  - question: "What is the average water damage insurance claim amount?"
+    answer: "The Insurance Information Institute (Triple-I) has reported the average homeowner insurance water damage and freezing claim at approximately $12,514, based on ISO/Verisk data for 2023. This figure covers non-catastrophe water losses (pipe bursts, appliance failures, roof leak-related interior water intrusion) for homeowner policies. It excludes catastrophic flooding, which is typically covered under NFIP (National Flood Insurance Program) or private flood policies."
+  - question: "What is the average fire insurance claim amount?"
+    answer: "Fire and lightning claims are the highest-severity homeowner insurance losses on a per-claim basis. Triple-I data for 2022–2023 puts the average fire and lightning claim at approximately $77,000–$84,000. This figure varies significantly by cause (kitchen fires vs. structure fires vs. wildfire), by property value, and by geographic market. Large commercial fire losses average significantly higher."
+  - question: "What causes the most homeowner insurance claims by frequency?"
+    answer: "Wind and hail is consistently the most frequent cause of homeowner insurance claims by number of claims filed, per Triple-I and ISO/Verisk data. Water damage and freezing is second by claim count but first by non-catastrophe dollar volume. Fire and lightning is third or fourth by claim count but highest by average claim severity."
+  - question: "How many billion-dollar weather disasters occur each year in the U.S.?"
+    answer: "Based on NOAA NCEI data, the U.S. has averaged 18–20 billion-dollar weather and climate disasters per year over the 2014–2023 decade. This compares to an average of 3 per year in the 1980s and 8 per year in the 1990s — a 6× increase over four decades. Each major CAT event generates surge demand for restoration services in the affected region."
+  - question: "How does climate change affect restoration industry demand?"
+    answer: "Climate change affects restoration demand through: (1) Higher frequency of extreme weather events (storms, floods, wildfires) — the NOAA data shows a clear upward trend in billion-dollar disasters; (2) Higher severity per event as property values increase; (3) Changing geographic distribution of risk (wildfire expansion into previously lower-risk zones, sea-level-related flood risk expansion). Industry analysts and reinsurers consistently project continued growth in insured catastrophe losses driven by climate trends."
+  - question: "What percentage of homeowners file a claim each year?"
+    answer: "Approximately 6–8% of U.S. homeowners file at least one property insurance claim per year, per Triple-I data. With approximately 93 million owner-occupied housing units (U.S. Census Bureau, 2023), this implies 5.5–7.5 million property claims annually. The claims rate is higher in catastrophe-prone markets (Florida, Texas, Gulf Coast states) and lower in markets with lower climate exposure."
+  - question: "What is the NFIP and how does it affect restoration companies?"
+    answer: "The National Flood Insurance Program (NFIP) is the federal flood insurance program administered by FEMA. NFIP provides flood coverage to approximately 4–5 million policyholders in flood-prone areas. Flood damage generates restoration demand that's separate from standard homeowner policy claims — larger average losses (flooding events affect entire structures), longer repair timelines, and different adjuster and payment processes. Restoration companies in Gulf Coast, Atlantic Coast, and riverine markets often see significant NFIP-covered claims."
+  - question: "How do TPA programs affect claims routing to restoration companies?"
+    answer: "Third-Party Administrator programs (Code Blue, Contractor Connection, Alacrity, Sedgwick, Worley, Crawford, Gallagher Bassett) function as intermediaries between carriers and contractors. When a policyholder files a claim, the carrier routes the mitigation work through its preferred TPA program, which dispatches a contractor from its network. Industry estimates suggest 30–50% of all residential water damage claims are routed through TPA programs in markets where they are active. TPA penetration varies significantly by carrier and market."
+  - question: "How does aging housing stock affect restoration claims frequency?"
+    answer: "Older housing has higher claims frequency for water damage (aging plumbing systems, deteriorating roofing), mold (inadequate ventilation, building envelope degradation), and structural damage (foundation issues, deteriorating building envelopes). Approximately 40% of U.S. housing was built before 1980 (U.S. Census Bureau data). This aging stock is a structural driver of restoration demand that's independent of weather events."
+  - question: "What is the relationship between commercial property claims and restoration companies?"
+    answer: "Commercial property insurance claims generate restoration demand through business property policies (covering commercial building damage) and business interruption policies (covering lost revenue during restoration). Commercial losses tend to be higher in average severity than residential but lower in claim frequency. Commercial restoration work is typically more complex, longer in duration, and higher in revenue per job than residential — making it attractive to larger restoration operators with commercial capabilities."
+  - question: "What is the mold insurance claim landscape?"
+    answer: "Mold claims are a distinctive segment. Most homeowner policies have explicit mold exclusions or limited mold coverage (typically $10,000–$50,000 caps) because of the high cost and variability of mold remediation. Mold claims most frequently arise as secondary damage from water claims — mold discovered during water damage remediation. Standalone mold claims (discovered without an active water event) face more coverage challenges. The mold remediation market is driven primarily by mold discovered during insured water damage events."
+---
+
+<AnswerBlock>
+**Water damage and freezing is the single largest source of non-catastrophe property insurance losses in the U.S., averaging $12,514 per homeowner claim — totaling billions in annual insured losses.** Fire claims average $77,000–$84,000 each. Billion-dollar weather disasters now occur 18–20 times per year, up from 3 per year in the 1980s. This claims landscape is the demand engine for the restoration industry. Understanding it tells you where restoration demand comes from, how it's growing, and what's driving the surge in PE interest in the sector.
+
+*Last updated: May 2026. Data sourced from Triple-I, NOAA NCEI, FEMA, and ISO/Verisk.*
+</AnswerBlock>
+
+---
+
+## Methodology and Sources
+
+Data in this report is sourced from:
+
+- **Insurance Information Institute (Triple-I)** — The definitive public source for U.S. homeowner insurance claims data, published annually. Triple-I compiles ISO/Verisk data on claim frequency and severity by cause of loss.
+- **ISO/Verisk** — Property Claim Services (PCS) data underlies most carrier and industry-level claims statistics.
+- **NOAA National Centers for Environmental Information (NCEI)** — Billion-Dollar Weather and Climate Disasters database — the authoritative public source for U.S. catastrophe event data.
+- **FEMA** — National Flood Insurance Program (NFIP) data on policy counts and claims.
+- **U.S. Census Bureau** — Housing stock data (age, tenure, construction type).
+- **Swiss Re sigma / Munich Re NatCatSERVICE** — Global and U.S. insured loss data.
+- **Restoration Industry Association (RIA)** — Industry perspective on claims trends.
+
+**Data vintage note:** Claims data typically lags publication by 12–18 months. Statistics cited here reflect the most recent published data available as of mid-2025, primarily covering 2022–2024 claim experience.
+
+---
+
+## Key Findings
+
+- Average homeowner water damage claim: **$12,514** (Triple-I, 2023 data)
+- Average homeowner fire and lightning claim: **~$77,000–$84,000** (Triple-I, 2022–2023)
+- Wind and hail: **#1 cause by claims frequency** (Triple-I)
+- Water damage: **#1 non-CAT peril by dollar volume** (~20–25% of non-CAT property losses)
+- Annual U.S. billion-dollar disasters: **18–20 per year** (2014–2023 average, NOAA NCEI)
+- Total U.S. insured catastrophe losses 2023: **$92.9 billion** (Swiss Re sigma)
+- NFIP policies in force: **approximately 4–5 million** (FEMA)
+- U.S. homeowner claims rate: **~6–8% per year** (Triple-I)
+- Homeowners claiming water damage: **approximately 14,000 per day** nationwide (derived from annual claim counts)
+
+---
+
+## Section 1: Homeowner Insurance Claims — The Demand Engine
+
+Property insurance claims are the primary demand driver for insurance restoration companies. Understanding claims frequency (how often losses occur) and severity (the average dollar size of each loss) explains the structural demand for restoration services.
+
+<Stat
+  id="stat-homeowner-claim-rate"
+  value="~6–8%"
+  label="Percentage of U.S. homeowners who file at least one property insurance claim per year"
+  source="Insurance Information Institute (Triple-I), 2023"
+  note="With ~93 million owner-occupied housing units (U.S. Census Bureau, 2023), this implies 5.5–7.5 million property claims annually across all causes of loss. Not all property claims generate restoration work — some are personal property (theft, liability) rather than structural damage."
+/>
+
+<Stat
+  id="stat-annual-property-claims"
+  value="5.5–7.5M"
+  label="Estimated annual property damage insurance claims, U.S. homeowners (all causes of loss)"
+  source="Derived from Triple-I claims rate data and U.S. Census Bureau housing unit count, 2023"
+/>
+
+**The causes of loss:** Triple-I and ISO/Verisk data consistently shows the following distribution of homeowner claims by dollar volume (non-CAT years):
+
+<DecisionMatrix title="Homeowner Insurance Claims by Cause of Loss — Approximate Distribution (Non-CAT Years)">
+
+| Cause of Loss | Claims Frequency | Average Severity | Dollar Volume Share |
+|---|---|---|---|
+| Wind and hail | Highest | Moderate | ~40% of total dollars |
+| Water damage and freezing | High | Moderate-High | ~20–25% of total |
+| Fire and lightning | Moderate | Highest | ~15–20% of total |
+| Other property damage | Moderate | Low-Moderate | ~10% |
+| Theft | Moderate | Low | ~5% |
+| Liability | Low | Variable | ~5% |
+
+</DecisionMatrix>
+
+*Source: Insurance Information Institute (Triple-I) based on ISO/Verisk data. Distribution varies year to year based on weather events.*
+
+---
+
+## Section 2: Water Damage Claims — Detailed Analysis
+
+Water damage is the most restoration-relevant insurance peril because it's pervasive, non-catastrophic in most occurrences, and generates demand for immediate mitigation response.
+
+<Stat
+  id="stat-water-claim-avg-2"
+  value="$12,514"
+  label="Average homeowner insurance water damage and freezing claim payment (non-catastrophe events)"
+  source="Insurance Information Institute (Triple-I), based on ISO/Verisk data, 2023 homeowners insurance report"
+/>
+
+<Stat
+  id="stat-water-dollar-share"
+  value="~20–25%"
+  label="Water damage and freezing's share of all non-catastrophe homeowner insurance property damage dollars"
+  source="Insurance Information Institute (Triple-I); ISO/Verisk data, 2022–2023"
+/>
+
+**Common water damage claim causes:**
+- Frozen pipe bursts (highly seasonal, concentrated in winter freeze events)
+- Appliance failure (dishwasher, washing machine, refrigerator water line)
+- HVAC drain line backup
+- Roof leak-related interior water intrusion (following rain events)
+- Supply line failure (toilet, sink, bathroom supply lines)
+- Water heater failure
+
+**What water damage claims generate in restoration demand:**
+- Emergency mitigation response (the $12,514 average covers mitigation primarily)
+- Structural drying (2–14 days of equipment deployment)
+- Demo if materials are non-restorable
+- Reconstruction of affected areas
+- Contents restoration if personal property is affected
+
+**The total restoration value per water claim:** The $12,514 average covers the mitigation phase. For claims that proceed to reconstruction, the total restoration value (mitigation + demo + rebuild) is significantly higher — often $25,000–$60,000 for a typical kitchen or bathroom loss, and $50,000–$200,000+ for major structural water events.
+
+<Stat
+  id="stat-water-damage-daily"
+  value="~14,000/day"
+  label="Estimated daily U.S. homeowner water damage claims (derived from annual frequency data)"
+  source="Derived from Triple-I annual claim frequency data; U.S. housing unit count"
+  note="This is a rough approximation. Actual daily claims are highly seasonal — freeze-related losses spike in winter. The annual total implies approximately 5 million water damage claims per year, or approximately 14,000 per day on average."
+/>
+
+---
+
+## Section 3: Fire Damage Claims — High Severity, High Complexity
+
+Fire damage represents the smallest category by claim count but the highest average severity per claim. Fire and smoke restoration is among the most technically complex restoration services, requiring structural cleaning, contents restoration, odor remediation, and full reconstruction.
+
+<Stat
+  id="stat-fire-claim-2"
+  value="~$77,000–$84,000"
+  label="Average homeowner insurance fire and lightning claim payment"
+  source="Insurance Information Institute (Triple-I), 2022–2023 homeowners insurance data"
+/>
+
+<Stat
+  id="stat-fire-severity-vs-water"
+  value="6–7×"
+  label="Ratio of average fire claim severity to average water damage claim severity ($77K–$84K vs. $12,514)"
+  source="Derived from Triple-I data, 2022–2023"
+  note="Fire claims are materially larger per incident because they frequently involve both structural damage (requiring demo and reconstruction) and contents losses, plus the specialized services required for smoke and soot remediation throughout an entire structure."
+/>
+
+**Fire claim restoration components:**
+- Emergency board-up and tarping
+- Structural assessment
+- Smoke and soot cleaning (structure, HVAC system, cabinetry)
+- Odor remediation (thermal fogging, hydroxyl treatment, ozone — per IICRC OCT standards)
+- Contents cleaning and restoration (per IICRC CCT standards)
+- Total loss documentation (for non-restorable contents)
+- Reconstruction (demo, rebuild, finishes)
+- Final clearance
+
+**Wildfire as a distinct segment:** Wildfire-related residential losses are distinct from structure fires in several ways: they typically affect multiple properties simultaneously (CAT event characteristics), insurance coverage disputes are more frequent (defensible space, fire-hardening requirements), and demand for restoration services surges faster than supply can respond. California, Colorado, and other Western markets have seen significant wildfire loss in recent years.
+
+---
+
+## Section 4: Catastrophe Events — The Surge Driver
+
+CAT events generate outsized, concentrated restoration demand. A single major hurricane generates more restoration work in one week than many markets see in a year.
+
+<Stat
+  id="stat-cat-per-year"
+  value="18–20"
+  label="Average number of billion-dollar weather and climate disasters per year in the U.S. (2014–2023 ten-year average)"
+  source="NOAA NCEI, Billion-Dollar Weather and Climate Disasters, 2024 update"
+/>
+
+<Stat
+  id="stat-cat-1980s"
+  value="~3/year"
+  label="Average number of U.S. billion-dollar weather disasters per year in the 1980s"
+  source="NOAA NCEI, Billion-Dollar Weather and Climate Disasters, 2024 update"
+/>
+
+<Stat
+  id="stat-cat-trend"
+  value="6×"
+  label="Increase in annual U.S. billion-dollar disaster frequency from the 1980s average to the 2014–2023 average"
+  source="NOAA NCEI, 2024 update"
+  note="This trend reflects both actual increases in extreme weather frequency and increases in reported insured losses from rising property values and insurance penetration. Both factors contribute to the growth in restoration demand."
+/>
+
+<Stat
+  id="stat-cat-2023-losses"
+  value="$92.9B"
+  label="Total U.S. insured losses from weather and climate disasters in 2023"
+  source="Insurance Information Institute (Triple-I); Swiss Re sigma, 2024"
+/>
+
+**Annual decade averages — U.S. billion-dollar disasters:**
+
+<DecisionMatrix title="U.S. Billion-Dollar Weather Disaster Frequency by Decade">
+
+| Decade | Average Events Per Year | Source |
+|---|---|---|
+| 1980s | ~3.3 | NOAA NCEI |
+| 1990s | ~5.8 | NOAA NCEI |
+| 2000s | ~6.7 | NOAA NCEI |
+| 2010–2019 | ~13.8 | NOAA NCEI |
+| 2020–2023 | ~20.4 | NOAA NCEI |
+
+</DecisionMatrix>
+
+*All figures adjusted to 2023 dollars. Source: NOAA NCEI Billion-Dollar Weather and Climate Disasters database.*
+
+**CAT event impact on restoration companies:**
+- Immediate surge in inbound calls (24–72 hours post-event)
+- Equipment shortages (dehumidifiers and air movers get deployed at full capacity)
+- Labor shortages (local crews depleted; large operators fly in CAT response teams)
+- Price discipline challenges (some contractors exploit CAT events with unauthorized price increases — damaging to long-term carrier relationships)
+- Extended AR cycles (carriers under volume pressure take longer to process claims)
+
+---
+
+## Section 5: Mold Claims — The Hidden Segment
+
+Mold is the most complex insurance claim segment because coverage is frequently limited or excluded in standard homeowner policies.
+
+<Stat
+  id="stat-mold-coverage-limit"
+  value="$10,000–$50,000"
+  label="Typical mold coverage limit in standard homeowner insurance policies"
+  source="Industry insurance coverage analysis; Triple-I policy coverage data"
+  note="Most homeowner policies added explicit mold exclusions or sub-limits following the 2001–2003 'mold crisis' in which multi-million dollar mold claims drove significant insured losses. Current policies typically cover mold only as a secondary consequence of a covered water loss, with dollar sublimits."
+/>
+
+**Mold claim dynamics:**
+- Most billable mold remediation is discovered during water damage response, not as a standalone claim
+- IICRC S520 Standard for Professional Mold Remediation governs the procedures that justify billing
+- Post-remediation verification (clearance testing) is a required billing element and documentation asset
+- Air quality testing (AIHA standards) is often required for carrier reimbursement
+
+<Stat
+  id="stat-mold-discovery-rate"
+  value="15–30%"
+  label="Estimated percentage of water damage claims where mold is discovered during or after mitigation"
+  source="Industry practitioner estimates; IICRC S500/S520 intersection data"
+  note="The discovery rate is higher for delayed water losses (pipe burst discovered after extended period, slow leak behind wall) than for acute losses (flooding, pipe burst responded to immediately). IICRC S500 and S520 protocols define the billing basis for mold discovered during water damage response."
+/>
+
+---
+
+## Section 6: Flood Claims — NFIP and Private Flood
+
+Flood damage — covered under NFIP or private flood policies, not standard homeowner insurance — is a separate and significant segment.
+
+<Stat
+  id="stat-nfip-policies"
+  value="~4–5M"
+  label="NFIP flood insurance policies in force (United States)"
+  source="FEMA NFIP data, 2023–2024"
+  note="NFIP policies are concentrated in Gulf Coast, Atlantic Coast, and riverine markets. Florida, Texas, Louisiana, New York, and New Jersey account for the largest shares of NFIP policies. Many flood-prone properties remain uninsured — NFIP penetration is approximately 10–15% of properties in mapped flood zones."
+/>
+
+<Stat
+  id="stat-nfip-avg-claim"
+  value="~$50,000–$75,000"
+  label="Average NFIP flood insurance claim payment (major flood events)"
+  source="FEMA NFIP claims data; post-hurricane claim averages from major events"
+  note="Average NFIP claim payments vary dramatically between ordinary flood events and major hurricane-driven flooding. Individual hurricane-related flood claims can reach $200,000+ for severely affected structures. The stated range reflects the broader distribution across all NFIP claims types."
+/>
+
+**Private flood insurance growth:** Following regulatory changes in 2019–2020, private flood insurance has grown as an alternative or supplement to NFIP coverage. Private flood policies may offer higher coverage limits, shorter waiting periods, and more flexible coverage terms than NFIP — and they typically produce higher-value claims that generate more restoration revenue per event.
+
+---
+
+## Section 7: Geographic Distribution of Claims
+
+Claims demand is not distributed evenly. Restoration operators' strategic decisions about geographic footprint should account for the claims density and peril mix of their target markets.
+
+**Highest-frequency markets by peril:**
+
+| Peril | High-Frequency States |
+|---|---|
+| Hurricane / wind | Florida, Texas, Louisiana, North Carolina, South Carolina |
+| Hail | Texas, Colorado, Kansas, Nebraska, Missouri (Tornado Alley / Hail Alley) |
+| Tornado | Oklahoma, Kansas, Texas, Missouri, Alabama, Tennessee |
+| Wildfire | California, Colorado, Oregon, Washington, Montana |
+| Ice dam / freeze | Minnesota, Wisconsin, Michigan, New York, New England |
+| Flooding (non-CAT) | Mississippi River basin, Gulf Coast, Florida |
+
+*Sources: NOAA NCEI; Triple-I state-level loss data; ISO/Verisk geographic claims data.*
+
+<Stat
+  id="stat-florida-market"
+  value="#1 or #2"
+  label="Florida's rank in U.S. homeowner insurance insured losses — most years since 2017"
+  source="Triple-I state-level data; reinsurer regional loss data"
+  note="Florida's outsized loss burden reflects hurricane exposure, high property values in coastal markets, litigation environment (historically, though recent tort reform has affected this), and significant aging condo stock. Florida is among the most challenging carrier environments for restoration contractors."
+/>
+
+---
+
+## Section 8: TPA Program Volume and Claims Routing
+
+The TPA system routes a significant share of restoration demand through administrative intermediaries. Understanding TPA volume trends is important for restoration companies managing their program participation decisions.
+
+<Stat
+  id="stat-tpa-routing-pct"
+  value="30–50%"
+  label="Estimated share of residential water damage claims routed through TPA programs in active TPA markets"
+  source="Industry estimates; practitioner data from TPA-active markets, 2023"
+  note="TPA routing rates vary significantly by carrier and market. Carriers with established TPA programs (State Farm, Allstate, and others using Contractor Connection, Code Blue, etc.) route a higher share. Smaller regional carriers may not use TPA programs at all."
+/>
+
+**The major TPA programs:** Contractor Connection (Crawford & Company), Code Blue (Crawford), Alacrity Services (Alacrity Solutions), Sedgwick, Worley, Broadspire, Gallagher Bassett, and program-specific networks operated by individual carriers.
+
+**TPA volume growth:** Industry data suggests TPA-routed claims volume has grown over the past decade as carriers have sought to control costs and standardize contractor quality. This growth directly increases the share of restoration revenue subject to TPA takedown fees — a factor that restoration operators must account for in pricing and margin management.
+
+---
+
+## Frequently Asked Questions
+
+### What is the average water damage insurance claim?
+
+$12,514 average for homeowner water damage and freezing claims (non-catastrophe), per Triple-I based on ISO/Verisk data for 2023.
+
+### What is the average fire damage insurance claim?
+
+Approximately $77,000–$84,000 for residential fire and lightning claims per Triple-I 2022–2023 data.
+
+### What causes the most homeowner claims by frequency?
+
+Wind and hail (highest frequency); water damage (second frequency, highest non-CAT dollar volume); fire and lightning (lower frequency, highest per-claim severity).
+
+### How many billion-dollar weather disasters occur annually?
+
+18–20 per year over the 2014–2023 decade, per NOAA NCEI. This is 6× the 1980s average of 3 per year.
+
+### What were total U.S. insured CAT losses in 2023?
+
+$92.9 billion, per Triple-I and Swiss Re sigma 2024.
+
+### How many homeowners file a claim each year?
+
+Approximately 6–8% of homeowners, implying 5.5–7.5 million property claims annually. Source: Triple-I.
+
+### How does climate change affect restoration demand?
+
+More frequent and severe weather events (higher CAT frequency per NOAA), expanding wildfire risk zones, and increasing property values (raising average severity) all drive long-term demand growth. The trend data from NOAA shows a clear upward trajectory.
+
+### What is the NFIP and how many policies are in force?
+
+The National Flood Insurance Program provides federal flood coverage to approximately 4–5 million policyholders. It's concentrated in Gulf Coast, Atlantic Coast, and riverine markets. FEMA 2023–2024 data.
+
+### What percentage of water damage claims involve mold?
+
+Estimated 15–30% discover mold during or after water damage mitigation, particularly for delayed losses. Source: industry practitioner estimates; IICRC S500/S520 intersection data.
+
+### What is a typical mold coverage limit in homeowner policies?
+
+$10,000–$50,000 sublimit in most standard homeowner policies following post-2001 coverage restrictions. Mold is covered primarily as a secondary consequence of a covered water loss.
+
+### What share of water damage claims go through TPA programs?
+
+30–50% in active TPA markets, varying by carrier. Source: industry estimates.
+
+---
+
+## Source Bibliography
+
+1. **Insurance Information Institute (Triple-I)** — "Facts + Statistics: Homeowners and Renters Insurance" (annual); catastrophe data and insured loss statistics. [iii.org](https://www.iii.org)
+2. **NOAA NCEI** — "Billion-Dollar Weather and Climate Disasters." [ncei.noaa.gov/access/billions](https://www.ncei.noaa.gov/access/billions)
+3. **FEMA** — National Flood Insurance Program (NFIP) data. [fema.gov/nfip](https://www.fema.gov/flood-insurance)
+4. **ISO/Verisk** — Property Claim Services (PCS); homeowner claims data (published through Triple-I and industry reports).
+5. **Swiss Re sigma** — "Natural Catastrophes and Man-Made Disasters" (annual). [swissre.com/sigma](https://www.swissre.com/sigma)
+6. **U.S. Census Bureau** — American Housing Survey; housing stock age and tenure data.
+7. **IICRC** — S500 Standard for Professional Water Damage Restoration; S520 Standard for Professional Mold Remediation; OCT and CCT standards. [iicrc.org](https://iicrc.org)
+8. **Restoration Industry Association (RIA)** — Industry perspective on claims trends and TPA program dynamics. [restorationindustry.org](https://www.restorationindustry.org)
+
+---
+
+*Related reading: [50+ Restoration Industry Statistics Every Owner Should Know](/field-notes/restoration-industry-statistics-2026) · [Why Mitigation Companies Have Unique Accounting Needs](/field-notes/mitigation-companies-unique-accounting-needs) · [The Code Blue Test: How to Decide Which TPA Programs to Drop](/field-notes/code-blue-test-tpa-programs) · [Building a 13-Week Cash Forecast for Restoration](/field-notes/13-week-cash-forecast-restoration)*

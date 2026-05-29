@@ -120,6 +120,38 @@ export const fieldNotesMeta: Record<
       "A large restoration job looks like a revenue win. It might be a cash flow trap, a margin drain, or an opportunity cost you can't afford. Here's the framework to decide in the field.",
   },
 
+  // ── Industry Research Series ─────────────────────────────────────────────
+  "restoration-industry-statistics-2026": {
+    title: "50+ Restoration Industry Statistics Every Owner Should Know in 2026",
+    categoryLabel: "Industry Research",
+    excerpt:
+      "The U.S. damage restoration industry spans $15–$20B in direct services revenue across more than 70,000 businesses — growing at 4–6% annually. Here are the statistics that matter, sourced and cited across market size, claims data, profitability, M&A, and more.",
+  },
+  "restoration-profitability-benchmarks-analysis": {
+    title: "Restoration Company Profitability Benchmarks: A Data-Driven Analysis",
+    categoryLabel: "Industry Research",
+    excerpt:
+      "Restoration companies average 30–50% gross margins and 8–18% EBITDA margins — but the range is wide. Revenue tier, service mix, TPA dependency, and bookkeeping quality all drive the variance. This analysis covers every major financial benchmark by revenue stage.",
+  },
+  "restoration-ma-trends-2026": {
+    title: "The State of Restoration Industry M&A in 2026: Multiples, Buyers, and Trends",
+    categoryLabel: "Industry Research",
+    excerpt:
+      "PE has been buying restoration companies at 4–8× EBITDA since 2018, and the consolidation wave is ongoing. This report covers who's buying, what they're paying, what they look for, and what restoration owners need to know about their exit options.",
+  },
+  "insurance-restoration-claims-data": {
+    title: "Insurance Restoration Claims Data: Trends, Frequency, and Severity Analysis",
+    categoryLabel: "Industry Research",
+    excerpt:
+      "Water damage averages $12,514 per homeowner claim. Fire claims average $77,000–$84,000. Billion-dollar disasters now occur 18–20 times per year — triple the 1980s rate. This report compiles the claims data that drives restoration industry demand.",
+  },
+  "cost-of-doing-business-restoration-2026": {
+    title: "The Cost of Doing Business in Restoration: 2026 Industry Report",
+    categoryLabel: "Industry Research",
+    excerpt:
+      "Workers' comp at $8–$18 per $100 of payroll, Xactimate at $1,800–$4,200/user/year, GL insurance, equipment depreciation, IICRC certification — restoration overhead stacks to 22–32% of revenue. This report benchmarks every major cost category.",
+  },
+
   // ── Industry Analysis Series ─────────────────────────────────────────────
   "why-restoration-needs-specialized-bookkeepers": {
     title: "Why Restoration Companies Need Specialized Bookkeepers (Not Generic Services)",

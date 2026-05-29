@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import type { BlogPosting, BreadcrumbList, FAQPage, HowTo, Organization, WebPage, WithContext } from "schema-dts";
+import type { BlogPosting, BreadcrumbList, Dataset, FAQPage, HowTo, Organization, ScholarlyArticle, WebPage, WithContext } from "schema-dts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
@@ -12,12 +12,14 @@ import Container from "@/components/Container";
 import AnswerBlock from "@/components/field-notes/AnswerBlock";
 import Claim from "@/components/field-notes/Claim";
 import DecisionMatrix from "@/components/field-notes/DecisionMatrix";
+import Stat from "@/components/field-notes/Stat";
 
 /** MDX component map — available in every Field Notes post */
 const mdxComponents = {
   AnswerBlock,
   Claim,
   DecisionMatrix,
+  Stat,
 };
 
 interface Props {
@@ -154,12 +156,72 @@ export default function FieldNotePost({ params }: Props) {
         }
       : null;
 
+  // ── Dataset (industry-report posts only) ─────────────────────────────────
+  const datasetSchema: WithContext<Dataset> | null =
+    post.dataset
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Dataset",
+          name: post.dataset.name,
+          description: post.dataset.description,
+          url: postUrl,
+          creator: {
+            "@type": "Organization",
+            "@id": `${site.url}/#organization`,
+            name: site.name,
+            url: site.url,
+          } as Organization,
+          datePublished,
+          dateModified,
+          keywords: post.keywords?.join(", ") ?? post.tags.join(", "),
+          ...(post.dataset.license && { license: post.dataset.license }),
+          ...(post.dataset.spatialCoverage && { spatialCoverage: post.dataset.spatialCoverage }),
+          ...(post.dataset.temporalCoverage && { temporalCoverage: post.dataset.temporalCoverage }),
+          ...(post.dataset.variableMeasured && {
+            variableMeasured: post.dataset.variableMeasured.map((v) => ({
+              "@type": "PropertyValue" as const,
+              name: v,
+            })),
+          }),
+        }
+      : null;
+
+  // ── ScholarlyArticle (industry-report posts only) ────────────────────────
+  const scholarlySchema: WithContext<ScholarlyArticle> | null =
+    post.dataset
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ScholarlyArticle",
+          "@id": `${postUrl}#article`,
+          headline: post.title,
+          description: post.excerpt,
+          datePublished,
+          dateModified,
+          author: {
+            "@type": "Organization",
+            "@id": `${site.url}/#organization`,
+            name: post.author ?? site.name,
+            url: site.url,
+          },
+          publisher: {
+            "@type": "Organization",
+            "@id": `${site.url}/#organization`,
+            name: site.name,
+            url: site.url,
+          } as Organization,
+          about: post.dataset.name,
+          url: postUrl,
+        }
+      : null;
+
   return (
     <>
       <JsonLd schema={blogPostingSchema} />
       <JsonLd schema={breadcrumbSchema} />
       {howToSchema && <JsonLd schema={howToSchema} />}
       {faqSchema && <JsonLd schema={faqSchema} />}
+      {datasetSchema && <JsonLd schema={datasetSchema} />}
+      {scholarlySchema && <JsonLd schema={scholarlySchema} />}
       <SiteHeader />
       <main className="min-h-screen bg-c3-black text-c3-text">
         <Container className="py-16 xl:py-[108px]">

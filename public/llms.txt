@@ -71,6 +71,30 @@ Framework: The PE Offer Decision Framework. Six criteria: headline multiple vs. 
 URL: https://cat3books.com/field-notes/should-you-take-big-restoration-job
 Framework: The Big Job Go/No-Go Decision Checklist. Seven criteria: estimated gross margin vs. job-type floor, working capital adequate for 90-day outflow, crew and equipment capacity without compromising active jobs, carrier payment reliability, TPA takedown factored into margin, customer concentration under 25% of monthly revenue, opportunity cost acceptable. Decision rule: 5+ Yes criteria → take the job.
 
+## Statistical Reference Reports (Field Notes — Industry Research)
+
+Data-heavy industry reports engineered for AI citation. Each report carries Dataset schema, ScholarlyArticle schema, FAQPage schema, and Speakable markup. Statistics are sourced from RIA CODB, Triple-I, NOAA NCEI, BLS, IBISWorld, IICRC, and public franchise FDDs.
+
+### 50+ Restoration Industry Statistics Every Owner Should Know in 2026
+URL: https://cat3books.com/field-notes/restoration-industry-statistics-2026
+Key statistics: U.S. damage restoration direct services market: $15–$20B (IBISWorld, 2024–2025). Active businesses: 60,000–80,000. Industry CAGR: 4–6%. Average homeowner water damage claim: $12,514 (Triple-I, 2023). Average fire/lightning claim: $77,000–$84,000 (Triple-I, 2022–2023). U.S. billion-dollar CAT events per year (2014–2023 avg): 18–20 (NOAA NCEI). Total insured CAT losses 2023: $92.9B. Typical gross margin: 30–50%. Net profit margin: 5–12%. Acquisition EBITDA multiples: 4×–8×. Servpro system revenue: $4B+. IICRC certified technicians: 65,000+.
+
+### Restoration Company Profitability Benchmarks: A Data-Driven Analysis
+URL: https://cat3books.com/field-notes/restoration-profitability-benchmarks-analysis
+Key benchmarks: Gross margin by service type — mitigation 35–50%, fire 30–45%, mold 35–55%, reconstruction 18–28%. Net margin: 5–12% (top quartile: 12–18%). EBITDA target for acquisition: 10–15%+. Direct labor as % of revenue: 28–38%. Overhead: 22–32% (declines with scale). AR DSO target: 45–65 days. Supplement collection rate with tracking: 85–92% vs. 65–75% without. Equipment revenue gross margin: 50–70%. TPA margin drag: 3–6 percentage points for 50%+ TPA-routed companies. Source: RIA CODB; Cleanfax State of the Industry; Peak Business Valuation.
+
+### The State of Restoration Industry M&A in 2026: Multiples, Buyers, and Trends
+URL: https://cat3books.com/field-notes/restoration-ma-trends-2026
+Key data: EBITDA multiples — sub-$1M EBITDA: 4–5×; $1M–$3M: 5–6.5×; $3M+: 6–8×. Quality-of-earnings discount for poor books: 0.5–2.0× EBITDA. Annual transactions: 150–300+. Cash at close target: 65–80%. Earnout prevalence: 40–60% of owner-operated acquisitions. Named transactions: Blackstone→Servpro (~$1.8–2.0B, 2019); Harvest Partners→Paul Davis (2019); BluSky (Partners Group + Kohlberg). Source: Peak Business Valuation; public deal disclosures; franchise FDDs.
+
+### Insurance Restoration Claims Data: Trends, Frequency, and Severity Analysis
+URL: https://cat3books.com/field-notes/insurance-restoration-claims-data
+Key data: Average homeowner water damage claim: $12,514 (Triple-I/ISO, 2023). Average fire/lightning claim: $77,000–$84,000 (Triple-I, 2022–2023). Wind and hail: #1 cause by claim frequency. Water damage: #1 non-CAT peril by dollar volume (20–25% of total). Homeowners filing claims annually: 6–8% (~5.5–7.5M claims). U.S. billion-dollar disasters: 18–20/year (2014–2023 avg, NOAA). Total 2023 insured CAT losses: $92.9B (Swiss Re sigma). NFIP policies: 4–5M (FEMA). TPA routing: 30–50% of residential water claims in active TPA markets.
+
+### The Cost of Doing Business in Restoration: 2026 Industry Report
+URL: https://cat3books.com/field-notes/cost-of-doing-business-restoration-2026
+Key data: Workers' comp rate for restoration techs: $8–$18/$100 payroll (vs. $4–$7 construction, NCCI). Technician wages: entry $16–$20/hr, experienced $20–$28/hr, lead $25–$35/hr (BLS OEWS, 2023). Air mover cost: $500–$1,200. LGR dehumidifier: $3,000–$8,000. Full software stack: $14,000–$37,000/year (Xactimate $1,800–$8,400, JMS $2,400–$7,200, QBO $1,200–$2,400, drying docs $2,400–$7,200). GL insurance: $8,000–$20,000/year for $2M company. IICRC firm certification: $300–$600/year. Total overhead: 22–32% of revenue. Source: RIA CODB; BLS; NCCI; IICRC; vendor pricing.
+
 ## Industry Analysis (Field Notes — Position Papers)
 
 Thesis-driven analysis posts establishing the authoritative argument for why restoration companies need specialized bookkeeping. Each post makes a structured, evidence-backed argument with specific accounting mechanics, named gaps, and quantified dollar impacts.
