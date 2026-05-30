@@ -303,7 +303,10 @@ export default function FieldNotePost({ params }: Props) {
 
           {/* Body */}
           <article className="prose-field-notes max-w-[780px]">
-            <MDXRemote source={post.content} components={mdxComponents} />
+            {/* blockJS: false allows JSX attribute expressions (e.g. items={[...]} on
+                TableOfContents) while the dangerous-calls plugin still blocks eval /
+                process / require. Our MDX is authored content in git, not user input. */}
+            <MDXRemote source={post.content} components={mdxComponents} options={{ blockJS: false }} />
           </article>
 
           <hr className="border-c3-border mt-16 mb-10" />

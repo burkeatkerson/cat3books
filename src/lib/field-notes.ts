@@ -102,7 +102,15 @@ export function getPost(slug: string): Post {
     path.join(POSTS_DIR, `${slug}.mdx`),
     "utf-8"
   );
-  const { data, content } = matter(raw);
+  const { data, content: rawContent } = matter(raw);
+  // MDX treats {…} as JSX expressions, so {#anchor-id} in headings fails the
+  // acorn parser. Convert ## Heading {#id} → <hN id="id">Heading</hN> before
+  // the content reaches MDXRemote.
+  const content = rawContent.replace(
+    /^(#{1,6})\s+(.+?)\s*\{#([\w-]+)\}\s*$/gm,
+    (_, hashes: string, text: string, id: string) =>
+      `<h${hashes.length} id="${id}">${text}</h${hashes.length}>`
+  );
   return {
     slug,
     title: data.title as string,

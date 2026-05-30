@@ -1,5 +1,3 @@
-"use client";
-
 interface TocItem {
   id: string;
   label: string;
