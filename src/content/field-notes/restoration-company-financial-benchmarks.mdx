@@ -1,0 +1,342 @@
+---
+title: "Restoration Company Financial Benchmarks: What Gross Margin, AR, and Net Profit Should Look Like at $1M, $3M, and $5M"
+date: "2026-05-29"
+excerpt: "The RIA Cost of Doing Business Report puts average gross margin at 50%, net margin at 14%, and overhead at 38% for insurance restoration contractors. Here's what those numbers look like broken down by revenue tier — and what it means if yours are different."
+tags:
+  - "restoration benchmarks"
+  - "gross margin restoration"
+  - "net profit restoration"
+  - "restoration industry KPIs"
+  - "restoration financial data"
+author: "Cat3 Books"
+category: "benchmarks"
+categoryLabel: "Industry Benchmarks"
+coverStyle: "cv-grid"
+coverGlyph: "50%\nGM"
+coverSub: "Industry benchmarks, tier by tier"
+issueNumber: "№ 071"
+readTime: "15 min"
+featured: false
+contentType: "industry-report"
+priority: 0.9
+keywords:
+  - "restoration company financial benchmarks"
+  - "restoration gross margin benchmark"
+  - "restoration net profit percentage"
+  - "restoration overhead percentage benchmark"
+  - "restoration AR days outstanding"
+  - "RIA cost of doing business restoration"
+  - "restoration company KPIs by revenue"
+dataset:
+  name: "U.S. Insurance Restoration Contractor Financial Benchmarks 2024"
+  description: "Gross margin, net margin, overhead percentage, AR-to-revenue ratio, and labor efficiency benchmarks for U.S. insurance restoration contractors, segmented by annual revenue tier ($1M, $3M, $5M), sourced from the RIA Cost of Doing Business Report and industry data."
+  temporalCoverage: "2022/2024"
+  spatialCoverage: "United States"
+  variableMeasured:
+    - "Gross margin percentage"
+    - "Net margin percentage"
+    - "Overhead percentage"
+    - "AR-to-revenue ratio"
+    - "Labor cost percentage"
+    - "EBITDA margin"
+faqItems:
+  - question: "What is the average gross margin for a restoration company?"
+    answer: "The RIA Cost of Doing Business Report puts average gross margin for insurance restoration contractors at approximately 50%. This means for every dollar of revenue, 50 cents covers all direct job costs (labor, materials, subcontractors, equipment rental) and 50 cents is left for overhead and profit. Companies below 45% gross margin typically have a labor or subcontractor cost problem. Companies above 55% are either highly efficient or may be underpricing direct costs."
+  - question: "What is the average net profit margin for a restoration company?"
+    answer: "The RIA Cost of Doing Business Report reports an average net margin of approximately 14% for insurance restoration contractors. At $1M revenue, that's $140,000 in net profit. At $3M, it's $420,000. However, net margin is heavily influenced by how owner compensation is structured — if the owner takes a below-market salary, net profit is inflated. Normalized EBITDA (adding back owner comp to market rate) is a more reliable profitability metric."
+  - question: "What is a healthy overhead percentage for a restoration company?"
+    answer: "The RIA Cost of Doing Business Report reports an average overhead percentage of 38% for insurance restoration contractors. This encompasses all non-job-direct costs: facilities, equipment depreciation, marketing, administrative salaries, insurance (GL, workers' comp), vehicle costs, and technology. Companies below 35% are efficient for their size. Companies above 42% are carrying overhead that is compressing margins. The overhead percentage typically decreases as revenue grows, driven by fixed-cost leverage."
+  - question: "What is the normal AR-to-revenue ratio for a restoration company?"
+    answer: "The RIA Cost of Doing Business Report reports a median AR-to-revenue ratio of 16.5% for insurance restoration contractors. At $2M in annual revenue, that's approximately $330,000 in outstanding receivables at any given time — which is normal for a business with 60+ day collection cycles. Companies above 20% AR-to-revenue may have a collection problem; below 12% may be understating outstanding receivables or running faster-than-average collection cycles."
+  - question: "How do restoration company margins compare to general contractors?"
+    answer: "Insurance restoration contractors generally run higher gross margins than general contractors (50% vs. 25–35%) because the work is insurance-funded, labor-intensive, and involves specialized knowledge that commands a premium. However, overhead is also higher in restoration due to 24/7 response requirements, specialized equipment, certifications, and TPA program fees. Net margins are comparable to well-run general contractors."
+  - question: "Why do financial benchmarks vary by revenue tier for restoration companies?"
+    answer: "Revenue tier matters because fixed-cost leverage changes the math significantly. A $1M company spreads overhead across half the revenue of a $2M company — which means the same fixed cost base (facilities, vehicles, insurance, technology) takes a larger percentage bite. As revenue grows, fixed overhead becomes a smaller percentage of revenue while gross margin often improves slightly through better subcontractor pricing and labor efficiency. The result is that net margin typically improves by 3–6 percentage points from $1M to $5M, all else equal."
+---
+
+<AnswerBlock>
+**Industry median benchmarks for U.S. insurance restoration contractors** <Citation source="RIA Cost of Doing Business Report" year="2024" />:
+
+- **Gross margin:** ~50% of revenue
+- **Net margin:** ~14% of revenue
+- **Overhead:** ~38% of revenue
+- **AR-to-revenue ratio:** ~16.5%
+
+If your numbers are materially different from these, this post tells you what that difference means — and whether it's a problem.
+</AnswerBlock>
+
+---
+
+## Why These Numbers Exist
+
+Every few years, the Restoration Industry Association surveys member contractors and publishes the Cost of Doing Business Report — the closest thing the industry has to a standardized financial benchmark. The data isn't perfect (self-reported, not audited, member-biased toward larger/better-managed companies), but it's the most credible industry-specific source available.
+
+The numbers are also consistent with what IBISWorld and similar industry analysts report for the broader damage restoration sector: gross margins in the 48–52% range, net margins in the 12–16% range for well-managed operations. <Citation source="IBISWorld" year="2024" />
+
+This post breaks those aggregate numbers down by revenue tier — $1M, $3M, $5M — because a 50% gross margin benchmark means something very different to a company doing $1M than one doing $5M. The context changes what's healthy and what's concerning.
+
+<TableOfContents items={[
+  {id: "gross-margin", label: "Gross Margin: What 50% Actually Means"},
+  {id: "overhead", label: "Overhead: The 38% That Eats the Middle"},
+  {id: "net-margin", label: "Net Margin: The Number After Everything"},
+  {id: "ar-ratio", label: "AR-to-Revenue: The Float You're Carrying"},
+  {id: "benchmark-table", label: "Full Benchmark Table by Revenue Tier"},
+  {id: "reading-your-own-numbers", label: "Reading Your Own Numbers"},
+  {id: "what-moves-the-needle", label: "What Actually Moves These Numbers"},
+]} />
+
+---
+
+## Gross Margin: What 50% Actually Means {#gross-margin}
+
+<DatasetSchema
+  name="Restoration Contractor Gross Margin Benchmarks by Revenue Tier"
+  description="Gross margin percentage ranges for U.S. insurance restoration contractors at $1M, $3M, and $5M annual revenue, based on RIA Cost of Doing Business Report data."
+  temporalCoverage="2022/2024"
+  spatialCoverage="United States"
+  variableMeasured={["Gross margin percentage", "Direct labor cost", "Materials cost", "Subcontractor cost"]}
+/>
+
+Gross margin is revenue minus direct job costs, expressed as a percentage of revenue. Direct job costs include:
+- Direct labor (field crews, lead techs, project managers)
+- Materials and supplies consumed on jobs
+- Subcontractor costs
+- Equipment rental and consumables
+
+The industry average of ~50% means the average restoration company spends 50 cents of every dollar on directly producing the work. <Citation source="RIA Cost of Doing Business Report" year="2024" />
+
+**What drives gross margin lower than 50%:**
+- High subcontractor use without corresponding markup (subcontractors should carry 10–20% margin)
+- Labor inefficiency — crews running over budget hours on jobs
+- Materials waste or untracked material consumption
+- TPA program revenue at lower margins dragging down the blended rate
+
+**What drives gross margin higher than 50%:**
+- Strong direct-labor efficiency (low labor as % of revenue)
+- Effective supplement recovery (captures full scope value)
+- Good job costing discipline (catches overruns early)
+- Service mix favoring higher-margin work (mitigation over contents, for example)
+
+<BlogImage
+  alt="Bar chart showing healthy, concerning, and critical gross margin zones for restoration companies: above 52% is excellent, 45-52% is the healthy target range, 40-45% is concerning and warrants investigation, below 40% is a structural cost problem requiring immediate attention"
+  caption="Gross margin benchmark zones. The 50% median sits in the middle of the healthy range — below 45% warrants a job costing review."
+  width={780}
+  height={300}
+/>
+
+**By revenue tier:** Gross margin tends to improve slightly as revenue grows, driven by better subcontractor pricing leverage and more consistent labor efficiency. A $1M company at 46% gross margin is performing differently than a $5M company at 46% — the $1M company is at the low end of acceptable; the $5M company may have a structural cost problem.
+
+---
+
+## Overhead: The 38% That Eats the Middle {#overhead}
+
+Overhead is everything that isn't directly attributable to a specific job: office rent, non-field salaries, marketing, vehicles not directly billed to jobs, technology, insurance (GL and workers' comp), owner compensation above job-level work.
+
+The RIA CODB puts average overhead at **38% of revenue** for insurance restoration contractors. <Citation source="RIA Cost of Doing Business Report" year="2024" /> This is the number that surprises most owners when they see it — overhead takes up more than twice what Xactimate's 10% overhead allowance assumes (more on that in [The "10 and 10" Myth](/field-notes/ten-and-ten-myth-restoration)).
+
+**Where the 38% goes:**
+
+| Overhead Category | Typical % of Revenue | Notes |
+|---|---|---|
+| Administrative / office labor | 8–12% | Office manager, bookkeeper, estimator overhead |
+| Owner compensation (above field work) | 5–10% | Varies widely by how owner pays themselves |
+| Vehicles (non-billable portion) | 3–5% | Insurance, depreciation, fuel overhead |
+| Equipment (non-billable depreciation) | 3–6% | Drying equipment, tools amortized |
+| Facilities (rent, utilities) | 2–5% | Warehouse, office |
+| Insurance (GL, E&O, umbrella) | 2–5% | Varies by state and risk profile |
+| Marketing and lead generation | 2–5% | Ad spend, referral fees, networking |
+| Technology and software | 1–3% | QBO, Xactimate, job management platforms |
+| **Total** | **26–51%** | **Median ~38%** |
+
+The wide range (26–51%) reflects the difference between a tight single-location mitigation company and a multi-location full-service contractor with significant administrative overhead.
+
+**Fixed vs. variable overhead:** Most of these categories are fixed or semi-fixed. Facilities cost the same whether revenue is $2M or $3M. Technology costs the same. This is the "fixed cost leverage" that improves net margin as revenue grows — the same overhead percentage takes fewer dollars out of a larger revenue base.
+
+---
+
+## Net Margin: The Number After Everything {#net-margin}
+
+Net margin is what's left after direct costs and overhead: the owner's return on running the business.
+
+**Industry median: ~14%** <Citation source="RIA Cost of Doing Business Report" year="2024" />
+
+At $1M revenue: **$140,000** net profit  
+At $3M revenue: **$420,000** net profit  
+At $5M revenue: **$700,000** net profit
+
+These are the *reported* numbers. The real picture is more complicated because of how owners structure their own compensation:
+
+- If the owner takes a below-market salary (or no salary) and calls everything "profit," net margin is inflated
+- If the owner takes a generous above-market salary, net margin is understated
+- Most industry benchmarks normalize to EBITDA (earnings before interest, taxes, depreciation, and amortization) rather than net profit to enable cleaner comparison
+
+**EBITDA margin benchmarks:** <Citation source="Peak Business Valuation" year="2024" />
+
+| Revenue Range | EBITDA Margin (Normalized) | EBITDA Amount |
+|---|---|---|
+| $1M–$2M | 15–20% | $150K–$400K |
+| $2M–$5M | 18–24% | $360K–$1.2M |
+| $5M–$10M | 20–27% | $1M–$2.7M |
+
+The EBITDA ranges from Peak Business Valuation reflect their restoration M&A transaction database — these are the numbers that actually support acquisition multiples. Companies hitting the high end of these ranges at their revenue tier typically command EBITDA multiples of 4–6×; the low end is more likely to see 2–3×.
+
+---
+
+## AR-to-Revenue: The Float You're Carrying {#ar-ratio}
+
+<DatasetSchema
+  name="Restoration Contractor AR and Collections Benchmarks"
+  description="Accounts receivable to revenue ratio and days outstanding benchmarks for U.S. insurance restoration contractors."
+  temporalCoverage="2022/2024"
+  spatialCoverage="United States"
+  variableMeasured={["AR-to-revenue ratio", "Days sales outstanding", "AR aging distribution"]}
+/>
+
+AR-to-revenue ratio is your outstanding receivables balance divided by annual revenue. The industry median is **16.5%**. <Citation source="RIA Cost of Doing Business Report" year="2024" />
+
+At $2M annual revenue, 16.5% AR-to-revenue = **$330,000 in outstanding AR** at any given time. This isn't alarming — insurance restoration has 45–90 day collection cycles by nature. But understanding what normal looks like prevents you from confusing slow-pay carriers with a collection problem.
+
+**What the ratio tells you:**
+
+| AR-to-Revenue | Interpretation |
+|---|---|
+| Under 12% | Fast collection cycle, or AR may be understated |
+| 12–20% | Normal for insurance restoration |
+| 20–25% | Elevated — review aging by payer type |
+| Over 25% | High — likely a collection or staging problem |
+
+**AR aging by payer type** (normal ranges):
+
+| Payer Type | Normal Collection Window | Concerning If... |
+|---|---|---|
+| Direct insurance (no TPA) | 30–75 days | Over 90 days |
+| TPA programs (Code Blue, Alacrity, etc.) | 45–90 days | Over 120 days |
+| Retail / homeowner-pay | 15–45 days | Over 60 days |
+
+For the full AR management methodology and what to do with aging outliers, see [AR Days Outstanding for Restoration: What's Normal vs. What's a Problem](/field-notes/ar-days-outstanding-restoration) and [The Complete Guide to Insurance Billing Accounting](/field-notes/complete-guide-insurance-billing-accounting-restoration).
+
+---
+
+## Full Benchmark Table by Revenue Tier {#benchmark-table}
+
+<BlogImage
+  alt="Multi-metric benchmark comparison chart showing healthy ranges for gross margin, net margin, overhead percentage, and AR-to-revenue ratio across three revenue tiers: $1M, $3M, and $5M restoration companies, with green zones indicating healthy performance and yellow/red zones indicating areas of concern"
+  caption="Key financial benchmarks by revenue tier. The ranges reflect the RIA Cost of Doing Business Report median and typical interquartile spread."
+  width={780}
+  height={440}
+/>
+
+The table below shows the healthy target range for each benchmark at three revenue tiers. "Healthy range" means the middle 50% of well-run restoration companies at that revenue level — not the top 10%, not the struggling 25%.
+
+### Gross Margin by Revenue Tier
+
+| Metric | $1M Company | $3M Company | $5M Company |
+|---|---|---|---|
+| Healthy range | 44–52% | 47–54% | 49–56% |
+| Industry median | ~48% | ~50% | ~52% |
+| Concerning below | 42% | 44% | 46% |
+| Excellent above | 54% | 57% | 59% |
+
+### Overhead Percentage by Revenue Tier
+
+| Metric | $1M Company | $3M Company | $5M Company |
+|---|---|---|---|
+| Healthy range | 35–42% | 33–40% | 30–38% |
+| Industry median | ~40% | ~38% | ~35% |
+| Concerning above | 45% | 43% | 40% |
+| Excellent below | 32% | 30% | 27% |
+
+### Net Margin by Revenue Tier
+
+| Metric | $1M Company | $3M Company | $5M Company |
+|---|---|---|---|
+| Healthy range | 10–17% | 12–19% | 14–22% |
+| Industry median | ~13% | ~14% | ~16% |
+| Concerning below | 8% | 10% | 12% |
+| Excellent above | 20% | 22% | 25% |
+
+### AR-to-Revenue by Revenue Tier
+
+| Metric | $1M Company | $3M Company | $5M Company |
+|---|---|---|---|
+| Healthy range | 13–20% | 14–21% | 15–22% |
+| Industry median | ~16% | ~17% | ~18% |
+| Concerning above | 23% | 24% | 26% |
+
+### Labor Cost as % of Revenue
+
+| Metric | $1M Company | $3M Company | $5M Company |
+|---|---|---|---|
+| Healthy range | 26–34% | 27–33% | 28–34% |
+| Industry median | ~30% | ~30% | ~31% |
+| Concerning above | 37% | 36% | 37% |
+
+*Sources: RIA Cost of Doing Business Report 2024; IBISWorld Industry Report 56172; Peak Business Valuation restoration M&A transaction data 2024.* <Citation source="RIA Cost of Doing Business Report" year="2024" /> <Citation source="IBISWorld" year="2024" /> <Citation source="Peak Business Valuation" year="2024" />
+
+---
+
+## Reading Your Own Numbers {#reading-your-own-numbers}
+
+<MidPostCTA type="download" headline="Get the Free Benchmark Scorecard" subtext="One page. Your numbers vs. industry medians for gross margin, overhead, net profit, and AR. Download and fill in — takes 10 minutes." />
+
+To compare your numbers to these benchmarks, you need three things from your books:
+
+**1. Gross margin:** From your income statement. Revenue minus direct job costs (labor, materials, subcontractors, equipment billable). Divide by revenue. If your bookkeeper isn't separating direct costs from overhead in QBO, you won't be able to calculate this cleanly. See [How to Read a Job-Level P&L Like a Restoration Owner](/field-notes/how-to-read-a-job-level-pl).
+
+**2. Overhead percentage:** Total overhead (everything that isn't a direct job cost) divided by revenue. Common mistake: including owner's field labor as a direct cost when it's actually overhead. Be honest about how much of the owner's time is strategic vs. billable.
+
+**3. Net margin:** Revenue minus all costs. Check your P&L and make sure it's on accrual basis — cash basis can distort net margin significantly when you have substantial AR (you're recognizing costs but deferring revenue).
+
+**4. AR-to-revenue:** Pull your current AR balance from QBO. Divide by your trailing-12-month revenue. If the number is over 20%, pull the AR aging report and look at the 90+ day bucket — that's where collection problems live.
+
+If you can't pull these numbers in 10 minutes from your current QBO setup, that's its own signal. Clean monthly closes and proper chart of accounts structure should make every one of these instantly accessible. See [The Complete Guide to Job Costing for Restoration](/field-notes/complete-guide-job-costing-restoration-mitigation) for how to structure QBO to produce these automatically.
+
+---
+
+## What Actually Moves These Numbers {#what-moves-the-needle}
+
+Understanding the benchmarks is step one. Understanding what causes your numbers to be different from the benchmarks is step two.
+
+**Gross margin levers (biggest impact first):**
+1. Labor efficiency on jobs — are crews hitting or beating estimated hours?
+2. Supplement recovery — are you capturing full scope value?
+3. Subcontractor markup discipline — are subs being marked up appropriately?
+4. Materials waste and unbilled materials
+
+**Overhead levers:**
+1. Administrative staff-to-revenue ratio — more revenue per admin dollar is the goal
+2. Owner comp structure — market-rate salary or equity-extraction-as-salary?
+3. Marketing spend efficiency — cost-per-job versus job volume
+4. Equipment utilization — are owned assets generating revenue?
+
+**Net margin:** Net margin is downstream of the first two. If gross margin is healthy and overhead is controlled, net margin takes care of itself. If net margin is low despite healthy gross margin, overhead is the problem. If both gross margin and overhead are off, you have a cost structure problem worth examining line by line.
+
+**AR ratio:** The main driver is collection process discipline, not collection speed (which is largely controlled by carriers). Companies with systematic AR staging — tracking ACV, RCV, and supplement separately and following up systematically — have lower AR-to-revenue ratios than companies that rely on carriers to initiate payment. See [When Supplements Disappear Between Xactimate and QuickBooks](/field-notes/supplements-disappear-xactimate-quickbooks).
+
+---
+
+## Frequently Asked Questions
+
+### How often is the RIA Cost of Doing Business Report published?
+
+The RIA (Restoration Industry Association) publishes the Cost of Doing Business Report periodically, typically every 2–3 years. The most recent available data covers 2022–2024 survey periods. The benchmarks have been relatively stable over time — gross margin in the 48–52% range and overhead in the 36–40% range have been consistent across multiple report cycles.
+
+### Are these benchmarks skewed toward larger companies?
+
+Likely yes, modestly. RIA members tend to skew toward larger, better-managed operations. The median respondent in CODB surveys is typically a $2M–$5M company. The numbers for sub-$1M companies in the database are less representative. Use the $1M-tier benchmarks as directional guidance, not precise targets, for very small operations.
+
+### How does revenue mix (TPA vs. direct insurance vs. retail) affect benchmarks?
+
+TPA-heavy companies typically run lower gross margins (TPA program fees reduce the effective margin by 5–15%) but more predictable volume. Direct-insurance companies may run higher gross margins but face more supplement negotiation friction. Retail (homeowner-pay) work often runs the highest gross margins but the shortest collection cycles. If your revenue mix is different from a typical insurance restoration contractor, adjust the benchmarks accordingly.
+
+### Can these benchmarks be used to value my restoration company?
+
+Indirectly yes. EBITDA margin is one input to valuation multiples. Peak Business Valuation reports that restoration companies typically sell at 3–6× EBITDA, with the multiple varying based on revenue size, growth rate, customer concentration, and financial documentation quality. A company at the high end of EBITDA margins for its tier commands higher multiples than one at the low end.
+
+### What if my gross margin is strong but my net margin is poor?
+
+This points to an overhead problem. Your direct-job economics are solid, but something in overhead is consuming the margin: possibly over-staffed admin, above-market owner compensation classified as salary, high equipment costs, or inefficient marketing spend. The overhead breakdown in [What Overhead Percentage Is Healthy for a Restoration Company?](/field-notes/restoration-company-overhead-percentage) gives a category-by-category benchmark.
+
+---
+
+*Related reading: [Is Your Restoration Company Actually Profitable? 5 Numbers to Know](/field-notes/is-your-restoration-company-profitable) · [What Overhead Percentage Is Healthy?](/field-notes/restoration-company-overhead-percentage) · [AR Days Outstanding: What's Normal vs. What's a Problem](/field-notes/ar-days-outstanding-restoration)*

@@ -296,3 +296,81 @@ Only the tax-legal glossary (post 5) has an explicit BlogImage. The other 4 exis
 ---
 
 *Updated total: 28 images across 23 posts.*
+
+---
+
+## Industry Benchmarks Series (Bundle 6)
+
+### Post 1: Restoration Company Financial Benchmarks (Pillar)
+**Slug:** `restoration-company-financial-benchmarks`
+
+**Image 1: KPI Benchmark Zones Chart**
+**Filename:** `restoration-company-financial-benchmarks-zones.jpg`
+**Alt text:** "Bar chart showing healthy, concerning, and critical gross margin zones for restoration companies: above 52% is excellent, 45-52% is the healthy target range, 40-45% is concerning and warrants investigation, below 40% is a structural cost problem requiring immediate attention"
+**Size:** 780×300px
+**Notes:** Horizontal bar with 4 color zones from red (critical) to yellow (concerning) to green (healthy) to bright green (excellent). Benchmark median marker at 50%. Clean, minimal. Dark background.
+
+**Image 2: Multi-Metric Benchmark Comparison**
+**Filename:** `restoration-company-financial-benchmarks-tiers.jpg`
+**Alt text:** "Multi-metric benchmark comparison chart showing healthy ranges for gross margin, net margin, overhead percentage, and AR-to-revenue ratio across three revenue tiers: $1M, $3M, and $5M restoration companies, with green zones indicating healthy performance and yellow/red zones indicating areas of concern"
+**Size:** 780×440px
+**Notes:** Grouped bar chart or table-style visual. Three column groups ($1M, $3M, $5M). Four metrics per group. Color-coded by health (green/yellow/red ranges). Source attribution: RIA CODB 2024.
+
+---
+
+### Post 2: Is Your Restoration Company Actually Profitable?
+**Slug:** `is-your-restoration-company-profitable`
+
+**Image: 5-Number Scorecard**
+**Filename:** `is-your-restoration-company-profitable-scorecard.jpg`
+**Alt text:** "Restoration company profitability scorecard showing five benchmark metrics in a table format: gross margin (target 48-52%, your number blank), AR over 90 days (target under 15% of AR, your number blank), WIP position (target modest net under-billing, your number blank), labor efficiency ratio (target 26-32%, your number blank), and overhead percentage (target 36-40%, your number blank) — with a traffic light status column"
+**Size:** 780×380px
+**Notes:** Clean scorecard table. Five rows (one per KPI). Columns: Metric | Industry Target | Your Number (blank fill-in) | Status (traffic light icon). Dark background. Designed to feel like something printable. Yellow accents.
+
+---
+
+### Post 3: The 10 and 10 Myth
+**Slug:** `ten-and-ten-myth-restoration`
+
+**Image: 10% vs. 38% Overhead Comparison**
+**Filename:** `ten-and-ten-myth-restoration-comparison.jpg`
+**Alt text:** "Side-by-side bar chart comparing Xactimate's 10% overhead assumption to the actual 38% average overhead for restoration contractors, with the 28-point gap highlighted — showing that the O&P line in a typical estimate covers roughly one-quarter of actual overhead costs"
+**Size:** 780×340px
+**Notes:** Two bars. Left: "Xactimate O&P Assumption" — 10% height, yellow. Right: "Actual Overhead" — 38% height, red/orange. Gap between the two is annotated "28-point gap" with arrow. Dark background. Simple and striking.
+
+---
+
+### Post 4: Why Your $3M Company Might Only Be Making $80K
+**Slug:** `3m-restoration-company-take-home-profit`
+
+**Image: $3M Revenue Waterfall Chart**
+**Filename:** `3m-restoration-company-take-home-profit-waterfall.jpg`
+**Alt text:** "Waterfall chart showing $3M restoration company revenue flowing down to take-home profit: starting at $3,000,000 revenue, minus $1,500,000 in direct costs (50% gross margin), equals $1,500,000 gross profit; minus $1,140,000 in overhead (38%), equals $360,000 EBITDA; minus $130,000 owner salary, equals $230,000; minus $90,000 debt service, equals $140,000; minus $58,000 in taxes (estimated), equals $82,000 owner take-home"
+**Size:** 780×400px
+**Notes:** Classic waterfall/cascade chart. Starting bar at $3M descending to $82K. Each step labeled with the deduction amount and category. Running total shown. Color: deductions in red, interim totals in grey, final take-home in yellow. Dark background.
+
+---
+
+### Post 5: What Overhead Percentage Is Healthy?
+**Slug:** `restoration-company-overhead-percentage`
+
+**Image: Overhead Category Stack**
+**Filename:** `restoration-company-overhead-percentage-stack.jpg`
+**Alt text:** "Stacked bar chart showing the 8 overhead categories as a proportion of the 38% total overhead for a typical restoration company: administrative labor 10%, owner comp 7%, vehicles 4%, equipment depreciation 5%, facilities 3%, insurance 4%, marketing 4%, and technology 2% — totaling 38% of revenue"
+**Size:** 780×360px
+**Notes:** Single tall stacked bar representing 38% total overhead. Each segment a different color, labeled with category name and percentage. Second comparison bar showing "efficient company" at 32% for contrast. Dark background, legend at right.
+
+---
+
+### Post 6: AR Days Outstanding for Restoration
+**Slug:** `ar-days-outstanding-restoration`
+
+**Image: AR Window Range Chart by Payer Type**
+**Filename:** `ar-days-outstanding-restoration-ranges.jpg`
+**Alt text:** "Range chart showing normal and concerning AR collection windows by payer type for restoration companies: direct insurance carriers (normal 30-75 days, concerning over 90), TPA programs (normal 45-90 days, concerning over 120), retail/homeowner-pay (normal 15-45 days, concerning over 60), with color-coded zones: green for normal, yellow for follow-up, red for problem"
+**Size:** 780×320px
+**Notes:** Horizontal range bars by payer type (4 rows: Direct Insurance, TPA Programs, RCV Holdback, Retail). Each row shows a green zone (normal), yellow zone (follow-up), red zone (problem) along a day axis from 0 to 180. Clean and scannable. Dark background.
+
+---
+
+*Updated total: 35 images across 29 posts.*

@@ -21,6 +21,7 @@ import QuickAnswer from "@/components/field-notes/QuickAnswer";
 import ReviewBlock from "@/components/field-notes/ReviewBlock";
 import Stat from "@/components/field-notes/Stat";
 import TableOfContents from "@/components/field-notes/TableOfContents";
+import DatasetSchema from "@/components/field-notes/DatasetSchema";
 
 /** MDX component map — available in every Field Notes post */
 const mdxComponents = {
@@ -28,6 +29,7 @@ const mdxComponents = {
   BlogImage,
   Citation,
   Claim,
+  DatasetSchema,
   DecisionMatrix,
   DefinedTerm,
   GlossaryNav,

@@ -323,4 +323,42 @@ export const fieldNotesMeta: Record<
     excerpt:
       "It starts with practicality and ends with a problem that's hard to see because it grew slowly. The office manager–bookkeeper arrangement works fine at $500K. By $1.5M–$2M it's costing you real money — in errors, missed supplements, and financial blind spots. Here's what to watch for.",
   },
+
+  // ── Industry Benchmarks ──────────────────────────────────────────────────
+  "restoration-company-financial-benchmarks": {
+    title: "Restoration Company Financial Benchmarks: What Gross Margin, AR, and Net Profit Should Look Like at $1M, $3M, and $5M",
+    categoryLabel: "Industry Benchmarks",
+    excerpt:
+      "The RIA Cost of Doing Business Report puts average gross margin at 50%, net margin at 14%, and overhead at 38% for insurance restoration contractors. Here's what those numbers look like broken down by revenue tier — and what it means if yours are different.",
+  },
+  "is-your-restoration-company-profitable": {
+    title: "Is Your Restoration Company Actually Profitable? 5 Numbers Every Owner Should Be Able to Answer",
+    categoryLabel: "Industry Benchmarks",
+    excerpt:
+      "Most restoration owners have a rough sense of whether money is coming in. Fewer know their gross margin by service line, their WIP balance, their labor efficiency ratio, or what percentage of their AR is sitting past 90 days. These five numbers tell you whether your company is actually profitable — or just busy.",
+  },
+  "ten-and-ten-myth-restoration": {
+    title: "The '10 and 10' Myth: Why Xactimate Overhead and Profit Doesn't Cover Your Actual Costs",
+    categoryLabel: "Industry Benchmarks",
+    excerpt:
+      "Xactimate's default 10% overhead and 10% profit line assumes your overhead is 10% of job revenue. The RIA Cost of Doing Business Report puts actual restoration contractor overhead at 38%. That 28-point gap is real money — and understanding where it goes changes how you read every estimate you write.",
+  },
+  "3m-restoration-company-take-home-profit": {
+    title: "Why Your $3M Restoration Company Might Only Be Making $80K in Real Take-Home Profit",
+    categoryLabel: "Industry Benchmarks",
+    excerpt:
+      "A $3M restoration company at industry-average margins produces $1.5M in gross profit. After 38% overhead, owner salary, debt service, and taxes, the take-home can land below $100K. Here's the math most owners haven't run — and what it means for how you think about growth.",
+  },
+  "restoration-company-overhead-percentage": {
+    title: "What Overhead Percentage Is Healthy for a Restoration Company?",
+    categoryLabel: "Industry Benchmarks",
+    excerpt:
+      "The RIA Cost of Doing Business Report puts average overhead at 38% of revenue for insurance restoration contractors. That 38% breaks into 8 specific categories — and the healthy range for each varies by revenue size. Here's what's normal, what's high, and where most companies are carrying more than they realize.",
+  },
+  "ar-days-outstanding-restoration": {
+    title: "AR Days Outstanding for Restoration: What's Normal vs. What's a Problem",
+    categoryLabel: "Industry Benchmarks",
+    excerpt:
+      "The RIA Cost of Doing Business Report reports a median AR-to-revenue ratio of 16.5% for insurance restoration contractors — which translates to 60+ days outstanding at typical collection cycles. But 60 days is the median, not the floor. Here's how to read your AR aging, what's normal by payer type, and when 90+ days becomes a real problem.",
+  },
 };
