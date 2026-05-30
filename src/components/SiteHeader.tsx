@@ -5,11 +5,11 @@ import Link from "next/link";
 import Container from "./Container";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "About", href: "#about" },
+  { label: "Services", href: "/#services" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "About", href: "/#about" },
   { label: "Field Notes", href: "/field-notes" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function SiteHeader() {
@@ -19,7 +19,7 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 h-[60px] bg-[rgba(9,9,8,0.78)] backdrop-blur-[14px] border-b border-c3-border relative">
       <Container className="flex items-center gap-6 h-full px-4 sm:px-6 lg:px-[52px] xl:px-20">
       <Link
-        href="#top"
+        href="/"
         aria-label="Cat3 Books home"
         className="inline-flex items-baseline font-disp text-[22px] tracking-[0.04em] leading-none shrink-0"
         onClick={() => setMenuOpen(false)}
@@ -46,7 +46,7 @@ export default function SiteHeader() {
 
       {/* Desktop CTA */}
       <Link
-        href="#contact"
+        href="/#contact"
         className="hidden md:inline-flex ml-auto items-center gap-2 font-cond font-bold text-[12px] tracking-[0.10em] uppercase px-[14px] py-[10px] min-h-[44px] bg-c3-yellow text-[#111] hover:bg-c3-yellow-2 hover:-translate-y-0.5 hover:shadow-[0_10px_32px_rgba(240,190,0,0.15)] transition-all duration-[220ms]"
       >
         Free Assessment →
@@ -95,7 +95,7 @@ export default function SiteHeader() {
           ))}
           <div className="px-5 py-4">
             <Link
-              href="#contact"
+              href="/#contact"
               className="flex items-center justify-center gap-2 font-cond font-bold text-[14px] tracking-[0.10em] uppercase px-[14px] py-[14px] min-h-[52px] bg-c3-yellow text-[#111] hover:bg-c3-yellow-2 transition-colors duration-200"
               onClick={() => setMenuOpen(false)}
             >
