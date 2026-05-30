@@ -5,13 +5,18 @@ import { cn } from "@/lib/cn";
 export const CATEGORIES = [
   { key: "all",         label: "All Topics" },
   { key: "frameworks",  label: "Decision Frameworks" },
+  { key: "benchmarks",  label: "Industry Benchmarks" },
   { key: "jobcosting",  label: "Job Costing" },
   { key: "pl",          label: "P&L Management" },
+  { key: "hiring",      label: "Hiring & Outsourcing" },
   { key: "software",    label: "Software Reviews" },
   { key: "qb",          label: "QuickBooks Guides" },
   { key: "profit",      label: "Profitability" },
   { key: "supplements", label: "Supplements & TPAs" },
   { key: "cashflow",    label: "Cash Flow" },
+  { key: "guides",      label: "Definitive Guides" },
+  { key: "research",    label: "Industry Research" },
+  { key: "reference",   label: "Reference" },
 ];
 
 interface Props {
