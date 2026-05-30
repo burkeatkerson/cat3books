@@ -224,3 +224,75 @@ Only the tax-legal glossary (post 5) has an explicit BlogImage. The other 4 exis
 ---
 
 *Total images to create (all files): 22 images across 17 posts. Priority by citation value: Pillar Guide 2 (Job Costing Framework) > Pillar Guide 5 (M&A landscape) > Thesis Post 1 (Generic vs. Specialized) > Post 5 (QBO-centered stack hub diagram) > Thesis Post 2 (True cost stacked bar).*
+
+---
+
+## Hiring & Outsourcing Series (Bundle 5)
+
+### Post 1: The Real Cost of Hiring an In-House Bookkeeper
+**Slug:** `real-cost-in-house-bookkeeper-restoration`
+
+**Image: True Cost Stacked Bar**
+**Filename:** `real-cost-in-house-bookkeeper-restoration-stacked.jpg`
+**Alt text:** "Stacked bar chart showing the true annual cost of hiring an in-house bookkeeper for a restoration company — base salary $52,000 plus six additional cost layers: employer burden $14,000, ramp cost $6,500, training $1,200, software $1,200, turnover risk annualized $12,000, and owner oversight time $18,000 — totaling $104,900 versus the apparent job listing cost of $52,000"
+**Size:** 780×420px
+**Notes:** Two bars side by side. Left bar: "Job Listing" (short, single color, $52K). Right bar: "True Cost" (tall, 6 color segments stacked, ~$105K). Each segment labeled with category name and dollar amount. Red/orange palette for cost bars. Dark background, yellow accent labels.
+
+---
+
+### Post 2: In-House vs. Outsourcing Cost Comparison
+**Slug:** `in-house-vs-outsourcing-bookkeeping-restoration`
+
+**Image: Year 1 vs. Year 3 Cost Comparison**
+**Filename:** `in-house-vs-outsourcing-bookkeeping-restoration-cost.jpg`
+**Alt text:** "Two-panel cost comparison for a $2M restoration company: Year 1 in-house bookkeeper cost ($107,860 all-in) versus Year 1 outsourced specialist cost ($30,000) showing $77,860 annual difference; Year 3 comparison showing in-house at $95,360 (recurring burden plus turnover risk) versus outsourced at $32,000, with $63,360 annual difference"
+**Size:** 780×380px
+**Notes:** Side-by-side grouped bar chart with two groups (Year 1, Year 3). Each group has two bars: In-House (red/tall) and Outsourced (yellow/short). Dollar amounts labeled on each bar. Gap annotation showing the annual difference. Dark background.
+
+---
+
+### Post 3: Bookkeeper vs. Controller vs. CFO
+**Slug:** `bookkeeper-vs-controller-vs-cfo-restoration`
+
+**Image: Revenue-Stage Role Staircase**
+**Filename:** `bookkeeper-vs-controller-vs-cfo-restoration-staircase.jpg`
+**Alt text:** "Revenue-stage staircase showing when to add each financial role at a restoration company: under $500K — basic bookkeeping only; $500K to $2M — specialized restoration bookkeeper essential; $2M to $3M — specialized bookkeeper plus optional fractional CFO for active strategic decisions; $3M to $7M — specialized bookkeeper plus fractional CFO non-negotiable; $7M to $10M — specialized bookkeeper plus controller or VP Finance plus fractional or part-time CFO; over $10M — full internal finance function with bookkeeper, controller, and full-time CFO"
+**Size:** 780×400px
+**Notes:** Ascending staircase left to right. Six steps labeled with revenue ranges. Each step shows which roles are added (bookkeeper, fractional CFO, controller, full CFO). Yellow accent for the Fractional CFO addition step at $3M (the key threshold). Dark background.
+
+---
+
+### Post 4: 5 Questions to Ask Before Hiring a Bookkeeper
+**Slug:** `questions-to-ask-bookkeeper-restoration`
+
+**Image: Interview Question Checklist**
+**Filename:** `questions-to-ask-bookkeeper-restoration-checklist.jpg`
+**Alt text:** "Clean interview checklist showing the five questions to ask a restoration bookkeeper candidate: (1) Xactimate revenue workflow — can they describe ACV invoice, holdback tracking, and RCV trigger; (2) ACV/RCV staging in QBO — can they describe two separate accounting events with correct period treatment; (3) Supplement tracking — do they describe a systematic log with monthly reconciliation; (4) Two-party check handling — do they know it requires dual endorsement and describe the process; (5) WIP schedule capability — do they know what WIP is and what inputs it requires. Scoring guide: 5/5 = specialist; 3-4/5 = competent generalist who can be trained; below 3/5 = not ready for restoration"
+**Size:** 780×440px
+**Notes:** Clean checklist layout. Five numbered rows, each with the question text and a brief "right answer" note. Checkbox column on the left. Scoring guide at the bottom. Dark background, yellow question numbers, white text. Feels like something you'd screenshot to use in an interview.
+
+---
+
+### Post 5: When Does a Restoration Company Need a Fractional CFO?
+**Slug:** `fractional-cfo-restoration-company`
+
+**Image: Fractional CFO Scope Visual**
+**Filename:** `fractional-cfo-restoration-company-scope.jpg`
+**Alt text:** "Fractional CFO scope visual showing what's included versus what's not: included (13-week cash flow forecast, monthly WIP reporting, budget vs. actual analysis, lender package preparation, financial modeling for major decisions, monthly advisory call) versus not included (bookkeeping and transaction entry, tax preparation and filing, payroll processing, day-to-day AR follow-up, legal or entity structuring)"
+**Size:** 780×380px
+**Notes:** Two-column layout. Left column (green/yellow): "What's Included" with 6 items and check icons. Right column (muted/grey): "What's Not Included" with 5 items and X icons. Header: "Fractional CFO Scope — $3M–$7M Restoration Company." Dark background.
+
+---
+
+### Post 6: My Office Manager Is Doing My Books
+**Slug:** `office-manager-doing-books-restoration`
+
+**Image: Revenue-Stage Warning Signs**
+**Filename:** `office-manager-doing-books-restoration-warning.jpg`
+**Alt text:** "Revenue-stage warning signs visual for the office manager doing books arrangement: at $500K to $750K — arrangement works, minor gaps acceptable; at $750K to $1.2M — month-end delays begin, job costing inconsistent, first supplement tracking gaps; at $1.2M to $1.8M — ACV/RCV staging errors, supplement backlog accumulates, AR aging becomes unreliable; at $1.8M to $2.5M — P&L is structurally wrong, supplements uncollected at scale, job margins meaningless; above $2.5M — books are a liability not an asset, financial decisions made without reliable data"
+**Size:** 780×400px
+**Notes:** Horizontal timeline with 5 revenue zones labeled. Each zone has a color indicator (green → yellow → orange → red) and 2–3 bullet warning signs. The $1.5M–$2M zone should be visually highlighted as the typical "ceiling" point. Dark background, clear typography.
+
+---
+
+*Updated total: 28 images across 23 posts.*

@@ -285,4 +285,42 @@ export const fieldNotesMeta: Record<
     excerpt:
       "Your estimating platform choice does affect your bookkeeping workflow — but probably less than you think. The core accounting steps are the same. The differences are in export quality, supplement tracking, and manual mapping work.",
   },
+
+  // ── Hiring & Outsourcing ─────────────────────────────────────────────────
+  "real-cost-in-house-bookkeeper-restoration": {
+    title: "The Real Cost of Hiring an In-House Bookkeeper for a Restoration Company ($65K Isn't the Answer)",
+    categoryLabel: "Hiring & Outsourcing",
+    excerpt:
+      "The Indeed listing says $45K–$65K. The real all-in cost — salary, burden, ramp time, training, turnover risk, and your own management overhead — runs $80,000–$110,000 per year. Here's the full math, line by line.",
+  },
+  "in-house-vs-outsourcing-bookkeeping-restoration": {
+    title: "Hiring an In-House Bookkeeper vs. Outsourcing: The Real Cost Comparison for a $2M Restoration Company",
+    categoryLabel: "Hiring & Outsourcing",
+    excerpt:
+      "A side-by-side comparison of every meaningful dimension — cost, time-to-productivity, restoration expertise, scalability, and risk — for a $2M restoration company choosing between in-house and outsourced bookkeeping. The math favors outsourcing in Year 1. The Year 3 picture is even more lopsided.",
+  },
+  "bookkeeper-vs-controller-vs-cfo-restoration": {
+    title: "Bookkeeper, Controller, or CFO: Which One Does Your Restoration Company Need?",
+    categoryLabel: "Hiring & Outsourcing",
+    excerpt:
+      "Three roles. Three different functions. Most restoration owners conflate them — and either overpay for overhead they don't need yet, or underpay and leave financial blind spots that compound. Here's the plain-English breakdown mapped to your revenue stage.",
+  },
+  "questions-to-ask-bookkeeper-restoration": {
+    title: "5 Questions to Ask Before Hiring a Bookkeeper for Your Restoration Company",
+    categoryLabel: "Hiring & Outsourcing",
+    excerpt:
+      "Most restoration owners can't tell a specialist from a generalist in an interview. These five questions change that — each one has a wrong answer that's easy to give, and a right answer that only someone with actual restoration bookkeeping experience would know.",
+  },
+  "fractional-cfo-restoration-company": {
+    title: "When Does a Restoration Company Need a Fractional CFO? The Deliverables That Pay for Themselves",
+    categoryLabel: "Hiring & Outsourcing",
+    excerpt:
+      "A fractional CFO isn't a luxury title or a vague 'strategic advisor.' For a $3M–$7M restoration company, it's four specific deliverables: a 13-week cash forecast, WIP reporting, bank covenant prep, and sale preparation. Here's what each one costs and what each one returns.",
+  },
+  "office-manager-doing-books-restoration": {
+    title: "My Office Manager Is Doing My Books. Here's When That Stops Working.",
+    categoryLabel: "Hiring & Outsourcing",
+    excerpt:
+      "It starts with practicality and ends with a problem that's hard to see because it grew slowly. The office manager–bookkeeper arrangement works fine at $500K. By $1.5M–$2M it's costing you real money — in errors, missed supplements, and financial blind spots. Here's what to watch for.",
+  },
 };
