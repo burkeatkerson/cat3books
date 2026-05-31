@@ -1,0 +1,474 @@
+---
+title: "The Insurance Job Setup SOP in QuickBooks Online (From First Call to First Invoice)"
+date: "2026-05-31"
+updatedDate: "2026-05-31"
+excerpt: "Step-by-step SOP for setting up an insurance restoration job in QuickBooks Online — 28 steps across 7 phases, from the first-call intake to the first ACV invoice."
+tags:
+  - "restoration SOP"
+  - "QuickBooks Online setup"
+  - "insurance job setup"
+  - "ACV invoicing"
+  - "QBO Projects"
+  - "class tracking"
+author: "Cat3 Books"
+category: "sop"
+categoryLabel: "Standard Operating Procedures"
+coverStyle: "cv-grid"
+coverGlyph: "28\nSTEPS"
+coverSub: "First call to first invoice"
+issueNumber: "№ 089"
+readTime: "18 min"
+featured: false
+contentType: "sop"
+priority: 0.9
+keywords:
+  - "how to set up an insurance job in QuickBooks Online"
+  - "QuickBooks Online insurance restoration job setup"
+  - "QBO project vs sub-customer restoration"
+  - "ACV invoice QuickBooks restoration"
+  - "claim number tracking QuickBooks"
+  - "QBO class tracking restoration service lines"
+  - "insurance job intake SOP"
+  - "first invoice restoration QuickBooks"
+howTo:
+  totalTime: "PT2H"
+  estimatedCost: "$0 — software you already own"
+  supply:
+    - "Completed first-call intake form (homeowner, carrier, claim #, adjuster, TPA)"
+    - "Signed work authorization / direction-to-pay"
+    - "Approved Xactimate or Symbility estimate (PDF + line-item export)"
+    - "Loss photos and pre-existing damage documentation"
+    - "Moisture and drying logs (if mitigation has started)"
+  tool:
+    - "QuickBooks Online (admin or standard-with-Projects access)"
+    - "Xactimate or Symbility license (read access to the approved estimate)"
+    - "Job management platform or shared drive for document storage"
+howToSteps:
+  - name: "Capture homeowner and loss-location details"
+    text: "Record the homeowner's full name, property address, phone, email, and the loss type and date during the first call."
+    url: "#step-1"
+  - name: "Record the carrier and policy details"
+    text: "Capture the insurance carrier name, policy number, and policy type before the call ends."
+    url: "#step-2"
+  - name: "Record the claim number and adjuster"
+    text: "Get the claim number, adjuster name, adjuster phone, and adjuster email — the claim number is the spine of the entire job record."
+    url: "#step-3"
+  - name: "Identify the TPA program and fee, if any"
+    text: "Determine whether the job came through a TPA program and record the program name and fee percentage."
+    url: "#step-4"
+  - name: "Decide parent customer vs sub-customer structure"
+    text: "Use the decision table to choose between a standalone customer, a sub-customer of a parent, or a QBO Project."
+    url: "#step-5"
+  - name: "Create or locate the parent customer in QBO"
+    text: "Create the customer record in Sales > Customers, or locate the existing parent if this homeowner or carrier already exists."
+    url: "#step-6"
+  - name: "Create the QBO Project or sub-customer for the job"
+    text: "Create a Project (or sub-customer billed with parent) named with a consistent claim-number convention."
+    url: "#step-7"
+  - name: "Apply the carrier, claim, and service-line tags"
+    text: "Set the QBO Class to the service line and record the carrier and claim number in the customer fields and Project name."
+    url: "#step-8"
+  - name: "Confirm class tracking and Projects are enabled"
+    text: "Verify in Account and Settings that Class tracking and Projects are turned on before adding any items."
+    url: "#step-9"
+  - name: "Select the correct revenue service items by peril"
+    text: "Map the job to the right water, fire, or mold service items so revenue lands in the correct income accounts."
+    url: "#step-10"
+  - name: "Map service items to income and COGS accounts"
+    text: "Confirm each service item points to the correct income account and, for two-sided items, the correct cost account."
+    url: "#step-11"
+  - name: "Create any missing service items for this peril"
+    text: "Add any missing service items (e.g. Mold Containment, Pack-Out) following the established naming convention."
+    url: "#step-12"
+  - name: "Pull the approved estimate and confirm the scope total"
+    text: "Open the approved Xactimate or Symbility estimate and confirm the RCV, ACV, and depreciation figures."
+    url: "#step-13"
+  - name: "Map estimate line items to QBO service items"
+    text: "Group the estimate line items by service line and map each group to a QBO service item."
+    url: "#step-14"
+  - name: "Record the equipment-days line for mitigation"
+    text: "Capture the equipment-day quantities from the estimate as a billable line so equipment revenue is tracked."
+    url: "#step-15"
+  - name: "Enter the estimate as an Estimate in QBO"
+    text: "Enter the approved scope as a QBO Estimate on the Project so it can be progress-invoiced and variance-tracked."
+    url: "#step-16"
+  - name: "Calculate the ACV amount for the first invoice"
+    text: "Subtract recoverable depreciation from the RCV to get the ACV amount to bill on the first invoice."
+    url: "#step-17"
+  - name: "Create the ACV invoice from the estimate"
+    text: "Create the first invoice from the QBO Estimate for the ACV amount, dated when scope was approved."
+    url: "#step-18"
+  - name: "Record the deductible correctly"
+    text: "Show the homeowner deductible as a separate receivable or line so carrier and homeowner balances are not blended."
+    url: "#step-19"
+  - name: "Record the TPA program fee as a job cost"
+    text: "Post the TPA program fee to a cost-of-revenue account allocated to the Project, never netted against revenue."
+    url: "#step-20"
+  - name: "Attach the approved estimate to the QBO records"
+    text: "Attach the estimate PDF and approval email to the customer/Project and the invoice for the audit trail."
+    url: "#step-21"
+  - name: "Upload loss and pre-existing-condition photos"
+    text: "Store dated loss photos and pre-existing damage photos in the job folder linked from QBO."
+    url: "#step-22"
+  - name: "File moisture and drying logs"
+    text: "Attach moisture readings and drying logs to support equipment-day billing and any future supplement."
+    url: "#step-23"
+  - name: "Record the work authorization and direction to pay"
+    text: "Attach the signed work authorization and direction-to-pay so the receivable is enforceable."
+    url: "#step-24"
+  - name: "Set AR aging by job stage on the Project"
+    text: "Tag the receivable by stage (ACV, holdback, supplement) so it ages on the correct collection clock."
+    url: "#step-25"
+  - name: "Schedule the first adjuster follow-up"
+    text: "Set a follow-up task to confirm the carrier received the ACV invoice and payment is in process."
+    url: "#step-26"
+  - name: "Set the holdback and supplement reminders"
+    text: "Create reminders to invoice the RCV holdback at completion and to track any supplements separately."
+    url: "#step-27"
+  - name: "Run a setup QA check before handing off"
+    text: "Run a final checklist confirming class, claim number, estimate, invoice, and documents are all correct."
+    url: "#step-28"
+faqItems:
+  - question: "How do I set up an insurance restoration job in QuickBooks Online?"
+    answer: "Set it up in seven phases: capture the first-call intake (homeowner, carrier, claim #, adjuster, TPA), create the customer and a QBO Project, select the right service items by peril, reference the approved Xactimate estimate, generate the first ACV invoice, attach the documentation, and set the AR aging and follow-up cadence. The whole setup takes about two hours if your intake form is complete."
+  - question: "Should I use a QBO Project or a sub-customer for an insurance job?"
+    answer: "Use a QBO Project for almost every insurance restoration job — it gives you a job-level P&L, progress invoicing from the estimate, and clean job costing. Use a sub-customer only when your QBO plan does not include Projects, or when a single property owner has multiple unrelated jobs you want grouped under one parent. Never set up an insurance job as a flat customer with no project layer."
+  - question: "What is the difference between ACV and RCV when I create the first invoice?"
+    answer: "RCV (Replacement Cost Value) is the full cost to restore without depreciation. ACV (Actual Cash Value) is RCV minus recoverable depreciation — the amount the carrier pays first. Your first invoice is for the ACV amount. The depreciation (the holdback) becomes a second invoice you create when repairs are complete and documentation is submitted."
+  - question: "Where do I record the claim number in QuickBooks Online?"
+    answer: "Record the claim number in two places: in the customer or Project name (using a consistent convention like LastName-Claim#) and in a custom field or the Notes section of the customer record. Putting it in the name makes it searchable and visible on invoices; putting it in a field keeps it queryable for reporting. Never rely on memory or a separate spreadsheet alone."
+  - question: "How do I handle the homeowner deductible in QuickBooks?"
+    answer: "The deductible is the homeowner's responsibility, not the carrier's, so it must be tracked separately. Show it either as a separate invoice to the homeowner or as a clearly labeled line on the job so the carrier portion and homeowner portion never blend in AR aging. Blending them is the single most common cause of restoration AR confusion."
+  - question: "How do I record a TPA program fee in QuickBooks Online?"
+    answer: "Post the TPA program fee to a cost-of-revenue account (for example 'TPA Program Fees') and allocate it to the specific Project, using the program's percentage of the job revenue. Never net the fee against revenue — show gross revenue and the fee as a separate direct cost so your job-level margin is accurate."
+  - question: "Do I need class tracking turned on to set up an insurance job?"
+    answer: "Yes. Turn on Class tracking in Account and Settings > Advanced > Categories before you set up the job, and assign a class for the service line (Water, Fire, Mold, Contents, Reconstruction). Class tracking lets you see revenue and margin by service line across all jobs — something Projects alone cannot give you."
+  - question: "When should I post the ACV invoice — at scope approval or at cash receipt?"
+    answer: "Post the ACV invoice when the carrier approves the scope, not when the check arrives. Accrual-basis accounting requires recognizing the receivable when it is earned. Waiting for cash understates your AR, hides collection delays, and distorts the timing of your revenue. Date the invoice the day the adjuster signed off on the estimate."
+  - question: "How do I enter the Xactimate estimate into QuickBooks Online?"
+    answer: "Enter the approved scope as a QBO Estimate on the Project. Group the Xactimate line items by service line, map each group to a QBO service item, and capture equipment-days as their own line. Entering it as an Estimate lets you progress-invoice the ACV and holdback from the same document and track variance against actuals."
+  - question: "What documents should I attach to the QBO job at setup?"
+    answer: "Attach the approved estimate PDF, the carrier approval email, the signed work authorization and direction-to-pay, dated loss and pre-existing-condition photos, and the moisture and drying logs. These build the audit trail that supports your invoice and any future supplement. Attach them to the customer/Project and to the invoice itself."
+  - question: "How do I age insurance AR by job stage in QuickBooks?"
+    answer: "Tag each receivable by stage — ACV, RCV holdback, or supplement — using separate invoices or memo labels, then run AR aging filtered by stage and TPA program. ACV over 45 days, holdback over 90 days post-completion, and supplements over 45 days each need different follow-up. Calendar-only aging cannot tell you which clock a receivable is on."
+  - question: "What is the fastest way to set up a new insurance job correctly?"
+    answer: "Use a complete first-call intake form so you are not chasing missing fields later. With a complete intake, the QBO setup is mechanical: customer, Project, class, service items, estimate, ACV invoice, documents, follow-up. The bottleneck is almost always incomplete intake, not the QuickBooks steps themselves."
+  - question: "Can I set up the job before the carrier approves the scope?"
+    answer: "Yes — create the customer, Project, class, and service items immediately so mitigation costs are captured from day one, but do not post the ACV invoice until the scope is approved. Setting up the cost side early and the revenue side at approval keeps both your job costing and your revenue recognition correct."
+  - question: "How long should setting up an insurance job in QuickBooks take?"
+    answer: "About two hours per job with a complete intake form: roughly 20 minutes for intake review, 30 minutes for customer/Project/item setup, 30 minutes for estimate entry and the ACV invoice, and 30 minutes for documentation and follow-up scheduling. If it is taking far longer, your intake form is incomplete or your service-item list is not standardized."
+faqItemsNote: "FAQ items drive FAQPage schema."
+---
+
+<AnswerBlock>
+Setting up an insurance restoration job in QuickBooks Online is a 28-step procedure across 7 phases, completed in about 2 hours per job: first-call intake (steps 1–4), customer and Project setup (5–8), service-item selection (9–12), Xactimate estimate reference (13–16), first ACV invoice generation (17–20), documentation handoff (21–24), and AR aging plus follow-up cadence (25–28). The first invoice is always for the ACV amount (RCV minus recoverable depreciation), posted when the carrier approves the scope — not when the check arrives. Every job is built as a QBO Project tagged with its carrier, claim number, and service-line class so it produces a job-level P&L from day one.
+</AnswerBlock>
+
+# The Insurance Job Setup SOP in QuickBooks Online (From First Call to First Invoice)
+
+This SOP covers the exact, repeatable procedure for setting up a single insurance restoration job in QuickBooks Online — from the moment the phone rings to the first ACV invoice going out the door. It is written so a new office manager or bookkeeper can execute it without supervision. Every restoration job that flows through your books should be built the same way, every time.
+
+It is used by office managers, project coordinators, and bookkeepers at water, fire, and mold restoration companies. The accounting structure here follows accrual-basis revenue recognition and the ACV / RCV / holdback model used across the insurance industry; the service-line classifications align with IICRC scopes (S500 water, S520 mold, S700 fire/smoke). For deeper background, see the [complete guide to insurance billing accounting for restoration](/field-notes/complete-guide-insurance-billing-accounting-restoration) and the [restoration insurance glossary](/field-notes/restoration-insurance-glossary).
+
+The output of this SOP is a fully configured QBO job: a Project tagged with carrier, claim number, and service-line class; the approved estimate entered; the first ACV invoice posted; documentation attached; and a follow-up cadence scheduled.
+
+## Prerequisites
+
+- **QBO access** — admin access, or standard access on a Plus/Advanced plan that includes Projects and Class tracking.
+- **A completed first-call intake form** — homeowner details, carrier, claim number, adjuster contact, and TPA program if applicable.
+- **The signed work authorization and direction-to-pay** — the documents that make the receivable enforceable.
+- **The approved estimate** — Xactimate or Symbility PDF plus a line-item export.
+- **Knowledge of your service-item list and class structure** — see [QBO class tracking for restoration](/field-notes/qbo-class-tracking-restoration).
+- **Familiarity with ACV / RCV / holdback terms** — see the [restoration accounting terminology reference](/field-notes/restoration-accounting-terminology-reference).
+
+## Materials & Tools Required
+
+<DecisionMatrix title="Tools and Inputs for Insurance Job Setup">
+
+| Item | Type | Used in steps | Notes |
+|---|---|---|---|
+| QuickBooks Online (Plus/Advanced) | Software | All | Projects + Class tracking required |
+| Xactimate or Symbility license | Software | 13–16 | Read access to approved estimate |
+| First-call intake form | Document | 1–4 | Drives everything downstream |
+| Signed work authorization / direction-to-pay | Document | 24 | Makes the receivable enforceable |
+| Approved estimate (PDF + export) | Document | 13–18, 21 | Source of RCV/ACV/depreciation |
+| Loss + pre-existing photos | Document | 22 | Audit trail and supplement support |
+| Moisture/drying logs | Document | 23 | Supports equipment-day billing |
+| Job folder (drive or platform) | Storage | 21–24 | Linked from the QBO Project |
+
+</DecisionMatrix>
+
+<BlogImage alt="A decision-tree diagram titled 'QBO Project vs Sub-customer setup for an insurance restoration job.' The start node 'New insurance job' branches first on whether the QBO plan includes Projects. The 'Projects available' path leads to a 'Create QBO Project' leaf, which is the default for nearly all jobs and yields a job-level P&L and progress invoicing. The 'Projects not available' path and the 'single owner, multiple unrelated jobs' path lead to a 'Sub-customer of parent, Bill with parent' leaf. Each leaf is annotated with the tagging convention applied: a Class for the service line (Water, Fire, Mold, Contents, Reconstruction), the carrier name in the customer record, and the claim number embedded in the Project or sub-customer name using a LastName-Claim number convention." caption="Decision tree: how to choose a QBO Project versus a sub-customer for an insurance job, with the carrier / claim / service-line tagging applied at each leaf." width={820} height={480} />
+
+## Phase 1 — First-Call Intake (Steps 1–4)
+
+<QuickAnswer>
+The first call sets up everything downstream. Capture the homeowner, the carrier and policy, the claim number and adjuster, and any TPA program before the call ends. A complete intake form turns the entire QBO setup into a mechanical 90 minutes; an incomplete one turns it into a week of chasing.
+</QuickAnswer>
+
+<Claim label="Core Principle">
+The claim number is the spine of the job record. Everything — the Project name, the invoice, the documentation, the AR follow-up — hangs off it. Capture it correctly on the first call or you will fight it for the life of the job.
+</Claim>
+
+<SOPStep n={1} name="Capture homeowner and loss-location details" time="5 min" check="Property address, homeowner name, phone, email, loss type, and loss date are all recorded." escalate="Loss date is more than 14 days before the call — flag for coverage-timing review.">
+On the first call, record the homeowner's full legal name (as it will appear on the claim and check), the property address, phone, email, the **loss type** (water, fire, mold, etc.), and the **date of loss**. Use a standardized intake form so no field is skipped. The homeowner name must match the carrier's records exactly, because it determines how a two-party check is made out.
+</SOPStep>
+
+<SOPStep n={2} name="Record the carrier and policy details" time="3 min" check="Carrier name, policy number, and policy type are recorded and legible." escalate="Homeowner cannot provide carrier or policy info — escalate to the adjuster or agent before proceeding.">
+Capture the **insurance carrier** name, the **policy number**, and the policy type (homeowner, commercial, flood). The carrier name becomes a searchable field on the customer record and drives which TPA program rules and follow-up cadence apply. If the homeowner is unsure of the carrier, the declarations page or a prior bill will have it.
+</SOPStep>
+
+<SOPStep n={3} name="Record the claim number and adjuster" time="4 min" where="Intake form > Claim section" check="Claim number, adjuster name, adjuster phone, and adjuster email are all captured." escalate="No claim number yet — the homeowner must open a claim before scope work begins; flag and follow up.">
+Record the **claim number**, the assigned **adjuster's** name, direct phone, and email. The claim number is the single most important field in the entire setup — it is the key you will use to name the Project, label the invoice, and organize documentation. If a claim has not been filed yet, note that and set a reminder; do not invent a placeholder you will forget to replace.
+</SOPStep>
+
+<SOPStep n={4} name="Identify the TPA program and fee, if any" time="3 min" check="TPA program name and fee percentage recorded, or 'direct / no TPA' confirmed." escalate="TPA program is unfamiliar or fee terms are unknown — confirm the agreement before accepting the job.">
+Determine whether the job came through a **Third-Party Administrator (TPA)** program (Contractor Connection, Alacrity, Sedgwick, etc.) and record the program name and the **fee percentage** that program charges. The fee is a real job cost you will post in Step 20. If you are unsure how TPA fees should flow through the books, review [how supplements disappear between Xactimate and QuickBooks](/field-notes/supplements-disappear-xactimate-quickbooks) and the [code-blue test for TPA programs](/field-notes/code-blue-test-tpa-programs).
+</SOPStep>
+
+## Phase 2 — Customer Setup in QuickBooks Online (Steps 5–8)
+
+<QuickAnswer>
+Decide the structure first, then build it. For almost every insurance job the answer is a QBO Project under a customer record, named with a consistent claim-number convention and tagged with a service-line class. The decision table below tells you when a sub-customer is the right call instead.
+</QuickAnswer>
+
+<DecisionMatrix title="Project vs Sub-customer Decision">
+
+| Situation | Use a QBO Project | Use a Sub-customer | Why |
+|---|---|---|---|
+| Standard single insurance job | ✓ | | Job-level P&L + progress invoicing from estimate |
+| QBO plan without Projects | | ✓ | Projects feature unavailable; sub-customer is the fallback |
+| One owner, multiple unrelated jobs | | ✓ (parent) + Project each | Group under one parent, each loss is its own Project |
+| Commercial client, many properties | ✓ (Project per loss) | ✓ (parent per client) | Parent = client, Project = each property/loss |
+| Quick T&M job, no insurance | ✓ (optional) | | Project still gives clean job costing |
+
+</DecisionMatrix>
+
+<SOPStep n={5} name="Decide parent customer vs sub-customer structure" time="3 min" check="Structure chosen and documented: standalone customer + Project, or parent + sub-customer." escalate="Multi-property commercial client — confirm the parent/Project hierarchy with the bookkeeper before building.">
+Using the decision table above, choose the structure. **Default: a standalone customer record with a QBO Project for the job.** Use a sub-customer only when your plan lacks Projects, or when one property owner or commercial client has multiple distinct losses you want grouped under a single parent. Decide before you click anything — restructuring later is painful.
+</SOPStep>
+
+<SOPStep n={6} name="Create or locate the parent customer in QBO" time="5 min" where="Sales > Customers > New customer" check="Customer exists with correct display name, billing address, and carrier recorded in a custom field or Notes." escalate="A near-duplicate customer already exists — merge or reuse rather than creating a duplicate.">
+Go to **Sales > Customers > New customer**. Search first to avoid duplicates. Enter the homeowner (or commercial client) as the display name, set the property as the billing/service address, and record the **carrier name** in a custom field or the Notes. If the homeowner already exists from a prior job, reuse the record and add a new Project rather than creating a second customer.
+</SOPStep>
+
+<SOPStep n={7} name="Create the QBO Project or sub-customer for the job" time="6 min" where="Projects > New project (or Sales > Customers > New customer > toggle 'Is sub-customer' > Bill with parent)" check="Project (or sub-customer) created and named with the standard convention, e.g. 'Smith — Claim 24-882910 — Water'." escalate="Two open jobs at the same address — confirm they are separate claims before creating two Projects.">
+Create the job container. For a Project: **Projects > New project**, select the customer, and name it with your standard convention — **LastName — Claim# — Service line**. For a sub-customer: **Sales > Customers > New customer**, toggle **'Is sub-customer'**, select the parent, and set **'Bill with parent'**. Consistent naming is what makes the claim number searchable forever.
+</SOPStep>
+
+<SOPStep n={8} name="Apply the carrier, claim, and service-line tags" time="4 min" where="Project name + customer Notes/custom field; Class set on each transaction" check="Claim number is in the Project name AND a queryable field; service-line class is identified." escalate="No class exists for this service line — create one in Step 9 before posting any transaction.">
+Apply your three core tags: the **carrier** (customer field), the **claim number** (Project name + custom field/Notes), and the **service-line class** (Water, Fire, Mold, Contents, Reconstruction) which you will assign on each transaction. These tags are what let you slice revenue by carrier and by service line later. See [QBO class tracking for restoration](/field-notes/qbo-class-tracking-restoration) for the full class structure.
+</SOPStep>
+
+## Phase 3 — Service Item Selection (Steps 9–12)
+
+<QuickAnswer>
+Service items decide which income and cost accounts a job's dollars land in. Confirm Class tracking and Projects are on, then select the right items for the peril — water, fire, or mold — and create any that are missing using your naming convention. Get this wrong and every report downstream is wrong.
+</QuickAnswer>
+
+<SOPStep n={9} name="Confirm class tracking and Projects are enabled" time="3 min" where="Account and Settings > Advanced > Categories (turn on Track classes); Account and Settings > Advanced > Projects" check="Class tracking and Projects both show 'On'; class list includes your service lines." escalate="You lack admin rights to change settings — request access from the account admin before continuing.">
+Open **Account and Settings > Advanced > Categories** and confirm **Track classes** is on (set 'Warn me when a transaction is not assigned a class'). Confirm **Projects** is on under the same Advanced tab. If a service-line class is missing, add it under **Settings (gear) > All lists > Classes**. Do not post any transaction until classes are live, or you will have to re-class later.
+</SOPStep>
+
+<SOPStep n={10} name="Select the correct revenue service items by peril" time="6 min" where="Settings (gear) > Products and services" check="The peril-appropriate service items exist: Water Mitigation, Fire/Smoke, Mold Remediation, Contents, Reconstruction." escalate="Job spans multiple perils (e.g. fire + water) — confirm split with the bookkeeper so revenue is mapped to both.">
+In **Settings (gear) > Products and services**, identify the service items that match this job's peril. **Water** jobs use Water Mitigation, Structural Drying, Equipment Rental, Antimicrobial. **Fire** jobs use Emergency Board-Up, Smoke/Soot Cleaning, Contents Pack-Out, Deodorization. **Mold** jobs use Mold Containment, Remediation, Air Scrubbing, Post-Remediation. Mapping to the correct items keeps revenue in the correct income accounts.
+</SOPStep>
+
+<SOPStep n={11} name="Map service items to income and COGS accounts" time="5 min" where="Settings (gear) > Products and services > Edit item > Income/Expense accounts" check="Each item points to the correct income account; two-sided items also point to the correct cost-of-revenue account." escalate="An item is mapped to a generic 'Sales' or 'Uncategorized' account — fix before using it.">
+Edit each service item you will use and confirm it points to the right **income account** and, for two-sided (purchase + sell) items, the right **cost-of-revenue account**. Restoration job costing depends on revenue and direct costs landing in matched accounts so you can read a real job-level margin. See [how to read a job-level P&L](/field-notes/how-to-read-a-job-level-pl) for why this mapping matters.
+</SOPStep>
+
+<SOPStep n={12} name="Create any missing service items for this peril" time="5 min" where="Settings (gear) > Products and services > New" check="New items created with consistent names, mapped to correct income/cost accounts, and assigned a default class where possible." escalate="You are tempted to create a one-off 'Misc' item — stop; map to an existing standard item instead.">
+If the peril needs an item that does not exist (e.g. **Mold Containment** or **Contents Pack-Out**), create it via **Products and services > New**, following your naming convention and account mapping from Step 11. Resist creating one-off 'Miscellaneous' items — they destroy your ability to report by service line. Build the standard library once and reuse it on every job.
+</SOPStep>
+
+## Phase 4 — Xactimate Estimate Reference (Steps 13–16)
+
+<QuickAnswer>
+The approved estimate is your source of truth for what to bill. Confirm the RCV, ACV, and depreciation, group the line items by service line, capture equipment-days, and enter the scope as a QBO Estimate so you can progress-invoice the ACV now and the holdback later from the same document.
+</QuickAnswer>
+
+<SOPStep n={13} name="Pull the approved estimate and confirm the scope total" time="6 min" check="RCV total, recoverable depreciation, and ACV total are confirmed against the carrier-approved estimate." escalate="The estimate is not yet carrier-approved — set up the cost side only; do not post revenue (see Step 18).">
+Open the carrier-approved **Xactimate or Symbility** estimate. Confirm three figures: the **RCV** (replacement cost value, the full scope), the **recoverable depreciation**, and the **ACV** (RCV minus depreciation). These three numbers drive your invoicing. If you are unclear on the terms, see the [restoration insurance glossary](/field-notes/restoration-insurance-glossary).
+</SOPStep>
+
+<SOPStep n={14} name="Map estimate line items to QBO service items" time="10 min" check="Every estimate line item is grouped into a service-line bucket that maps to a QBO service item; totals reconcile to the estimate." escalate="A material estimate line does not map to any service item — create the item (Step 12) rather than dropping the line.">
+Group the estimate's line items by service line (mitigation, demolition, equipment, reconstruction) and map each group to the matching **QBO service item** from Phase 3. You do not enter every Xactimate line into QBO — you summarize by service item. Confirm the grouped totals reconcile back to the estimate's grand total before moving on.
+</SOPStep>
+
+<SOPStep n={15} name="Record the equipment-days line for mitigation" time="5 min" check="Equipment-day quantity (air movers, dehus, air scrubbers × days) is captured as a billable line matching the estimate." escalate="Drying logs show more equipment-days than the estimate allows — flag for a supplement, do not just absorb it.">
+Capture the **equipment-days** — the count of air movers, dehumidifiers, and air scrubbers multiplied by days deployed — as their own billable line, matching the estimate. Equipment is a major revenue and margin driver on mitigation jobs and must be tracked discretely. Build the [equipment-day reconciliation habit](/field-notes/equipment-day-reconciliation-habit) so billed days always match drying-log days.
+</SOPStep>
+
+<SOPStep n={16} name="Enter the estimate as an Estimate in QBO" time="8 min" where="Sales > Estimates > New estimate (assign Customer/Project + Class)" check="A QBO Estimate exists on the Project with grouped service items totaling the approved RCV; class assigned." escalate="QBO Estimate total does not equal the approved RCV — reconcile before creating any invoice.">
+Create a QBO **Estimate** (**Sales > Estimates > New estimate**), assign it to the Project, set the service-line class, and enter the grouped service-item lines totaling the **RCV**. Entering it as an Estimate (not directly as an invoice) lets you progress-invoice the ACV now and the holdback at completion from the same document, and lets you measure variance against actual costs later.
+</SOPStep>
+
+## Phase 5 — First Invoice Generation (Steps 17–20)
+
+<QuickAnswer>
+The first invoice is for the ACV amount — RCV minus recoverable depreciation — created from the QBO Estimate and dated when the carrier approved the scope. Keep the deductible and the TPA fee out of the carrier receivable: the deductible is the homeowner's, and the TPA fee is a job cost, not a revenue offset.
+</QuickAnswer>
+
+<SOPStep n={17} name="Calculate the ACV amount for the first invoice" time="3 min" check="ACV = RCV − recoverable depreciation; figure matches the carrier's ACV on the approved estimate." escalate="Your ACV math does not match the carrier's stated ACV — reconcile with the adjuster before invoicing.">
+Compute the **ACV**: take the approved **RCV** and subtract the **recoverable depreciation**. This is the amount the carrier pays first; the depreciation (holdback) is released after completion. Confirm your number equals the carrier's stated ACV on the estimate. A mismatch here means the wrong amount goes out the door.
+</SOPStep>
+
+<SOPStep n={18} name="Create the ACV invoice from the estimate" time="6 min" where="Open the Estimate > Create invoice > choose 'Partial / custom amount' for the ACV portion" check="Invoice posted to the Project for the ACV amount, dated to the scope-approval date, class assigned." escalate="Scope is not yet carrier-approved — do NOT post this invoice; revenue is not yet earned.">
+From the QBO Estimate, click **Create invoice** and bill the **ACV portion** of the scope. Date the invoice to the day the carrier approved the scope, not today and not the future payment date — accrual accounting recognizes the receivable when earned. Assign the service-line class. This is your first AR entry; two more (holdback and any supplement) will follow later in the job's life. See [complete guide to job costing for restoration](/field-notes/complete-guide-job-costing-restoration-mitigation).
+</SOPStep>
+
+<SOPStep n={19} name="Record the deductible correctly" time="5 min" where="Sales > Invoices > New invoice (to homeowner) OR a labeled line on the job" check="Deductible is tracked as the homeowner's receivable, separate from the carrier portion in AR aging." escalate="Homeowner disputes or cannot pay the deductible — flag to ownership; it affects job collectibility.">
+The **deductible** is the homeowner's responsibility, never the carrier's. Track it as a separate invoice to the homeowner (or a clearly labeled line) so the carrier and homeowner balances never blend in AR aging. Blending them is the most common cause of restoration AR confusion and write-offs. Confirm who collects the deductible and when, per your engagement terms.
+</SOPStep>
+
+<SOPStep n={20} name="Record the TPA program fee as a job cost" time="5 min" where="Expenses > New (Bill or Expense) > category = 'TPA Program Fees' > assign Project + Class" check="TPA fee posted to a cost-of-revenue account, allocated to the Project, at the program's fee percentage." escalate="Tempted to net the TPA fee against revenue — do not; it hides the fee and overstates margin.">
+If this is a TPA job, record the **program fee** (from Step 4) as a **cost of revenue** — category **'TPA Program Fees'** — allocated to the Project, never netted against revenue. Show gross revenue and the fee as a separate direct cost so the job-level margin is honest. If a TPA invoices monthly across many jobs, allocate each job's share by the program percentage.
+</SOPStep>
+
+<MidPostCTA type="download" headline="Download This SOP as a Printable PDF" subtext="Use it as a real internal training document for new hires." href="/downloads/insurance-job-setup-sop-quickbooks.pdf" label="Download the SOP →" />
+
+## Phase 6 — Documentation Handoff (Steps 21–24)
+
+<QuickAnswer>
+Documentation is what makes your invoice defensible and your supplements collectible. Attach the approved estimate and approval email, the loss and pre-existing photos, the moisture and drying logs, and the signed authorization and direction-to-pay — all linked to the QBO Project and the invoice.
+</QuickAnswer>
+
+<SOPStep n={21} name="Attach the approved estimate to the QBO records" time="3 min" where="Open the Project / Estimate / Invoice > Attachments > Add" check="Estimate PDF and carrier approval email are attached to the Project and the ACV invoice." escalate="No written carrier approval exists — obtain it; a verbal approval is not an audit trail.">
+Attach the **approved estimate PDF** and the **carrier approval email** to the QBO Project and to the ACV invoice via the **Attachments** panel. These prove what was approved and when, supporting both the invoice and any later supplement. A receivable with no attached approval is a receivable you will struggle to collect or defend.
+</SOPStep>
+
+<SOPStep n={22} name="Upload loss and pre-existing-condition photos" time="4 min" where="Job folder (linked from QBO Project Notes) + Attachments" check="Dated loss photos and pre-existing-damage photos are stored in the job folder and linked from QBO." escalate="Pre-existing damage is visible in photos — flag to the estimator so it is excluded from scope.">
+Store **dated loss photos** and **pre-existing-condition photos** in the job folder and link the folder from the Project Notes. Pre-existing-condition photos protect you from disputes over what your scope did and did not cover. Photos are also the backbone of supplement justification when hidden damage is found during demolition.
+</SOPStep>
+
+<SOPStep n={23} name="File moisture and drying logs" time="4 min" where="Job folder + Attachments on the Project" check="Moisture readings and daily drying logs are filed and reconcile to the equipment-days billed (Step 15)." escalate="Drying logs do not support the equipment-days billed — reconcile before the carrier audits.">
+Attach the **moisture readings and drying logs** to the Project. These documents justify the equipment-days you billed in Step 15 and are the first thing a carrier requests when auditing a mitigation invoice. Logs that do not match billed days are a fast path to a clawback. For mitigation timing, see the [water mitigation first 48 hours SOP](/field-notes/water-mitigation-first-48-hours-sop) and the [mold remediation containment SOP](/field-notes/mold-remediation-containment-sop).
+</SOPStep>
+
+<SOPStep n={24} name="Record the work authorization and direction to pay" time="3 min" where="Attachments on the Project + customer record" check="Signed work authorization and direction-to-pay are attached and legible." escalate="No signed direction-to-pay — the carrier may pay the homeowner directly; escalate immediately.">
+Attach the **signed work authorization** and the **direction-to-pay** to the Project and customer record. The direction-to-pay is what routes the carrier's payment to your company rather than to the homeowner; without it, your receivable may be paid to someone else. Confirm both are signed and dated before relying on the receivable.
+</SOPStep>
+
+## Phase 7 — AR Setup & Follow-up Cadence (Steps 25–28)
+
+<QuickAnswer>
+A receivable that is not on a follow-up clock is a receivable that ages silently. Tag the AR by stage, schedule the first adjuster follow-up, set reminders for the holdback and any supplement, and run a final QA check so the job is handed off clean.
+</QuickAnswer>
+
+<Stat value="90–180" label="Days to collect a full insurance job (ACV + holdback + supplement) from first invoice" source="Cat3 Books client data" />
+
+<SOPStep n={25} name="Set AR aging by job stage on the Project" time="4 min" where="Sales > Invoices (memo/label by stage) > Reports > Accounts receivable aging" check="The ACV invoice is labeled as stage 'ACV' so it ages on the 45-day carrier clock, separate from holdback and supplement." escalate="ACV receivable is already over 45 days at setup (backdated approval) — start follow-up immediately.">
+Tag the receivable by **stage** — ACV, RCV holdback, or supplement — using a memo label or separate invoices, so each ages on its own clock when you run **Reports > Accounts receivable aging**. ACV follows a ~45-day clock, holdback ~90 days post-completion, supplements ~45 days from approval. Stage-based aging gives you a real collection action list. See [AR days outstanding for restoration](/field-notes/ar-days-outstanding-restoration).
+</SOPStep>
+
+<SOPStep n={26} name="Schedule the first adjuster follow-up" time="3 min" where="Calendar / task system + Project Notes" check="A follow-up task is set for ~7–10 days out to confirm the carrier received the ACV invoice and payment is in process." escalate="Adjuster is unresponsive after two attempts — escalate to a supervisor or the carrier's main line.">
+Create a **follow-up task** roughly 7–10 days after the ACV invoice goes out to confirm the carrier received it and payment is in process. Log the contact in the Project Notes. The first follow-up catches lost invoices and missing documentation early — the cheapest time to fix a collection problem. Build this into your [13-week cash-flow forecast](/field-notes/13-week-cash-flow-forecast-sop) so expected ACV timing feeds the forecast.
+</SOPStep>
+
+<SOPStep n={27} name="Set the holdback and supplement reminders" time="4 min" where="Calendar / task system + Project Notes" check="A reminder exists to invoice the RCV holdback at job completion, and a supplement-tracking placeholder is open." escalate="Hidden damage found during demo — open a supplement immediately; do not wait for completion.">
+Set two forward reminders: one to **invoice the RCV holdback** when repairs are complete and completion documentation is submitted, and one to **track any supplements** separately as they arise. Supplements posted late or untracked are the largest silent revenue leak in restoration. Use the [supplement filing and tracking SOP](/field-notes/supplement-filing-tracking-sop) to manage them and the [job close-out and final AR SOP](/field-notes/job-close-out-final-ar-sop) to close the job clean.
+</SOPStep>
+
+<SOPStep n={28} name="Run a setup QA check before handing off" time="5 min" check="Checklist confirms: customer/Project correct, claim # searchable, class set, estimate entered, ACV invoice posted and dated correctly, deductible and TPA fee handled, all documents attached, follow-ups scheduled." escalate="Any checklist item fails — fix it now; do not hand off an incomplete setup.">
+Run a final **QA checklist** against every prior step: structure, claim number, class, estimate, ACV invoice (correct amount and date), deductible, TPA fee, attached documents, and scheduled follow-ups. A clean setup at handoff prevents nearly every downstream billing and collection problem. See the [complete guide to bookkeeping for restoration companies](/field-notes/complete-guide-bookkeeping-restoration-companies) for how this job now flows into your monthly close.
+</SOPStep>
+
+## Common Mistakes
+
+- **Flat customer, no Project.** Setting the job up as a plain customer with no Project (or sub-customer) layer means no job-level P&L and no clean job costing. Always build the job container.
+- **Posting the ACV invoice at cash receipt instead of scope approval.** This understates AR, hides collection delays, and distorts revenue timing. Post when the carrier approves, dated to the approval.
+- **Blending the deductible into the carrier receivable.** The deductible is the homeowner's. Blending them corrupts AR aging and produces phantom write-offs.
+- **Netting the TPA fee against revenue.** Hides the fee, overstates job margin, and makes profitability impossible to read. Always post it as a separate direct cost.
+- **Inconsistent claim-number naming.** If every coordinator names Projects differently, the claim number stops being searchable and the audit trail breaks.
+- **Creating one-off 'Miscellaneous' service items.** Destroys reporting by service line. Build a standard item library once and reuse it.
+- **Skipping class tracking.** Without a service-line class, you can never see revenue or margin by Water vs Fire vs Mold across jobs.
+- **No attached documentation.** An invoice with no approved estimate, photos, or drying logs is hard to collect and impossible to defend in a carrier audit.
+- **No follow-up clock.** A receivable with no scheduled follow-up ages silently until it is uncollectible.
+- **Billing equipment-days that do not match the drying logs.** A fast path to a carrier clawback. Reconcile billed days to logged days at setup.
+
+## How to Adapt This SOP for Your Company
+
+**Universal (do not change):** posting the ACV at scope approval; separating the deductible from the carrier receivable; treating the TPA fee as a job cost; attaching the approved estimate and authorization; and tagging the claim number consistently. These follow accrual accounting and the ACV/RCV model and apply to every restoration company.
+
+**Company-specific (adapt these):**
+
+- **Project vs sub-customer rule** — depends on your QBO plan and whether you serve commercial clients with many properties.
+- **Service-item list and account mapping** — your chart of accounts and the perils you handle.
+- **Class structure** — the exact service lines you want to report on.
+- **Naming convention** — pick one (e.g. `LastName — Claim# — Service`) and enforce it.
+- **Follow-up timing** — tune the 7–10 day and 45/90-day cadences to your carriers' actual payment behavior.
+
+Steps 5, 7, 10–12, and 25–27 are the ones most likely to need tailoring. The intake (1–4), estimate reference (13–16), and invoicing logic (17–20) are largely universal.
+
+<MidPostCTA type="audit" headline="Free 30-min Books Audit Call" subtext="We'll show you how your field SOPs and job setup flow into your books — and where insurance receivables are aging or leaking on your jobs right now." />
+
+## Frequently Asked Questions
+
+### How do I set up an insurance restoration job in QuickBooks Online?
+
+Set it up in seven phases: capture the first-call intake (homeowner, carrier, claim #, adjuster, TPA), create the customer and a QBO Project, select the right service items by peril, reference the approved Xactimate estimate, generate the first ACV invoice, attach the documentation, and set the AR aging and follow-up cadence. The whole setup takes about two hours if your intake form is complete.
+
+### Should I use a QBO Project or a sub-customer for an insurance job?
+
+Use a QBO Project for almost every insurance restoration job — it gives you a job-level P&L, progress invoicing from the estimate, and clean job costing. Use a sub-customer only when your QBO plan does not include Projects, or when a single property owner has multiple unrelated jobs you want grouped under one parent. Never set up an insurance job as a flat customer with no project layer.
+
+### What is the difference between ACV and RCV when I create the first invoice?
+
+RCV (Replacement Cost Value) is the full cost to restore without depreciation. ACV (Actual Cash Value) is RCV minus recoverable depreciation — the amount the carrier pays first. Your first invoice is for the ACV amount. The depreciation (the holdback) becomes a second invoice you create when repairs are complete and documentation is submitted.
+
+### Where do I record the claim number in QuickBooks Online?
+
+Record the claim number in two places: in the customer or Project name (using a consistent convention like LastName-Claim#) and in a custom field or the Notes section of the customer record. Putting it in the name makes it searchable and visible on invoices; putting it in a field keeps it queryable for reporting. Never rely on memory or a separate spreadsheet alone.
+
+### How do I handle the homeowner deductible in QuickBooks?
+
+The deductible is the homeowner's responsibility, not the carrier's, so it must be tracked separately. Show it either as a separate invoice to the homeowner or as a clearly labeled line on the job so the carrier portion and homeowner portion never blend in AR aging. Blending them is the single most common cause of restoration AR confusion.
+
+### How do I record a TPA program fee in QuickBooks Online?
+
+Post the TPA program fee to a cost-of-revenue account (for example 'TPA Program Fees') and allocate it to the specific Project, using the program's percentage of the job revenue. Never net the fee against revenue — show gross revenue and the fee as a separate direct cost so your job-level margin is accurate.
+
+### Do I need class tracking turned on to set up an insurance job?
+
+Yes. Turn on Class tracking in Account and Settings > Advanced > Categories before you set up the job, and assign a class for the service line (Water, Fire, Mold, Contents, Reconstruction). Class tracking lets you see revenue and margin by service line across all jobs — something Projects alone cannot give you.
+
+### When should I post the ACV invoice — at scope approval or at cash receipt?
+
+Post the ACV invoice when the carrier approves the scope, not when the check arrives. Accrual-basis accounting requires recognizing the receivable when it is earned. Waiting for cash understates your AR, hides collection delays, and distorts the timing of your revenue. Date the invoice the day the adjuster signed off on the estimate.
+
+### How do I enter the Xactimate estimate into QuickBooks Online?
+
+Enter the approved scope as a QBO Estimate on the Project. Group the Xactimate line items by service line, map each group to a QBO service item, and capture equipment-days as their own line. Entering it as an Estimate lets you progress-invoice the ACV and holdback from the same document and track variance against actuals.
+
+### What documents should I attach to the QBO job at setup?
+
+Attach the approved estimate PDF, the carrier approval email, the signed work authorization and direction-to-pay, dated loss and pre-existing-condition photos, and the moisture and drying logs. These build the audit trail that supports your invoice and any future supplement. Attach them to the customer/Project and to the invoice itself.
+
+### How do I age insurance AR by job stage in QuickBooks?
+
+Tag each receivable by stage — ACV, RCV holdback, or supplement — using separate invoices or memo labels, then run AR aging filtered by stage and TPA program. ACV over 45 days, holdback over 90 days post-completion, and supplements over 45 days each need different follow-up. Calendar-only aging cannot tell you which clock a receivable is on.
+
+### What is the fastest way to set up a new insurance job correctly?
+
+Use a complete first-call intake form so you are not chasing missing fields later. With a complete intake, the QBO setup is mechanical: customer, Project, class, service items, estimate, ACV invoice, documents, follow-up. The bottleneck is almost always incomplete intake, not the QuickBooks steps themselves.
+
+### Can I set up the job before the carrier approves the scope?
+
+Yes — create the customer, Project, class, and service items immediately so mitigation costs are captured from day one, but do not post the ACV invoice until the scope is approved. Setting up the cost side early and the revenue side at approval keeps both your job costing and your revenue recognition correct.
+
+### How long should setting up an insurance job in QuickBooks take?
+
+About two hours per job with a complete intake form: roughly 20 minutes for intake review, 30 minutes for customer/Project/item setup, 30 minutes for estimate entry and the ACV invoice, and 30 minutes for documentation and follow-up scheduling. If it is taking far longer, your intake form is incomplete or your service-item list is not standardized.
+
+## Key Takeaways
+
+- Setting up an insurance job in QBO is a **28-step, 7-phase, ~2-hour** procedure that should run identically on every job.
+- **Build a QBO Project** for nearly every job; use a sub-customer only when Projects are unavailable or for grouping multiple losses under one parent.
+- Tag every job with three things: **carrier, claim number, and service-line class.**
+- The **first invoice is the ACV** (RCV minus recoverable depreciation), posted at scope approval — never at cash receipt.
+- Keep the **deductible** (homeowner's) and the **TPA fee** (a job cost) out of the carrier receivable.
+- Enter the approved estimate as a **QBO Estimate** so ACV and holdback can be progress-invoiced from one document.
+- **Documentation and a follow-up clock** are not optional — they make the receivable collectible and defensible.
+
+*Related reading:* [Complete Guide to Insurance Billing Accounting](/field-notes/complete-guide-insurance-billing-accounting-restoration) · [Supplement Filing & Tracking SOP](/field-notes/supplement-filing-tracking-sop) · [Job Close-Out & Final AR SOP](/field-notes/job-close-out-final-ar-sop) · [QBO Class Tracking for Restoration](/field-notes/qbo-class-tracking-restoration) · [How Restoration Companies Make Money](/field-notes/how-restoration-companies-make-money-profit-levers) · [Restoration Insurance Glossary](/field-notes/restoration-insurance-glossary)

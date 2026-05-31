@@ -1,0 +1,411 @@
+---
+title: "The 13-Week Cash Flow Forecast SOP for Restoration Companies"
+date: "2026-05-31"
+updatedDate: "2026-05-31"
+excerpt: "Step-by-step SOP for building and maintaining a rolling 13-week cash flow forecast in a restoration company — 22 steps across 7 phases, with a 30-min Monday update cadence."
+tags:
+  - "restoration SOP"
+  - "cash flow forecast"
+  - "13-week forecast"
+  - "insurance AR lag"
+  - "treasury management"
+author: "Cat3 Books"
+category: "sop"
+categoryLabel: "Standard Operating Procedures"
+coverStyle: "cv-grid"
+coverGlyph: "13\nWEEK"
+coverSub: "Cash flow forecast SOP"
+issueNumber: "№ 091"
+readTime: "17 min"
+featured: false
+contentType: "sop"
+priority: 0.9
+keywords:
+  - "how to build a 13-week cash flow forecast restoration"
+  - "restoration cash flow forecast template"
+  - "13-week cash forecast SOP"
+  - "rolling cash flow forecast insurance restoration"
+  - "restoration AR lag forecasting"
+  - "weekly cash flow update process"
+  - "restoration treasury management"
+  - "cash flow variance analysis restoration"
+howTo:
+  totalTime: "PT3H"
+  estimatedCost: "$0 — QuickBooks Online and a spreadsheet you already own"
+  supply:
+    - "AR aging report by job and stage (last 90 days)"
+    - "AP aging / unpaid bills report"
+    - "Payroll register and pay calendar"
+    - "Debt and equipment lease/loan amortization schedules"
+    - "12 months of carrier and TPA payment history"
+    - "Recurring expense list (rent, utilities, software, insurance)"
+  tool:
+    - "QuickBooks Online (admin or reports access)"
+    - "Spreadsheet (Excel or Google Sheets) — the 13-week template"
+    - "Bank online portal (current cleared balances)"
+howToSteps:
+  - name: "Confirm why 13 weeks and not a monthly budget"
+    text: "Establish that the insurance AR lag spans one full quarter, so the forecast horizon must be 13 weeks to capture a complete collection cycle."
+    url: "#step-1"
+  - name: "Set your minimum cash threshold and escalation line"
+    text: "Define the floor balance below which the company cannot operate, and mark it as the escalation trigger line on the forecast."
+    url: "#step-2"
+  - name: "Pull the AR aging report by job and stage"
+    text: "Export AR aging from QBO segmented by job and collection stage so each receivable can be assigned an expected pay week."
+    url: "#step-3"
+  - name: "Pull the AP / unpaid bills schedule"
+    text: "Export unpaid bills from QBO with due dates so each payable lands in the correct outflow week."
+    url: "#step-4"
+  - name: "Capture the payroll cadence and fixed cost calendar"
+    text: "Record payroll run dates, debt service dates, equipment payment dates, and recurring expense dates onto the week grid."
+    url: "#step-5"
+  - name: "Build carrier and TPA payment-lag assumptions"
+    text: "Calculate average days-to-pay per carrier and TPA from 12 months of history to use as forecast lag inputs instead of a generic 30 days."
+    url: "#step-6"
+  - name: "Set up the 13-week template skeleton"
+    text: "Build the spreadsheet with 13 week columns and rows for Beginning Cash, Inflows, Outflows, Net Change, and Ending Cash."
+    url: "#step-7"
+  - name: "Enter the beginning cash balance"
+    text: "Seed week 1 with the actual cleared bank balance across all operating accounts as of Monday morning."
+    url: "#step-8"
+  - name: "Forecast TPA AR inflows"
+    text: "Schedule expected TPA program collections net of takedown fees using each program's payment cycle."
+    url: "#step-9"
+  - name: "Forecast direct insurance (ACV and RCV) AR inflows"
+    text: "Schedule ACV payments and RCV holdback releases per job using carrier-specific lag and completion dates."
+    url: "#step-10"
+  - name: "Forecast retail and out-of-pocket AR inflows"
+    text: "Schedule retail invoices and deductible receipts on a standard 30-day or term-based assumption."
+    url: "#step-11"
+  - name: "Forecast supplement collections"
+    text: "Schedule approved and probable supplement payments at a risk-adjusted percentage of submitted value."
+    url: "#step-12"
+  - name: "Forecast payroll outflows"
+    text: "Enter gross payroll plus employer taxes on each scheduled pay date across the 13 weeks."
+    url: "#step-13"
+  - name: "Forecast subcontractor payments"
+    text: "Schedule subcontractor payables by invoice due date and lien-release milestone."
+    url: "#step-14"
+  - name: "Forecast equipment lease and loan payments"
+    text: "Enter fixed equipment and vehicle lease/loan payments on their contractual due dates."
+    url: "#step-15"
+  - name: "Forecast vendor AP outflows"
+    text: "Schedule materials and vendor payables by due date and card statement cycle."
+    url: "#step-16"
+  - name: "Forecast tax, rent, utilities, and owner distributions"
+    text: "Enter payroll tax deposits, sales/use tax, rent, utilities, software, and any owner distributions on their due dates."
+    url: "#step-17"
+  - name: "Calculate Net Change and Ending Cash each week"
+    text: "Compute inflows minus outflows per week and roll each week's ending cash into the next week's beginning cash."
+    url: "#step-18"
+  - name: "Run variance analysis against last week's forecast"
+    text: "Compare actual cash movement to the prior forecast, label each variance as timing or amount, and recalibrate assumptions."
+    url: "#step-19"
+  - name: "Apply escalation triggers"
+    text: "When projected ending cash dips below the minimum threshold, execute the escalation playbook in order: collections, AP, banker."
+    url: "#step-20"
+  - name: "Run the Monday 30-minute update cadence"
+    text: "Roll the forecast forward one week every Monday, refresh actuals, and re-run the inflow and outflow assumptions in 30 minutes."
+    url: "#step-21"
+  - name: "Produce the three reporting views"
+    text: "Generate the 1-page owner view, the 13-week detail tab, and the banker version from the same model."
+    url: "#step-22"
+faqItems:
+  - question: "How do I build a 13-week cash flow forecast for a restoration company?"
+    answer: "Start with your cleared bank balance, schedule expected inflows by source (TPA AR, direct insurance ACV/RCV, retail, supplements) using carrier-specific payment lags, then schedule outflows by category (payroll, subs, equipment, vendor AP, taxes, rent). Compute Net Change and roll Ending Cash into the next week for all 13 weeks. The initial build takes about 3 hours; the weekly update takes 30 minutes."
+  - question: "Why 13 weeks instead of a monthly cash budget?"
+    answer: "Insurance receivables in restoration lag 30 to 180 days, which means a single quarter is the shortest horizon that captures a complete collection cycle for ACV, TPA reconciliation, supplements, and RCV holdback. A monthly budget hides the within-month payroll-versus-collection timing gaps that actually cause cash crises. Thirteen weeks equals one quarter at weekly resolution."
+  - question: "What data do I need before building the forecast?"
+    answer: "You need AR aging by job and stage, an AP / unpaid bills schedule, your payroll calendar, debt and equipment amortization schedules, a recurring expense list, and 12 months of carrier and TPA payment history to set lag assumptions. All of it comes from QuickBooks Online and your bank portal."
+  - question: "How do I forecast insurance AR when carriers pay on different schedules?"
+    answer: "Build a payment-lag table from 12 months of your own history: average days-to-pay per carrier and per TPA program. Apply that lag to each open receivable's invoice or completion date to land it in the correct week, rather than assuming a flat 30 days. Update the table quarterly."
+  - question: "How should I forecast supplement collections that are not yet approved?"
+    answer: "Risk-adjust them. Use roughly 70% of submitted supplement value as the expected inflow based on your historical approval rate, and place it in the week implied by your supplement approval-plus-payment lag. Track any single supplement over $15K individually because the cash event is material."
+  - question: "What is a minimum cash threshold and how do I set it?"
+    answer: "It is the floor balance below which you cannot meet payroll and critical obligations. Set it at one to two payroll cycles plus a buffer for one large vendor or equipment payment. Mark it as a line on the forecast; any projected ending cash below it is an automatic escalation trigger."
+  - question: "How often do I update a 13-week cash flow forecast?"
+    answer: "Weekly, ideally first thing Monday in a fixed 30-minute block. You roll the model forward one week, drop the completed week, add a new week 13, refresh the beginning cash from actual cleared balances, and update any inflow or outflow that changed."
+  - question: "What is variance analysis in a cash forecast and why does it matter?"
+    answer: "Variance analysis compares what actually happened last week to what you forecast for that week. You label each gap as a timing variance (cash arrived in a different week) or an amount variance (the dollar figure was wrong) and adjust the underlying assumption. It is how the forecast gets more accurate over time instead of staying a guess."
+  - question: "What do I do when the forecast shows cash dropping below the threshold?"
+    answer: "Run the escalation playbook in order: first accelerate collections (call on the largest near-term receivables), second slow non-critical AP within terms, third draw on or expand the line of credit, and finally defer owner distributions. Acting two to four weeks ahead keeps draws scheduled rather than reactive."
+  - question: "Should I include owner distributions in the forecast?"
+    answer: "Yes. Owner distributions are real cash outflows and hiding them produces a forecast that looks healthier than reality. Schedule planned distributions explicitly, and treat them as the first discretionary outflow to defer when ending cash approaches the minimum threshold."
+  - question: "How do I present this forecast to my banker?"
+    answer: "Produce a banker version: a clean 13-week summary showing beginning cash, inflows by source, outflows by category, net change, ending cash, and the minimum threshold line, plus a short note on your carrier-specific lag assumptions. It demonstrates you understand your cash cycle and makes a line-of-credit request a creditworthy argument rather than a request for faith."
+  - question: "Can I build this in QuickBooks Online or do I need separate software?"
+    answer: "QBO supplies the data (AR aging, unpaid bills, payroll, recurring expenses) but the forecast itself lives in a spreadsheet because you need to overlay carrier-specific timing assumptions QBO cannot model. Export the reports from QBO and drive the 13-week grid in Excel or Google Sheets."
+  - question: "What is the difference between this and accrual-based revenue?"
+    answer: "Accrual revenue records the sale when the job is billed; this forecast tracks only when cash actually moves. A restoration job can be 'revenue' today and not become 'cash' for 90 to 180 days. The 13-week forecast deliberately ignores accrual timing and models the bank account."
+  - question: "How do I keep the forecast accurate as jobs change?"
+    answer: "Tie it to your weekly update cadence and your AR aging. Each Monday, re-pull AR and AP, move any receivable whose pay date shifted, and re-risk-adjust supplements. Run variance analysis to catch systematic lag errors and recalibrate the carrier lag table quarterly."
+  - question: "Who on my team should own the 13-week forecast?"
+    answer: "The bookkeeper or controller builds and updates it; the owner or operations manager reviews the 1-page summary and owns the escalation decisions. In a smaller shop the office manager doing the books can run the Monday update once the template is built, escalating any threshold breach to the owner same day."
+---
+
+<AnswerBlock>
+This SOP builds and maintains a rolling 13-week cash flow forecast for a restoration company in 22 numbered steps across 7 phases. The initial build takes about 3 hours; the weekly Monday update takes 30 minutes. A restoration forecast must run 13 weeks (one quarter) because insurance receivables lag 30 to 180 days across ACV, TPA reconciliation, supplements, and RCV holdback — a monthly budget hides the timing gaps that cause cash crises. The model schedules five inflow sources and seven outflow categories week by week, rolls Ending Cash forward, runs weekly variance analysis, and fires an escalation playbook whenever projected ending cash dips below a defined minimum cash threshold.
+</AnswerBlock>
+
+# The 13-Week Cash Flow Forecast SOP for Restoration Companies
+
+This is the operating procedure for building and running a rolling 13-week cash flow forecast in a restoration company. It is written so a bookkeeper, controller, or office manager can execute it directly, and so an owner can review the output in five minutes. The forecast models the **bank account**, not accrual revenue — it answers one question every week: will we have enough cash to make every payment due in the next 13 weeks, and if not, when do we act?
+
+Restoration is the worst-case industry for cash timing. You front payroll, subcontractors, and equipment for jobs that will not collect for 30 to 180 days, spread across ACV payments, TPA reconciliations, supplements, and RCV holdback releases. A generic 13-week template assumes a 30-day collection — apply it here and it will be wrong by half in any given week. This SOP fixes that by forecasting inflows by source with carrier-specific lag. It pairs with our explainer on [why the standard template breaks](/field-notes/13-week-cash-forecast-restoration) and assumes familiarity with terms like ACV, RCV, and supplements (see the [restoration insurance glossary](/field-notes/restoration-insurance-glossary)).
+
+## Prerequisites
+
+- **QuickBooks Online access** with reports permission (admin is ideal).
+- **A spreadsheet tool** (Excel or Google Sheets) and the 13-week template.
+- **Bank portal login** to read current cleared balances.
+- **12 months of payment history** by carrier and by TPA program.
+- **Working knowledge** of how restoration revenue collects across the [five collection horizons](/field-notes/13-week-cash-forecast-restoration) and basic AR/AP concepts (see the [accounting terminology reference](/field-notes/restoration-accounting-terminology-reference)).
+- **Authority or escalation path** to act on a cash shortfall (call the banker, slow AP, push collections).
+
+## Materials & Tools Required
+
+<DecisionMatrix title="Data inputs and where they come from">
+
+| Input | Source | QBO path / location |
+|---|---|---|
+| AR aging by job & stage | QBO | Reports > Who owes you > A/R Aging Detail (filter by Customer/Job) |
+| Unpaid bills (AP) schedule | QBO | Reports > What you owe > Unpaid Bills |
+| Payroll register & calendar | QBO Payroll | Payroll > Reports > Payroll Summary; Settings > Pay schedule |
+| Debt / equipment amortization | Loan & lease docs | Lender statements / lease agreements |
+| Recurring expenses | QBO | Reports > Expenses by Vendor Summary; Recurring transactions list |
+| Carrier & TPA payment history | QBO | A/R Aging + Invoice payment dates, exported to spreadsheet |
+| Current cleared balance | Bank portal | All operating + sweep accounts |
+
+</DecisionMatrix>
+
+<BlogImage alt="A clean 13-week cash flow forecast template with 13 week columns across the top. Rows are grouped into Beginning Cash at the top, then Inflows broken into TPA AR, direct insurance AR (ACV and RCV holdback), retail AR, supplement collections, and deductible receipts; then Outflows broken into payroll, subcontractors, equipment lease and loan payments, vendor AP, tax payments, owner distributions, and rent and utilities; then a Net Change row (inflows minus outflows) and an Ending Cash row that carries forward to the next week's Beginning Cash. A horizontal shaded band marks the minimum cash threshold line across all 13 weeks, and a red escalation-trigger callout points to a week where projected ending cash dips below that threshold line." caption="The 13-week template: five inflow sources, seven outflow categories, a rolling Ending Cash row, and a shaded minimum-cash threshold with an escalation trigger." width={820} height={480} />
+
+## Phase 1 — Frame the Forecast (Why 13 Weeks, Set the Threshold)
+
+<QuickAnswer>
+Before touching data, lock in the two design decisions that make the forecast useful: the 13-week horizon (because insurance AR spans a full quarter) and the minimum cash threshold (the floor that triggers escalation). These two steps take 15 minutes and govern everything that follows.
+</QuickAnswer>
+
+<Claim label="Core Principle">
+The 13-week forecast models cash, not revenue. A restoration job is "revenue" the day you invoice it and "cash" 30 to 180 days later. The entire point of this SOP is to track the gap between those two events so it never surprises you.
+</Claim>
+
+<SOPStep n={1} name="Confirm why 13 weeks and not a monthly budget" time="10 min" check="You can state in one sentence why the horizon is one full quarter at weekly resolution." escalate="Owner insists on a monthly-only view despite a >60-day AR cycle.">
+Document the rationale: restoration receivables collect across ACV (30–60 days), TPA reconciliation (30–45 days), supplements (60–90 days), and RCV holdback (60–120 days). Thirteen weeks is exactly one quarter — the shortest window that captures a full collection cycle — and weekly columns expose the payroll-versus-collection timing gaps a monthly budget hides. This is the foundation of all [restoration financial management](/field-notes/complete-guide-restoration-company-financial-management).
+</SOPStep>
+
+<SOPStep n={2} name="Set your minimum cash threshold and escalation line" time="10 min" where="Spreadsheet > Assumptions tab" check="A single threshold dollar figure is entered and rendered as a line across all 13 weeks." escalate="Threshold is less than one full payroll cycle — the company has no buffer.">
+Set the floor at **one to two payroll cycles plus one large vendor or equipment payment**. Enter it on an Assumptions tab and draw it as a horizontal line on the Ending Cash row. Any week where projected ending cash falls below this line is an automatic escalation trigger handled in Step 20. Do not skip this — a forecast with no threshold has no decision rule.
+</SOPStep>
+
+## Phase 2 — Gather the Data Inputs
+
+<QuickAnswer>
+Pull four reports from QuickBooks Online (AR aging, unpaid bills, payroll calendar, recurring expenses), add your debt/equipment schedules, and build a carrier-specific payment-lag table from 12 months of history. This is the raw material; accuracy here drives forecast accuracy.
+</QuickAnswer>
+
+<SOPStep n={3} name="Pull the AR aging report by job and stage" time="15 min" where="QBO > Reports > A/R Aging Detail" check="Every open receivable shows a job, an amount, an invoice/completion date, and a collection stage (ACV / RCV / supplement / retail / TPA)." escalate="Any single receivable over $25K aged past 90 days with no payment commitment.">
+Export A/R Aging Detail filtered by Customer/Job. Tag each receivable by collection stage so it can be assigned an inflow source in Phase 3. If your jobs are not tracked by class, fix that first using the [QBO class tracking process](/field-notes/qbo-class-tracking-restoration) — the forecast is only as granular as your books.
+</SOPStep>
+
+<SOPStep n={4} name="Pull the AP / unpaid bills schedule" time="10 min" where="QBO > Reports > Unpaid Bills" check="Every unpaid bill shows a vendor, an amount, and a due date." escalate="A bill is already past due or a vendor has threatened to hold materials.">
+Export Unpaid Bills with due dates. Separate subcontractor payables from materials/vendor payables — they have different timing and different escalation rules (subs often carry lien-release leverage). These map to outflow Steps 14 and 16.
+</SOPStep>
+
+<SOPStep n={5} name="Capture the payroll cadence and fixed cost calendar" time="15 min" where="QBO > Payroll > Pay schedule; loan/lease statements" check="Every payroll date, debt service date, equipment payment date, and recurring expense date is mapped to a week number 1–13." escalate="A pay date and a large loan date land in the same week with thin projected cash.">
+List the exact dates for payroll runs, payroll tax deposits, debt service, equipment lease/loan payments, rent, utilities, software, and insurance across the next 13 weeks. These are the **known, fixed** outflows — get them exactly right because they anchor the model.
+</SOPStep>
+
+<SOPStep n={6} name="Build carrier and TPA payment-lag assumptions" time="30 min" where="Spreadsheet > Lag table tab" check="A table exists with average days-to-pay per major carrier and per TPA program from 12 months of data." escalate="A major carrier's average lag exceeds 90 days or has worsened by >15 days year over year.">
+For each carrier and TPA, calculate the average gap between invoice/completion date and payment date over 12 months. Use these lags — not a generic 30 days — to schedule inflows. Recalibrate quarterly. This table is the single biggest driver of forecast accuracy; see [AR days outstanding](/field-notes/ar-days-outstanding-restoration) for how to compute the inputs.
+</SOPStep>
+
+## Phase 3 — Build the Template and Forecast Inflows by Source
+
+<QuickAnswer>
+Build the 13-week grid, seed it with your actual cleared bank balance, then schedule cash inflows by source: TPA AR, direct insurance ACV/RCV, retail AR, and supplement collections. Each source uses its own lag assumption, not a blanket 30 days.
+</QuickAnswer>
+
+<SOPStep n={7} name="Set up the 13-week template skeleton" time="20 min" where="Spreadsheet > Forecast tab" check="13 week columns exist with rows for Beginning Cash, each Inflow source, each Outflow category, Net Change, and Ending Cash." escalate="Formulas do not roll Ending Cash into the next Beginning Cash.">
+Lay out 13 dated week columns. Build rows: Beginning Cash; Inflows (TPA AR, direct insurance AR, retail AR, supplement collections, deductible receipts); Outflows (payroll, subcontractors, equipment, vendor AP, taxes, owner distributions, rent/utilities); Net Change; Ending Cash. Mirror the diagram above. Skip the manual build by using the downloadable Excel template referenced below.
+</SOPStep>
+
+<SOPStep n={8} name="Enter the beginning cash balance" time="5 min" where="Bank portal; Forecast tab week 1" check="Week 1 Beginning Cash equals the sum of actual cleared balances across all operating accounts." escalate="Book balance and cleared bank balance differ by more than a rounding amount — reconcile first.">
+Seed week 1 with the **cleared** bank balance (not the QBO book balance) across all operating and sweep accounts as of Monday morning. If they disagree, your books are behind — run a [monthly close](/field-notes/monthly-books-close-sop-restoration) or at least reconcile before forecasting.
+</SOPStep>
+
+<SOPStep n={9} name="Forecast TPA AR inflows" time="15 min" where="Forecast tab > TPA AR row" check="Each open TPA receivable lands in a week equal to its expected payment date, net of takedown fee." escalate="A TPA program's remittance is more than one cycle overdue.">
+For each TPA program, apply its payment cycle (from your lag table) to schedule the expected remittance **net of the program takedown fee**. TPA reconciliations arrive separately from carrier payments — keep them on their own row. See the [code blue TPA test](/field-notes/code-blue-test-tpa-programs) if a program's economics look thin.
+</SOPStep>
+
+<SOPStep n={10} name="Forecast direct insurance (ACV and RCV) AR inflows" time="20 min" where="Forecast tab > Direct insurance AR row" check="Each job's ACV payment and RCV holdback release is placed in a week using carrier-specific lag." escalate="An RCV holdback over $15K has no certificate-of-completion date or release path.">
+Schedule the **ACV payment** (typically 60–70% of approved estimate) using the carrier's lag from invoice date, and the **RCV holdback release** using the carrier's lag from certificate-of-completion date. Flag any holdback over $15K for individual tracking — the cash event is material enough to model alone.
+</SOPStep>
+
+<SOPStep n={11} name="Forecast retail and out-of-pocket AR inflows" time="10 min" where="Forecast tab > Retail AR / deductible row" check="Retail invoices and deductible receipts are placed on their term-based or 30-day expected dates." escalate="A deductible has not been collected before job start on a self-pay portion.">
+Schedule retail invoices on their stated terms (usually Net-30) and deductible receipts when the homeowner is expected to pay. Deductibles should ideally be collected up front; any uncollected deductible aging past completion is a collections risk, not a forecast asset.
+</SOPStep>
+
+<SOPStep n={12} name="Forecast supplement collections" time="15 min" where="Forecast tab > Supplement collections row" check="Each supplement is risk-adjusted and placed using the approval-plus-payment lag." escalate="Submitted supplements exceed 20% of open AR with low historical approval rates.">
+Use roughly **70% of submitted supplement value** (or your own historical approval rate) as the expected inflow, placed in the week implied by your supplement approval-plus-payment lag. Track supplements over $15K individually. If supplements routinely vanish between Xactimate and QBO, fix the [supplement tracking gap](/field-notes/supplements-disappear-xactimate-quickbooks) first.
+</SOPStep>
+
+## Phase 4 — Forecast Outflows by Category
+
+<QuickAnswer>
+Schedule the seven outflow categories on their known due dates: payroll, subcontractors, equipment lease/loan, vendor AP, taxes, owner distributions, and rent/utilities. Most are fixed and known — enter them exactly; the only judgment calls are which discretionary items to defer.
+</QuickAnswer>
+
+<SOPStep n={13} name="Forecast payroll outflows" time="10 min" where="Forecast tab > Payroll row" check="Gross payroll plus employer taxes is entered on each scheduled pay date." escalate="A projected pay date has Beginning Cash below the payroll amount.">
+Enter total gross payroll **plus employer payroll taxes** on each pay date from your calendar (Step 5). Payroll is the most time-sensitive outflow in the model — it is the obligation you protect first when cash is tight. Use actual recent runs adjusted for known crew changes.
+</SOPStep>
+
+<SOPStep n={14} name="Forecast subcontractor payments" time="10 min" where="Forecast tab > Subcontractor row" check="Each subcontractor payable lands on its due date with lien-release timing noted." escalate="A sub threatens to file a lien or hold work on an active job.">
+Schedule subcontractor payables by invoice due date (usually Net-15 or Net-30 from job close). Note lien-release milestones — a sub payment that unlocks a lien waiver may be non-deferrable even when cash is tight. Tie this to your [job close-out and final AR process](/field-notes/job-close-out-final-ar-sop).
+</SOPStep>
+
+<SOPStep n={15} name="Forecast equipment lease and loan payments" time="5 min" where="Forecast tab > Equipment row" check="Every equipment and vehicle lease/loan payment is on its contractual due date." escalate="An equipment payment will bounce or trigger a default clause.">
+Enter fixed equipment and vehicle lease/loan payments from the amortization schedules (Step 5). These are contractual and rarely deferrable. Cross-check that you are paying for equipment you still have using the [equipment tracking process](/field-notes/equipment-tracking-recovery-sop).
+</SOPStep>
+
+<SOPStep n={16} name="Forecast vendor AP outflows" time="10 min" where="Forecast tab > Vendor AP row" check="Materials and vendor payables are placed by due date and card statement cycle." escalate="A critical materials vendor will place the account on hold.">
+Schedule materials and vendor payables from the Unpaid Bills export (Step 4) by due date, and place credit-card balances on their statement-due dates. Non-critical vendor AP within terms is your **first lever to slow** when cash dips — note which vendors tolerate Net-45 versus Net-15.
+</SOPStep>
+
+<SOPStep n={17} name="Forecast tax, rent, utilities, and owner distributions" time="10 min" where="Forecast tab > Taxes / Fixed / Distributions rows" check="Payroll tax deposits, sales/use tax, rent, utilities, software, and planned owner distributions are all scheduled." escalate="A tax deposit is at risk — never defer payroll tax.">
+Enter payroll tax deposit dates, any sales/use tax due dates, rent, utilities, software, insurance, and **planned owner distributions**. Show distributions explicitly — hiding them makes the forecast lie. Distributions are the first discretionary outflow to defer; payroll taxes are never deferrable.
+</SOPStep>
+
+<SOPStep n={18} name="Calculate Net Change and Ending Cash each week" time="5 min" where="Forecast tab > Net Change / Ending Cash rows" check="Net Change = Inflows − Outflows per week, and each Ending Cash carries into the next Beginning Cash." escalate="Any week shows Ending Cash below the minimum threshold line.">
+Confirm the formulas: each week's Net Change is total inflows minus total outflows; each week's Ending Cash is Beginning Cash plus Net Change; and that Ending Cash becomes the next week's Beginning Cash. Scan the Ending Cash row against the threshold line from Step 2 — the lowest projected week is your pressure point.
+</SOPStep>
+
+<MidPostCTA type="download" headline="Download This SOP as a Printable PDF" subtext="Use it as a real internal training document for new hires — and grab the matching Excel forecast template inside." href="/downloads/13-week-cash-flow-forecast-sop.pdf" label="Download the SOP →" />
+
+The PDF includes this full procedure plus a link to the **ready-to-use Excel 13-week template** with the inflow/outflow rows, the threshold line, and the rolling Ending Cash formulas already built — so a new hire can start from Step 8 instead of Step 7.
+
+## Phase 5 — Variance Analysis and Escalation Triggers
+
+<QuickAnswer>
+Each week, compare what actually happened to what you forecast (variance analysis) and recalibrate. When projected ending cash drops below the threshold, run the escalation playbook in order: accelerate collections, slow non-critical AP, then engage the banker, deferring owner distributions as needed.
+</QuickAnswer>
+
+<SOPStep n={19} name="Run variance analysis against last week's forecast" time="10 min" where="Spreadsheet > Variance tab" check="Each material variance is labeled 'timing' or 'amount' and the underlying assumption is updated." escalate="The same carrier shows a recurring positive timing variance — your lag table is stale.">
+Compare actual cash movement to last week's forecast for the week that just closed. Label each gap as a **timing variance** (cash arrived in a different week) or an **amount variance** (the dollar figure was wrong), then fix the assumption that caused it. This feedback loop is what turns the forecast from a guess into a tool — review it alongside the [job-level P&L](/field-notes/how-to-read-a-job-level-pl) when amounts surprise you.
+</SOPStep>
+
+<SOPStep n={20} name="Apply escalation triggers" time="15 min" where="Spreadsheet > Forecast tab; phone" check="If any projected week breaches the threshold, the playbook is executed in order and documented." escalate="All four levers are exhausted and a week still breaches the threshold — owner decision required immediately.">
+When projected ending cash dips below the threshold, run the playbook in order: **(1) accelerate collections** on the largest near-term receivables; **(2) slow non-critical vendor AP** within terms; **(3) draw on or expand the line of credit** — call the banker with the forecast; **(4) defer owner distributions**. Acting 2–4 weeks ahead keeps draws scheduled, not reactive. Persistent breaches are a structural problem — see [hidden profit leaks](/field-notes/hidden-profit-leaks-restoration-companies).
+</SOPStep>
+
+<DecisionMatrix title="Escalation playbook — order of operations when cash dips below threshold">
+
+| Order | Lever | Action | When it is the wrong move |
+|---|---|---|---|
+| 1 | Accelerate collections | Call on largest near-term AR; push aged supplements | Receivable has a hard carrier lag you cannot influence |
+| 2 | Slow non-critical AP | Extend Net-15 vendors to terms; delay non-urgent materials | Vendor will hold materials on an active job |
+| 3 | Engage banker / draw LOC | Present the 13-week model; draw or request increase | You are already near max utilization |
+| 4 | Defer owner distributions | Pause planned distributions until cash recovers | Distribution is a fixed tax-estimate obligation |
+
+</DecisionMatrix>
+
+## Phase 6 — The Weekly Update Cadence
+
+<QuickAnswer>
+Update the forecast every Monday in a fixed 30-minute block: roll the model forward one week, refresh beginning cash from actual cleared balances, re-pull AR and AP, re-risk-adjust supplements, and re-run variance analysis. Consistency beats precision — a forecast updated weekly is worth more than a perfect one updated monthly.
+</QuickAnswer>
+
+<SOPStep n={21} name="Run the Monday 30-minute update cadence" time="30 min" where="Spreadsheet + QBO" check="The forecast is rolled forward one week, beginning cash matches actuals, and variance analysis is logged — all within 30 minutes." escalate="The update routinely exceeds 30 minutes — the template is too manual; tighten it.">
+Every Monday morning: drop the completed week, add a new week 13, reset week 1 Beginning Cash to the actual cleared balance, re-pull AR and AP from QBO, move any receivable whose pay date shifted, re-risk-adjust supplements, and run Step 19 variance analysis. The discipline of a fixed weekly slot is the real deliverable — this mirrors the habit behind [equipment day reconciliation](/field-notes/equipment-day-reconciliation-habit).
+</SOPStep>
+
+## Phase 7 — Reporting Format
+
+<QuickAnswer>
+Produce three views from the same model: a 1-page owner summary (beginning cash, net change, ending cash, threshold breaches), the full 13-week detail tab for the bookkeeper, and a clean banker version for line-of-credit conversations. Same data, three audiences.
+</QuickAnswer>
+
+<SOPStep n={22} name="Produce the three reporting views" time="15 min" where="Spreadsheet > Owner / Detail / Banker tabs" check="All three views reconcile to the same Ending Cash figures and the threshold line is visible on each." escalate="The owner view and detail tab disagree on any week's ending cash.">
+Generate: **(1) the 1-page owner view** — beginning cash, net change, ending cash, and any threshold breach flagged in red; **(2) the 13-week detail tab** — every inflow source and outflow category; **(3) the banker version** — the summary plus a note on carrier-specific lag assumptions. The banker version turns a line-of-credit ask into a creditworthy argument; pair it with where you sit on the [profitability roadmap by stage](/field-notes/restoration-profitability-roadmap-by-stage).
+</SOPStep>
+
+## Common Mistakes
+
+- **The 30-day collection assumption.** Treating all AR as Net-30 is the single most common error. Restoration AR spans 30–180 days by source — use the carrier lag table or the forecast is fiction.
+- **Forecasting accrual revenue instead of cash.** Putting invoiced amounts in the week they were billed rather than the week they will collect. The model tracks the bank account, full stop.
+- **Counting full supplement value.** Booking 100% of submitted supplements ignores approval risk. Risk-adjust to ~70% and track large ones individually.
+- **Hiding owner distributions.** Leaving distributions out produces a forecast that looks healthier than reality and removes your most flexible lever.
+- **Updating monthly instead of weekly.** A 13-week forecast refreshed once a month is stale by week two. The Monday cadence is the SOP, not a suggestion.
+- **No minimum cash threshold.** Without a defined floor, there is no decision rule and no escalation trigger — the forecast becomes a report no one acts on.
+- **Skipping variance analysis.** If you never compare forecast to actual, your lag assumptions never improve and the model stays a guess.
+- **Using book balance instead of cleared balance.** Seeding week 1 with an unreconciled QBO balance bakes an error into all 13 weeks.
+- **Reactive line-of-credit draws.** Drawing only when cash is already low — usually at peak utilization — instead of scheduling draws 2–4 weeks ahead from the forecast.
+
+## How to Adapt This SOP for Your Company
+
+**Universal (do not change):** the 13-week horizon, the cash-not-accrual principle, the five inflow sources, the seven outflow categories, the weekly update cadence, variance analysis, and a defined minimum cash threshold. These apply to every restoration company regardless of size.
+
+**Company-specific (tune these):** your carrier and TPA lag table (built from your own history), your threshold dollar figure (your payroll size and risk tolerance), your supplement risk-adjustment percentage (your approval rate), your escalation authority (who can call the banker or defer distributions), and who owns the Monday update. A $1M shop may have the office manager run it; a $10M shop assigns a controller or [fractional CFO](/field-notes/when-restoration-company-needs-fractional-cfo). Larger operations with multiple TPA programs should split the TPA AR row by program.
+
+## Frequently Asked Questions
+
+### How do I build a 13-week cash flow forecast for a restoration company?
+Start with your cleared bank balance, schedule expected inflows by source (TPA AR, direct insurance ACV/RCV, retail AR, supplements) using carrier-specific payment lags, then schedule outflows by category (payroll, subs, equipment, vendor AP, taxes, rent). Compute Net Change and roll Ending Cash into the next week for all 13 weeks. The initial build takes about 3 hours; the weekly update takes 30 minutes.
+
+### Why 13 weeks instead of a monthly cash budget?
+Insurance receivables in restoration lag 30 to 180 days, which means a single quarter is the shortest horizon that captures a complete collection cycle for ACV, TPA reconciliation, supplements, and RCV holdback. A monthly budget hides the within-month payroll-versus-collection timing gaps that actually cause cash crises. Thirteen weeks equals one quarter at weekly resolution.
+
+### What data do I need before building the forecast?
+You need AR aging by job and stage, an AP / unpaid bills schedule, your payroll calendar, debt and equipment amortization schedules, a recurring expense list, and 12 months of carrier and TPA payment history to set lag assumptions. All of it comes from QuickBooks Online and your bank portal.
+
+### How do I forecast insurance AR when carriers pay on different schedules?
+Build a payment-lag table from 12 months of your own history: average days-to-pay per carrier and per TPA program. Apply that lag to each open receivable's invoice or completion date to land it in the correct week, rather than assuming a flat 30 days. Update the table quarterly.
+
+### How should I forecast supplement collections that are not yet approved?
+Risk-adjust them. Use roughly 70% of submitted supplement value as the expected inflow based on your historical approval rate, and place it in the week implied by your supplement approval-plus-payment lag. Track any single supplement over $15K individually because the cash event is material.
+
+### What is a minimum cash threshold and how do I set it?
+It is the floor balance below which you cannot meet payroll and critical obligations. Set it at one to two payroll cycles plus a buffer for one large vendor or equipment payment. Mark it as a line on the forecast; any projected ending cash below it is an automatic escalation trigger.
+
+### How often do I update a 13-week cash flow forecast?
+Weekly, ideally first thing Monday in a fixed 30-minute block. You roll the model forward one week, drop the completed week, add a new week 13, refresh the beginning cash from actual cleared balances, and update any inflow or outflow that changed.
+
+### What is variance analysis in a cash forecast and why does it matter?
+Variance analysis compares what actually happened last week to what you forecast for that week. You label each gap as a timing variance (cash arrived in a different week) or an amount variance (the dollar figure was wrong) and adjust the underlying assumption. It is how the forecast gets more accurate over time instead of staying a guess.
+
+### What do I do when the forecast shows cash dropping below the threshold?
+Run the escalation playbook in order: first accelerate collections (call on the largest near-term receivables), second slow non-critical AP within terms, third draw on or expand the line of credit, and finally defer owner distributions. Acting two to four weeks ahead keeps draws scheduled rather than reactive.
+
+### Should I include owner distributions in the forecast?
+Yes. Owner distributions are real cash outflows and hiding them produces a forecast that looks healthier than reality. Schedule planned distributions explicitly, and treat them as the first discretionary outflow to defer when ending cash approaches the minimum threshold.
+
+### How do I present this forecast to my banker?
+Produce a banker version: a clean 13-week summary showing beginning cash, inflows by source, outflows by category, net change, ending cash, and the minimum threshold line, plus a short note on your carrier-specific lag assumptions. It demonstrates you understand your cash cycle and makes a line-of-credit request a creditworthy argument rather than a request for faith.
+
+### Can I build this in QuickBooks Online or do I need separate software?
+QBO supplies the data (AR aging, unpaid bills, payroll, recurring expenses) but the forecast itself lives in a spreadsheet because you need to overlay carrier-specific timing assumptions QBO cannot model. Export the reports from QBO and drive the 13-week grid in Excel or Google Sheets.
+
+### What is the difference between this and accrual-based revenue?
+Accrual revenue records the sale when the job is billed; this forecast tracks only when cash actually moves. A restoration job can be "revenue" today and not become "cash" for 90 to 180 days. The 13-week forecast deliberately ignores accrual timing and models the bank account.
+
+### How do I keep the forecast accurate as jobs change?
+Tie it to your weekly update cadence and your AR aging. Each Monday, re-pull AR and AP, move any receivable whose pay date shifted, and re-risk-adjust supplements. Run variance analysis to catch systematic lag errors and recalibrate the carrier lag table quarterly.
+
+### Who on my team should own the 13-week forecast?
+The bookkeeper or controller builds and updates it; the owner or operations manager reviews the 1-page summary and owns the escalation decisions. In a smaller shop the office manager doing the books can run the Monday update once the template is built, escalating any threshold breach to the owner same day.
+
+<MidPostCTA type="audit" headline="Free 30-min Books Audit Call" subtext="We'll look at your AR aging and show you whether your books can actually feed a reliable 13-week forecast — and where the timing gaps are hiding." />
+
+## Key Takeaways
+
+- A restoration 13-week forecast models **cash, not accrual revenue** — it tracks the gap between billing and collection.
+- Use **13 weeks (one quarter)** because insurance AR collects across 30–180 days; a monthly budget hides the timing gaps.
+- Forecast **five inflow sources** (TPA AR, direct insurance ACV/RCV, retail AR, supplements, deductibles) with **carrier-specific lag**, never a flat 30 days.
+- Forecast **seven outflow categories** on their known due dates; defer owner distributions and non-critical AP first when cash tightens.
+- Define a **minimum cash threshold** and run the escalation playbook in order whenever a projected week breaches it.
+- **Update every Monday in 30 minutes** and run variance analysis — consistency and feedback make the forecast accurate over time.
+- Produce **three views** from one model: owner 1-pager, 13-week detail, and a banker version that turns a credit ask into a creditworthy argument.
+
+---
+
+*Related reading: [Why the standard 13-week template breaks in restoration](/field-notes/13-week-cash-forecast-restoration) · [The Complete Guide to Restoration Company Financial Management](/field-notes/complete-guide-restoration-company-financial-management) · [Restoration Profitability Roadmap by Stage](/field-notes/restoration-profitability-roadmap-by-stage) · [Monthly Books Close SOP](/field-notes/monthly-books-close-sop-restoration) · [Job Close-Out & Final AR SOP](/field-notes/job-close-out-final-ar-sop) · [Restoration Insurance Glossary](/field-notes/restoration-insurance-glossary)*

@@ -10,6 +10,7 @@ export const CATEGORIES = [
   { key: "pl",          label: "P&L Management" },
   { key: "hiring",      label: "Hiring & Outsourcing" },
   { key: "comparisons", label: "Comparisons" },
+  { key: "sop",         label: "Standard Operating Procedures" },
   { key: "software",    label: "Software Reviews" },
   { key: "qb",          label: "QuickBooks Guides" },
   { key: "profit",      label: "Profitability" },

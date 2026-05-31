@@ -431,4 +431,66 @@ export const fieldNotesMeta: Record<
     excerpt:
       "A restoration company's dominant profit problem changes at every revenue stage — owner-as-production at startup, blended-margin blindness at $500K–$1.5M, overhead outrunning gross profit at $1.5M–$3M, owner-as-bottleneck at $3M–$5M, and unit-economics drift above $5M. This is The Restoration Profitability Roadmap: the problem and the opportunity at each stage from $0 to $10M+.",
   },
+
+  // ── Standard Operating Procedures ────────────────────────────────────────
+  "monthly-books-close-sop-restoration": {
+    title: "The Monthly Books Close SOP for Restoration Companies (28 Steps)",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for closing the books at a restoration company in 28 steps across 4 phases — bank recon, AR cleanup, job costing, and owner sign-off — every month by the 10th.",
+  },
+  "insurance-job-setup-sop-quickbooks": {
+    title: "The Insurance Job Setup SOP in QuickBooks Online (From First Call to First Invoice)",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for setting up an insurance restoration job in QuickBooks Online — 28 steps across 7 phases, from the first-call intake to the first ACV invoice.",
+  },
+  "supplement-filing-tracking-sop": {
+    title: "The Supplement Filing & Tracking SOP (Xactimate → Carrier → QBO → Cash)",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for filing and tracking restoration supplements across 24 steps — from trigger identification through Xactimate build, carrier submission, QBO recording, and cash collection.",
+  },
+  "13-week-cash-flow-forecast-sop": {
+    title: "The 13-Week Cash Flow Forecast SOP for Restoration Companies",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for building and maintaining a rolling 13-week cash flow forecast in a restoration company — 22 steps across 7 phases, with a 30-min Monday update cadence.",
+  },
+  "job-close-out-final-ar-sop": {
+    title: "The Job Close-Out & Final AR SOP (How to Actually Close a Restoration Job in Your Books)",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for closing a restoration job across all four states — 30 steps across 6 phases covering physical demob, final billing, collections, and books close-out.",
+  },
+  "water-mitigation-first-48-hours-sop": {
+    title: "The Water Mitigation First-48-Hours SOP (IICRC S500-Compliant, Step by Step)",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for the first 48 hours of an IICRC S500-compliant water mitigation job — 26 numbered steps across 5 hour-by-hour phases.",
+  },
+  "mold-remediation-containment-sop": {
+    title: "The Mold Remediation Containment Setup SOP (IICRC S520-Compliant)",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for building IICRC S520-compliant mold containment in 25 steps: classify Condition, size the AFD, set negative pressure, run decon.",
+  },
+  "fire-smoke-damage-assessment-pack-out-sop": {
+    title: "The Fire & Smoke Damage Assessment & Pack-Out SOP",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for fire and smoke loss work — a 24-step procedure covering scene assessment, smoke-type categorization, pack-out, structural soot removal, and deodorization.",
+  },
+  "crew-dispatch-on-call-rotation-sop": {
+    title: "The Daily Crew Dispatch & On-Call Rotation SOP",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for daily crew dispatch and on-call rotation in a restoration company — 22 steps across morning huddle, assignment logic, after-hours intake, and burnout prevention.",
+  },
+  "equipment-tracking-recovery-sop": {
+    title: "The Equipment Tracking & Recovery SOP (Air Movers, Dehus, AFDs)",
+    categoryLabel: "Standard Operating Procedures",
+    excerpt:
+      "Step-by-step SOP for tracking, deploying, recovering, and reconciling restoration drying equipment — 22 steps across 8 phases that stop equipment losses and billing leaks.",
+  },
 };

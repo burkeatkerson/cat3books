@@ -22,6 +22,7 @@ import ReviewBlock from "@/components/field-notes/ReviewBlock";
 import Stat from "@/components/field-notes/Stat";
 import TableOfContents from "@/components/field-notes/TableOfContents";
 import DatasetSchema from "@/components/field-notes/DatasetSchema";
+import SOPStep from "@/components/field-notes/SOPStep";
 
 /** MDX component map — available in every Field Notes post */
 const mdxComponents = {
@@ -36,6 +37,7 @@ const mdxComponents = {
   MidPostCTA,
   QuickAnswer,
   ReviewBlock,
+  SOPStep,
   Stat,
   TableOfContents,
 };
@@ -148,11 +150,27 @@ export default function FieldNotePost({ params }: Props) {
           "@type": "HowTo",
           name: post.title,
           description: post.excerpt,
+          ...(post.howTo?.totalTime && { totalTime: post.howTo.totalTime }),
+          ...(post.howTo?.estimatedCost && { estimatedCost: post.howTo.estimatedCost }),
+          ...(post.howTo?.supply && post.howTo.supply.length > 0 && {
+            supply: post.howTo.supply.map((s) => ({
+              "@type": "HowToSupply" as const,
+              name: s,
+            })),
+          }),
+          ...(post.howTo?.tool && post.howTo.tool.length > 0 && {
+            tool: post.howTo.tool.map((t) => ({
+              "@type": "HowToTool" as const,
+              name: t,
+            })),
+          }),
           step: post.howToSteps.map((s, i) => ({
             "@type": "HowToStep" as const,
             position: i + 1,
             name: s.name,
             text: s.text,
+            // Deep-link each step to its rendered <SOPStep> anchor when provided.
+            ...(s.url && { url: `${postUrl}${s.url.startsWith("#") ? "" : "#"}${s.url}` }),
           })),
         }
       : null;

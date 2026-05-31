@@ -1,0 +1,457 @@
+---
+title: "The Equipment Tracking & Recovery SOP (Air Movers, Dehus, AFDs)"
+date: "2026-05-31"
+updatedDate: "2026-05-31"
+excerpt: "Step-by-step SOP for tracking, deploying, recovering, and reconciling restoration drying equipment — 22 steps across 8 phases that stop equipment losses and billing leaks."
+tags:
+  - "restoration SOP"
+  - "equipment tracking"
+  - "equipment-day billing"
+  - "air movers dehumidifiers AFD"
+  - "IICRC S500"
+author: "Cat3 Books"
+category: "sop"
+categoryLabel: "Standard Operating Procedures"
+coverStyle: "cv-grid"
+coverGlyph: "22\nSTEPS"
+coverSub: "Track it, recover it, bill it"
+issueNumber: "№ 097"
+readTime: "18 min"
+featured: false
+contentType: "sop"
+priority: 0.9
+keywords:
+  - "restoration equipment tracking SOP"
+  - "air mover dehumidifier tracking system"
+  - "equipment-day billing reconciliation"
+  - "restoration equipment recovery procedure"
+  - "drying equipment inventory management"
+  - "lost restoration equipment process"
+  - "equipment maintenance schedule restoration"
+  - "Xactimate equipment day reconciliation"
+howTo:
+  totalTime: "PT6H"
+  estimatedCost: "$0–$1,200 — QR labels and asset tags plus software you likely already own (field platform, QBO, Xactimate)"
+  supply:
+    - "Durable asset tags or QR/barcode labels (one per unit)"
+    - "Equipment placement diagram template"
+    - "Daily monitoring/atmospheric log sheets"
+    - "Customer equipment-confirmation signature form"
+    - "Recovery walkthrough checklist"
+  tool:
+    - "Field documentation platform (Encircle, MICA, or equivalent) or shared spreadsheet"
+    - "QuickBooks Online (admin access) with the fixed-asset / depreciation schedule"
+    - "Xactimate license (estimate write access)"
+    - "QR/barcode scanner or smartphone scanning app"
+    - "Calibrated thermo-hygrometer and moisture meter"
+    - "Label printer (e.g. Brother / DYMO industrial)"
+howToSteps:
+  - name: "Build the master equipment register"
+    text: "Create a single master register listing every air mover, dehumidifier, and AFD with make, model, serial number, and purchase data."
+    url: "#step-1"
+  - name: "Tag every unit with a serial and QR/asset tag"
+    text: "Apply a durable asset tag and scannable QR/barcode to each unit and link the scan to the register record."
+    url: "#step-2"
+  - name: "Log baseline condition and hour-meter reading"
+    text: "Photograph and grade each unit's condition and record its hour-meter or run-time baseline at intake."
+    url: "#step-3"
+  - name: "Integrate the register with the depreciation schedule"
+    text: "Match each tagged unit to its QBO fixed-asset record and MACRS depreciation line so book value tracks the physical fleet."
+    url: "#step-4"
+  - name: "Set the available-pool status board"
+    text: "Stand up a status board or field-platform view showing every unit as Available, Deployed, In Maintenance, or Lost."
+    url: "#step-5"
+  - name: "Assign equipment to a job and create the sign-out record"
+    text: "Scan each unit onto a specific job number and create a dated sign-out record naming the crew lead who took it."
+    url: "#step-6"
+  - name: "Photograph equipment placement on arrival"
+    text: "Take wide and close placement photos of every unit in the structure and store them against the job."
+    url: "#step-7"
+  - name: "Draw the equipment placement diagram"
+    text: "Produce a room-by-room placement diagram showing unit type, count, and location for the loss site."
+    url: "#step-8"
+  - name: "Record the deployed count against the estimate"
+    text: "Write the deployed unit count and placement date into the Xactimate estimate and the equipment log on Day 1."
+    url: "#step-9"
+  - name: "Capture daily equipment status and run confirmation"
+    text: "Each visit, confirm every unit is present, running, and logged as on-site for that calendar day."
+    url: "#step-10"
+  - name: "Record daily atmospheric and moisture readings"
+    text: "Log temperature, relative humidity, GPP, and material moisture readings to justify continued equipment days."
+    url: "#step-11"
+  - name: "Capture the customer placement-confirmation signature"
+    text: "Obtain a customer or authorized-rep signature confirming the equipment placed and running at the site."
+    url: "#step-12"
+  - name: "Run the final recovery walkthrough"
+    text: "Walk the structure against the placement diagram to confirm every deployed unit is accounted for before pull."
+    url: "#step-13"
+  - name: "Photograph equipment as recovered"
+    text: "Photograph the units staged for recovery and note removal date and hour-meter reading."
+    url: "#step-14"
+  - name: "Scan units back into the shop"
+    text: "Scan each returning unit back to Available or In Maintenance and close the job's sign-out record."
+    url: "#step-15"
+  - name: "Clean and decontaminate recovered units"
+    text: "Wipe, decontaminate, and dry every recovered unit before it re-enters the available pool."
+    url: "#step-16"
+  - name: "Change filters and service on cadence"
+    text: "Replace AFD HEPA/pre-filters and perform scheduled service based on run hours or the maintenance calendar."
+    url: "#step-17"
+  - name: "Calibrate meters and verify dehu performance"
+    text: "Calibrate hygrometers and verify dehumidifier grain depression on the documented calibration cadence."
+    url: "#step-18"
+  - name: "File the lost or damaged equipment report"
+    text: "Open a documented loss/damage report within 24 hours, set the unit status, and route it for claim or recovery."
+    url: "#step-19"
+  - name: "Run the quarterly physical inventory audit"
+    text: "Physically scan and reconcile every unit against the register and depreciation schedule each quarter."
+    url: "#step-20"
+  - name: "Reconcile billed equipment-days to logged on-site days"
+    text: "Compare Xactimate billed equipment-days against logged on-site days per job and flag every gap before close."
+    url: "#step-21"
+  - name: "Correct the estimate and document the adjustment"
+    text: "Update the Xactimate file for any verified gap and document the supporting logs before the job closes."
+    url: "#step-22"
+faqItems:
+  - question: "How do I track restoration equipment so units stop getting lost?"
+    answer: "Tag every unit with a serial number plus a scannable QR/asset tag, keep a single master register, and require a scan-out at deployment and a scan-in at recovery. The status of every unit (Available, Deployed, In Maintenance, Lost) should be visible on one board at all times. Most chronic losses come from units leaving the shop without a sign-out record, so the scan-out step is the highest-leverage control."
+  - question: "What is equipment-day billing reconciliation?"
+    answer: "It is the weekly or per-job comparison of the equipment-days billed on the Xactimate estimate against the equipment-days actually logged on-site from your field documentation. When billed days are fewer than logged days, you have unbilled revenue; when billed days exceed logged days, you have an audit exposure. The reconciliation catches both before the job closes, while the supporting logs still exist."
+  - question: "How much money do equipment-day gaps cost a restoration company?"
+    answer: "For a roughly $1M mitigation shop, unreconciled equipment-day gaps commonly cost $12,000–$24,000 per year in forfeited billing. The driver is that air movers and dehumidifiers are billed per unit per day, so a few undercounted days across many active jobs compound quickly. Larger fleets and heavy commercial work push the number higher."
+  - question: "How often should I do a physical equipment inventory audit?"
+    answer: "Run a full physical inventory at least quarterly, scanning every unit and reconciling it against the master register and the QBO depreciation schedule. Companies with high job volume or multiple branches should move to monthly. The audit's job is to surface ghost assets (on the books but physically gone) and untagged units before they become write-offs."
+  - question: "How do I document equipment placement for an insurance file?"
+    answer: "On arrival, photograph each unit in place (wide and close), draw a room-by-room placement diagram with unit type and count, and record the placement date in both the equipment log and the Xactimate estimate. A customer or authorized-rep signature confirming the equipment is placed and running closes the loop. This package defends every equipment-day you later bill."
+  - question: "What should be on a restoration equipment tag?"
+    answer: "Each tag should carry a unique asset ID, the unit type and model, the serial number, and a scannable QR or barcode that resolves to the register record. The register behind the tag holds purchase date, cost basis, depreciation line, condition grade, run hours, and current status. Durable tags survive job-site abuse far better than printed labels."
+  - question: "How do I integrate equipment tracking with my depreciation schedule?"
+    answer: "Match every tagged unit to a fixed-asset record in QuickBooks Online with its cost basis and MACRS depreciation line, using the asset ID as the common key. When a unit is sold, lost, or written off, update both the physical register and the QBO asset record in the same step. This keeps book value aligned with the fleet you actually own."
+  - question: "What is the process when a piece of equipment is lost on a job?"
+    answer: "Open a documented loss report within 24 hours, set the unit's status to Lost in the register, and capture the last-known job, crew lead, and recovery-walkthrough notes. Route the report to determine whether it is a customer-responsibility loss (bill or claim against the job), a covered insurance event, or an internal write-off. Never let a unit sit in limbo — an unresolved Lost status is a future audit and tax problem."
+  - question: "How do I bill equipment days correctly in Xactimate?"
+    answer: "Record the placement date and unit count on Day 1, confirm presence daily in your field log, and record the removal date at recovery. At job close, reconcile the billed equipment-days in Xactimate against the logged on-site days and correct any gap before the estimate is finalized. The daily log plus placement and recovery photos are what make each billed day defensible."
+  - question: "Who should own the equipment tracking SOP in my company?"
+    answer: "Field execution (scan-out, placement photos, daily logs, recovery) belongs to crew leads, while the reconciliation, register maintenance, and depreciation integration belong to the office manager or bookkeeper. The quarterly audit should be co-owned so field and office verify the same physical count. The key is a single named owner for the weekly billing reconciliation so it never gets skipped."
+  - question: "What maintenance schedule should restoration drying equipment follow?"
+    answer: "Clean and decontaminate every unit at each recovery, change AFD pre-filters every 250–500 run hours and HEPA filters per manufacturer spec, and calibrate hygrometers quarterly. Dehumidifier performance (grain depression) should be verified on the same calibration cadence. Logging run hours at intake and recovery is what lets you trigger service by usage instead of guesswork."
+  - question: "How do I prove equipment was on-site for the days I billed?"
+    answer: "The defensible package is the placement diagram, dated arrival photos, daily status confirmations with atmospheric readings, the customer placement signature, and the as-recovered photo with removal date. Together these establish a continuous chain from placement to pull. Carriers and TPA auditors challenge equipment-days more than almost any other line, so this documentation is your protection."
+  - question: "Can I use a spreadsheet instead of equipment-tracking software?"
+    answer: "Yes — a shared spreadsheet with a register tab, a per-job deployment tab, and a reconciliation tab works for smaller fleets, provided you still enforce scan-out, daily logging, and recovery scan-in disciplines. Software (Encircle, MICA, or equivalent) reduces manual error and speeds the reconciliation, but the SOP's controls matter more than the tool. Start with the process and upgrade the tool when volume justifies it."
+  - question: "What is the difference between an air mover, an LGR dehumidifier, and an AFD?"
+    answer: "An air mover (axial or centrifugal) accelerates surface evaporation, an LGR (low-grain refrigerant) dehumidifier removes the evaporated moisture from the air, and an AFD (air filtration device, HEPA-equipped) scrubs airborne particulates and is required on Category 3 and mold jobs. Each bills as a separate equipment-day line, so each must be tagged, deployed, logged, and reconciled independently. See the restoration software and certifications glossaries for the full definitions."
+---
+
+<AnswerBlock>
+This is a **22-step Standard Operating Procedure** for tracking restoration drying equipment — air movers, LGR dehumidifiers, and AFDs — across **8 phases**: inventory baseline, deployment, daily on-site documentation, recovery, maintenance, loss/damage protocol, quarterly audit, and equipment-day billing reconciliation. The full procedure takes roughly **6 hours to stand up** and about **15 minutes per job per week to run**. It exists to solve two expensive problems at once: physical equipment loss ('where are our dehumidifiers?') and billing leakage. For a **$1M mitigation shop, unreconciled equipment-day gaps cost $12,000–$24,000 per year** in forfeited revenue. The bridge that closes the leak is **Step 21**: reconciling billed equipment-days in Xactimate against logged on-site days before every job closes. The SOP aligns with **IICRC S500** documentation expectations for atmospheric monitoring and equipment placement.
+</AnswerBlock>
+
+# The Equipment Tracking & Recovery SOP (Air Movers, Dehus, AFDs)
+
+Drying equipment is simultaneously your most mobile asset and your most under-controlled revenue line. Air movers and dehumidifiers leave the shop on rush mobilizations, scatter across multiple loss sites, and come back — or don't — with no paper trail. The same units that walk off uncounted are billed per unit per day, so every gap between what's physically deployed and what's documented is both a missing asset and a missing invoice line.
+
+This SOP is the field-to-books loop that closes both gaps. It is written for crew leads, project managers, office managers, and the bookkeeper who owns equipment-day reconciliation. Field crews execute the tagging, deployment, logging, and recovery steps; the office owns the register, depreciation integration, and the billing reconciliation that ties field reality to the Xactimate estimate. It references **IICRC S500** for atmospheric monitoring and equipment documentation, and it plugs directly into your [monthly books close](/field-notes/monthly-books-close-sop-restoration) and the weekly [equipment-day reconciliation habit](/field-notes/equipment-day-reconciliation-habit). Work the 22 steps in order the first time; after that, the deployment, daily, recovery, and reconciliation phases repeat per job.
+
+## Prerequisites
+
+- Admin access to your field documentation platform (Encircle, MICA, or a structured shared spreadsheet)
+- **QuickBooks Online admin access** with the fixed-asset / depreciation schedule visible
+- **Xactimate** estimate write access for active jobs
+- A complete, physically present fleet to baseline (pull everything into the shop before Step 1)
+- A QR/barcode scanner or smartphone scanning app, and a label printer for durable tags
+- Working knowledge of S500 equipment terms (AFD, LGR, GPP). If any are unfamiliar, review the [restoration software glossary](/field-notes/restoration-software-glossary) and [certifications & standards reference](/field-notes/restoration-certifications-standards-explained) first
+- A named owner for the weekly billing reconciliation (do not start without one)
+
+## Materials & Tools Required
+
+<DecisionMatrix title="Equipment, Software & Supplies Checklist">
+
+| Item | Type | Example / Spec | Used in phase |
+|---|---|---|---|
+| Field documentation platform | Software | Encircle, MICA, or structured shared sheet | All |
+| QuickBooks Online (admin) | Software | Fixed-asset / depreciation schedule | Baseline, Audit, Reconciliation |
+| Xactimate license | Software | Estimate write access | Deployment, Reconciliation |
+| Durable asset tags + QR labels | Supply | Metalized/poly QR tags, 1 per unit | Baseline |
+| Label printer | Tool | Brother industrial / DYMO Rhino | Baseline |
+| QR/barcode scanner | Tool | Handheld or smartphone app | All |
+| Air movers | Equipment | Phoenix Axial / Dri-Eaz Velo Pro | Deployment |
+| LGR dehumidifiers | Equipment | Phoenix DriMAX / Dri-Eaz LGR 7000 | Deployment |
+| AFD (HEPA air scrubber) | Equipment | Phoenix Guardian R / HEPA 500 | Deployment |
+| Thermo-hygrometer (calibrated) | Tool | Protimeter / Tramex | Daily, Maintenance |
+| Moisture meter | Tool | Tramex MEP / Protimeter Surveymaster | Daily |
+| Monitoring + placement + signature forms | Supply | Daily log, placement diagram, sign-off | Deployment, Daily, Recovery |
+
+</DecisionMatrix>
+
+<BlogImage alt="Equipment lifecycle loop diagram for restoration drying equipment (air movers, LGR dehumidifiers, AFDs). Five stages arranged in a clockwise loop: (1) Intake/Tagging — serial number plus QR tag plus depreciation schedule integration; (2) Deployment — sign-out scan plus equipment placement photos; (3) On-Site — daily status, atmospheric monitoring readings, and customer signature; (4) Recovery — final walkthrough recovery list, as-recovered photo, and return-to-shop check-in; (5) Maintenance — clean, change filters, calibrate meters — feeding back into the Available Pool that supplies Deployment. A branch from the On-Site and Recovery stages feeds a separate Equipment-Day Billing Reconciliation node that compares billed days in Xactimate against logged on-site days, flagging gaps for correction before job close." caption="The equipment lifecycle loop: every unit moves Intake → Deployment → On-Site → Recovery → Maintenance and back to the available pool, while On-Site and Recovery logs feed the equipment-day billing reconciliation." width={820} height={480} />
+
+## Phase 1 — Equipment Inventory Baseline
+
+<QuickAnswer>
+Before you can track or recover anything, build a single master register of every unit, tag each one with a serial and scannable QR code, log its condition, and tie it to your depreciation schedule. This baseline is the source of truth every later phase reads from and writes to.
+</QuickAnswer>
+
+<SOPStep n={1} name="Build the master equipment register" time="60 min" where="Field platform asset module or shared sheet 'Register' tab" check="Every physically present unit appears exactly once with make, model, and serial." escalate="Any unit on hand with no purchase record or unknown origin.">
+Pull every air mover, LGR dehumidifier, and AFD into the shop and enter each into one **master register**: make, model, **serial number**, unit type, purchase date, and cost basis. Use the serial as the permanent identity and assign a short **asset ID** (e.g. `AM-014`, `DH-007`, `AFD-003`) as the working key. One unit, one row — no duplicates, no 'misc' bucket.
+</SOPStep>
+
+<SOPStep n={2} name="Tag every unit with a serial and QR/asset tag" time="45 min" where="Label printer → physical unit → register record" check="Scanning the tag resolves to the correct register row." escalate="Any tag that will not adhere or scan reliably on a unit.">
+Print a **durable asset tag** carrying the asset ID and a scannable **QR/barcode** for each unit and affix it where it survives job-site handling (housing, not a removable panel). Scan the tag and link it to the register record so a single scan retrieves the unit's full history. Replace, never reuse, a tag when a unit is retired.
+</SOPStep>
+
+<SOPStep n={3} name="Log baseline condition and hour-meter reading" time="40 min" where="Register record → 'Condition' and 'Run hours' fields" check="Each unit has a dated condition grade, photo, and starting hour reading." escalate="Any unit already at or past its expected service life or grading 'Poor'.">
+Photograph each unit, assign a **condition grade** (Excellent / Good / Fair / Poor), and record the **hour-meter or run-time baseline**. This baseline is what later triggers usage-based maintenance and supports any insurance or write-off valuation. Note visible defects in the record so they are not later mistaken for customer damage.
+</SOPStep>
+
+<SOPStep n={4} name="Integrate the register with the depreciation schedule" time="50 min" where="QBO: Accounting > Chart of Accounts > Fixed Assets (and depreciation schedule)" check="Every register unit maps to a QBO fixed-asset line by asset ID." escalate="Ghost assets on the books with no physical unit, or units with no asset record.">
+Match each tagged unit to its **QuickBooks Online fixed-asset record** and **MACRS depreciation line**, using the asset ID as the common key. Equipment typically depreciates on a 5-year MACRS schedule; confirm the class with your CPA. Now book value tracks the physical fleet — see the [restoration accounting terminology reference](/field-notes/restoration-accounting-terminology-reference) and <Citation source="IRS MACRS schedule" /> for class detail.
+</SOPStep>
+
+Use this schema as the canonical tag/register definition:
+
+<DecisionMatrix title="Equipment Tag & Register Schema">
+
+| Field | Lives on | Example | Purpose |
+|---|---|---|---|
+| Asset ID | Tag + register | `DH-007` | Working key, scannable |
+| Serial number | Tag + register | `LGR7000-4421` | Permanent identity |
+| Unit type | Register | LGR dehumidifier | Billing & deployment logic |
+| Make / model | Register | Dri-Eaz LGR 7000 | Service & specs |
+| Purchase date / cost | Register | 2024-03-11 / $2,650 | Depreciation basis |
+| QBO asset line | Register link | FA: Equipment-DH-007 | Book value tie-out |
+| Condition grade | Register | Good | Maintenance & valuation |
+| Run hours | Register | 1,240 hrs | Usage-based service |
+| Status | Status board | Deployed (Job #2291) | Availability & loss control |
+
+</DecisionMatrix>
+
+<SOPStep n={5} name="Set the available-pool status board" time="20 min" where="Field platform status view or 'Status' column in the register" check="Every unit shows exactly one current status." escalate="Any unit stuck 'Deployed' on a job that closed more than 7 days ago.">
+Stand up a **status board** — a saved field-platform view or a status column — that shows every unit as **Available, Deployed, In Maintenance, or Lost**. This board is read every time a unit moves. The discipline is simple: a unit's status changes the moment it physically moves, not at end of day.
+</SOPStep>
+
+## Phase 2 — Deployment Tracking
+
+<QuickAnswer>
+When equipment leaves for a job, scan it out against the job number, photograph its placement, draw a placement diagram, and record the deployed count on the Day 1 estimate. The deployment record is what every billed equipment-day is measured against.
+</QuickAnswer>
+
+<SOPStep n={6} name="Assign equipment to a job and create the sign-out record" time="10 min" where="Field platform: Job > Equipment > Sign out (scan each unit)" check="Status board shows each unit as Deployed to the correct job number." escalate="Any unit physically loaded but not scanned out before the truck leaves.">
+**Scan each unit** onto the specific job number and create a dated **sign-out record** naming the crew lead who took it. No unit leaves the shop without a scan-out — this single control eliminates most chronic losses. Confirm the unit count loaded matches the count signed out before the truck departs.
+</SOPStep>
+
+<SOPStep n={7} name="Photograph equipment placement on arrival" time="15 min" where="Field platform: Job > Photos > 'Equipment placement'" check="Every deployed unit appears in at least one wide and one close placement photo." escalate="Fewer placement photos than units signed out to the job.">
+On arrival, take **wide and close placement photos** of every unit set in the structure and store them against the job. These photos establish Day 1 placement and protect every equipment-day you later bill. Follow the placement priorities from the [water mitigation first 48 hours SOP](/field-notes/water-mitigation-first-48-hours-sop).
+</SOPStep>
+
+<SOPStep n={8} name="Draw the equipment placement diagram" time="15 min" where="Field platform sketch tool or placement-diagram template" check="Diagram shows room-by-room unit type and count totaling the signed-out count." escalate="Diagram count does not equal the sign-out count.">
+Produce a **room-by-room placement diagram** showing each unit's type, count, and location. This diagram becomes the master checklist for the recovery walkthrough in Step 13 and the visual backup for atmospheric monitoring placement under <Citation source="IICRC" /> S500.
+</SOPStep>
+
+<SOPStep n={9} name="Record the deployed count against the estimate" time="10 min" where="Xactimate: Estimate > Line items (equipment) + equipment log Day 1" check="Xactimate equipment line count equals the deployed count, with placement date set." escalate="Estimate written on a stale price list or with a placeholder unit count.">
+Write the **deployed unit count and placement date** into both the Xactimate estimate and the equipment log on Day 1. The placement date anchors the equipment-day count. If the price list is stale, flag it — see the [restoration pricing audit](/field-notes/restoration-pricing-audit) for why a stale list under-bills 8–12% before equipment-days are even counted.
+</SOPStep>
+
+## Phase 3 — Daily On-Site Documentation
+
+<QuickAnswer>
+Every site visit, confirm each unit is present and running, log atmospheric and moisture readings to justify the equipment, and capture a customer signature confirming placement. Each documented day is one defensible billable equipment-day.
+</QuickAnswer>
+
+<SOPStep n={10} name="Capture daily equipment status and run confirmation" time="10 min" where="Field platform: Job > Daily log > Equipment status" check="Every deployed unit is marked present and running for the current calendar day." escalate="Any unit missing from the site or not running, or a removed unit not logged.">
+On each visit, **confirm every unit is present, running, and logged on-site** for that calendar day. A unit removed early must be logged the same day so the equipment-day count is accurate. This daily presence record is the field side of the reconciliation in Step 21 and the weekly [equipment-day reconciliation habit](/field-notes/equipment-day-reconciliation-habit).
+</SOPStep>
+
+<SOPStep n={11} name="Record daily atmospheric and moisture readings" time="15 min" where="Field platform: Job > Daily log > Atmospheric readings" check="Temperature, RH, GPP, and material moisture readings logged for the day." escalate="Readings show the structure is dry but equipment is still running and billing.">
+Log **temperature, relative humidity, GPP, and material moisture readings** with a calibrated meter. Under **IICRC S500**, this monitoring justifies continued equipment days; once materials hit dry standard, equipment must come out. Readings that show 'dry' while equipment keeps billing are an audit and ethics flag — escalate immediately.
+</SOPStep>
+
+<SOPStep n={12} name="Capture the customer placement-confirmation signature" time="5 min" where="Field platform: Job > Forms > Equipment confirmation" check="Signed confirmation of units placed and running is on file." escalate="Customer disputes the equipment count or refuses to sign.">
+Obtain a **customer or authorized-rep signature** confirming the equipment placed and running at the site. This signature, paired with the placement photos and diagram, makes the equipment-days nearly impossible for a carrier or TPA to dispute. Capture it on Day 1 and again at recovery if your platform supports it.
+</SOPStep>
+
+## Phase 4 — Recovery Procedure
+
+<QuickAnswer>
+At pull, walk the structure against the placement diagram to confirm every unit, photograph the equipment as recovered, and scan each unit back into the shop. Recovery is where lost units are caught while you can still act on them.
+</QuickAnswer>
+
+<SOPStep n={13} name="Run the final recovery walkthrough" time="15 min" where="Job > Equipment > Recovery walkthrough (vs placement diagram)" check="Recovered count equals the deployed count on the placement diagram." escalate="Any unit on the diagram not physically located at recovery.">
+Walk the structure against the **Step 8 placement diagram** and check off every unit as recovered. The diagram is the recovery list — a unit on the diagram that is not in front of you is a loss happening in real time. Resolve missing units before leaving the site; a unit found three days later is usually a unit gone for good.
+</SOPStep>
+
+<SOPStep n={14} name="Photograph equipment as recovered" time="10 min" where="Job > Photos > 'Equipment recovered'" check="As-recovered photo plus removal date and hour-meter reading captured." escalate="Recovered unit shows damage not in the Step 3 baseline.">
+Photograph the units **staged for recovery** and record the **removal date and hour-meter reading**. The removal date closes the equipment-day count; the hour reading updates run hours for maintenance triggers. New damage versus the baseline routes to the loss/damage protocol in Step 19.
+</SOPStep>
+
+<SOPStep n={15} name="Scan units back into the shop" time="10 min" where="Field platform: Job > Equipment > Check in (scan each unit)" check="Status board shows each unit Available or In Maintenance; job sign-out closed." escalate="Any unit still showing Deployed after the truck returns.">
+**Scan each returning unit** to Available or In Maintenance and **close the job's sign-out record**. The job's equipment loop is not closed until every signed-out unit is scanned in or formally marked Lost. An open sign-out with no matching check-in is the trigger for the loss report in Step 19.
+</SOPStep>
+
+## Phase 5 — Maintenance Schedule
+
+<QuickAnswer>
+Every recovered unit is cleaned, serviced on cadence, and verified before re-entering the available pool. Maintenance protects asset life, keeps readings trustworthy, and prevents cross-contamination between jobs.
+</QuickAnswer>
+
+<SOPStep n={16} name="Clean and decontaminate recovered units" time="15 min/unit" where="Shop maintenance log → register 'Last serviced' field" check="Unit is wiped, decontaminated, dried, and marked Available." escalate="Unit returned from a Category 3 or mold job without decontamination.">
+Wipe, **decontaminate, and dry** every recovered unit before it re-enters the available pool. Units off **Category 3** or mold jobs require documented decontamination — see the [mold remediation containment SOP](/field-notes/mold-remediation-containment-sop) and the [restoration insurance glossary](/field-notes/restoration-insurance-glossary) for the Category definitions. A contaminated unit redeployed to a clean job is a liability event.
+</SOPStep>
+
+<SOPStep n={17} name="Change filters and service on cadence" time="20 min/unit" where="Maintenance calendar + register 'Run hours'" check="Filter changed and service logged against the run-hour trigger." escalate="A unit past its service interval still in the available pool.">
+Replace **AFD pre-filters every 250–500 run hours** and **HEPA filters per manufacturer spec**, and perform scheduled service driven by the run hours logged at recovery. A clogged AFD filter silently degrades the air-scrubbing you are billing for. Log every filter change so usage-based service replaces guesswork.
+</SOPStep>
+
+<SOPStep n={18} name="Calibrate meters and verify dehu performance" time="30 min" where="Calibration log + register 'Last calibrated' field" check="Hygrometers calibrated and dehu grain depression verified within spec." escalate="A meter out of calibration tolerance or a dehu failing its grain-depression check.">
+**Calibrate hygrometers quarterly** and **verify dehumidifier grain depression** on the same cadence. Out-of-cal meters poison the very readings (Step 11) that justify your equipment-days, and a dehu not pulling spec grains extends drying cycles. Pull any failing unit from the pool until serviced.
+</SOPStep>
+
+<DecisionMatrix title="Maintenance Cadence by Trigger">
+
+| Task | Trigger / cadence | Unit types | Log to |
+|---|---|---|---|
+| Clean & decontaminate | Every recovery | All | Maintenance log |
+| AFD pre-filter change | Every 250–500 run hrs | AFD | Run-hours log |
+| AFD HEPA filter change | Per mfr spec / annual | AFD | Run-hours log |
+| Hygrometer calibration | Quarterly | Meters | Calibration log |
+| Dehu grain-depression check | Quarterly | LGR dehu | Calibration log |
+| Hour-meter / wear inspection | Quarterly + each recovery | Air movers, dehus | Register |
+| Deep service / motor check | Annual or 2,000 run hrs | Dehus, AFDs | Maintenance log |
+
+</DecisionMatrix>
+
+<MidPostCTA type="download" headline="Download This SOP as a Printable PDF" subtext="Use it as a real internal training document for new hires." href="/downloads/equipment-tracking-recovery-sop.pdf" label="Download the SOP →" />
+
+## Phase 6 — Loss & Damage Protocol
+
+<QuickAnswer>
+When a unit is lost or damaged, open a documented report within 24 hours, set its status, and route it for customer billing, an insurance claim, or an internal write-off. An unresolved loss is a future tax and audit problem.
+</QuickAnswer>
+
+<SOPStep n={19} name="File the lost or damaged equipment report" time="20 min" where="Field platform: Equipment > Loss report → register 'Status: Lost'" check="Report names last job, crew lead, and resolution path within 24 hours." escalate="Any loss without a clear responsible party or a unit Lost more than 30 days.">
+Open a documented **loss/damage report within 24 hours**, set the unit's status to **Lost** or **Damaged**, and capture the last-known job, crew lead, and recovery-walkthrough notes. Route it to a resolution path: **customer-responsibility loss** (bill or claim against the job), **covered insurance event** (file the claim with photos and the register valuation), or **internal write-off** (remove the asset from QBO). Never leave a unit in limbo — see [hidden profit leaks in restoration companies](/field-notes/hidden-profit-leaks-restoration-companies) for how unresolved losses quietly erode margin.
+</SOPStep>
+
+## Phase 7 — Quarterly Inventory Audit
+
+<QuickAnswer>
+At least quarterly, physically scan every unit and reconcile the count against the master register and the QBO depreciation schedule. The audit surfaces ghost assets and untagged units before they become write-offs.
+</QuickAnswer>
+
+<SOPStep n={20} name="Run the quarterly physical inventory audit" time="90 min" where="Register + QBO Fixed Assets (three-way tie-out)" check="Physical count equals register count equals QBO asset count." escalate="Any variance between physical, register, and book counts.">
+**Physically scan every unit** and reconcile the count three ways: physical fleet, master register, and **QBO depreciation schedule**. Investigate every variance — a unit on the books but not on the floor is a **ghost asset**; a unit on the floor but not in the register is an untagged orphan (send it back through Step 1–2). Correct both the register and QBO so book value matches reality. Roll findings into your [monthly books close SOP](/field-notes/monthly-books-close-sop-restoration).
+</SOPStep>
+
+## Phase 8 — Equipment-Day Billing Reconciliation (the Bookkeeping Bridge)
+
+<QuickAnswer>
+This is where field reality meets the invoice: compare the equipment-days billed in Xactimate against the equipment-days logged on-site for every job, flag every gap, and correct the estimate before the job closes. For a $1M shop, this phase recovers $12K–$24K a year.
+</QuickAnswer>
+
+<Claim label="Core Principle">
+Every air mover, dehumidifier, and AFD is billed per unit per day. If the equipment-days on your Xactimate estimate do not match the equipment-days in your field log, you are either leaving money on the table or carrying an audit exposure — and only a per-job reconciliation, run before close, catches it while the logs still exist.
+</Claim>
+
+<Stat value="$12K–$24K" label="Annual equipment-day billing leak for a $1M mitigation shop with no reconciliation" source="Cat3 Books client data, 2026" />
+
+<SOPStep n={21} name="Reconcile billed equipment-days to logged on-site days" time="15 min/job" where="Xactimate equipment lines vs field platform daily log (per job)" check="Billed equipment-days equal logged on-site days for every active and closing job." escalate="Any gap of 1+ equipment-day, or billed days exceeding logged days (audit risk).">
+For each active and closing job, compare the **equipment-days billed in Xactimate** against the **equipment-days logged on-site** (unit count × calendar days from placement to removal). **Billed < logged** = unbilled revenue to capture; **billed > logged** = audit exposure to correct down. Run this weekly per the [equipment-day reconciliation habit](/field-notes/equipment-day-reconciliation-habit) — it is the single highest-return step in this SOP.
+</SOPStep>
+
+<SOPStep n={22} name="Correct the estimate and document the adjustment" time="10 min/job" where="Xactimate: Estimate > Edit equipment lines (before job close)" check="Estimate matches logged days; supporting logs and photos attached." escalate="A gap discovered after job close (now a supplement or audit issue, not a fix).">
+Update the **Xactimate file** for any verified gap and **attach the supporting logs, photos, and signature** before the job closes. A correction made pre-close is a clean adjustment; the same correction post-close becomes a supplement or an audit finding. See how billed scope slips between systems in [why supplements disappear between Xactimate and QuickBooks](/field-notes/supplements-disappear-xactimate-quickbooks) and the [job close-out & final AR SOP](/field-notes/job-close-out-final-ar-sop).
+</SOPStep>
+
+<MidPostCTA type="audit" headline="Free 30-min Books Audit Call" subtext="We'll show you how your field equipment logs flow into your books — and where equipment-days are leaking between Xactimate and QuickBooks." />
+
+## Common Mistakes
+
+1. **No scan-out at deployment.** Units leave the shop without a sign-out record, so when one walks off there is no last-known job or responsible crew lead. This is the single biggest cause of unrecoverable losses.
+2. **Logging removal at end of week instead of same day.** A unit pulled Tuesday but logged Friday distorts the equipment-day count and breaks the reconciliation in Step 21.
+3. **Placement photos but no placement diagram.** Without the room-by-room diagram, the recovery walkthrough (Step 13) has no checklist, so missing units aren't caught at pull.
+4. **Billing equipment-days the readings don't support.** Equipment still running and billing after materials hit dry standard under S500 is an audit and ethics exposure, not extra revenue.
+5. **Register and QBO drift apart.** Skipping the depreciation integration (Step 4) or the quarterly tie-out (Step 20) creates ghost assets and overstated book value.
+6. **Reconciling only at job close.** Discovering a gap after close turns a clean adjustment into a supplement or audit issue — reconcile weekly, before close.
+7. **No single owner for reconciliation.** When the billing reconciliation lives on a checklist nobody reviews instead of one named person's weekly task, it silently stops happening.
+8. **Skipping decontamination off Category 3 / mold jobs.** Redeploying a contaminated unit to a clean job is a liability event and a cross-contamination risk.
+9. **Tracking AFDs the same as air movers.** Each unit type bills as a separate line and has its own filter and HEPA cadence; lumping them hides under-billing and missed maintenance.
+10. **Letting a 'Lost' status sit open.** An unresolved loss is never billed, claimed, or written off — it just quietly erodes margin and book accuracy.
+
+## How to Adapt This SOP for Your Company
+
+**Universal — do not change:** the scan-out at deployment (Step 6), the daily presence log (Step 10), the placement-vs-recovery walkthrough (Steps 8 and 13), and the equipment-day reconciliation (Steps 21–22). These controls are what make the loop work regardless of size or tooling.
+
+**Company-specific — adapt freely:** the tool (Encircle/MICA versus a structured spreadsheet), the exact equipment models and filter intervals (match your manufacturer specs), the audit frequency (quarterly is the floor; high-volume or multi-branch shops should move to monthly), and who owns each step (a small shop may have the owner run reconciliation; a larger one assigns it to a bookkeeper or coordinator).
+
+**Scale triggers:** when active jobs regularly exceed what one person can reconcile in an hour, or you add a second location, upgrade from spreadsheet to platform-based tracking and split field execution from office reconciliation. The SOP's controls stay identical — only the tooling and ownership change. For the broader system this plugs into, see the [complete guide to job costing for restoration & mitigation](/field-notes/complete-guide-job-costing-restoration-mitigation) and the [complete guide to bookkeeping for restoration companies](/field-notes/complete-guide-bookkeeping-restoration-companies).
+
+## Frequently Asked Questions
+
+### How do I track restoration equipment so units stop getting lost?
+
+Tag every unit with a serial number plus a scannable QR/asset tag, keep a single master register, and require a scan-out at deployment and a scan-in at recovery. The status of every unit (Available, Deployed, In Maintenance, Lost) should be visible on one board at all times. Most chronic losses come from units leaving the shop without a sign-out record, so the scan-out step is the highest-leverage control.
+
+### What is equipment-day billing reconciliation?
+
+It is the weekly or per-job comparison of the equipment-days billed on the Xactimate estimate against the equipment-days actually logged on-site from your field documentation. When billed days are fewer than logged days, you have unbilled revenue; when billed days exceed logged days, you have an audit exposure. The reconciliation catches both before the job closes, while the supporting logs still exist.
+
+### How much money do equipment-day gaps cost a restoration company?
+
+For a roughly $1M mitigation shop, unreconciled equipment-day gaps commonly cost $12,000–$24,000 per year in forfeited billing. The driver is that air movers and dehumidifiers are billed per unit per day, so a few undercounted days across many active jobs compound quickly. Larger fleets and heavy commercial work push the number higher.
+
+### How often should I do a physical equipment inventory audit?
+
+Run a full physical inventory at least quarterly, scanning every unit and reconciling it against the master register and the QBO depreciation schedule. Companies with high job volume or multiple branches should move to monthly. The audit's job is to surface ghost assets (on the books but physically gone) and untagged units before they become write-offs.
+
+### How do I document equipment placement for an insurance file?
+
+On arrival, photograph each unit in place (wide and close), draw a room-by-room placement diagram with unit type and count, and record the placement date in both the equipment log and the Xactimate estimate. A customer or authorized-rep signature confirming the equipment is placed and running closes the loop. This package defends every equipment-day you later bill.
+
+### What should be on a restoration equipment tag?
+
+Each tag should carry a unique asset ID, the unit type and model, the serial number, and a scannable QR or barcode that resolves to the register record. The register behind the tag holds purchase date, cost basis, depreciation line, condition grade, run hours, and current status. Durable tags survive job-site abuse far better than printed labels.
+
+### How do I integrate equipment tracking with my depreciation schedule?
+
+Match every tagged unit to a fixed-asset record in QuickBooks Online with its cost basis and MACRS depreciation line, using the asset ID as the common key. When a unit is sold, lost, or written off, update both the physical register and the QBO asset record in the same step. This keeps book value aligned with the fleet you actually own.
+
+### What is the process when a piece of equipment is lost on a job?
+
+Open a documented loss report within 24 hours, set the unit's status to Lost in the register, and capture the last-known job, crew lead, and recovery-walkthrough notes. Route the report to determine whether it is a customer-responsibility loss (bill or claim against the job), a covered insurance event, or an internal write-off. Never let a unit sit in limbo — an unresolved Lost status is a future audit and tax problem.
+
+### How do I bill equipment days correctly in Xactimate?
+
+Record the placement date and unit count on Day 1, confirm presence daily in your field log, and record the removal date at recovery. At job close, reconcile the billed equipment-days in Xactimate against the logged on-site days and correct any gap before the estimate is finalized. The daily log plus placement and recovery photos are what make each billed day defensible.
+
+### Who should own the equipment tracking SOP in my company?
+
+Field execution (scan-out, placement photos, daily logs, recovery) belongs to crew leads, while the reconciliation, register maintenance, and depreciation integration belong to the office manager or bookkeeper. The quarterly audit should be co-owned so field and office verify the same physical count. The key is a single named owner for the weekly billing reconciliation so it never gets skipped.
+
+### What maintenance schedule should restoration drying equipment follow?
+
+Clean and decontaminate every unit at each recovery, change AFD pre-filters every 250–500 run hours and HEPA filters per manufacturer spec, and calibrate hygrometers quarterly. Dehumidifier performance (grain depression) should be verified on the same calibration cadence. Logging run hours at intake and recovery is what lets you trigger service by usage instead of guesswork.
+
+### How do I prove equipment was on-site for the days I billed?
+
+The defensible package is the placement diagram, dated arrival photos, daily status confirmations with atmospheric readings, the customer placement signature, and the as-recovered photo with removal date. Together these establish a continuous chain from placement to pull. Carriers and TPA auditors challenge equipment-days more than almost any other line, so this documentation is your protection.
+
+### Can I use a spreadsheet instead of equipment-tracking software?
+
+Yes — a shared spreadsheet with a register tab, a per-job deployment tab, and a reconciliation tab works for smaller fleets, provided you still enforce scan-out, daily logging, and recovery scan-in disciplines. Software (Encircle, MICA, or equivalent) reduces manual error and speeds the reconciliation, but the SOP's controls matter more than the tool. Start with the process and upgrade the tool when volume justifies it.
+
+### What is the difference between an air mover, an LGR dehumidifier, and an AFD?
+
+An air mover (axial or centrifugal) accelerates surface evaporation, an LGR (low-grain refrigerant) dehumidifier removes the evaporated moisture from the air, and an AFD (air filtration device, HEPA-equipped) scrubs airborne particulates and is required on Category 3 and mold jobs. Each bills as a separate equipment-day line, so each must be tagged, deployed, logged, and reconciled independently. See the [restoration software glossary](/field-notes/restoration-software-glossary) and [certifications & standards reference](/field-notes/restoration-certifications-standards-explained) for the full definitions.
+
+## Key Takeaways
+
+- This is a **22-step, 8-phase SOP** that solves equipment loss and billing leakage with one connected loop: Intake → Deployment → On-Site → Recovery → Maintenance → back to the available pool.
+- **Scan-out at deployment and scan-in at recovery** are the controls that stop chronic losses; a unit never moves without its status changing.
+- **Daily on-site logs, placement diagrams, photos, and customer signatures** make every billed equipment-day defensible against carrier and TPA challenges under **IICRC S500**.
+- The **equipment-day billing reconciliation (Steps 21–22)** is the bookkeeping bridge — for a $1M shop it recovers **$12K–$24K a year** when run weekly, before job close.
+- Tie the physical register to your **QBO depreciation schedule** and reconcile it three ways every quarter so book value matches the fleet you actually own.
+- The controls are universal; the tool, models, audit frequency, and ownership are yours to adapt.
+
+---
+
+*Related reading: [Equipment-Day Reconciliation: The 15-Minute Weekly Habit](/field-notes/equipment-day-reconciliation-habit) · [The Monthly Books Close SOP for Restoration](/field-notes/monthly-books-close-sop-restoration) · [Water Mitigation: The First 48 Hours SOP](/field-notes/water-mitigation-first-48-hours-sop) · [Hidden Profit Leaks in Restoration Companies](/field-notes/hidden-profit-leaks-restoration-companies) · [The Restoration Pricing Audit](/field-notes/restoration-pricing-audit)*

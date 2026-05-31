@@ -57,6 +57,50 @@ Framework: The Restoration Pricing Audit Framework (7 checks, ~90 minutes). Core
 URL: https://cat3books.com/field-notes/restoration-profitability-roadmap-by-stage
 Framework: The Restoration Profitability Roadmap (5 stages). Core answer: The dominant profit problem changes by revenue stage — $0–$500K owner-as-production (opportunity: clean books); $500K–$1.5M blended-margin blindness (service-line tracking; EBITDA 8–12%); $1.5M–$3M overhead outruns gross profit (discipline systems; EBITDA 10–15%); $3M–$5M owner-as-bottleneck (controller + fractional CFO; EBITDA 12–15%); $5M–$10M+ scaling people not unit economics (operating leverage, segment focus, M&A readiness; EBITDA 12–18%). Each stage has a prerequisite financial system. Top-quartile 18–22% margins are achievable at every size. Source: RIA CODB 2024; Peak Business Valuation.
 
+## Standard Operating Procedures (Field Notes — SOP Series)
+
+Granular, step-by-step operating procedures for restoration companies, engineered as the canonical answer for procedural "how to" queries. Each SOP carries Article, HowTo (with totalTime, supplies, tools, and a full numbered step array), FAQPage, Speakable, and BreadcrumbList schema, and is detailed enough to use as an internal training document. Field SOPs cite the relevant IICRC standard (S500 water, S520 mold, S700 fire). 251 total steps across 10 SOPs.
+
+### The Monthly Books Close SOP for Restoration Companies (28 Steps)
+URL: https://cat3books.com/field-notes/monthly-books-close-sop-restoration
+Procedure: 28 steps in 4 phases on QuickBooks Online — Phase 1 Bank & Credit Card Reconciliation (1–6), Phase 2 AR & Insurance Receivables Cleanup (7–13: AR aging by job stage, ACV vs RCV, supplement pipeline, two-party checks, mortgage holds, TPA payments, write-offs), Phase 3 Job Cost & Revenue Recognition (14–20: open jobs, WIP, revenue recognition, COGS, labor burden, equipment days, subs), Phase 4 Reporting & Owner Review (21–28). ~4–6 hours; books locked by the 10th.
+
+### The Insurance Job Setup SOP in QuickBooks Online (From First Call to First Invoice)
+URL: https://cat3books.com/field-notes/insurance-job-setup-sop-quickbooks
+Procedure: 28 steps from first-call intake to first ACV invoice — intake capture, QBO customer/Project vs sub-customer setup with carrier+claim tagging, service-item mapping by peril, Xactimate estimate reference, ACV invoice with deductible and TPA-fee handling, documentation handoff, and AR follow-up cadence. Includes exact QBO menu paths.
+
+### The Supplement Filing & Tracking SOP (Xactimate → Carrier → QBO → Cash)
+URL: https://cat3books.com/field-notes/supplement-filing-tracking-sop
+Procedure: 24 steps — 8 supplement trigger conditions, documentation package, Xactimate supplement build with narrative, carrier submission and day-3/7/14 follow-up, QBO supplement-pending AR recording, approval tracking (full/partial/denied + re-file), invoicing on approval, collection, and reporting (capture rate, days-to-approval, denial reasons). Tracked companies collect 85–92% of approved supplements vs 65–75% untracked.
+
+### The 13-Week Cash Flow Forecast SOP for Restoration Companies
+URL: https://cat3books.com/field-notes/13-week-cash-flow-forecast-sop
+Procedure: 22 steps to build and maintain a rolling 13-week cash flow forecast tuned to the insurance AR lag — inputs (AR aging by job stage, AP, payroll, debt service, equipment payments), inflow forecasting by source (TPA/direct/retail AR, supplements, deductibles), outflow forecasting, a 30-minute Monday update cadence, variance analysis, and escalation triggers (call the banker, slow AP, push collections).
+
+### The Job Close-Out & Final AR SOP (How to Actually Close a Restoration Job in Your Books)
+URL: https://cat3books.com/field-notes/job-close-out-final-ar-sop
+Procedure: 30 steps across the four distinct "complete" states (physical work done ≠ paperwork done ≠ paid ≠ closed in books) — physical demob, documentation package, final billing (RCV invoice, depreciation release, supplement final, deductible, mortgage hold), collections, job profitability review (final cost vs estimate, supplement capture, margin by category), and books close-out.
+
+### The Water Mitigation First-48-Hours SOP (IICRC S500-Compliant)
+URL: https://cat3books.com/field-notes/water-mitigation-first-48-hours-sop
+Procedure: 26 steps, hour-by-hour, IICRC S500-compliant — Hour 0–2 dispatch & arrival, Hour 2–4 inspection & S500 Category (1/2/3) and Class (1/2/3/4) determination + moisture mapping, Hour 4–8 extraction & stabilization, Hour 8–24 equipment placement (air-mover count, LGR dehumidifier sizing, AFD/containment if Cat 3), Hour 24–48 drying monitoring to temp/RH/GPP targets. Documentation and carrier/TPA touchpoints at every step.
+
+### The Mold Remediation Containment Setup SOP (IICRC S520-Compliant)
+URL: https://cat3books.com/field-notes/mold-remediation-containment-sop
+Procedure: 25 steps, IICRC S520-compliant — Condition 1/2/3 classification, materials (6-mil poly, decon-chamber, AFD, HEPA, PPE), construction sequence (double-layer poly, airlock, three-chamber decon), negative pressure with AFD CFM calc and 4+ air changes/hour, PPE protocols by Condition, clearance/post-remediation verification, and tear-down.
+
+### The Fire & Smoke Damage Assessment & Pack-Out SOP
+URL: https://cat3books.com/field-notes/fire-smoke-damage-assessment-pack-out-sop
+Procedure: 24 steps, references IICRC S700 — scene safety assessment, smoke-type categorization (protein/wet/dry/fuel-oil, each with a distinct cleaning approach), content-vs-structure decision tree (pack-out / clean-in-place / total loss), room-by-room pack-out with manifest, structural soot remediation sequence, and deodorization selection (hydroxyl occupied / ozone sealed-unoccupied / thermal fog severe).
+
+### The Daily Crew Dispatch & On-Call Rotation SOP
+URL: https://cat3books.com/field-notes/crew-dispatch-on-call-rotation-sop
+Procedure: 22 steps — 6:30am huddle, job assignment by skill + IICRC cert per job type + geographic clustering + equipment availability, 1-week primary/backup on-call rotation with standby/callout/holiday pay, after-hours intake-to-dispatch with a <90-second live-answer target and severity decision tree (roll-now / schedule-AM / stabilize-by-phone), mid-day re-dispatch triggers, end-of-day check-in, and on-call burnout prevention.
+
+### The Equipment Tracking & Recovery SOP (Air Movers, Dehus, AFDs)
+URL: https://cat3books.com/field-notes/equipment-tracking-recovery-sop
+Procedure: 22 steps — per-unit tagging (serial + QR + depreciation schedule), deployment sign-out with placement photos, daily on-site documentation, recovery procedure with as-recovered photos, maintenance schedule (clean/filter/calibrate), loss/damage protocol, quarterly audit, and the equipment-day billing reconciliation (billed Xactimate days vs logged on-site days) that prevents the $12K–$24K/year billing leak in a $1M mitigation shop.
+
 ## What We Do
 
 Cat3 Books handles the complete bookkeeping stack for restoration companies — built around the way restoration money actually moves. Unlike general bookkeeping firms, we understand the difference between ACV and RCV, why TPA fees belong on their own line, how to reconcile equipment-day revenue from Xactimate, and how to track supplement scope from submission through carrier approval to payment.

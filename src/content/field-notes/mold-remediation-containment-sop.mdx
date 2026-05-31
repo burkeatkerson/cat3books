@@ -1,0 +1,446 @@
+---
+title: "The Mold Remediation Containment Setup SOP (IICRC S520-Compliant)"
+date: "2026-05-31"
+updatedDate: "2026-05-31"
+excerpt: "Step-by-step SOP for building IICRC S520-compliant mold containment in 25 steps: classify Condition, size the AFD, set negative pressure, run decon."
+tags:
+  - "restoration SOP"
+  - "mold remediation"
+  - "IICRC S520"
+  - "containment setup"
+  - "negative air pressure"
+author: "Cat3 Books"
+category: "sop"
+categoryLabel: "Standard Operating Procedures"
+coverStyle: "cv-grid"
+coverGlyph: "25\nSTEPS"
+coverSub: "S520 Containment Setup"
+issueNumber: "№ 094"
+readTime: "18 min"
+featured: false
+contentType: "sop"
+priority: 0.9
+keywords:
+  - "how to build mold containment IICRC S520"
+  - "mold remediation containment setup SOP"
+  - "negative air pressure mold containment"
+  - "AFD CFM calculation air changes per hour"
+  - "S520 Condition 1 2 3 classification"
+  - "decontamination chamber setup mold"
+  - "6-mil poly containment construction"
+  - "manometer negative pressure monitoring"
+howTo:
+  totalTime: "PT6H"
+  estimatedCost: "$350–$900 in consumables (poly, tape, zipper doors, PPE) per containment; equipment owned"
+  supply:
+    - "6-mil fire-rated polyethylene sheeting"
+    - "Painter's tape and contractor sheathing tape"
+    - "Spray adhesive or poly hangers"
+    - "Self-adhesive zipper doors (2–3 per containment)"
+    - "Disposable Tyvek suits, nitrile gloves, P100 cartridges"
+    - "HEPA vacuum bags and pre-filters"
+    - "Antimicrobial / EPA-registered cleaner"
+  tool:
+    - "HEPA air filtration device / negative air machine (e.g. Phoenix Guardian R)"
+    - "Digital manometer (e.g. Dwyer Series 477 / Testo 510)"
+    - "HEPA vacuum (e.g. Pullman Ermator)"
+    - "Full-face respirator or PAPR"
+    - "Moisture meter and thermo-hygrometer"
+    - "Laser distance measure / tape measure"
+    - "Documentation camera or job-management app (Encircle / DASH)"
+howToSteps:
+  - name: "Verify the IEP scope and remediation work order"
+    text: "Confirm the Indoor Environmental Professional's protocol, affected materials, and clearance criteria before mobilizing."
+    url: "#step-1"
+  - name: "Classify the S520 Condition (1, 2, or 3)"
+    text: "Assess each zone as Condition 1, 2, or 3 to set containment and PPE requirements."
+    url: "#step-2"
+  - name: "Measure and calculate affected square footage"
+    text: "Measure the work area and tally affected square footage to size containment and AFD capacity."
+    url: "#step-3"
+  - name: "Decide full vs. limited containment"
+    text: "Select limited containment under 10 sq ft contiguous or full containment for larger or Condition 3 areas."
+    url: "#step-4"
+  - name: "Calculate room volume in cubic feet"
+    text: "Multiply length by width by height to get the cubic volume that the AFD must turn over."
+    url: "#step-5"
+  - name: "Size the AFD for 4+ air changes per hour"
+    text: "Convert required ACH and room volume into the CFM the negative air machine must deliver."
+    url: "#step-6"
+  - name: "Stage materials and stage the equipment"
+    text: "Pull all poly, tape, zipper doors, AFD, HEPA vac, and PPE to the job before construction begins."
+    url: "#step-7"
+  - name: "Shut down and seal the HVAC"
+    text: "Turn off the HVAC and seal all supply and return registers in the work area with poly and tape."
+    url: "#step-8"
+  - name: "Pre-clean and HEPA vacuum loose debris"
+    text: "HEPA-vacuum gross surface debris before sealing to reduce airborne load during construction."
+    url: "#step-9"
+  - name: "Mark anchor points and run the top edge"
+    text: "Snap or mark the ceiling/wall anchor line and fasten the first poly run along the perimeter."
+    url: "#step-10"
+  - name: "Hang the first 6-mil poly layer"
+    text: "Hang the primary fire-rated poly wall and floor cover, overlapping seams a minimum of 12 inches."
+    url: "#step-11"
+  - name: "Hang the second poly layer (critical barriers)"
+    text: "Add the second poly layer for Condition 3 or critical barriers, offsetting seams from layer one."
+    url: "#step-12"
+  - name: "Seal all seams, penetrations, and edges"
+    text: "Tape every seam, corner, and penetration so the only opening is the airlock entry."
+    url: "#step-13"
+  - name: "Install the two-stage airlock entry"
+    text: "Build a flap-over-flap airlock so the containment is never open to the clean space at once."
+    url: "#step-14"
+  - name: "Construct the three-chamber decontamination unit"
+    text: "Build a dirty room, shower/transition room, and clean room for Condition 3 work."
+    url: "#step-15"
+  - name: "Position and duct the negative air machine"
+    text: "Place the AFD inside containment and duct exhaust to the exterior or through a HEPA-filtered path."
+    url: "#step-16"
+  - name: "Establish and verify negative pressure"
+    text: "Run the AFD and confirm the poly draws inward with measurable negative differential."
+    url: "#step-17"
+  - name: "Set and log the manometer baseline"
+    text: "Place the manometer and record a baseline reading of at least -0.02 in. w.c. relative to outside."
+    url: "#step-18"
+  - name: "Don PPE per the Condition level"
+    text: "Select and don respiratory protection and suits matched to the classified Condition."
+    url: "#step-19"
+  - name: "Verify directional airflow with a smoke test"
+    text: "Use a smoke pencil at the airlock to confirm air moves into, not out of, containment."
+    url: "#step-20"
+  - name: "Photograph and document the built containment"
+    text: "Capture wide and detail photos of every barrier, the AFD, and the manometer for the file."
+    url: "#step-21"
+  - name: "Start the AFD/manometer monitoring log"
+    text: "Open a running log of negative pressure, runtime, and filter status for the project duration."
+    url: "#step-22"
+  - name: "Coordinate post-remediation verification with the IEP"
+    text: "Schedule independent clearance and confirm containment stays intact until clearance passes."
+    url: "#step-23"
+  - name: "Tear down containment in reverse sequence"
+    text: "After clearance, mist, fold dirty-side-in, and remove poly while the AFD still runs."
+    url: "#step-24"
+  - name: "Demobilize, decontaminate equipment, and close the file"
+    text: "HEPA-clean and log equipment, dispose of waste, and attach all documentation to the job."
+    url: "#step-25"
+faqItems:
+  - question: "How do I size a negative air machine for a mold containment?"
+    answer: "Calculate room volume (length x width x height in cubic feet), multiply by your target air changes per hour (4 ACH minimum), then divide by 60 to get required CFM. A 12 x 15 x 8 ft room is 1,440 cu ft; at 4 ACH that is 5,760 cu ft/hr ÷ 60 = 96 CFM minimum. Always round up to the next machine and add capacity for duct loss."
+  - question: "What is the minimum negative pressure for mold containment?"
+    answer: "IICRC S520 references a minimum measurable negative pressure of roughly -0.02 inches of water column (in. w.c.) relative to adjacent areas, the same threshold used in many mold and asbestos programs. The practical test is that the poly draws visibly inward and a smoke pencil at the airlock pulls into the containment. Log the manometer reading at setup and monitor it daily."
+  - question: "What is the difference between S520 Condition 1, 2, and 3?"
+    answer: "Condition 1 is normal fungal ecology (no abnormal growth). Condition 2 is settled spores or fragments from a Condition 3 source. Condition 3 is actual active or dormant mold growth on materials. Containment and PPE escalate with the Condition: full containment, decon chamber, and PAPR-grade protection are standard for large Condition 3 work."
+  - question: "When do I need full containment versus limited containment for mold?"
+    answer: "Limited containment is generally appropriate for isolated areas under about 10 contiguous square feet of Condition 3 growth, using a single poly barrier and an airlock. Full containment with a three-chamber decontamination unit and negative pressure is used for larger areas, heavy Condition 3, or sensitive occupants. The IEP's protocol governs; when in doubt, build full containment."
+  - question: "What poly thickness is required for mold containment walls?"
+    answer: "Use a minimum of 6-mil polyethylene sheeting, and fire-rated poly where building or code requirements apply. Critical barriers and Condition 3 jobs typically get a double layer of 6-mil with offset seams. Thinner 4-mil poly tears too easily and is reserved for floor protection runners outside containment."
+  - question: "How many air changes per hour does mold remediation require?"
+    answer: "Target a minimum of 4 air changes per hour (ACH) inside the containment, and many protocols call for 6 ACH or more on aggressive Condition 3 work. ACH is set by your AFD CFM relative to room volume. More ACH clears airborne spores faster but increases negative pressure demand, so size the machine and seal the barriers accordingly."
+  - question: "What PPE is required for mold remediation by Condition level?"
+    answer: "Condition 1 cleanup typically needs an N95 and gloves at minimum. Condition 2 and small Condition 3 work uses a half-face P100 respirator, Tyvek suit, and gloves. Large or heavy Condition 3 work uses a full-face respirator or PAPR with P100/HEPA cartridges, full suit, gloves, and boot covers. Always follow the IEP protocol and OSHA respiratory program."
+  - question: "How do I build a decontamination chamber for mold remediation?"
+    answer: "Build a three-room poly chamber attached to the containment airlock: a dirty room where workers doff suits, a shower or transition room, and a clean room where street clothes and clean PPE are stored. Each room is separated by a flap door, and the chambers sit under negative pressure so air flows from clean toward dirty. This is standard for full-containment Condition 3 projects."
+  - question: "Where should the negative air machine exhaust?"
+    answer: "Exhaust the AFD to the building exterior whenever possible, ducting through a window or wall penetration that is sealed around the duct. If exterior exhaust is impractical, the HEPA-filtered air may recirculate within the structure, but never exhaust unfiltered air into an occupied clean space. Confirm the discharge does not re-enter the building through a nearby intake."
+  - question: "How do I prove negative pressure was maintained for the insurance file?"
+    answer: "Photograph the manometer reading at setup and keep a daily AFD/manometer monitoring log showing the differential, machine runtime, and filter changes throughout the project. Pair that with dated containment photos and the IEP clearance report. This documentation package supports both the S520 standard of care and the billing on the file."
+  - question: "How long does it take to set up mold containment?"
+    answer: "A standard single-room full containment with negative pressure and a decon chamber takes about 4 to 6 hours for a two-person crew, including assessment, construction, and verification. Limited containment can be set in under 2 hours. Tear-down after clearance adds another 1 to 2 hours."
+  - question: "Do I need an IEP for every mold remediation job?"
+    answer: "Independent assessment and post-remediation verification by an Indoor Environmental Professional are strongly recommended and often contractually or state-required for larger or insurance-driven jobs. S520 frames the remediator and the IEP as separate roles to avoid conflict of interest. Small owner-occupied jobs may proceed without one, but the clearance documentation is weaker without independent verification."
+  - question: "What is the air change per hour formula for containment?"
+    answer: "ACH = (CFM x 60) ÷ room volume in cubic feet. To solve for the CFM you need: required CFM = (room volume x target ACH) ÷ 60. Use the machine's rated CFM at the filter loading you expect, not the clean-filter spec, because a dirty HEPA filter drops delivered airflow significantly."
+  - question: "How do I tear down mold containment without re-contaminating the area?"
+    answer: "Only tear down after the IEP clearance passes. Lightly mist surfaces to suppress dust, then fold each poly sheet dirty-side-in starting from the top, bagging as you go, while the AFD continues running. Run the AFD and HEPA-vacuum the area for a final pass, then shut down and remove the machine last."
+---
+
+<AnswerBlock>
+This is a 25-step Standard Operating Procedure for building an IICRC S520-compliant mold remediation containment. It runs four phases — Pre-work assessment, Construction sequence, Air movement and negative pressure, and Documentation and tear-down — and takes a two-person crew roughly 6 hours for a full single-room containment. The core targets: classify each zone as S520 Condition 1, 2, or 3; build double-layer 6-mil poly barriers with a two-stage airlock and a three-chamber decontamination unit; size the air filtration device (AFD) for a minimum of 4 air changes per hour; and hold a measurable negative pressure of at least -0.02 in. w.c., verified by manometer and a smoke test, and logged daily until an Indoor Environmental Professional clears the space.
+</AnswerBlock>
+
+# The Mold Remediation Containment Setup SOP (IICRC S520-Compliant)
+
+This SOP tells a remediation technician exactly how to assess, build, and verify a containment for a mold job that meets the IICRC S520 Standard for Professional Mold Remediation. It is written so a new hire can execute it from the truck without supervision, and so an ops manager can print it as a training document. It covers the four jobs that make a containment defensible: classifying the contamination (S520 Condition 1/2/3), constructing the physical barrier, establishing negative pressure with the right air filtration device, and documenting everything for clearance and the insurance file.
+
+The standard of care here is the IICRC <Citation source="IICRC" /> S520 mold standard, supported by OSHA respiratory protection rules. If your job overlaps with a water loss, your containment work follows the same crew right after the [Water Mitigation First 48 Hours SOP](/field-notes/water-mitigation-first-48-hours-sop). Terms like Condition 3, AFD, and ACH are defined in the [restoration certifications and standards reference](/field-notes/restoration-certifications-standards-explained) and the [restoration insurance glossary](/field-notes/restoration-insurance-glossary). Build it once, build it right, and the clearance test is a formality.
+
+## Prerequisites
+
+- A signed remediation work order and, where applicable, the **IEP protocol** (scope, affected materials, and clearance criteria) in hand.
+- Confirmed **power and water** at the structure, and authorization to run an exhaust duct to the exterior.
+- Completed safety walk: structural hazards, electrical, and occupant/pet relocation handled.
+- Working knowledge of S520 **Condition 1/2/3** classification and your company's PPE program.
+- A current **OSHA respiratory fit-test** for every technician who will enter containment.
+- Access to your job-documentation app (Encircle, DASH, or photo log) for the file.
+
+## Materials & Tools Required
+
+<DecisionMatrix title="Containment Materials & Equipment">
+
+| Item | Spec / model example | Purpose |
+|---|---|---|
+| Poly sheeting | 6-mil fire-rated polyethylene | Containment walls, ceiling, floor, critical barriers |
+| Floor runner | 4-mil poly | Pathway protection outside containment |
+| Tape | Contractor sheathing tape + painter's tape | Seams, edges, register seals |
+| Zipper doors | Self-adhesive, 2–3 per containment | Airlock and decon chamber entries |
+| AFD / negative air machine | Phoenix Guardian R or equivalent HEPA AFD | Negative pressure + air scrubbing (4+ ACH) |
+| Ducting | 16 in. lay-flat or rigid, with collar | Exhaust to exterior |
+| Manometer | Dwyer Series 477 / Testo 510 (digital) | Verify and log negative pressure |
+| HEPA vacuum | Pullman Ermator or equivalent | Pre-clean and final clean |
+| Respiratory PPE | P100 half-face / full-face / PAPR | Matched to Condition level |
+| Body PPE | Tyvek suits, nitrile gloves, boot covers | Skin/clothing protection |
+| Antimicrobial | EPA-registered cleaner | Surface remediation cleaning |
+| Measuring | Laser distance measure, moisture meter | Square footage + volume + moisture |
+
+</DecisionMatrix>
+
+## Phase 1 — Pre-Work Assessment
+
+<QuickAnswer>
+Before touching poly, classify the contamination under S520, measure the area, and decide full versus limited containment. This phase converts the IEP protocol into a concrete build plan and the exact AFD size you need. Steps 1–6.</QuickAnswer>
+
+<SOPStep n={1} name="Verify the IEP scope and remediation work order" time="15 min" check="The protocol, affected materials list, and clearance criteria are documented and match the field conditions." escalate="No IEP protocol on an insurance or large Condition 3 job, or field conditions exceed the written scope.">
+Read the **Indoor Environmental Professional (IEP)** protocol and the signed work order before mobilizing equipment. Confirm which materials are slated for removal versus cleaning, the defined work area, and the **clearance criteria** that will end the job. If there is no protocol and the job is large or insurance-driven, stop and get one — the remediator and IEP are intentionally separate roles under S520.
+</SOPStep>
+
+<SOPStep n={2} name="Classify the S520 Condition (1, 2, or 3)" time="20 min" check="Every zone in the work area is labeled Condition 1, 2, or 3 with a photo and note." escalate="Hidden growth suspected behind walls, or a Condition 3 area materially larger than the IEP protocol describes.">
+Walk the space and classify each zone using the S520 framework: **Condition 1** (normal fungal ecology), **Condition 2** (settled spores/fragments), or **Condition 3** (actual growth). Use a moisture meter and visual/odor cues; probe suspect cavities only if authorized. The Condition level drives your containment type and PPE — see the matrix below.
+</SOPStep>
+
+<DecisionMatrix title="IICRC S520 Condition Classification">
+
+| Condition | Definition | Typical containment | PPE baseline |
+|---|---|---|---|
+| **Condition 1** | Normal fungal ecology — no abnormal growth or settled contamination | None or source control | N95 + gloves |
+| **Condition 2** | Settled spores/fragments from a Condition 3 source; no active growth | Limited containment | P100 half-face + suit |
+| **Condition 3** | Actual active or dormant mold growth on materials | Full containment + decon + negative pressure | Full-face or PAPR + full suit |
+
+</DecisionMatrix>
+
+<SOPStep n={3} name="Measure and calculate affected square footage" time="15 min" where="Job app > Sketch / measurements" check="Affected square footage is recorded per room and totaled." escalate="Affected area exceeds 100 sq ft of contiguous Condition 3 — large-project documentation and an IEP are expected.">
+Measure each affected surface with a laser distance measure and record the **affected square footage** by room. This number feeds the containment plan and your scope/billing. Note ceiling height now — you will need it for the volume calculation in Step 5.
+</SOPStep>
+
+<SOPStep n={4} name="Decide full vs. limited containment" time="10 min" check="Containment type is selected and matches the Condition, area, and IEP protocol." escalate="Sensitive occupants (immunocompromised, infants), HVAC contamination, or any ambiguity — default to full containment.">
+Choose **limited containment** (single 6-mil barrier + airlock) for isolated Condition 3 areas under roughly **10 contiguous square feet**. Choose **full containment** (double poly, decon chamber, negative pressure) for larger areas, heavy Condition 3, HVAC involvement, or sensitive occupants. When in doubt, build full — under-containing is the costliest failure mode on this SOP.
+</SOPStep>
+
+<SOPStep n={5} name="Calculate room volume in cubic feet" time="5 min" check="Volume = L x W x H is recorded in cubic feet for each containment zone." escalate="Irregular or vaulted ceilings that make volume uncertain — measure conservatively (use the largest dimension).">
+Multiply **length x width x height** to get the cubic volume the AFD must turn over. Example: a 12 x 15 ft room with an 8 ft ceiling is **1,440 cubic feet**. For vaulted or stepped ceilings, segment the room and add the volumes.
+</SOPStep>
+
+<SOPStep n={6} name="Size the AFD for 4+ air changes per hour" time="10 min" check="Selected AFD's effective CFM meets or exceeds required CFM at expected filter loading." escalate="Required CFM exceeds a single machine's rated output — add a second AFD rather than running one machine over-spec.">
+Convert volume and target **ACH** into required CFM: `required CFM = (volume x ACH) / 60`. For 1,440 cu ft at 4 ACH that is `(1,440 x 4) / 60 = 96 CFM` minimum. Use the machine's **dirty-filter** CFM, not the clean-filter spec, and round up. See the AFD sizing table below.
+</SOPStep>
+
+<DecisionMatrix title="AFD CFM & Air-Changes Calculation">
+
+| Room volume (cu ft) | 4 ACH (CFM) | 6 ACH (CFM) | Suggested AFD setup |
+|---|---|---|---|
+| 1,000 | 67 | 100 | 1 mid-size HEPA AFD |
+| 1,440 (12x15x8) | 96 | 144 | 1 AFD (e.g. Phoenix Guardian R) |
+| 2,500 | 167 | 250 | 1 high-CFM AFD |
+| 4,000 | 267 | 400 | 1 large or 2 mid AFDs |
+| 8,000 | 533 | 800 | 2 AFDs, balanced exhaust |
+
+</DecisionMatrix>
+
+<Stat value="4 ACH" label="Minimum air changes per hour inside mold containment" source="IICRC S520" />
+
+## Phase 2 — Construction Sequence
+
+<QuickAnswer>
+Stage materials, kill the HVAC, pre-clean, then build the barrier from the top down: hang 6-mil poly, seal every seam, and add a two-stage airlock plus a three-chamber decon unit for full containment. The only opening when you finish is the airlock. Steps 7–15.</QuickAnswer>
+
+<SOPStep n={7} name="Stage materials and stage the equipment" time="15 min" check="All poly, tape, zipper doors, AFD, ducting, HEPA vac, and PPE are on site before construction starts." escalate="Missing AFD ducting or short on zipper doors — do not start the build with an incomplete kit.">
+Pull every item from the materials table to the work area before you cut the first sheet of poly. Position the **AFD**, ducting, and **HEPA vacuum** near the planned airlock. Pre-stage PPE in what will become the clean room. Track which equipment goes on this job in your [equipment tracking and recovery SOP](/field-notes/equipment-tracking-recovery-sop) so machines come home.
+</SOPStep>
+
+<SOPStep n={8} name="Shut down and seal the HVAC" time="15 min" check="HVAC is off and all supply/return registers in the work area are sealed with poly and tape." escalate="Visible mold inside ductwork or the air handler — that is a separate scope; notify the PM and IEP.">
+Turn the **HVAC off at the thermostat and breaker** so the system cannot pull spores through the structure. Cover every supply and return register inside the work area with 6-mil poly taped on all four sides. An unsealed return is the single fastest way to cross-contaminate a clean space.
+</SOPStep>
+
+<SOPStep n={9} name="Pre-clean and HEPA vacuum loose debris" time="20 min" check="Gross surface debris is removed and bagged before barriers are sealed." escalate="Friable material or suspected asbestos/lead in the debris — stop and test before disturbing.">
+**HEPA-vacuum** loose surface debris and remove obvious gross contamination before sealing the room. This lowers the airborne load during construction. Bag waste in 6-mil disposal bags and stage it for goose-neck sealing at tear-down.
+</SOPStep>
+
+<SOPStep n={10} name="Mark anchor points and run the top edge" time="20 min" check="A continuous, level anchor line is fastened around the perimeter at the ceiling/wall junction." escalate="No solid anchor surface (e.g. drop ceiling) — use a frame or strut system rather than taping to tiles.">
+Mark the ceiling/wall **anchor line** around the perimeter and fasten the top edge of the poly first using spray adhesive, poly hangers, or staples backed with tape. A secure top run carries the wall sheets; a sagging top edge will fail under negative pressure.
+</SOPStep>
+
+<SOPStep n={11} name="Hang the first 6-mil poly layer" time="30 min" check="Walls and floor are covered in 6-mil poly with seams overlapped at least 12 inches." escalate="Sheeting repeatedly tears at fasteners — switch to a strut/clamp system before continuing.">
+Hang the primary **6-mil fire-rated poly** from the anchor line down the walls and across the floor, overlapping each seam a minimum of **12 inches**. Run floor poly up the walls 6–12 inches to form a sealed pan. Keep the sheet taut — slack poly flaps and breaks the pressure seal.
+</SOPStep>
+
+<SOPStep n={12} name="Hang the second poly layer (critical barriers)" time="25 min" check="A second 6-mil layer is installed on Condition 3 barriers and critical openings, with seams offset from layer one." escalate="A critical barrier (e.g. shared wall to occupied space) cannot be doubled — flag before proceeding.">
+For full containment and **Condition 3**, add a second 6-mil layer over the walls and any **critical barriers** (openings to occupied space), offsetting the seams from the first layer. Doors and pass-throughs that must stay closed get a doubled, taped critical barrier rather than an airlock.
+</SOPStep>
+
+<SOPStep n={13} name="Seal all seams, penetrations, and edges" time="25 min" check="Every seam, corner, pipe, and penetration is taped; the only opening is the planned airlock." escalate="A penetration cannot be sealed (active plumbing, conduit) — sleeve and tape it; if airtightness fails, redesign the barrier.">
+Tape **every seam, inside corner, and penetration** — pipes, conduit, fixtures — so the containment is airtight except for the airlock. Run a hand along each seam to find lifts. This step is what lets the AFD pull and hold negative pressure in Phase 3.
+</SOPStep>
+
+<SOPStep n={14} name="Install the two-stage airlock entry" time="20 min" check="The airlock uses overlapping flaps so containment is never open to the clean space at once." escalate="Heavy foot traffic blows the airlock open under pressure — add a third flap or a slit-curtain.">
+Build a **two-stage airlock**: a zipper-door outer flap and an overlapping inner flap, arranged so a tech is never opening both at the same moment. The airlock is the controlled breach in an otherwise sealed box; air should pull *into* it. Verify the slit/flap orientation faces the airflow you will establish in Step 17.
+</SOPStep>
+
+<SOPStep n={15} name="Construct the three-chamber decontamination unit" time="30 min" check="Dirty room, shower/transition room, and clean room are built in sequence off the airlock with flap doors between each." escalate="No water source for the shower chamber on a heavy Condition 3 job — coordinate a portable wash station.">
+For full-containment Condition 3 work, attach a **three-chamber decon unit** to the airlock: a **dirty room** (doff suits/HEPA-vac off), a **shower/transition room**, and a **clean room** (street clothes + clean PPE). Each chamber is separated by a flap door, and air flows clean-to-dirty under negative pressure.
+</SOPStep>
+
+<BlogImage alt="Cutaway room view of an IICRC S520 mold containment: double-layer 6-mil polyethylene walls sealed at ceiling and floor anchor points, a two-stage airlock entry with overlapping flaps, and an attached three-chamber decontamination unit labeled dirty room, shower/transition room, and clean room. A HEPA air filtration device (negative air machine) sits inside the containment ducted through a sealed window penetration to exhaust outside, creating negative pressure. A digital manometer mounted on the barrier reads a negative pressure differential of -0.02 inches water column. Blue arrows show directional airflow pulling inward through the airlock and decon chambers toward the AFD. Callout labels mark the target of 4-plus air changes per hour and the PPE don/doff zones in the decon unit." caption="Full S520 containment: double 6-mil poly, two-stage airlock, three-chamber decon, ducted HEPA AFD, and a manometer holding -0.02 in. w.c. negative pressure." width={820} height={480} />
+
+## Phase 3 — Air Movement & Negative Pressure
+
+<QuickAnswer>
+Position and duct the AFD, run it to draw the poly inward, then prove negative pressure with a manometer (target at least -0.02 in. w.c.) and a smoke test at the airlock. Negative pressure is what keeps spores inside the box. Steps 16–20.</QuickAnswer>
+
+<SOPStep n={16} name="Position and duct the negative air machine" time="20 min" check="AFD sits inside containment with exhaust ducted to the exterior or a HEPA-filtered path; duct collar is sealed." escalate="No viable exterior exhaust route — confirm HEPA recirculation is acceptable with the IEP before relying on it.">
+Place the **HEPA AFD** (e.g. Phoenix Guardian R) inside the containment near the airlock and duct the **exhaust to the exterior** through a sealed window or wall penetration. Tape the duct collar to the poly so no exhaust leaks back into containment. If exterior exhaust is impossible, HEPA-filtered recirculation is the fallback — never exhaust unfiltered air into a clean space.
+</SOPStep>
+
+<SOPStep n={17} name="Establish and verify negative pressure" time="10 min" check="With the AFD running, the poly barriers visibly draw inward." escalate="Poly will not pull inward after AFD startup — hunt for the leak (usually an unsealed seam or register) before proceeding.">
+Start the AFD and watch the barriers: properly sealed poly will **suck inward** within seconds. If the walls billow outward or stay slack, you have a leak — recheck seams, registers, and the airlock. Negative pressure is the entire point of containment; do not move on until the box pulls in.
+</SOPStep>
+
+<SOPStep n={18} name="Set and log the manometer baseline" time="10 min" where="Manometer placed through a sealed port in the barrier" check="Manometer reads at least -0.02 in. w.c. relative to outside containment; baseline value photographed." escalate="Reading cannot hold -0.02 in. w.c. — add AFD capacity or improve the seal; do not start remediation under-pressure.">
+Mount the **digital manometer** with the reference port outside containment and the measurement port inside. Confirm a reading of at least **-0.02 in. w.c.** (negative). Photograph the baseline reading — this is your first entry in the monitoring log and a key piece of the clearance file.
+</SOPStep>
+
+<SOPStep n={19} name="Don PPE per the Condition level" time="10 min" where="Clean room of the decon chamber" check="Every entrant wears respiratory and body protection matched to the classified Condition." escalate="A technician is not fit-tested for the required respirator — they do not enter containment.">
+Don PPE that matches the **Condition** (see the PPE matrix below). Gear up in the **clean room**, enter through the chambers, and reverse the process to exit. No one enters Condition 3 containment without a fit-tested respirator and a full suit.
+</SOPStep>
+
+<DecisionMatrix title="PPE by S520 Condition Level">
+
+| Condition / scope | Respiratory protection | Body protection | Notes |
+|---|---|---|---|
+| Condition 1 cleanup | N95 | Gloves | Minimal disturbance only |
+| Condition 2 / small Condition 3 | P100 half-face | Tyvek suit, gloves | Limited containment |
+| Large / heavy Condition 3 | Full-face P100 or **PAPR** | Full suit, gloves, boot covers | Full containment + decon |
+| Sensitive structure / occupant | PAPR | Full suit + double gloves | Follow IEP + OSHA program |
+
+</DecisionMatrix>
+
+<SOPStep n={20} name="Verify directional airflow with a smoke test" time="10 min" check="Smoke at the airlock and decon flaps is pulled into containment, confirming clean-to-dirty airflow." escalate="Smoke pushes out of the airlock — negative pressure has failed; stop and rebalance before work continues.">
+Hold a **smoke pencil** at the airlock and each decon flap. The smoke must be drawn **into** containment, confirming directional airflow runs clean-to-dirty toward the AFD exhaust. If smoke escapes outward, you are positive-pressurizing the box and spreading spores — fix it before any remediation begins.
+</SOPStep>
+
+## Phase 4 — Documentation, Monitoring & Tear-Down
+
+<QuickAnswer>
+Photograph the built containment, open a daily AFD/manometer log, and coordinate independent post-remediation verification with the IEP before tear-down. After clearance passes, dismantle in reverse, dirty-side-in, with the AFD still running. Steps 21–25.</QuickAnswer>
+
+<SOPStep n={21} name="Photograph and document the built containment" time="15 min" where="Job app (Encircle / DASH) > Photos" check="Wide and detail photos of every barrier, the AFD, ducting, decon chamber, and manometer are in the file." escalate="Any barrier you cannot photograph clearly — re-shoot; gaps in documentation weaken clearance and billing.">
+Capture **wide-angle and detail photos** of every poly barrier, sealed register, the airlock, the decon chambers, the AFD and its exhaust duct, and the manometer reading. This is the evidence that the containment met the standard of care. Strong containment photos also protect the supplement and billing trail on the job.
+</SOPStep>
+
+<SOPStep n={22} name="Start the AFD/manometer monitoring log" time="10 min" where="Job app > Monitoring log / readings" check="A dated log records negative pressure, AFD runtime, and filter status, updated at every visit." escalate="Negative pressure drops below -0.02 in. w.c. on any reading, or HEPA filter loads to the point CFM falls below target.">
+Open a running **monitoring log**: date, time, manometer reading, AFD runtime hours, and filter condition. Update it every site visit for the project duration. A continuous log is what proves negative pressure was *maintained*, not just achieved once — auditors and adjusters look for the gaps.
+</SOPStep>
+
+<MidPostCTA type="download" headline="Download This SOP as a Printable PDF" subtext="Use it as a real internal training document for new hires." href="/downloads/mold-remediation-containment-sop.pdf" label="Download the SOP →" />
+
+<SOPStep n={23} name="Coordinate post-remediation verification with the IEP" time="15 min" check="Independent clearance is scheduled and containment remains intact and under negative pressure until it passes." escalate="Clearance fails — do not tear down; re-clean, re-test, and document the corrective action.">
+Schedule **post-remediation verification (PRV)** by the **IEP**, not by your own crew. Keep the containment intact and the AFD running until clearance passes against the protocol's criteria. If it fails, the containment stays up while you re-clean and re-test — tearing down a failed job is the most expensive mistake on this SOP.
+</SOPStep>
+
+<SOPStep n={24} name="Tear down containment in reverse sequence" time="45 min" check="Poly is misted, folded dirty-side-in, and bagged while the AFD continues running; area gets a final HEPA pass." escalate="Visible residual debris or odor during tear-down — stop; the area is not actually clean.">
+**Only after clearance passes**, lightly mist surfaces to suppress dust, then remove poly from the top down, folding each sheet **dirty-side-in** and bagging as you go — with the **AFD still running**. Run a final HEPA-vacuum pass of the cleared area, then shut down and remove the AFD last so the room stays negative until the barrier is gone.
+</SOPStep>
+
+<SOPStep n={25} name="Demobilize, decontaminate equipment, and close the file" time="30 min" where="Job app > Close-out + equipment log" check="Equipment is HEPA-cleaned and logged back to inventory, waste is disposed, and all documentation is attached to the job." escalate="An AFD or HEPA vac shows internal contamination or a failed filter — tag it out of service before it goes to the next job.">
+**HEPA-clean and wipe down** the AFD, HEPA vac, manometer, and ducting before they leave the site, and log each unit back to inventory. Dispose of bagged waste per local rules. Attach the photo set, monitoring log, and IEP clearance report to the job file so billing and clearance close together.
+</SOPStep>
+
+## Common Mistakes
+
+- **Under-containing the area.** Treating a large or heavy Condition 3 job as limited containment because it is faster. When the contamination spreads, the re-do plus liability dwarfs the time saved.
+- **Skipping the HVAC seal.** An unsealed return register pulls spores into the whole structure the moment the system cycles. Kill the HVAC at the breaker and seal every register.
+- **Trusting one manometer reading.** Achieving -0.02 in. w.c. at setup proves nothing if the log is empty for the next five days. Negative pressure must be *monitored*, not just established.
+- **Slack poly and unsealed seams.** Loose sheeting and missed seams leak air, kill negative pressure, and billow outward. The AFD cannot overcome a leaky box.
+- **Exhausting unfiltered air into the structure.** Ducting an AFD into an occupied clean space, or discharging near a building intake, re-contaminates the area you just cleaned.
+- **Sizing the AFD on clean-filter CFM.** A loaded HEPA filter drops delivered airflow well below the spec sheet, quietly pushing you under 4 ACH. Size on dirty-filter output and round up.
+- **No two-stage airlock.** A single-flap entry opens containment to the clean space every time someone walks through. Two overlapping stages keep the breach controlled.
+- **Tearing down before clearance.** Dismantling on assumption rather than a passed IEP test. If clearance fails after tear-down, you rebuild from scratch.
+- **Crew acting as their own IEP.** Self-clearing a job creates the exact conflict of interest S520 separates the roles to prevent. Use an independent IEP on insurance and large jobs.
+
+## How to Adapt This SOP for Your Company
+
+**Universal (do not change):** the S520 Condition classification logic (Step 2), the volume/ACH math and 4+ ACH target (Steps 5–6), negative pressure verification and the -0.02 in. w.c. floor (Steps 17–18), the smoke test (Step 20), and IEP-based clearance before tear-down (Steps 23–24). These are standard-of-care and liability boundaries.
+
+**Company-specific (tune these):** equipment models (substitute your AFD, manometer, and HEPA vac brands), the exact `where` software paths (Encircle vs. DASH vs. your photo log), PPE thresholds where your safety program is stricter than the baseline, and decon-chamber design for your typical job sizes. Smaller shops may combine the dirty/shower rooms; larger shops may add a fourth equipment-decon stage.
+
+**Where it connects to the books:** every step that touches equipment (Steps 7, 25) should feed your asset log, and every documented containment supports the billing and supplement trail. See the [complete guide to job costing for restoration and mitigation](/field-notes/complete-guide-job-costing-restoration-mitigation) for how field SOPs flow into job-level margin.
+
+<MidPostCTA type="audit" headline="Free 30-min Books Audit Call" subtext="We'll show you how your field SOPs — containment, equipment, decon — actually flow into your books and job-level margin." />
+
+## Frequently Asked Questions
+
+### How do I size a negative air machine for a mold containment?
+
+Calculate room volume (length x width x height in cubic feet), multiply by your target air changes per hour (4 ACH minimum), then divide by 60 to get required CFM. A 12 x 15 x 8 ft room is 1,440 cu ft; at 4 ACH that is 5,760 cu ft/hr ÷ 60 = 96 CFM minimum. Always round up to the next machine and add capacity for duct loss.
+
+### What is the minimum negative pressure for mold containment?
+
+IICRC S520 references a minimum measurable negative pressure of roughly -0.02 inches of water column (in. w.c.) relative to adjacent areas, the same threshold used in many mold and asbestos programs. The practical test is that the poly draws visibly inward and a smoke pencil at the airlock pulls into the containment. Log the manometer reading at setup and monitor it daily.
+
+### What is the difference between S520 Condition 1, 2, and 3?
+
+Condition 1 is normal fungal ecology (no abnormal growth). Condition 2 is settled spores or fragments from a Condition 3 source. Condition 3 is actual active or dormant mold growth on materials. Containment and PPE escalate with the Condition: full containment, decon chamber, and PAPR-grade protection are standard for large Condition 3 work.
+
+### When do I need full containment versus limited containment for mold?
+
+Limited containment is generally appropriate for isolated areas under about 10 contiguous square feet of Condition 3 growth, using a single poly barrier and an airlock. Full containment with a three-chamber decontamination unit and negative pressure is used for larger areas, heavy Condition 3, or sensitive occupants. The IEP's protocol governs; when in doubt, build full containment.
+
+### What poly thickness is required for mold containment walls?
+
+Use a minimum of 6-mil polyethylene sheeting, and fire-rated poly where building or code requirements apply. Critical barriers and Condition 3 jobs typically get a double layer of 6-mil with offset seams. Thinner 4-mil poly tears too easily and is reserved for floor protection runners outside containment.
+
+### How many air changes per hour does mold remediation require?
+
+Target a minimum of 4 air changes per hour (ACH) inside the containment, and many protocols call for 6 ACH or more on aggressive Condition 3 work. ACH is set by your AFD CFM relative to room volume. More ACH clears airborne spores faster but increases negative pressure demand, so size the machine and seal the barriers accordingly.
+
+### What PPE is required for mold remediation by Condition level?
+
+Condition 1 cleanup typically needs an N95 and gloves at minimum. Condition 2 and small Condition 3 work uses a half-face P100 respirator, Tyvek suit, and gloves. Large or heavy Condition 3 work uses a full-face respirator or PAPR with P100/HEPA cartridges, full suit, gloves, and boot covers. Always follow the IEP protocol and OSHA respiratory program.
+
+### How do I build a decontamination chamber for mold remediation?
+
+Build a three-room poly chamber attached to the containment airlock: a dirty room where workers doff suits, a shower or transition room, and a clean room where street clothes and clean PPE are stored. Each room is separated by a flap door, and the chambers sit under negative pressure so air flows from clean toward dirty. This is standard for full-containment Condition 3 projects.
+
+### Where should the negative air machine exhaust?
+
+Exhaust the AFD to the building exterior whenever possible, ducting through a window or wall penetration that is sealed around the duct. If exterior exhaust is impractical, the HEPA-filtered air may recirculate within the structure, but never exhaust unfiltered air into an occupied clean space. Confirm the discharge does not re-enter the building through a nearby intake.
+
+### How do I prove negative pressure was maintained for the insurance file?
+
+Photograph the manometer reading at setup and keep a daily AFD/manometer monitoring log showing the differential, machine runtime, and filter changes throughout the project. Pair that with dated containment photos and the IEP clearance report. This documentation package supports both the S520 standard of care and the billing on the file.
+
+### How long does it take to set up mold containment?
+
+A standard single-room full containment with negative pressure and a decon chamber takes about 4 to 6 hours for a two-person crew, including assessment, construction, and verification. Limited containment can be set in under 2 hours. Tear-down after clearance adds another 1 to 2 hours.
+
+### Do I need an IEP for every mold remediation job?
+
+Independent assessment and post-remediation verification by an Indoor Environmental Professional are strongly recommended and often contractually or state-required for larger or insurance-driven jobs. S520 frames the remediator and the IEP as separate roles to avoid conflict of interest. Small owner-occupied jobs may proceed without one, but the clearance documentation is weaker without independent verification.
+
+### What is the air change per hour formula for containment?
+
+ACH = (CFM x 60) ÷ room volume in cubic feet. To solve for the CFM you need: required CFM = (room volume x target ACH) ÷ 60. Use the machine's rated CFM at the filter loading you expect, not the clean-filter spec, because a dirty HEPA filter drops delivered airflow significantly.
+
+### How do I tear down mold containment without re-contaminating the area?
+
+Only tear down after the IEP clearance passes. Lightly mist surfaces to suppress dust, then fold each poly sheet dirty-side-in starting from the top, bagging as you go, while the AFD continues running. Run the AFD and HEPA-vacuum the area for a final pass, then shut down and remove the machine last.
+
+## Key Takeaways
+
+- This SOP is **25 steps across four phases** and runs roughly **6 hours** for a full single-room containment by a two-person crew.
+- **Classify before you build:** S520 **Condition 1/2/3** drives containment type and PPE; over-containing is cheap, under-containing is not.
+- **Size the AFD with math, not habit:** `required CFM = (volume x ACH) / 60`, target **4+ ACH**, and use dirty-filter output.
+- **Negative pressure is the job:** hold at least **-0.02 in. w.c.**, confirm with a manometer and smoke test, and **log it daily** — not just at setup.
+- **Independent clearance gates tear-down:** the **IEP** verifies, the crew does not self-clear, and the containment stays up until clearance passes.
+- **Document everything:** containment photos plus the monitoring log plus the clearance report close the standard-of-care, billing, and supplement trail together.
+
+*Related reading:* [Water Mitigation First 48 Hours SOP](/field-notes/water-mitigation-first-48-hours-sop) · [Equipment Tracking & Recovery SOP](/field-notes/equipment-tracking-recovery-sop) · [Restoration Certifications & Standards Explained](/field-notes/restoration-certifications-standards-explained) · [Restoration Insurance Glossary](/field-notes/restoration-insurance-glossary) · [Complete Guide to Job Costing for Restoration & Mitigation](/field-notes/complete-guide-job-costing-restoration-mitigation)

@@ -7,6 +7,20 @@ const POSTS_DIR = path.join(process.cwd(), "src/content/field-notes");
 export interface HowToStep {
   name: string;
   text: string;
+  /** Optional anchor (e.g. "#step-1") deep-linking to the rendered step. */
+  url?: string;
+}
+
+/** HowTo-level metadata for procedural (SOP) posts. Drives the rich HowTo schema. */
+export interface HowToMeta {
+  /** ISO 8601 duration for the whole procedure — e.g. "PT5H". */
+  totalTime?: string;
+  /** Plain-text or monetary estimate of cost — e.g. "$0 (software you already own)". */
+  estimatedCost?: string;
+  /** Consumable supplies/materials needed (HowToSupply). */
+  supply?: string[];
+  /** Durable tools / software needed (HowToTool). */
+  tool?: string[];
 }
 
 export interface FaqItem {
@@ -44,6 +58,8 @@ export interface PostMeta {
   readTime: string;
   featured?: boolean;
   howToSteps?: HowToStep[];
+  /** HowTo-level metadata (totalTime, cost, supplies, tools) for SOP posts. */
+  howTo?: HowToMeta;
   faqItems?: FaqItem[];
   keywords?: string[];
   contentType?: string;
@@ -87,6 +103,7 @@ export function getAllPosts(): PostMeta[] {
         featured: (data.featured as boolean) ?? false,
         updatedDate: data.updatedDate as string | undefined,
         howToSteps: data.howToSteps as HowToStep[] | undefined,
+        howTo: data.howTo as HowToMeta | undefined,
         faqItems: data.faqItems as FaqItem[] | undefined,
         keywords: data.keywords as string[] | undefined,
         contentType: data.contentType as string | undefined,

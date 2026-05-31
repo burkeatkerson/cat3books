@@ -506,4 +506,52 @@ Profitability content benefits heavily from data viz; alt text is already live a
 
 ---
 
-*Updated total: 46 images across 40 posts.*
+---
+
+## Bundle 9: Standard Operating Procedures (№ 088–097)
+
+Each SOP has one main procedural diagram via `<BlogImage>` placeholder. The alt text below is already live and is written to be AI-parseable (an engine can understand the procedure without seeing the image). House style: dark background, yellow accent, clean flowchart/diagram lines.
+
+### № 088 — Monthly Books Close SOP
+**Filename:** `monthly-books-close-sop-restoration-flow.jpg` · **Size:** 860×420px
+**Alt:** A four-phase horizontal flow diagram of the restoration monthly books close. Phase 1 Bank & Credit Card Reconciliation (steps 1–6), Phase 2 AR & Insurance Receivables Cleanup (steps 7–13), Phase 3 Job Cost & Revenue Recognition (steps 14–20), Phase 4 Reporting & Owner Review (steps 21–28), with a milestone marker at each phase end and a final flag "books locked by the 10th."
+
+### № 089 — Insurance Job Setup SOP
+**Filename:** `insurance-job-setup-sop-quickbooks-decision-tree.jpg` · **Size:** 820×460px
+**Alt:** Decision-tree diagram "QBO Project vs Sub-customer setup for an insurance restoration job." Start node "New insurance job" branches on Projects availability → "Create QBO Project" (default; job-level P&L) vs "Sub-customer of parent, Bill with parent." Leaves annotated with tagging conventions (service-line Class, carrier in customer record, claim number in the name).
+
+### № 090 — Supplement Filing & Tracking SOP
+**Filename:** `supplement-filing-tracking-sop-lifecycle.jpg` · **Size:** 860×420px
+**Alt:** Horizontal supplement-lifecycle flow with six stages — Identify (8 trigger conditions) → Document (photos, moisture logs, scope, signed forms) → Build in Xactimate (line items + narrative + attachments) → Submit (portal vs email, day-3/7/14 follow-up) → Approve (full/partial/denied) → Invoice & Collect. Red feedback loop from Denied back to Re-file; metrics box: capture rate, days-to-approval, denial reasons.
+
+### № 091 — 13-Week Cash Flow Forecast SOP
+**Filename:** `13-week-cash-flow-forecast-sop-template.jpg` · **Size:** 860×460px
+**Alt:** A 13-week cash flow forecast template, 13 week columns. Rows: Beginning Cash; Inflows (TPA AR, direct insurance AR [ACV + RCV holdback], retail AR, supplement collections, deductible receipts); Outflows (payroll, subcontractors, equipment payments, vendor AP, taxes, owner distributions, rent/utilities); Net Change; Ending Cash carrying forward. A shaded minimum-cash threshold line and a red escalation callout where projected ending cash dips below it.
+
+### № 092 — Job Close-Out & Final AR SOP
+**Filename:** `job-close-out-final-ar-sop-states.jpg` · **Size:** 860×420px
+**Alt:** Flowchart of the five completion states as sequential gates: (1) Physically complete, (2) Documentation complete, (3) Billed, (4) Paid, (5) Closed in books — each gate listing its exit criteria. A dashed callout from Gate 1 to Gates 3–5 reads "A job can be physically done but still OPEN in three later states."
+
+### № 093 — Water Mitigation First-48-Hours SOP (S500)
+**Filename:** `water-mitigation-first-48-hours-sop-timeline.jpg` · **Size:** 860×420px
+**Alt:** Hour-by-hour timeline of the first 48 hours of a water mitigation job in five segments — Hour 0–2 Dispatch & Arrival; Hour 2–4 Inspection & S500 Categorization (Cat 1/2/3, Class 1/2/3/4); Hour 4–8 Stabilization & Extraction; Hour 8–24 Equipment Placement (air-mover count, LGR dehumidifier sizing, AFD/containment if Cat 3); Hour 24–48 Drying Monitoring (temp/RH/GPP targets). Each segment annotated with required moisture/photo documentation and a carrier/TPA notification touchpoint.
+
+### № 094 — Mold Remediation Containment SOP (S520)
+**Filename:** `mold-remediation-containment-sop-diagram.jpg` · **Size:** 820×520px
+**Alt:** Cutaway room view of an S520 mold containment: double-layer 6-mil poly walls sealed at anchor points, two-stage airlock, three-chamber decon unit (dirty/shower/clean), HEPA AFD ducted to exhaust outside creating negative pressure, manometer reading −0.02 in. w.c., blue arrows showing inward airflow. Callouts mark target 4+ air changes/hour and PPE don/doff zones.
+
+### № 095 — Fire & Smoke Assessment & Pack-Out SOP (S700)
+**Filename:** `fire-smoke-damage-assessment-pack-out-sop-trees.jpg` · **Size:** 860×480px
+**Alt:** Two-part diagram. Left: smoke-type decision tree — Protein → degreasing/enzyme; Wet smoke → aggressive wet cleaning; Dry smoke → dry HEPA-vac/sponge; Fuel-oil → solvent cleaning + sealing. Right: content-vs-structure tree routing each item to Pack-Out, Clean-In-Place, or Total Loss; a final node selects deodorization (Hydroxyl occupied / Ozone sealed-unoccupied / Thermal fog severe).
+
+### № 096 — Daily Crew Dispatch & On-Call Rotation SOP
+**Filename:** `crew-dispatch-on-call-rotation-sop-flowchart.jpg` · **Size:** 860×480px
+**Alt:** Daily dispatch decision flowchart from the 6:30am huddle through job assignment by four parallel filters (skill match; IICRC cert per job type — WRT/ASD water, AMRT mold, FSRT fire; geographic clustering; equipment/vehicle availability), loadout verification, and customer call-aheads. A parallel after-hours branch: live answer within target → intake checklist → severity tree (roll-now / schedule-AM / stabilize-by-phone) → primary/backup on-call → ETA. End-of-day check-in loops back to next-day load planning.
+
+### № 097 — Equipment Tracking & Recovery SOP
+**Filename:** `equipment-tracking-recovery-sop-lifecycle.jpg` · **Size:** 820×480px
+**Alt:** Equipment lifecycle loop for drying equipment (air movers, LGR dehumidifiers, AFDs): (1) Intake/Tagging (serial + QR + depreciation schedule) → (2) Deployment (sign-out + placement photos) → (3) On-Site (daily status, monitoring readings, customer signature) → (4) Recovery (walkthrough list, as-recovered photo, shop check-in) → (5) Maintenance (clean, filter, calibrate) → back to Available Pool. A branch feeds an Equipment-Day Billing Reconciliation node comparing billed days in Xactimate vs logged on-site days.
+
+---
+
+*Updated total: 56 images across 50 posts.*
