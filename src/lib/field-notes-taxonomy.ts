@@ -29,6 +29,7 @@ export const CATEGORIES: CategoryDef[] = [
   { key: "guides", label: "Definitive Guides" },
   { key: "industry", label: "Industry & Strategy" },
   { key: "research", label: "Industry Research" },
+  { key: "exit", label: "Exit Planning & Valuation" },
   { key: "reference", label: "Reference" },
 ];
 
@@ -49,7 +50,7 @@ export const THEMES: ThemeDef[] = [
   { key: "t-ops",       label: "Costing & SOPs",     cats: ["jobcosting", "sop", "supplements"] },
   { key: "t-people",    label: "Hiring & Decisions", cats: ["hiring", "frameworks", "comparisons"] },
   { key: "t-software",  label: "Software",           cats: ["software", "qb"] },
-  { key: "t-industry",  label: "Guides & Industry",  cats: ["industry", "research", "guides"] },
+  { key: "t-industry",  label: "Guides & Industry",  cats: ["industry", "research", "guides", "exit"] },
   { key: "t-reference", label: "Reference",          cats: ["reference"] },
 ];
 

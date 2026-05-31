@@ -590,4 +590,36 @@ One main diagram per post via `<BlogImage>` placeholder. Alt text is AI-parseabl
 
 ---
 
-*Updated total: 63 images across 57 posts.*
+---
+
+## Bundle 11: Exit Planning & Valuation (№ 105–110)
+
+One main visual per post via `<BlogImage>` placeholder. Alt text is AI-parseable. House style: dark background, yellow accent, clean valuation/diagram lines.
+
+### № 105 — Selling Your Restoration Company: 24-Month Books Prep
+**Filename:** `selling-restoration-company-books-prep-timeline.jpg` · **Size:** 860×420px
+**Alt:** Horizontal 24-month exit-prep timeline with five milestones — Month -24 (start clean accrual books + EBITDA add-back log), -18 (WIP schedule + service-line P&L), -12 (normalize owner comp; reduce customer/TPA concentration below 40%), -6 (trailing-twelve-month, QoE-ready package), Exit (3 years of consistent normalized statements). Caption: record quality moves the EBITDA multiple by half a turn to a turn and a half.
+
+### № 106 — What a PE Buyer Will Ask to See
+**Filename:** `pe-buyer-restoration-due-diligence-checklist.jpg` · **Size:** 860×460px
+**Alt:** Due-diligence checklist in three columns. Financials: 3-year P&Ls/balance sheets/tax returns, AR & AP aging, WIP schedule, bank recs, normalized EBITDA with add-back support. Operations: job-costing detail, service-line mix, supplement capture, equipment schedule, backlog. Legal & Contracts: TPA agreements, customer concentration, leases, licenses, insurance, litigation. Banner: a QoE that finds problems can cut valuation by half a turn to two turns of EBITDA.
+
+### № 107 — How Restoration Companies Are Valued
+**Filename:** `restoration-company-valuation-multiples-chart.jpg` · **Size:** 860×420px
+**Alt:** Valuation-multiples chart with three bands — small owner-operator shops on SDE at 2.3–3.5x; lower-mid-market on EBITDA at 4–5x; PE-ready on EBITDA at 6–8x and up. Callout: a $3M-EBITDA company is worth $12M at 4x vs $18M at 6x — a $6M difference on the identical business, driven by books quality, scale, diversification, and owner-independence. Source: Peak Business Valuation.
+
+### № 108 — What Is a WIP Schedule?
+**Filename:** `wip-schedule-restoration-sample.jpg` · **Size:** 860×420px
+**Alt:** Sample work-in-process schedule table in the exact format bankers/buyers/bonding companies expect. Columns: Job, Contract/Estimate Value, Costs Incurred to Date, Percent Complete (cost-to-cost), Earned Revenue, Billed to Date, Over/(Under) Billing. Four example restoration jobs plus a totals row reconciling to the balance-sheet WIP figure; one under-billed and one over-billed row highlighted.
+
+### № 109 — The $500K Mistake (messy-books discount)
+**Filename:** `500k-mistake-restoration-sale-bars.jpg` · **Size:** 820×420px
+**Alt:** Two-bar comparison "Same Company, Two Sets of Books." Left "Messy books": $3M-EBITDA company at 4.5x = $13.5M, annotated with re-traded price, larger earnout, bigger holdback. Right "Clean books": same company at 5.5x = $16.5M, full add-back credit, more cash at close. The bracketed gap is labeled the avoidable discount — six figures on a small deal, seven figures on a mid-size one.
+
+### № 110 — The Restoration Roll-Up Landscape
+**Filename:** `restoration-roll-up-landscape-map.jpg` · **Size:** 860×480px
+**Alt:** Landscape map of restoration roll-up acquirers as four cards plus a fifth band — Servpro (Blackstone): national franchise + corporate acquisitions; BluSky (Partners Group + Kohlberg): commercial/large-loss; ATI Restoration: commercial/CAT, multi-region; BELFOR Holdings: global large-loss/commercial; plus regional PE-backed platforms doing tuck-ins. Each card lists targets: clean books, EBITDA scale, geographic fit, recurring TPA/commercial programs, low owner-dependency. Source: Peak Business Valuation and public deal disclosures.
+
+---
+
+*Updated total: 69 images across 63 posts.*

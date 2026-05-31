@@ -537,4 +537,42 @@ export const fieldNotesMeta: Record<
     excerpt:
       "AI is meaningfully deployed in restoration in five places today — Xactimate estimate assistance, photo documentation analysis, lead intake routing, claim narrative drafting, and adjuster-communication sentiment analysis. It is NOT replacing field judgment, trauma customer service, or full scope-of-work generation. Here's the honest reality check.",
   },
+
+  // ── Exit Planning & Valuation ────────────────────────────────────────────
+  "selling-restoration-company-books-prep": {
+    title: "Selling Your Restoration Company: What Your Books Need to Look Like 24 Months Before Exit",
+    categoryLabel: "Exit Planning & Valuation",
+    excerpt:
+      "The owners who clear 6x EBITDA start preparing their books 24 months out, not at the LOI. Here is the month-by-month financial checklist that protects a half-turn to a turn and a half of multiple.",
+  },
+  "pe-buyer-restoration-due-diligence": {
+    title: "What a PE Buyer Will Ask to See in Your Restoration Company Financials",
+    categoryLabel: "Exit Planning & Valuation",
+    excerpt:
+      "The exact due-diligence checklist a PE-backed buyer requests — and why a Quality-of-Earnings analysis that finds problems can quietly cut your valuation by 0.5 to 2.0x EBITDA.",
+  },
+  "restoration-company-valuation-multiples": {
+    title: "How Restoration Companies Are Valued: EBITDA Multiples, SDE, and What Really Moves the Number",
+    categoryLabel: "Exit Planning & Valuation",
+    excerpt:
+      "Restoration companies sell on SDE at 2.3-3.5x or EBITDA at 4-8x. The same $3M-EBITDA business is worth $12M at 4x or $18M at 6x. Here is what moves it.",
+  },
+  "wip-schedule-restoration": {
+    title: "What Is a WIP Schedule and Why Does Every Buyer Ask for One?",
+    categoryLabel: "Exit Planning & Valuation",
+    excerpt:
+      "A WIP schedule reconciles three numbers buyers trust — contract value, earned revenue, and billed-to-date — and a clean one can defend 0.5–1.5x of EBITDA multiple at sale.",
+  },
+  "500k-mistake-restoration-sale": {
+    title: "The $500K Mistake Restoration Owners Make When They Don't Clean Up Their Books Before Selling",
+    categoryLabel: "Exit Planning & Valuation",
+    excerpt:
+      "Messy books cost 10–20% of enterprise value at sale. On a $3M-EBITDA company at 5x, that is $1.5M–$3M gone. Here is the math and the 24-month fix.",
+  },
+  "restoration-roll-up-landscape": {
+    title: "Servpro, BluSky, ATI, BELFOR: What the Restoration Roll-Up Landscape Means for Owners",
+    categoryLabel: "Exit Planning & Valuation",
+    excerpt:
+      "A field guide to who is buying restoration companies in 2026 — Servpro, BluSky, ATI, BELFOR and their PE backers — what they pay (4–8x EBITDA), and how to read an unsolicited offer.",
+  },
 };

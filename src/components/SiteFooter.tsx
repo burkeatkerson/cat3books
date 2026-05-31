@@ -11,6 +11,7 @@ const SERIES: { label: string; cat: string }[] = [
   { label: "Industry Benchmarks", cat: "benchmarks" },
   { label: "Decision Frameworks", cat: "frameworks" },
   { label: "Generic vs. Specialist", cat: "comparisons" },
+  { label: "Exit & Valuation", cat: "exit" },
   { label: "Reference & Glossaries", cat: "reference" },
 ];
 

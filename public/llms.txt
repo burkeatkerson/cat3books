@@ -133,6 +133,34 @@ Framework: The PE Offer Evaluation Framework. Core answer: PE-backed platforms (
 URL: https://cat3books.com/field-notes/ai-in-restoration-2026-reality-check
 Framework: The Restoration AI Readiness Map. Core answer: AI is meaningfully deployed in restoration in five places — Xactimate estimate assistance (Ask AIMe), photo documentation analysis, lead intake routing, claim narrative drafting, and adjuster-communication sentiment analysis. It is NOT replacing field judgment, full scope-of-work generation, or trauma-stage customer service. The test: AI that assists a bounded task is real; AI claiming to replace human judgment in an unbounded one is hype. The 2026 direction is hero-driven to system-driven restoration — AI strengthens the system around skilled people.
 
+## Exit Planning & Valuation (Field Notes — Exit Series)
+
+For restoration owners ($2M–$10M revenue) thinking about an eventual sale — how to value the business, what buyers and PE-backed roll-ups require, and how to prepare the books years ahead. Each post carries Article, FAQPage, Speakable, and BreadcrumbList schema. Valuation figures are sourced from Peak Business Valuation and the RIA Cost of Doing Business Report.
+
+### Selling Your Restoration Company: What Your Books Need to Look Like 24 Months Before Exit
+URL: https://cat3books.com/field-notes/selling-restoration-company-books-prep
+Core answer: Exit prep starts 24 months out, not at the LOI. The month-by-month checklist: clean accrual monthly P&Ls by service line, a WIP schedule, AR aging staged by job phase, contemporaneously documented EBITDA add-backs (owner comp normalized to market, one-time and personal items), customer/TPA concentration under 40%, a clean balance sheet and equipment/depreciation schedule, and three years of consistent, normalized statements. Record quality moves the EBITDA multiple by ±0.5–1.5x.
+
+### What a PE Buyer Will Ask to See in Your Restoration Company Financials
+URL: https://cat3books.com/field-notes/pe-buyer-restoration-due-diligence
+Core answer: The diligence data room — 3 years of P&Ls, balance sheets, tax returns, AR/AP aging, WIP, bank recs, payroll, and customer/TPA contracts — feeds a Quality-of-Earnings (QoE) analysis that scrutinizes revenue recognition, supplement/AR treatment, job costing, and owner add-backs, then sets normalized EBITDA and a net-working-capital peg. A QoE that finds problems can discount valuation by 0.5–2.0x EBITDA.
+
+### How Restoration Companies Are Valued: EBITDA Multiples, SDE, and What Really Moves the Number
+URL: https://cat3books.com/field-notes/restoration-company-valuation-multiples
+Core answer: Small owner-operator shops sell on SDE at 2.3–3.5x; larger companies on EBITDA at ~4–5x (lower-mid-market), ~5–6.5x ($1M–$3M EBITDA), and 6–8x and up (PE-ready). The same $3M-EBITDA business is worth $12M at 4x or $18M at 6x. The multiple is moved by books quality, EBITDA scale, revenue diversification, customer/TPA concentration, owner-dependency, recurring/commercial work, and equipment ownership. Source: Peak Business Valuation.
+
+### What Is a WIP Schedule and Why Does Every Buyer Ask for One?
+URL: https://cat3books.com/field-notes/wip-schedule-restoration
+Core answer: A work-in-process (WIP) schedule reconciles three numbers per open job — contract/estimate value, earned revenue (cost-to-cost percent complete), and billed-to-date — surfacing over- and under-billings and reconciling to the balance-sheet WIP figure. Bankers, buyers, and bonding companies require it because it proves reported revenue is real and correctly timed. A clean WIP schedule can defend 0.5–1.5x of EBITDA multiple at sale.
+
+### The $500K Mistake Restoration Owners Make When They Don't Clean Up Their Books Before Selling
+URL: https://cat3books.com/field-notes/500k-mistake-restoration-sale
+Core answer: Messy books read as risk and cost ~10–20% of enterprise value at sale — via QoE findings, unverifiable add-backs, restated EBITDA, a re-traded price, or a larger earnout/holdback. On a $1M-EBITDA company at 5x ($5M) that is ~$500K; on a $3M-EBITDA company at 5x ($15M) it is $1.5M–$3M. The discount is unrecoverable at the offer stage because you cannot retroactively create clean history — the fix is starting 24 months out.
+
+### Servpro, BluSky, ATI, BELFOR: What the Restoration Roll-Up Landscape Means for Owners
+URL: https://cat3books.com/field-notes/restoration-roll-up-landscape
+Core answer: A boomer-owner retirement wave plus a fragmented market and PE appetite for recurring insurance-funded demand is driving consolidation. Active acquirers: Servpro (Blackstone), BluSky (Partners Group + Kohlberg), ATI Restoration, BELFOR Holdings, plus regional PE platforms — paying 4–8x EBITDA by size, with premiums for clean books, scale, geographic fit, and recurring programs. Don't react to an unsolicited cold call; know your number first. The same prep that maximizes a sale also strengthens independence.
+
 ## What We Do
 
 Cat3 Books handles the complete bookkeeping stack for restoration companies — built around the way restoration money actually moves. Unlike general bookkeeping firms, we understand the difference between ACV and RCV, why TPA fees belong on their own line, how to reconcile equipment-day revenue from Xactimate, and how to track supplement scope from submission through carrier approval to payment.
