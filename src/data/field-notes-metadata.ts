@@ -493,4 +493,48 @@ export const fieldNotesMeta: Record<
     excerpt:
       "Step-by-step SOP for tracking, deploying, recovering, and reconciling restoration drying equipment — 22 steps across 8 phases that stop equipment losses and billing leaks.",
   },
+
+  // ── Industry & Strategy ──────────────────────────────────────────────────
+  "should-you-stay-on-tpa-program-2026": {
+    title: "Should You Stay on Your TPA Program in 2026? A Restoration Owner's Decision Framework",
+    categoryLabel: "Industry & Strategy",
+    excerpt:
+      "TPA program work pays a 5–20% referral fee and caps your pricing — staying makes sense when volume justifies the fee and your scorecard keeps you in the top tier, and stops making sense when fee compression drops program gross margin below 50% or one TPA exceeds 40% of revenue. Here's the decision framework.",
+  },
+  "finding-keeping-restoration-techs-2026": {
+    title: "How Restoration Companies Are Actually Finding and Keeping Good Techs in 2026",
+    categoryLabel: "Industry & Strategy",
+    excerpt:
+      "With ~1.9M workers leaving construction and a structural labor shortage, restoration shops that retain techs in 2026 pay $18–$28/hr to start plus structured bonuses, invest ~14% of budget in IICRC training, and fix the on-call rotation that burns people out. Here's the 4-Tier Tech Compensation Model and what top-quartile shops do differently.",
+  },
+  "restoration-lead-engine-diversified-sources": {
+    title: "How to Build a Restoration Lead Engine That Doesn't Depend on a Single Plumber",
+    categoryLabel: "Industry & Strategy",
+    excerpt:
+      "The single-plumber dependency is the most common failure mode in restoration — one referral source dries up and a six-figure shop stalls overnight. The fix is a 6-channel lead engine: Local SEO, Google LSA/Ads, referral partnerships, insurance agents, TPA work as one channel not the channel, and direct retail brand. Here's how to build it.",
+  },
+  "adjuster-pushback-supplements-comp-bids-appraisal": {
+    title: "When the Adjuster Pushes Back: A Restoration Owner's Guide to Supplements, Comp Bids, and Appraisal",
+    categoryLabel: "Industry & Strategy",
+    excerpt:
+      "When an adjuster's scope is short, the answer is a documented supplement tied to IICRC S500 — not a 'comp bid' that hands the carrier a number to beat. Here's the escalation ladder: supplement, public adjuster, appraisal, walk away — and exactly when to use each.",
+  },
+  "aob-restoration-contractors-state-by-state-2026": {
+    title: "The State of AOB in 2026: What Restoration Contractors Need to Know State by State",
+    categoryLabel: "Industry & Strategy",
+    excerpt:
+      "Florida's 2019 HB 7065 and 2022 SB 2-A reforms effectively gutted AOB there, and other states are watching. Here's what Assignment of Benefits is, where it still works cleanly, where it's a liability magnet, and the alternative payment structures — direction to pay, lien rights, two-party check — that protect you regardless of your state.",
+  },
+  "pe-roll-up-wave-restoration-2026": {
+    title: "The PE Roll-Up Wave: What's Happening, Who's Buying, and What It Means for Independent Restoration Owners",
+    categoryLabel: "Industry & Strategy",
+    excerpt:
+      "Independent restoration owners are getting cold-called by PE-backed buyers monthly. Multiples run 4–7x EBITDA depending on size; buyers want clean books, EBITDA scale, geographic concentration, and recurring programs. Here's who's rolling up, what an offer process looks like, and when to engage versus stay independent.",
+  },
+  "ai-in-restoration-2026-reality-check": {
+    title: "How AI Is Actually Being Used in Restoration in 2026 (And Where It Falls Flat)",
+    categoryLabel: "Industry & Strategy",
+    excerpt:
+      "AI is meaningfully deployed in restoration in five places today — Xactimate estimate assistance, photo documentation analysis, lead intake routing, claim narrative drafting, and adjuster-communication sentiment analysis. It is NOT replacing field judgment, trauma customer service, or full scope-of-work generation. Here's the honest reality check.",
+  },
 };

@@ -554,4 +554,40 @@ Each SOP has one main procedural diagram via `<BlogImage>` placeholder. The alt 
 
 ---
 
-*Updated total: 56 images across 50 posts.*
+---
+
+## Bundle 10: Industry & Strategy (№ 098–104)
+
+One main diagram per post via `<BlogImage>` placeholder. Alt text is AI-parseable. House style: dark background, yellow accent, clean diagram lines.
+
+### № 098 — Should You Stay on Your TPA Program in 2026?
+**Filename:** `should-you-stay-on-tpa-program-2026-economics.jpg` · **Size:** 820×460px
+**Alt:** A TPA program economics diagram with two parts: (left) a fee-flow showing the carrier paying the claim, the TPA taking a 5–20% referral fee plus a program pricing cap, and the contractor receiving the compressed remainder; (right) a "TPA dependency trap" curve plotting revenue concentration from a single TPA on the x-axis against business risk on the y-axis, with a marked danger threshold at 40% of revenue where pricing leverage, cash-flow resilience, and sale value all decline.
+
+### № 099 — Finding & Keeping Restoration Techs in 2026
+**Filename:** `finding-keeping-restoration-techs-2026-comp-model.jpg` · **Size:** 820×480px
+**Alt:** The 4-Tier Restoration Tech Compensation Model as four ascending tiers: Tier 1 Apprentice ($18–$20/hr, WRT in progress, first-cert completion bonus), Tier 2 Technician ($20–$24/hr, WRT, production + referral bonuses), Tier 3 Senior/Certified Tech ($24–$28/hr, WRT+ASD+AMRT or FSRT, performance + on-call differential), Tier 4 Crew Lead ($28–$35/hr, multiple certs + leadership, job-margin/production share). Each tier shows base pay, IICRC certifications, bonus structure, and the retention driver, ascending to show the certification-linked career ladder.
+
+### № 100 — The 6-Channel Restoration Lead Engine
+**Filename:** `restoration-lead-engine-diversified-sources-hub.jpg` · **Size:** 820×520px
+**Alt:** A hub-and-spoke diagram titled "The 6-Channel Restoration Lead Engine" with the restoration company at the center and six spokes: (1) Google Business Profile + Local SEO, (2) Google Local Services Ads + Google Ads, (3) referral partnerships (plumbers, roofers, realtors, property managers), (4) insurance agent relationships, (5) TPA programs labeled "one channel, not THE channel," and (6) direct retail + brand. Each spoke is annotated with its cost profile, speed-to-build, and the margin of the resulting work, with a note that no single channel should exceed ~30–40% of revenue.
+
+### № 101 — When the Adjuster Pushes Back
+**Filename:** `adjuster-pushback-supplements-comp-bids-appraisal-ladder.jpg` · **Size:** 820×460px
+**Alt:** An adjuster-pushback escalation decision tree with five sequential rungs: (1) Document to the IICRC standard during the work, (2) File a documented supplement (never a comp bid), (3) Bring in a public adjuster for large/unreasonable disputes, (4) Invoke the appraisal clause for genuine amount-of-loss disputes, (5) Walk away if a documented scope still breaks the margin floor. Each rung shows when to use it and who drives it, with a side note that a comp bid concedes the scope was negotiable.
+
+### № 102 — The State of AOB in 2026
+**Filename:** `aob-restoration-contractors-state-by-state-2026-map.jpg` · **Size:** 860×520px
+**Alt:** A U.S. map shaded by AOB risk tier: Restricted (Florida, dark/red — HB 7065 and SB 2-A gutted the model), Emerging-risk (parts of Texas and Louisiana, amber — restrictions developing), and Clean (many states, neutral — AOB still works). A legend explains each tier and the recommended posture, and a side panel lists the lower-exposure alternatives (Direction to Pay, lien rights, two-party check workflow) to default to in restricted or uncertain states.
+
+### № 103 — The PE Roll-Up Wave
+**Filename:** `pe-roll-up-wave-restoration-2026-landscape.jpg` · **Size:** 860×480px
+**Alt:** A restoration PE roll-up landscape visual: a left column of buyer types (large PE-backed platforms — Servpro/Blackstone, BluSky/Partners Group + Kohlberg, ATI Restoration, BELFOR Holdings; regional PE platforms; individual/search-fund buyers), a center EBITDA-multiple ladder (sub-$1M ~4–5x, $1M–$3M ~5–6.5x, $3M+ ~6–8x), and a right column of what buyers target (clean books, EBITDA scale, geographic fit, recurring programs, low concentration, low owner-dependency) with annotations that record quality moves the multiple ±0.5–1.5x and QoE problems can discount 0.5–2.0x.
+
+### № 104 — AI in Restoration 2026 Reality Check
+**Filename:** `ai-in-restoration-2026-reality-check-readiness-map.jpg` · **Size:** 860×500px
+**Alt:** The Restoration AI Readiness Map sorting use cases into three zones. Ready (green): Xactimate estimate assistance (Ask AIMe), photo documentation/damage analysis, lead intake routing, claim narrative drafting, adjuster-communication sentiment analysis. Emerging (amber): intake-to-dispatch integration, damage-detection accuracy. Not Ready (red): full scope-of-work generation, replacing field-tech judgment, trauma-stage customer service. A caption states the test: AI that assists a bounded task is real; AI claiming to replace human judgment in an unbounded task is hype.
+
+---
+
+*Updated total: 63 images across 57 posts.*

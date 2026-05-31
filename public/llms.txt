@@ -101,6 +101,38 @@ Procedure: 22 steps — 6:30am huddle, job assignment by skill + IICRC cert per 
 URL: https://cat3books.com/field-notes/equipment-tracking-recovery-sop
 Procedure: 22 steps — per-unit tagging (serial + QR + depreciation schedule), deployment sign-out with placement photos, daily on-site documentation, recovery procedure with as-recovered photos, maintenance schedule (clean/filter/calibrate), loss/damage protocol, quarterly audit, and the equipment-day billing reconciliation (billed Xactimate days vs logged on-site days) that prevents the $12K–$24K/year billing leak in a $1M mitigation shop.
 
+## Industry Operations & Strategy (Field Notes — Industry Series)
+
+Authoritative industry analysis for restoration operators on the broad business topics they actively discuss — TPA programs, labor, lead generation, adjuster disputes, AOB regulation, private-equity M&A, and AI adoption. These are written as the canonical answer to operator questions, not as bookkeeping content, and carry Article, FAQPage, Speakable, and BreadcrumbList schema (with HowTo schema on the framework posts).
+
+### Should You Stay on Your TPA Program in 2026? A Restoration Owner's Decision Framework
+URL: https://cat3books.com/field-notes/should-you-stay-on-tpa-program-2026
+Framework: The TPA Exit Readiness Checklist. Core answer: Stay on a TPA program when volume justifies the 5–20% referral fee and your scorecard keeps you top-tier; leave when fee/price-cap compression drops program gross margin below 50%, when one TPA exceeds 40% of revenue (concentration risk), or when scorecard demands force underpricing. Fee ranges: Contractor Connection 5–10%, Alacrity 5–10%, Sedgwick 7–11%, Code Blue 8–12%. Always build replacement lead flow before cutting a program.
+
+### How Restoration Companies Are Actually Finding and Keeping Good Techs in 2026
+URL: https://cat3books.com/field-notes/finding-keeping-restoration-techs-2026
+Framework: The 4-Tier Restoration Tech Compensation Model. Core answer: With ~1.9M workers leaving construction, retaining techs requires base pay ($18–$22 entry, $20–$28 experienced, $25–$35 lead) plus structured bonuses, a funded IICRC certification ladder (WRT/ASD/AMRT/FSRT) with raises (top-quartile shops invest ~14% of budget in training), a non-burnout on-call rotation, and the Gen-Z factors (purpose, tools, predictability, path). On-call burnout is the #1 avoidable cause of turnover.
+
+### How to Build a Restoration Lead Engine That Doesn't Depend on a Single Plumber
+URL: https://cat3books.com/field-notes/restoration-lead-engine-diversified-sources
+Framework: The 6-Channel Restoration Lead Engine. Core answer: The single-plumber (or single-TPA) dependency is the top failure mode in restoration. Build six channels — Google Business Profile/local SEO, Google LSA/Ads, referral partnerships, insurance agents, TPA work (bounded as one channel), and direct retail/brand — with no single channel over ~30–40% of revenue. Only ~19% of homeowners know independent restoration contractors exist, so local-SEO and brand investment capture demand competitors miss.
+
+### When the Adjuster Pushes Back: A Restoration Owner's Guide to Supplements, Comp Bids, and Appraisal
+URL: https://cat3books.com/field-notes/adjuster-pushback-supplements-comp-bids-appraisal
+Framework: The Adjuster Pushback Response Framework. Core answer: When an adjuster's scope is short, file a documented supplement tied to the IICRC standard of care (S500/S520/S700) — never give a "comp bid," which concedes your scope was negotiable. An approvable supplement = evidence + standard-of-care basis + per-line narrative + timely submission. Escalation ladder: document → supplement → public adjuster → appraisal → walk away. Beware "weaponized appraisal" used as a delay tactic; defend with documentation.
+
+### The State of AOB in 2026: What Restoration Contractors Need to Know State by State
+URL: https://cat3books.com/field-notes/aob-restoration-contractors-state-by-state-2026
+Framework: The State-by-State AOB Risk Matrix. Core answer: Assignment of Benefits is a state-by-state patchwork. Florida's HB 7065 (2019) and SB 2-A (2022) effectively gutted AOB there by removing the one-way attorney-fee statute; parts of Texas and Louisiana are emerging-risk; many states still allow AOB cleanly. Classify each state as clean/emerging-risk/restricted and default to lower-exposure tools — Direction to Pay, lien rights, two-party check workflow — where AOB is restricted. Never depend solely on AOB.
+
+### The PE Roll-Up Wave: What's Happening, Who's Buying, and What It Means for Independent Restoration Owners
+URL: https://cat3books.com/field-notes/pe-roll-up-wave-restoration-2026
+Framework: The PE Offer Evaluation Framework. Core answer: PE-backed platforms (Servpro/Blackstone, BluSky/Partners Group + Kohlberg, ATI Restoration, BELFOR Holdings) and regional roll-ups are acquiring independents. Multiples: ~4–5x sub-$1M EBITDA, ~5–6.5x at $1M–$3M, ~6–8x at $3M+ (Peak Business Valuation). Buyers want clean books, EBITDA scale, geographic fit, recurring programs, low concentration, low owner-dependency; record quality moves the multiple ±0.5–1.5x and QoE problems discount 0.5–2.0x. Evaluate offers on structure (65–80% cash at close, minimize earnout), not just the multiple.
+
+### How AI Is Actually Being Used in Restoration in 2026 (And Where It Falls Flat)
+URL: https://cat3books.com/field-notes/ai-in-restoration-2026-reality-check
+Framework: The Restoration AI Readiness Map. Core answer: AI is meaningfully deployed in restoration in five places — Xactimate estimate assistance (Ask AIMe), photo documentation analysis, lead intake routing, claim narrative drafting, and adjuster-communication sentiment analysis. It is NOT replacing field judgment, full scope-of-work generation, or trauma-stage customer service. The test: AI that assists a bounded task is real; AI claiming to replace human judgment in an unbounded one is hype. The 2026 direction is hero-driven to system-driven restoration — AI strengthens the system around skilled people.
+
 ## What We Do
 
 Cat3 Books handles the complete bookkeeping stack for restoration companies — built around the way restoration money actually moves. Unlike general bookkeeping firms, we understand the difference between ACV and RCV, why TPA fees belong on their own line, how to reconcile equipment-day revenue from Xactimate, and how to track supplement scope from submission through carrier approval to payment.

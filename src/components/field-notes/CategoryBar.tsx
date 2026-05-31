@@ -17,6 +17,7 @@ export const CATEGORIES = [
   { key: "supplements", label: "Supplements & TPAs" },
   { key: "cashflow",    label: "Cash Flow" },
   { key: "guides",      label: "Definitive Guides" },
+  { key: "industry",    label: "Industry & Strategy" },
   { key: "research",    label: "Industry Research" },
   { key: "reference",   label: "Reference" },
 ];
