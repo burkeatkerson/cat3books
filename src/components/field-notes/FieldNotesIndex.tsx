@@ -157,10 +157,13 @@ export default function FieldNotesIndex({ featured, posts }: Props) {
           {/* Featured pillar */}
           <section className="relative py-10 xl:py-14 border-b border-c3-border">
             <Container>
-              <div className="font-mono text-[10px] tracking-[0.28em] uppercase text-c3-yellow inline-flex items-center gap-3 mb-1">
+              <div className="font-mono text-[10px] tracking-[0.28em] uppercase text-c3-yellow inline-flex items-center gap-3 mb-2">
                 <span className="w-7 h-px bg-c3-yellow" />
                 This Week&rsquo;s Cover
               </div>
+              <p className="font-cond font-light text-[clamp(16px,2vw,19px)] text-c3-mid max-w-[640px] leading-[1.45]">
+                Short on time? Start here — the one breakdown most worth your next ten minutes.
+              </p>
               <FeaturedPost post={featured} />
             </Container>
           </section>
@@ -168,7 +171,7 @@ export default function FieldNotesIndex({ featured, posts }: Props) {
           {/* Browse by topic — theme tiles */}
           <section className="relative py-12 xl:py-[72px] bg-c3-dark border-b border-c3-border">
             <Container>
-              <div className="flex justify-between items-end gap-6 mb-8 flex-wrap">
+              <div className="flex justify-between items-end gap-6 mb-3 flex-wrap">
                 <h2 className="font-disp text-[clamp(34px,5vw,48px)] leading-none tracking-[0.025em]">
                   Browse by <span className="text-c3-yellow">topic.</span>
                 </h2>
@@ -176,24 +179,35 @@ export default function FieldNotesIndex({ featured, posts }: Props) {
                   {posts.length} posts · {THEMES.length} topics
                 </span>
               </div>
+              <p className="font-cond font-light text-[clamp(16px,2vw,19px)] text-c3-mid max-w-[680px] leading-[1.45] mb-8">
+                Six tracks, one question each. Pick the problem you&rsquo;re trying to solve right now — each tile says what you&rsquo;ll walk away knowing.
+              </p>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-[2px] bg-c3-border">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[2px] bg-c3-border">
                 {THEMES.map((t) => {
                   const count = t.cats.reduce((n, c) => n + (counts[c] ?? 0), 0);
                   return (
                     <button
                       key={t.key}
                       onClick={() => setActive(t.key)}
-                      className="group relative h-[132px] overflow-hidden bg-c3-card text-left cursor-pointer"
+                      className="group relative min-h-[176px] overflow-hidden bg-c3-card text-left cursor-pointer p-5 flex flex-col"
                     >
-                      <div className={`absolute inset-0 opacity-50 group-hover:opacity-80 transition-opacity duration-300 ${THEME_COVER[t.key] ?? "cv-grid"}`} />
-                      <div className="absolute inset-0 bg-gradient-to-t from-c3-card via-c3-card/70 to-transparent" />
-                      <div className="relative z-10 flex flex-col justify-end h-full p-4">
-                        <span className="font-disp text-[15px] leading-[1.05] tracking-[0.02em] text-c3-text group-hover:text-c3-yellow transition-colors duration-200 uppercase">
-                          {t.label}
-                        </span>
-                        <span className="font-mono text-[9px] tracking-[0.18em] uppercase text-c3-dim mt-1">
-                          {count} posts →
+                      <div className={`absolute inset-0 opacity-40 group-hover:opacity-70 transition-opacity duration-300 ${THEME_COVER[t.key] ?? "cv-grid"}`} />
+                      <div className="absolute inset-0 bg-gradient-to-tr from-c3-card via-c3-card/85 to-c3-card/55" />
+                      <div className="relative z-10 flex flex-col h-full">
+                        <div className="flex items-baseline justify-between gap-3">
+                          <span className="font-disp text-[20px] leading-[1.0] tracking-[0.02em] text-c3-text group-hover:text-c3-yellow transition-colors duration-200 uppercase">
+                            {t.label}
+                          </span>
+                          <span className="font-mono text-[9px] tracking-[0.16em] uppercase text-c3-dim shrink-0">
+                            {count}
+                          </span>
+                        </div>
+                        <p className="font-body font-light text-[12.5px] text-c3-mid leading-[1.55] mt-3 flex-1">
+                          {t.blurb}
+                        </p>
+                        <span className="font-mono text-[9px] tracking-[0.18em] uppercase text-c3-yellow mt-3 group-hover:translate-x-0.5 transition-transform duration-200">
+                          Explore {count} posts →
                         </span>
                       </div>
                     </button>
@@ -208,7 +222,7 @@ export default function FieldNotesIndex({ featured, posts }: Props) {
             <section key={s.key} className="relative py-10 xl:py-14 border-b border-c3-border last:border-b-0">
               <Container>
                 <div className="flex justify-between items-end gap-6 mb-6 flex-wrap">
-                  <div>
+                  <div className="max-w-[620px]">
                     <div className="font-mono text-[10px] tracking-[0.26em] uppercase text-c3-yellow mb-2">
                       Series
                     </div>
@@ -218,6 +232,9 @@ export default function FieldNotesIndex({ featured, posts }: Props) {
                         {s.count} posts
                       </span>
                     </h3>
+                    <p className="font-body font-light text-[13.5px] text-c3-mid leading-[1.6] mt-3">
+                      {s.blurb}
+                    </p>
                   </div>
                   <button
                     onClick={() => setActive(s.key)}

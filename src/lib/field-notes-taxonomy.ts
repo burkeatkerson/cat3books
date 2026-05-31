@@ -37,6 +37,8 @@ export interface ThemeDef {
   key: string;
   label: string;
   cats: string[];
+  /** One-line, owner-facing benefit hook — what you get from reading this track. */
+  blurb: string;
 }
 
 /**
@@ -44,14 +46,45 @@ export interface ThemeDef {
  * Theme keys are prefixed `t-` so they never collide with category keys —
  * a filter value (and the ?cat= URL param) can hold "all", a theme key, or a
  * category key and be resolved unambiguously. Every category belongs to one theme.
+ * `blurb` is the benefit hook surfaced on the topic tiles and series headers.
  */
 export const THEMES: ThemeDef[] = [
-  { key: "t-profit",    label: "Profit & Numbers",   cats: ["profit", "benchmarks", "pl", "cashflow"] },
-  { key: "t-ops",       label: "Costing & SOPs",     cats: ["jobcosting", "sop", "supplements"] },
-  { key: "t-people",    label: "Hiring & Decisions", cats: ["hiring", "frameworks", "comparisons"] },
-  { key: "t-software",  label: "Software",           cats: ["software", "qb"] },
-  { key: "t-industry",  label: "Guides & Industry",  cats: ["industry", "research", "guides", "exit"] },
-  { key: "t-reference", label: "Reference",          cats: ["reference"] },
+  {
+    key: "t-profit",
+    label: "Profit & Numbers",
+    cats: ["profit", "benchmarks", "pl", "cashflow"],
+    blurb: "Find out if your margins are actually good — and the specific levers that move net profit, not just revenue.",
+  },
+  {
+    key: "t-ops",
+    label: "Costing & SOPs",
+    cats: ["jobcosting", "sop", "supplements"],
+    blurb: "Stop guessing which jobs make money. The job costing and step-by-step procedures that plug the leaks.",
+  },
+  {
+    key: "t-people",
+    label: "Hiring & Decisions",
+    cats: ["hiring", "frameworks", "comparisons"],
+    blurb: "The bet-the-business calls — who to hire, what to outsource, which bookkeeper — made with numbers, not gut.",
+  },
+  {
+    key: "t-software",
+    label: "Software",
+    cats: ["software", "qb"],
+    blurb: "Which tools actually fit restoration accounting, and which will cost you a year — decided before you commit.",
+  },
+  {
+    key: "t-industry",
+    label: "Guides & Industry",
+    cats: ["industry", "research", "guides", "exit"],
+    blurb: "The deep guides, industry data, and exit math that tell you where the business is headed and what it's worth.",
+  },
+  {
+    key: "t-reference",
+    label: "Reference",
+    cats: ["reference"],
+    blurb: "Plain-English definitions for every insurance, accounting, and tax term an adjuster or buyer will use on you.",
+  },
 ];
 
 export const CAT_LABEL: Record<string, string> = Object.fromEntries(

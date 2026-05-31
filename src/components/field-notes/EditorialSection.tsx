@@ -33,9 +33,12 @@ export default function EditorialSection({ posts }: Props) {
           <span className="w-7 h-px bg-c3-yellow" />
           Editorial
         </div>
-        <h2 className="font-disp text-[48px] leading-none tracking-[0.025em] mb-6">
+        <h2 className="font-disp text-[48px] leading-none tracking-[0.025em] mb-3">
           If you only read <span className="text-c3-yellow">a few things.</span>
         </h2>
+        <p className="font-cond font-light text-[clamp(16px,2vw,19px)] text-c3-mid max-w-[680px] leading-[1.45] mb-6">
+          The handful of pieces that change how an owner reads their own numbers — plus the exact sequence we run to clean up a set of books.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-[48px] mt-6">
           {/* Editor's picks */}
