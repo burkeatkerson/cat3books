@@ -23,6 +23,8 @@ import Stat from "@/components/field-notes/Stat";
 import TableOfContents from "@/components/field-notes/TableOfContents";
 import DatasetSchema from "@/components/field-notes/DatasetSchema";
 import SOPStep from "@/components/field-notes/SOPStep";
+import { PathBanner, PathNext } from "@/components/field-notes/LearningPathNav";
+import { getPathForSlug } from "@/lib/learning-paths";
 
 /** MDX component map — available in every Field Notes post */
 const mdxComponents = {
@@ -93,6 +95,7 @@ export default function FieldNotePost({ params }: Props) {
   const postUrl = `${site.url}/field-notes/${post.slug}`;
   const datePublished = new Date(post.date).toISOString();
   const dateModified = new Date(post.updatedDate ?? post.date).toISOString();
+  const pathInfo = getPathForSlug(post.slug);
 
   // ── BlogPosting ──────────────────────────────────────────────────────────
   const blogPostingSchema: WithContext<BlogPosting> = {
@@ -319,6 +322,8 @@ export default function FieldNotePost({ params }: Props) {
             </p>
           </header>
 
+          {pathInfo && <PathBanner path={pathInfo.path} index={pathInfo.index} />}
+
           <hr className="border-c3-border my-12" />
 
           {/* Body */}
@@ -328,6 +333,8 @@ export default function FieldNotePost({ params }: Props) {
                 process / require. Our MDX is authored content in git, not user input. */}
             <MDXRemote source={post.content} components={mdxComponents} options={{ blockJS: false }} />
           </article>
+
+          {pathInfo && <PathNext path={pathInfo.path} index={pathInfo.index} />}
 
           <hr className="border-c3-border mt-16 mb-10" />
 

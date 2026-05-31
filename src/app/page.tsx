@@ -10,6 +10,7 @@ import Ticker from "@/components/Ticker";
 import ProblemSection from "@/components/ProblemSection";
 import CashflowSection from "@/components/CashflowSection";
 import AutopsySection from "@/components/AutopsySection";
+import LearningPathFeature from "@/components/LearningPathFeature";
 import JobCostingSection from "@/components/JobCostingSection";
 import ServicesSection from "@/components/ServicesSection";
 import PricingSection from "@/components/PricingSection";
@@ -80,6 +81,7 @@ export default function HomePage() {
         <ProblemSection />
         <CashflowSection />
         <AutopsySection />
+        <LearningPathFeature pathId="hidden-profit" />
         <JobCostingSection />
         <ServicesSection />
         <PricingSection />
