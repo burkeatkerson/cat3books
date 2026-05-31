@@ -361,4 +361,42 @@ export const fieldNotesMeta: Record<
     excerpt:
       "The RIA Cost of Doing Business Report reports a median AR-to-revenue ratio of 16.5% for insurance restoration contractors — which translates to 60+ days outstanding at typical collection cycles. But 60 days is the median, not the floor. Here's how to read your AR aging, what's normal by payer type, and when 90+ days becomes a real problem.",
   },
+
+  // ── Comparisons ──────────────────────────────────────────────────────────
+  "bench-vs-restoration-bookkeeper": {
+    title: "Bench vs. a Restoration-Specialized Bookkeeper: The Honest Comparison",
+    categoryLabel: "Comparisons",
+    excerpt:
+      "Bench is one of the cleanest, fastest bookkeeping services you can buy — fixed price, simple app, painless onboarding. For a coffee shop or a marketing agency, it's hard to beat. For an insurance restoration company, the gap isn't the price or the interface. It's that Bench doesn't speak Xactimate, ACV/RCV, supplements, TPA fees, or WIP. Here's the honest, feature-by-feature comparison.",
+  },
+  "pilot-vs-restoration-bookkeeper": {
+    title: "Pilot vs. a Restoration Bookkeeping Specialist: Is the Lower Price Worth It?",
+    categoryLabel: "Comparisons",
+    excerpt:
+      "Pilot is one of the most sophisticated bookkeeping services in the market — built for venture-backed startups and SaaS companies, staffed by sharp accountants, with real CFO services on top. It is genuinely excellent at what it was designed for. Insurance restoration is not what it was designed for. Here's the honest, feature-by-feature look at where the gap is.",
+  },
+  "cpa-vs-bookkeeper-restoration": {
+    title: "Your CPA Does Your Taxes. Here's Why That's Not the Same as Having Your Books Right.",
+    categoryLabel: "Comparisons",
+    excerpt:
+      "\"I already have a CPA\" is the most common reason restoration owners give for not needing a bookkeeper. It's also a category error. Your CPA keeps you compliant with the IRS once a year. A bookkeeper keeps your numbers right and visible all year — so you can actually run the business. Different jobs, different timelines, both necessary. Here's the honest breakdown.",
+  },
+  "xendoo-vs-restoration-bookkeeper": {
+    title: "Xendoo vs. Restoration Bookkeeper: Feature-by-Feature for Restoration Owners",
+    categoryLabel: "Comparisons",
+    excerpt:
+      "Xendoo is a clean, affordable, QuickBooks- and Xero-based bookkeeping service with fast monthly closes and a tidy app. For a small service business it's a solid pick. For an insurance restoration company, the same gap shows up that every generic service hits: no Xactimate reconciliation, no ACV/RCV staging, no supplement tracking, no TPA fee coding, no WIP. Here's the feature-by-feature breakdown.",
+  },
+  "1800accountant-vs-restoration-specialist": {
+    title: "1-800Accountant vs. Restoration Specialist: Side by Side",
+    categoryLabel: "Comparisons",
+    excerpt:
+      "1-800Accountant is one of the most affordable, accessible accounting services for small businesses in the country — bundled bookkeeping, tax, and advisory at a volume price, with a CPA on call. For a sole proprietor or small LLC it's a real value. For an insurance restoration company, the volume model and the restoration-specific accounting gap collide. Here's the side-by-side.",
+  },
+  "fire-your-bookkeeper-restoration": {
+    title: "Should You Fire Your Bookkeeper? 7 Warning Signs in Restoration",
+    categoryLabel: "Comparisons",
+    excerpt:
+      "Most restoration owners keep a bookkeeper too long — not because the work is good, but because switching feels like a hassle and the books \"look fine.\" The problem is that restoration books can look perfectly clean and still be missing the things that decide whether you're profitable. Here are the 7 warning signs that your bookkeeper isn't built for restoration — and what each one is quietly costing you.",
+  },
 };

@@ -373,4 +373,76 @@ Only the tax-legal glossary (post 5) has an explicit BlogImage. The other 4 exis
 
 ---
 
-*Updated total: 35 images across 29 posts.*
+---
+
+## Bundle 7: Comparisons (competitor vs. specialist)
+
+These posts use `<BlogImage>` placeholders with descriptive alt text that is already live and indexed. Replace with real graphics when produced. House style: dark background, yellow accent, scannable.
+
+### Post 1: Bench vs. a Restoration-Specialized Bookkeeper
+**Slug:** `bench-vs-restoration-bookkeeper`
+
+**Image: Where Each One Wins**
+**Filename:** `bench-vs-restoration-bookkeeper-wins.jpg`
+**Alt text:** "Side-by-side comparison visual showing Bench's strengths (clean app, fast onboarding, flat pricing, integrated tax) on the left and a restoration specialist's strengths (Xactimate reconciliation, ACV/RCV staging, supplement tracking, TPA fee coding, job-level P&L, WIP schedule) on the right, with a center line showing the dividing question: 'are my books clean?' versus 'which jobs make money?'"
+**Size:** 780×360px
+**Notes:** Two-column "where each wins" layout, fair to both sides. Center divider with the two framing questions. Bench column neutral/blue accent; specialist column yellow accent.
+
+---
+
+### Post 2: Pilot vs. a Restoration Bookkeeping Specialist
+**Slug:** `pilot-vs-restoration-bookkeeper`
+
+**Image: Where Each One Wins**
+**Filename:** `pilot-vs-restoration-bookkeeper-wins.jpg`
+**Alt text:** "Side-by-side comparison visual showing Pilot's strengths (accrual bookkeeping, deferred revenue, investor-ready reporting, startup CFO services) on the left and a restoration specialist's strengths (Xactimate reconciliation, ACV/RCV staging, supplement tracking, TPA fee coding, job-level P&L, WIP) on the right, with a center line reading 'built for recurring-revenue tech' versus 'built for insurance restoration'"
+**Size:** 780×360px
+**Notes:** Two-column layout. Center divider contrasts business models, not quality. Pilot column neutral accent; specialist column yellow.
+
+---
+
+### Post 3: Your CPA Does Your Taxes (CPA vs. Bookkeeper)
+**Slug:** `cpa-vs-bookkeeper-restoration`
+
+**Image: CPA vs. Bookkeeper — Two Roles**
+**Filename:** `cpa-vs-bookkeeper-restoration-roles.jpg`
+**Alt text:** "Two-column visual contrasting what a CPA does versus what a bookkeeper does for a restoration company. Left column 'CPA': tax returns, tax strategy, IRS representation, annual timeline, backward-looking. Right column 'Bookkeeper': transaction recording, monthly reconciliation, AR/AP management, monthly financials, forward-looking. A small overlap in the center labeled 'accurate year-end numbers' shows where the two roles connect."
+**Size:** 780×400px
+**Notes:** Venn-style or two-column with a small center overlap labeled "accurate year-end numbers." Emphasize different timelines (annual vs. monthly) and directions (backward vs. forward).
+
+---
+
+### Post 4: Xendoo vs. Restoration Bookkeeper
+**Slug:** `xendoo-vs-restoration-bookkeeper`
+
+**Image: Where Each One Wins**
+**Filename:** `xendoo-vs-restoration-bookkeeper-wins.jpg`
+**Alt text:** "Side-by-side comparison visual showing Xendoo's strengths (works in QuickBooks/Xero, you own your data, fast monthly close, affordable, tax add-on) on the left and a restoration specialist's strengths (restoration chart of accounts, Xactimate reconciliation, ACV/RCV staging, supplement tracking, TPA fee coding, job-level P&L, WIP) on the right, with a center note clarifying 'same QuickBooks software, different configuration and expertise'"
+**Size:** 780×360px
+**Notes:** Two-column layout. Center note should drive home the "same software, different build-out" point.
+
+---
+
+### Post 5: 1-800Accountant vs. Restoration Specialist
+**Slug:** `1800accountant-vs-restoration-specialist`
+
+**Image: Where Each One Wins**
+**Filename:** `1800accountant-vs-restoration-specialist-wins.jpg`
+**Alt text:** "Side-by-side comparison visual showing 1-800Accountant's strengths (very affordable, bundled tax, CPA access, accessible onboarding) on the left and a restoration specialist's strengths (restoration chart of accounts, Xactimate reconciliation, ACV/RCV staging, supplement tracking, TPA fee coding, job-level P&L, WIP) on the right, with a center note explaining 'standardized at volume' versus 'built for the restoration trade'"
+**Size:** 780×360px
+**Notes:** Two-column layout. Center note frames the volume-vs-specialization trade-off.
+
+---
+
+### Post 6: Should You Fire Your Bookkeeper? 7 Warning Signs
+**Slug:** `fire-your-bookkeeper-restoration`
+
+**Image: 7 Warning Signs Checklist**
+**Filename:** `fire-your-bookkeeper-restoration-checklist.jpg`
+**Alt text:** "A clean checklist graphic titled '7 Warning Signs Your Bookkeeper Isn't Built for Restoration' with seven checkbox rows: (1) Doesn't know Xactimate, (2) Can't produce a job cost report, (3) AR is a mess, (4) Supplements aren't tracked, (5) TPA fees mis-recorded, (6) No WIP schedule, (7) Tax surprises — each with a short caption of what it costs. Designed to be screenshotted and used as a self-diagnostic."
+**Size:** 780×460px
+**Notes:** Vertical checklist, screenshot-friendly (consider also a square 1080×1080 social variant). Each row: bold sign + one-line cost. Yellow checkboxes, dark background.
+
+---
+
+*Updated total: 41 images across 35 posts.*
