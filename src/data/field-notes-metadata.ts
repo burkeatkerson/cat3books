@@ -399,4 +399,36 @@ export const fieldNotesMeta: Record<
     excerpt:
       "Most restoration owners keep a bookkeeper too long — not because the work is good, but because switching feels like a hassle and the books \"look fine.\" The problem is that restoration books can look perfectly clean and still be missing the things that decide whether you're profitable. Here are the 7 warning signs that your bookkeeper isn't built for restoration — and what each one is quietly costing you.",
   },
+
+  // ── Profitability & Growth ───────────────────────────────────────────────
+  "how-restoration-companies-make-money-profit-levers": {
+    title: "How Restoration Companies Actually Make Money: The 7 Profit Levers That Move the Needle",
+    categoryLabel: "Profitability",
+    excerpt:
+      "Restoration companies maximize profit by pulling 7 specific levers — service-line mix, supplement capture, labor efficiency, overhead discipline, pricing, AR velocity, and customer mix. Average net margin is 14%; top-quartile shops hit 18–22%. This is the framework, the quantified impact of each lever, and the obstacle stopping most owners from pulling it.",
+  },
+  "hidden-profit-leaks-restoration-companies": {
+    title: "The 10 Hidden Profit Leaks Costing Restoration Companies $50K–$500K Per Year",
+    categoryLabel: "Profitability",
+    excerpt:
+      "Restoration companies typically lose $50,000–$500,000 a year to 10 hidden profit leaks: unbilled supplements, TPA fee misclassification, equipment-day gaps, unallocated overhead, pricing creep, unbilled emergency response, missed code upgrades, two-party check delays, misclassified labor, and missed depreciation. Here's the dollar impact of each, why it's invisible, and how to find it in your books.",
+  },
+  "why-restoration-companies-plateau-net-margin": {
+    title: "Why Most Restoration Companies Plateau Below 15% Net Margin (And How to Break Through)",
+    categoryLabel: "Profitability",
+    excerpt:
+      "The average restoration company runs 14% net margin and about 7% lose money outright, per the RIA Cost of Doing Business Report. Most hit a ceiling between 10–14%. Top-quartile operators reach 18–22%. The gap is explained by 5 structural problems — mix, visibility, discipline, scale, and people — and each has a specific breakthrough action.",
+  },
+  "restoration-pricing-audit": {
+    title: "The Restoration Pricing Audit: How to Know If You're Leaving Money on Every Job",
+    categoryLabel: "Profitability",
+    excerpt:
+      "Most restoration companies leave 8–12% on the table from a stale Xactimate price list alone — before counting unrecovered deductibles, unbilled code upgrades, and missing emergency-response premiums. This is The Restoration Pricing Audit Framework: a 7-point audit you can run on your own books in 90 minutes to find the money hiding in your pricing.",
+  },
+  "restoration-profitability-roadmap-by-stage": {
+    title: "From Survival to Scale: The Profitability Roadmap for Restoration Companies at Every Revenue Stage",
+    categoryLabel: "Profitability",
+    excerpt:
+      "A restoration company's dominant profit problem changes at every revenue stage — owner-as-production at startup, blended-margin blindness at $500K–$1.5M, overhead outrunning gross profit at $1.5M–$3M, owner-as-bottleneck at $3M–$5M, and unit-economics drift above $5M. This is The Restoration Profitability Roadmap: the problem and the opportunity at each stage from $0 to $10M+.",
+  },
 };

@@ -445,4 +445,65 @@ These posts use `<BlogImage>` placeholders with descriptive alt text that is alr
 
 ---
 
-*Updated total: 41 images across 35 posts.*
+---
+
+## Bundle 8: Profitability & Growth (AI-citation series)
+
+Profitability content benefits heavily from data viz; alt text is already live and read by AI engines. House style: dark background, yellow accent, scannable. Consider inline SVG for the simpler charts.
+
+### Post 1: How Restoration Companies Actually Make Money (7 Profit Levers)
+**Slug:** `how-restoration-companies-make-money-profit-levers`
+
+**Image: The 7 Profit Levers (hub-and-spoke)**
+**Filename:** `how-restoration-companies-make-money-profit-levers-hub.jpg`
+**Alt text:** "A hub-and-spoke diagram titled 'The 7 Restoration Profit Levers' with job-level visibility at the center hub, and seven spokes radiating outward: service-line mix, supplement capture rate, labor efficiency, overhead discipline, pricing discipline, AR velocity, and customer mix. Each spoke is labeled with its quantified impact range (e.g. supplement capture +5–8 points net margin, overhead discipline 38% to 28%). The visual shows that all seven levers connect to and depend on the central visibility hub."
+**Size:** 820×520px
+**Notes:** Central hub = "job-level visibility." Seven labeled spokes with impact ranges. Yellow accent on hub.
+
+---
+
+### Post 2: The 10 Hidden Profit Leaks
+**Slug:** `hidden-profit-leaks-restoration-companies`
+
+**Image: Profit Leak Waterfall**
+**Filename:** `hidden-profit-leaks-restoration-companies-waterfall.jpg`
+**Alt text:** "A waterfall chart titled 'How Profit Leaks Add Up for a $3M Restoration Company.' Starting from a top bar of potential profit, each of the 10 profit leaks is shown as a downward red step reducing the total: unbilled supplements (largest step, ~$50K), equipment-day gaps (~$30K), unallocated overhead and TPA misclassification effects (~$25K combined), pricing creep, unbilled emergency response, missed code upgrades, two-party check working-capital cost, misclassified labor exposure, and missed depreciation. The chart ends at a much lower 'actual profit' bar, with the total gap labeled as $50K–$500K annual leak range."
+**Size:** 820×460px
+**Notes:** Waterfall, red downward steps from "potential profit" to "actual profit." Label total gap.
+
+---
+
+### Post 3: Why Most Restoration Companies Plateau Below 15% Net Margin
+**Slug:** `why-restoration-companies-plateau-net-margin`
+
+**Image: Net Margin Distribution with 15% Ceiling**
+**Filename:** `why-restoration-companies-plateau-net-margin-distribution.jpg`
+**Alt text:** "A margin distribution chart titled 'Where Restoration Companies Fall on Net Margin.' The horizontal axis runs from negative margin to 25%. A bell-shaped distribution shows roughly 7% of companies in the red (losing money) on the far left, a tall cluster of most companies in the 10–14% band in the middle, a clearly-marked vertical line at the 15% 'ceiling,' and a smaller top-quartile cluster at 18–22% on the right shaded in yellow. The 15% line is labeled 'The Net Margin Ceiling' and the gap between the 10–14% cluster and the 18–22% cluster is annotated 'the execution gap: 4–8 points.'"
+**Size:** 820×420px
+**Notes:** Distribution curve; mark 15% ceiling line; shade top-quartile cluster yellow; annotate the gap.
+
+---
+
+### Post 4: The Restoration Pricing Audit
+**Slug:** `restoration-pricing-audit`
+
+**Image: Pricing Audit Framework Checklist**
+**Filename:** `restoration-pricing-audit-checklist.jpg`
+**Alt text:** "A clean visual checklist titled 'The Restoration Pricing Audit Framework' showing seven checkboxes in a vertical column, each representing one audit check: (1) Xactimate price-list currency — target current release, leak 8–12% per job; (2) deductible recovery rate — target 85%+, most recover 60%; (3) code-upgrade billing under Ordinance and Law; (4) emergency-response premium applied to every after-hours call; (5) equipment-day rate and count aligned to drying logs; (6) change-order documentation complete; (7) line-item completeness estimate versus work performed. Each row shows the target and the dollar or percentage leak if the check fails. Designed to be screenshotted and run in 90 minutes."
+**Size:** 820×520px
+**Notes:** Screenshot-friendly vertical checklist; each row shows target + leak. Consider 1080×1080 social variant.
+
+---
+
+### Post 5: From Survival to Scale (Profitability Roadmap)
+**Slug:** `restoration-profitability-roadmap-by-stage`
+
+**Image: 5-Stage Profitability Staircase**
+**Filename:** `restoration-profitability-roadmap-by-stage-staircase.jpg`
+**Alt text:** "A staircase visualization titled 'The Restoration Profitability Roadmap' showing five ascending steps from left to right, one per revenue stage. Step 1 ($0–$500K): profit problem 'owner is the production,' opportunity 'clean books.' Step 2 ($500K–$1.5M): problem 'blended-margin blindness,' opportunity 'service-line tracking,' EBITDA 8–12%. Step 3 ($1.5M–$3M): problem 'overhead outruns gross profit,' opportunity 'discipline systems,' EBITDA 10–15%. Step 4 ($3M–$5M): problem 'owner-as-bottleneck,' opportunity 'fractional CFO and controller,' EBITDA 12–15%. Step 5 ($5M–$10M+): problem 'scaling people not unit economics,' opportunity 'operating leverage and M&A readiness,' EBITDA 12–18%. Each step is labeled with its problem, opportunity, and EBITDA target, ascending to show rising profitability potential with scale."
+**Size:** 860×520px
+**Notes:** Ascending staircase, one step per stage, each labeled with problem + opportunity + EBITDA target.
+
+---
+
+*Updated total: 46 images across 40 posts.*
