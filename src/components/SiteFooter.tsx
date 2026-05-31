@@ -171,6 +171,7 @@ export default function SiteFooter() {
                 Cat3 Books
               </h5>
               {[
+                ["Restoration Bookkeeping", "/restoration-bookkeeping"],
                 ["Services", "/#services"],
                 ["Pricing", "/#pricing"],
                 ["About", "/#about"],

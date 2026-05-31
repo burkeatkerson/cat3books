@@ -1,0 +1,58 @@
+import { site } from "@/lib/site";
+import Container from "../Container";
+import FadeUp from "../motion/FadeUp";
+import { Y_DEEP } from "@/lib/motion-config";
+
+export default function LandingFinalCTA() {
+  return (
+    <section id="contact" className="relative text-center final-cta-bg py-20 xl:py-[130px]">
+      <Container>
+        <FadeUp>
+          <div className="font-mono text-[10px] tracking-[0.28em] text-c3-yellow uppercase">
+            Free · No Obligation · 30 Minutes
+          </div>
+        </FadeUp>
+
+        <FadeUp delay={0.1} y={Y_DEEP}>
+          <h2 className="font-disp text-[clamp(54px,8vw,108px)] leading-[0.9] mt-6 tracking-[0.025em]">
+            STOP GUESSING.
+            <br />
+            <span className="text-c3-yellow animate-glowPulse">START KNOWING.</span>
+          </h2>
+        </FadeUp>
+
+        <FadeUp delay={0.2}>
+          <p className="font-body font-light text-[17px] text-c3-mid max-w-[560px] mx-auto mt-7 leading-[1.75]">
+            Book your free Books Audit. We&rsquo;ll open your actual numbers, name
+            three leaks we can plug, and hand you a clear plan &mdash; whether you
+            hire us or not. You&rsquo;ve got nothing to lose but the money that&rsquo;s
+            already leaking.
+          </p>
+        </FadeUp>
+
+        <FadeUp delay={0.3}>
+          <div className="mt-[34px] flex gap-[14px] justify-center flex-wrap">
+            <a
+              href={`mailto:${site.email}`}
+              className="inline-flex items-center gap-2 font-cond font-bold text-[14px] tracking-[0.10em] uppercase px-[22px] py-[14px] bg-c3-yellow text-[#111] hover:bg-c3-yellow-2 hover:-translate-y-0.5 hover:shadow-[0_10px_32px_rgba(240,190,0,0.15)] transition-all duration-[220ms]"
+            >
+              Get My Free Books Audit →
+            </a>
+            <a
+              href={`tel:${site.phone}`}
+              className="inline-flex items-center gap-2 font-cond font-bold text-[14px] tracking-[0.10em] uppercase px-[22px] py-[14px] border border-c3-b2 text-c3-mid hover:border-c3-mid hover:text-c3-text transition-all duration-[220ms]"
+            >
+              Call Us Directly
+            </a>
+          </div>
+        </FadeUp>
+
+        <FadeUp delay={0.4}>
+          <div className="mt-[30px] font-mono text-[10px] tracking-[0.22em] text-c3-dim uppercase">
+            No annual contracts · Cancel anytime · Response within 24 hours
+          </div>
+        </FadeUp>
+      </Container>
+    </section>
+  );
+}

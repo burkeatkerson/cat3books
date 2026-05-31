@@ -5,6 +5,7 @@ import Link from "next/link";
 import Container from "./Container";
 
 const navLinks = [
+  { label: "Clean Books", href: "/restoration-bookkeeping" },
   { label: "Services", href: "/#services" },
   { label: "Pricing", href: "/#pricing" },
   { label: "About", href: "/#about" },
