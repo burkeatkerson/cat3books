@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
-import Link from "next/link";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import type { PostMeta } from "@/lib/field-notes";
 import CategoryBar, { THEMES, CATEGORIES, matchesFilter } from "./CategoryBar";
 import FeaturedPost from "./FeaturedPost";
@@ -62,19 +61,22 @@ export default function FilteredPostSection({ featured, gridPosts }: Props) {
     );
   }, [active, search, ready]);
 
-  const matches = (post: PostMeta) => {
-    const q = search.trim().toLowerCase();
-    const searchMatch =
-      !q ||
-      post.title.toLowerCase().includes(q) ||
-      post.excerpt.toLowerCase().includes(q) ||
-      post.categoryLabel.toLowerCase().includes(q);
-    return matchesFilter(post.category, active) && searchMatch;
-  };
+  const matches = useCallback(
+    (post: PostMeta) => {
+      const q = search.trim().toLowerCase();
+      const searchMatch =
+        !q ||
+        post.title.toLowerCase().includes(q) ||
+        post.excerpt.toLowerCase().includes(q) ||
+        post.categoryLabel.toLowerCase().includes(q);
+      return matchesFilter(post.category, active) && searchMatch;
+    },
+    [active, search]
+  );
 
   const filtered = useMemo(
     () => gridPosts.filter(matches),
-    [gridPosts, active, search]
+    [gridPosts, matches]
   );
 
   const featuredVisible = featured && matches(featured);
