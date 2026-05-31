@@ -1,65 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/cn";
-
-/**
- * Category key → display label. One entry per `category` value used in MDX
- * frontmatter. Used for the sub-category chips and as a lookup elsewhere.
- */
-export const CATEGORIES: { key: string; label: string }[] = [
-  { key: "frameworks", label: "Decision Frameworks" },
-  { key: "benchmarks", label: "Industry Benchmarks" },
-  { key: "jobcosting", label: "Job Costing" },
-  { key: "pl", label: "P&L Management" },
-  { key: "hiring", label: "Hiring & Outsourcing" },
-  { key: "comparisons", label: "Comparisons" },
-  { key: "sop", label: "Standard Operating Procedures" },
-  { key: "software", label: "Software Reviews" },
-  { key: "qb", label: "QuickBooks Guides" },
-  { key: "profit", label: "Profitability" },
-  { key: "supplements", label: "Supplements & TPAs" },
-  { key: "cashflow", label: "Cash Flow" },
-  { key: "guides", label: "Definitive Guides" },
-  { key: "industry", label: "Industry & Strategy" },
-  { key: "research", label: "Industry Research" },
-  { key: "reference", label: "Reference" },
-];
-
-/**
- * Themes group the 16 categories into a short, scannable top-level nav.
- * Theme keys are prefixed `t-` so they never collide with category keys —
- * the active filter (and the ?cat= URL param) can hold "all", a theme key,
- * or a category key, and be resolved unambiguously.
- * Every category must belong to exactly one theme.
- */
-export const THEMES: { key: string; label: string; cats: string[] }[] = [
-  { key: "t-profit",    label: "Profit & Numbers",   cats: ["profit", "benchmarks", "pl", "cashflow"] },
-  { key: "t-ops",       label: "Costing & SOPs",     cats: ["jobcosting", "sop", "supplements"] },
-  { key: "t-people",    label: "Hiring & Decisions", cats: ["hiring", "frameworks", "comparisons"] },
-  { key: "t-software",  label: "Software",           cats: ["software", "qb"] },
-  { key: "t-industry",  label: "Guides & Industry",  cats: ["industry", "research", "guides"] },
-  { key: "t-reference", label: "Reference",          cats: ["reference"] },
-];
-
-const CAT_LABEL: Record<string, string> = Object.fromEntries(
-  CATEGORIES.map((c) => [c.key, c.label])
-);
-
-/** Resolve a filter key (theme | category | "all") to the theme it lives in. */
-export function themeForKey(key: string): (typeof THEMES)[number] | null {
-  if (key === "all") return null;
-  const asTheme = THEMES.find((t) => t.key === key);
-  if (asTheme) return asTheme;
-  return THEMES.find((t) => t.cats.includes(key)) ?? null;
-}
-
-/** Does a post's category fall under the active filter key? */
-export function matchesFilter(postCategory: string, key: string): boolean {
-  if (key === "all") return true;
-  const theme = THEMES.find((t) => t.key === key);
-  if (theme) return theme.cats.includes(postCategory);
-  return postCategory === key;
-}
+import { THEMES, CAT_LABEL, themeForKey } from "@/lib/field-notes-taxonomy";
 
 interface Props {
   /** "all" | a theme key (t-*) | a category key */

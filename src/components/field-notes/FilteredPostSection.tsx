@@ -2,7 +2,8 @@
 
 import { useState, useMemo, useEffect, useCallback } from "react";
 import type { PostMeta } from "@/lib/field-notes";
-import CategoryBar, { THEMES, CATEGORIES, matchesFilter } from "./CategoryBar";
+import CategoryBar from "./CategoryBar";
+import { THEMES, CATEGORIES, matchesFilter } from "@/lib/field-notes-taxonomy";
 import FeaturedPost from "./FeaturedPost";
 import PostCard from "./PostCard";
 import Container from "@/components/Container";
