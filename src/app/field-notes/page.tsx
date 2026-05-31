@@ -6,7 +6,7 @@ import JsonLd from "@/components/JsonLd";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import BlogHero from "@/components/field-notes/BlogHero";
-import FilteredPostSection from "@/components/field-notes/FilteredPostSection";
+import FieldNotesIndex from "@/components/field-notes/FieldNotesIndex";
 import EditorialSection from "@/components/field-notes/EditorialSection";
 import SoftwareScorecard from "@/components/field-notes/SoftwareScorecard";
 import NewsletterSection from "@/components/field-notes/NewsletterSection";
@@ -34,8 +34,15 @@ export const metadata: Metadata = {
 
 export default function FieldNotesPage() {
   const posts = getAllPosts();
-  const featured = posts.find((p) => p.featured);
-  const gridPosts = posts.filter((p) => !p.featured);
+  // Pick a featured "cover" post: an explicitly featured one if set, else the
+  // highest-priority, most-recent post.
+  const featured =
+    [...posts].sort(
+      (a, b) =>
+        Number(b.featured ?? false) - Number(a.featured ?? false) ||
+        (b.priority ?? 0.7) - (a.priority ?? 0.7) ||
+        new Date(b.date).getTime() - new Date(a.date).getTime()
+    )[0];
 
   const blogSchema: WithContext<Blog> = {
     "@context": "https://schema.org",
@@ -66,8 +73,8 @@ export default function FieldNotesPage() {
       <JsonLd schema={blogSchema} />
       <SiteHeader />
       <main id="top" className="bg-c3-black text-c3-text min-h-screen">
-        <BlogHero />
-        <FilteredPostSection featured={featured} gridPosts={gridPosts} />
+        <BlogHero postCount={posts.length} />
+        <FieldNotesIndex featured={featured} posts={posts} />
         <EditorialSection posts={posts} />
         <SoftwareScorecard />
         <NewsletterSection />

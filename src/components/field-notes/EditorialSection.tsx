@@ -16,12 +16,12 @@ interface Props {
 }
 
 export default function EditorialSection({ posts }: Props) {
-  const mostRead = [
-    { slug: "owners-reading-order-monthly-pl",       label: "P&L Management",  time: "5 min",  reads: "3,200" },
-    { slug: "supplements-disappear-xactimate-quickbooks", label: "Supplements", time: "7 min",  reads: "2,840" },
-    { slug: "code-blue-test-tpa-programs",            label: "Profitability",   time: "8 min",  reads: "2,610" },
-    { slug: "qbo-class-tracking-restoration",         label: "QuickBooks",      time: "11 min", reads: "2,140" },
-    { slug: "13-week-cash-forecast-restoration",      label: "Cash Flow",       time: "10 min", reads: "1,980" },
+  const editorPicks = [
+    { slug: "owners-reading-order-monthly-pl",       label: "P&L Management",  time: "5 min" },
+    { slug: "supplements-disappear-xactimate-quickbooks", label: "Supplements", time: "7 min" },
+    { slug: "code-blue-test-tpa-programs",            label: "Profitability",   time: "8 min" },
+    { slug: "qbo-class-tracking-restoration",         label: "QuickBooks",      time: "11 min" },
+    { slug: "13-week-cash-forecast-restoration",      label: "Cash Flow",       time: "10 min" },
   ];
 
   const postMap = Object.fromEntries(posts.map((p) => [p.slug, p]));
@@ -38,13 +38,13 @@ export default function EditorialSection({ posts }: Props) {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-[48px] mt-6">
-          {/* Most read */}
+          {/* Editor's picks */}
           <div className="bg-c3-card border border-c3-border p-8">
             <h3 className="font-cond font-bold text-[20px] uppercase tracking-[0.04em] mb-[18px] text-c3-text">
-              Most read · last 90 days
+              Editor&rsquo;s picks
             </h3>
             <div className="flex flex-col">
-              {mostRead.map(({ slug, label, time, reads }, i) => {
+              {editorPicks.map(({ slug, label, time }, i) => {
                 const post = postMap[slug];
                 return (
                   <Link
@@ -62,9 +62,6 @@ export default function EditorialSection({ posts }: Props) {
                       <h4 className="font-cond font-semibold text-[16px] text-c3-text leading-[1.25] tracking-[0.005em] group-hover:text-c3-yellow transition-colors duration-200">
                         {post?.title ?? slug}
                       </h4>
-                      <div className="font-mono text-[10px] tracking-[0.14em] text-c3-mid mt-[6px] uppercase">
-                        {reads} reads
-                      </div>
                     </div>
                   </Link>
                 );
@@ -97,16 +94,6 @@ export default function EditorialSection({ posts }: Props) {
                 </li>
               ))}
             </ol>
-
-            <div className="mt-[18px] pt-[14px] border-t border-c3-border">
-              <div className="flex justify-between font-mono text-[10px] tracking-[0.18em] text-c3-dim uppercase mb-2">
-                <span>Average reader progress</span>
-                <span className="text-c3-yellow">2 of 6</span>
-              </div>
-              <div className="h-[3px] bg-c3-b2 relative">
-                <div className="absolute inset-y-0 left-0 w-1/3 bg-c3-yellow" />
-              </div>
-            </div>
           </div>
         </div>
       </Container>

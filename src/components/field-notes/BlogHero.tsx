@@ -1,15 +1,14 @@
 import FadeUp from "@/components/motion/FadeUp";
 import Container from "@/components/Container";
+import { THEMES } from "@/lib/field-notes-taxonomy";
 
-const metaRows = [
-  { k: "Published",   v: "Weekly",       y: false },
-  { k: "In Archive",  v: "128+ posts",   y: false },
-  { k: "Read by",     v: "3,400 owners", y: false },
-  { k: "Avg read",    v: "7 min",        y: false },
-  { k: "Focus",       v: "Restoration only", y: true },
-];
-
-export default function BlogHero() {
+export default function BlogHero({ postCount }: { postCount: number }) {
+  const metaRows = [
+    { k: "Published",  v: "Weekly",                  y: false },
+    { k: "In Library", v: `${postCount} posts`,      y: false },
+    { k: "Topics",     v: `${THEMES.length} series`, y: false },
+    { k: "Focus",      v: "Restoration only",        y: true },
+  ];
   return (
     <section className="relative py-24 overflow-hidden border-b border-c3-border hero-grid-bg">
       {/* Ghost watermark */}
