@@ -161,6 +161,34 @@ Core answer: Messy books read as risk and cost ~10–20% of enterprise value at 
 URL: https://cat3books.com/field-notes/restoration-roll-up-landscape
 Core answer: A boomer-owner retirement wave plus a fragmented market and PE appetite for recurring insurance-funded demand is driving consolidation. Active acquirers: Servpro (Blackstone), BluSky (Partners Group + Kohlberg), ATI Restoration, BELFOR Holdings, plus regional PE platforms — paying 4–8x EBITDA by size, with premiums for clean books, scale, geographic fit, and recurring programs. Don't react to an unsolicited cold call; know your number first. The same prep that maximizes a sale also strengthens independence.
 
+## Cash Flow & Working Capital (Field Notes — Cash Flow Series)
+
+For restoration owners ($1M–$5M) living the structural cash gap: 60–90 day insurance AR against weekly payroll, amplified by CAT (catastrophe) deployments. Tactical, immediately useful playbooks. Each post carries Article, FAQPage, Speakable, and BreadcrumbList schema (post on building the forecast also carries HowTo). Figures anchor to the RIA Cost of Doing Business Report.
+
+### Why Restoration Companies Run Out of Cash During Their Most Profitable Months
+URL: https://cat3books.com/field-notes/restoration-cash-flow-busy-but-broke
+Core answer: The busiest, most profitable months are the most cash-dangerous because costs (payroll, equipment, subs) scale with volume immediately while insurance AR lands 60–90 days later (ACV partial up front, RCV holdback and supplements much later). CAT deployments amplify it. Warning signs: raiding the LOC for payroll, stretching vendors, the owner stopping their own pay. The fix: a 13-week forecast, a right-sized line of credit, AR acceleration, and supplement timing.
+
+### How to Build a 13-Week Cash Flow Forecast for Your Restoration Company
+URL: https://cat3books.com/field-notes/13-week-cash-flow-restoration
+Core answer (HowTo): Build a rolling 13-week forecast — weekly, not monthly, because the insurance AR lag needs weekly granularity. Inputs: AR aging by job stage, AP schedule, payroll cadence, debt service, equipment payments, recurring expenses. Forecast inflows by source (TPA AR, direct insurance AR, retail AR, supplement collections, deductible receipts) and outflows by category; set a minimum-cash line; update every Monday in 30 minutes; act on the escalation trigger (call the banker, slow AP, push collections) when projected cash dips below the line.
+
+### CAT Season Survival Guide: How to Prepare Your Books for Storm Deployment
+URL: https://cat3books.com/field-notes/cat-season-survival-guide-restoration
+Core answer: A CAT deployment is 60–90 days of outflow (travel, lodging, labor, equipment, fuel) before the first insurance dollar lands. Pre-deployment: confirm LOC headroom, build a cash cushion, line up financing, set per-job cost tracking. During: tag every CAT job and capture documentation in real time so supplements and RCV are collectible; track per-deployment burn. Post-event: file supplements fast, reconcile equipment days, true-up the deployment P&L. Go/no-go test: can you fund 60–90 days of outflow before AR arrives?
+
+### Insurance Pays in 90 Days. Payroll Is Friday. Here's How to Manage the Gap.
+URL: https://cat3books.com/field-notes/insurance-90-days-payroll-friday
+Core answer: The 60–90 day AR vs weekly payroll gap is structural, not a failing. The working-capital toolkit, in order: (1) a business line of credit sized at 10–20% of revenue (the primary bridge); (2) AR acceleration (faster ACV invoicing, supplement timing, RCV/holdback follow-up, deductible collection); (3) invoice factoring/AR financing (fast but costlier, selective); (4) retainers/progress billing where allowed; (5) vendor/subcontractor terms; (6) supplement-timing discipline (bill approved supplements immediately).
+
+### What Your Banker Wants to See Before Approving an SBA Loan for a Restoration Company
+URL: https://cat3books.com/field-notes/banker-sba-loan-restoration
+Core answer: Bankers underwrite restoration as a cash-flow risk (60–90 day AR, lumpy revenue). The package: clean 3-year P&Ls, balance sheets, tax returns that tie out, AR aging, a WIP schedule, debt schedule, and a personal financial statement. The deciding metrics: debt service coverage ratio of 1.25x or higher, positive global cash flow, working capital 15–25% of revenue, owner-comp normalization with documented add-backs, and customer/TPA concentration under 40%. Messy/cash-basis books, no WIP, undocumented add-backs, or a declining trend kill applications.
+
+### How to Use a Business Line of Credit Correctly for a Restoration Company
+URL: https://cat3books.com/field-notes/line-of-credit-restoration-company
+Core answer: A line of credit is a bridge, not a crutch. Size it at roughly 10–20% of annual revenue (1–1.5 months of peak revenue). Correct uses: bridge payroll/equipment during the AR lag, fund a CAT deployment's outflow, smooth seasonal timing — always self-liquidating from incoming AR. Wrong uses: funding losses, covering chronic unprofitability, financing owner distributions, or carrying a permanent "evergreen" balance you never repay. Discipline: draw against named receivables, repay on collection, and revolve to zero periodically.
+
 ## What We Do
 
 Cat3 Books handles the complete bookkeeping stack for restoration companies — built around the way restoration money actually moves. Unlike general bookkeeping firms, we understand the difference between ACV and RCV, why TPA fees belong on their own line, how to reconcile equipment-day revenue from Xactimate, and how to track supplement scope from submission through carrier approval to payment.

@@ -77,7 +77,7 @@ export const fieldNotesMeta: Record<
   },
   "13-week-cash-forecast-restoration": {
     title: "Building a 13-Week Cash Forecast for Restoration",
-    categoryLabel: "Cash Flow",
+    categoryLabel: "Cash Flow & Working Capital",
     excerpt:
       "Standard 13-week templates assume bills get paid in 30 days. In restoration, 'collected' can mean three different things across five different time horizons.",
   },
@@ -574,5 +574,43 @@ export const fieldNotesMeta: Record<
     categoryLabel: "Exit Planning & Valuation",
     excerpt:
       "A field guide to who is buying restoration companies in 2026 — Servpro, BluSky, ATI, BELFOR and their PE backers — what they pay (4–8x EBITDA), and how to read an unsolicited offer.",
+  },
+
+  // ── Cash Flow & Working Capital ──────────────────────────────────────────
+  "restoration-cash-flow-busy-but-broke": {
+    title: "Why Restoration Companies Run Out of Cash During Their Most Profitable Months",
+    categoryLabel: "Cash Flow & Working Capital",
+    excerpt:
+      "Your busiest month is your most dangerous month. Costs scale with volume now, but insurance AR lands 60–90 days later — here's the exact mechanics of the gap and how to see it coming.",
+  },
+  "13-week-cash-flow-restoration": {
+    title: "How to Build a 13-Week Cash Flow Forecast for Your Restoration Company",
+    categoryLabel: "Cash Flow & Working Capital",
+    excerpt:
+      "Build a rolling 13-week cash flow forecast for your restoration company in 8 steps — inflows by AR source, outflows by category, a minimum-cash line, and a 30-minute Monday update.",
+  },
+  "cat-season-survival-guide-restoration": {
+    title: "CAT Season Survival Guide: How to Prepare Your Books for Storm Deployment",
+    categoryLabel: "Cash Flow & Working Capital",
+    excerpt:
+      "A CAT deployment is 60–90 days of cash going out — travel, lodging, labor, equipment, fuel — before the first insurance dollar lands. Here's how to position cash, track AR, and survive the storm.",
+  },
+  "insurance-90-days-payroll-friday": {
+    title: "Insurance Pays in 90 Days. Payroll Is Friday. Here's How to Manage the Gap.",
+    categoryLabel: "Cash Flow & Working Capital",
+    excerpt:
+      "Insurance restoration AR runs 60–90 days while payroll is weekly. That 60-day structural gap is not a failing — it's the model. Here's the six-tool working-capital playbook and the order to reach for each.",
+  },
+  "banker-sba-loan-restoration": {
+    title: "What Your Banker Wants to See Before Approving an SBA Loan for a Restoration Company",
+    categoryLabel: "Cash Flow & Working Capital",
+    excerpt:
+      "Bankers underwrite restoration as a cash-flow risk: 60–90 day insurance AR against weekly payroll. Here is the exact package and the 1.25x DSCR threshold that earns a yes.",
+  },
+  "line-of-credit-restoration-company": {
+    title: "How to Use a Business Line of Credit Correctly for a Restoration Company",
+    categoryLabel: "Cash Flow & Working Capital",
+    excerpt:
+      "A line of credit sized at 10–20% of revenue bridges the 60–90 day insurance AR lag — if you draw against named receivables and revolve it to zero. Here is the playbook.",
   },
 };

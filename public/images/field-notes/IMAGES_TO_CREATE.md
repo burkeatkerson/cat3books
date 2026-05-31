@@ -622,4 +622,36 @@ One main visual per post via `<BlogImage>` placeholder. Alt text is AI-parseable
 
 ---
 
-*Updated total: 69 images across 63 posts.*
+---
+
+## Bundle 12: Cash Flow & Working Capital (№ 111–116)
+
+One main visual per post via `<BlogImage>` placeholder. Cash-flow content suits clean charts — consider inline SVG. House style: dark background, yellow accent.
+
+### № 111 — Busy But Broke (revenue vs cash divergence)
+**Filename:** `restoration-cash-flow-busy-but-broke-chart.jpg` · **Size:** 820×420px
+**Alt:** Line chart "Busy But Broke: One Profitable Month." X-axis weeks 1–12. One rising line "Revenue booked / profit earned"; a second line "Cash on hand" rises slightly then falls steeply as payroll, equipment, and subcontractor costs go out while insurance AR hasn't landed. The widening gap between them is shaded and labeled "the working-capital gap"; around week 8–12 AR lands and cash recovers.
+
+### № 112 — Build a 13-Week Forecast (template)
+**Filename:** `13-week-cash-flow-restoration-template.jpg` · **Size:** 860×420px
+**Alt:** A 13-week cash flow forecast template: 13 week columns; rows grouped Beginning Cash; Inflows (TPA AR, direct insurance AR [ACV + RCV holdback], retail AR, supplement collections, deductible receipts); Outflows (payroll, subcontractors, equipment lease/loan, vendor AP, taxes, owner distributions, rent/utilities); Net Change; Ending Cash carrying forward. A shaded minimum-cash threshold line with a red callout where projected ending cash dips below it.
+
+### № 113 — CAT Season Timeline
+**Filename:** `cat-season-survival-guide-restoration-timeline.jpg` · **Size:** 860×420px
+**Alt:** Three-stage CAT-season timeline. Pre-deployment: confirm LOC headroom, build cash cushion, line up financing, set per-job cost tracking ("cash positioned"). During: travel/lodging/labor/equipment/fuel out daily, tag every CAT job, real-time documentation ("peak cash burn, no AR yet"). Post-event reconciliation: file supplements fast, reconcile equipment days, match costs to jobs, true-up deployment P&L ("AR collection begins, 60–90 days out"). A cash-on-hand line dips deeply during deployment and recovers as AR lands.
+
+### № 114 — Working Capital Toolkit
+**Filename:** `insurance-90-days-payroll-friday-toolkit.jpg` · **Size:** 860×440px
+**Alt:** A "Working Capital Toolkit" of 5–6 cards, each with best-for / speed / tradeoff: Line of Credit (routine timing gaps; fast once in place; interest, sized 10–20% of revenue); AR Acceleration (shorten the lag; free; needs billing discipline); Invoice Factoring/AR Financing (urgent cash; very fast; higher cost, selective); Retainers/Progress Billing (large reconstruction; reduces gap up front; depends on what insurance allows); Vendor/Sub Terms (match outflow to inflow; free; relationship-dependent); Supplement Timing (recover earned cash faster; free; needs tracking).
+
+### № 115 — What the Banker Reviews
+**Filename:** `banker-sba-loan-restoration-checklist.jpg` · **Size:** 860×440px
+**Alt:** A "What the Banker Reviews" checklist in two groups. Documents: 3-year P&Ls, balance sheets, business + personal tax returns, AR aging, WIP schedule, debt schedule, personal financial statement. Metrics with green-flag thresholds: DSCR at or above 1.25x, positive global cash flow, working capital 15–25% of revenue, owner comp normalized with documented add-backs, no single customer/TPA above 40%, stable-or-rising 3-year trend.
+
+### № 116 — LOC Sizing Matrix
+**Filename:** `line-of-credit-restoration-company-matrix.jpg` · **Size:** 820×420px
+**Alt:** A line-of-credit sizing matrix. Rows = revenue ranges ($1M–$2M, $2M–$3M, $3M–$5M); columns = Recommended LOC size (~10–20% of revenue, e.g. $150K–$350K, $300K–$550K, $500K–$900K), Primary use cases (bridge payroll during AR lag, fund a CAT deployment, smooth seasonal timing), and a "never use it for" note (funding losses, owner distributions, permanent working capital). A side callout contrasts a healthy revolve-to-zero pattern against the unhealthy evergreen balance.
+
+---
+
+*Updated total: 75 images across 69 posts.*

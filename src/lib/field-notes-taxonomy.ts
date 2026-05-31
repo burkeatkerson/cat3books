@@ -25,7 +25,7 @@ export const CATEGORIES: CategoryDef[] = [
   { key: "qb", label: "QuickBooks Guides" },
   { key: "profit", label: "Profitability" },
   { key: "supplements", label: "Supplements & TPAs" },
-  { key: "cashflow", label: "Cash Flow" },
+  { key: "cashflow", label: "Cash Flow & Working Capital" },
   { key: "guides", label: "Definitive Guides" },
   { key: "industry", label: "Industry & Strategy" },
   { key: "research", label: "Industry Research" },

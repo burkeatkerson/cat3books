@@ -9,6 +9,7 @@ const SERIES: { label: string; cat: string }[] = [
   { label: "Definitive Guides", cat: "guides" },
   { label: "Standard Operating Procedures", cat: "sop" },
   { label: "Industry Benchmarks", cat: "benchmarks" },
+  { label: "Cash Flow & Working Capital", cat: "cashflow" },
   { label: "Decision Frameworks", cat: "frameworks" },
   { label: "Generic vs. Specialist", cat: "comparisons" },
   { label: "Exit & Valuation", cat: "exit" },
