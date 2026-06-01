@@ -7,7 +7,7 @@ function titleFor(slug: string): string {
   return post?.title ?? slug;
 }
 
-/** Slim banner at the top of a post that belongs to a learning path. */
+/** Slim banner at the top of a post that belongs to a course. */
 export function PathBanner({ path, index }: { path: LearningPath; index: number }) {
   const total = path.steps.length;
   const pct = Math.round(((index + 1) / total) * 100);
@@ -21,7 +21,7 @@ export function PathBanner({ path, index }: { path: LearningPath; index: number 
           ◆ {path.title}
         </div>
         <div className="font-mono text-[9px] tracking-[0.18em] uppercase text-c3-dim group-hover:text-c3-mid transition-colors duration-200">
-          Step {index + 1} of {total} · view the full path →
+          Lesson {index + 1} of {total} · view the full course →
         </div>
       </div>
       <div className="mt-3 h-[3px] bg-c3-b2 relative overflow-hidden">
@@ -31,7 +31,7 @@ export function PathBanner({ path, index }: { path: LearningPath; index: number 
   );
 }
 
-/** "Next in this path" card after the article (or a completion CTA on the last step). */
+/** "Next lesson" card after the article (or a completion CTA on the last lesson). */
 export function PathNext({ path, index }: { path: LearningPath; index: number }) {
   const total = path.steps.length;
   const isLast = index >= total - 1;
@@ -43,7 +43,7 @@ export function PathNext({ path, index }: { path: LearningPath; index: number })
           ◆ {path.title} · Complete
         </div>
         <p className="font-disp text-[clamp(22px,3vw,30px)] leading-[1.05] tracking-[0.02em] text-c3-text mb-3">
-          You&rsquo;ve walked the whole path.
+          You&rsquo;ve finished the course.
         </p>
         <p className="font-body font-light text-[14.5px] text-c3-mid leading-[1.7] max-w-[620px] mb-6">
           You now know how to read your numbers, where the money leaks, and which
@@ -61,7 +61,7 @@ export function PathNext({ path, index }: { path: LearningPath; index: number })
             href={`/learn/${path.id}`}
             className="inline-flex items-center gap-2 font-cond font-bold text-[13px] tracking-[0.10em] uppercase px-[18px] py-3 border border-c3-b2 text-c3-mid hover:border-c3-yellow hover:text-c3-yellow transition-all duration-200"
           >
-            Revisit the path
+            Revisit the course
           </Link>
         </div>
       </div>
@@ -69,23 +69,27 @@ export function PathNext({ path, index }: { path: LearningPath; index: number })
   }
 
   const next = path.steps[index + 1];
+  const nextHref = `/field-notes/${next.slug}`;
   return (
-    <Link
-      href={`/field-notes/${next.slug}`}
-      className="group not-prose block my-12 border border-c3-border bg-c3-card hover:border-c3-yellow transition-colors duration-200 p-7"
-    >
+    <div className="not-prose my-12 border border-c3-yellow border-l-[4px] bg-[rgba(240,190,0,0.05)] p-7">
       <div className="font-mono text-[9px] tracking-[0.24em] uppercase text-c3-yellow mb-2">
-        Next in {path.title} · Step {index + 2} of {total}
+        ▸ Next Lesson · {index + 2} of {total} in {path.title}
       </div>
-      <h3 className="font-cond font-bold text-[clamp(19px,2.6vw,26px)] leading-[1.1] tracking-[0.01em] text-c3-text group-hover:text-c3-yellow transition-colors duration-200">
-        {titleFor(next.slug)}
-      </h3>
+      <Link href={nextHref} className="group block">
+        <h3 className="font-cond font-bold text-[clamp(20px,2.8vw,28px)] leading-[1.1] tracking-[0.01em] text-c3-text group-hover:text-c3-yellow transition-colors duration-200">
+          {titleFor(next.slug)}
+        </h3>
+      </Link>
       <p className="font-body font-light text-[14px] text-c3-mid leading-[1.7] mt-3 max-w-[640px]">
         {next.hook}
       </p>
-      <span className="inline-flex items-center gap-2 font-cond font-bold text-[12px] tracking-[0.10em] uppercase text-c3-yellow mt-5 group-hover:translate-x-0.5 transition-transform duration-200">
-        Continue the path →
-      </span>
-    </Link>
+      <Link
+        href={nextHref}
+        className="group mt-6 inline-flex items-center gap-2.5 font-cond font-bold text-[15px] tracking-[0.10em] uppercase px-[28px] py-[16px] bg-c3-yellow text-[#111] hover:bg-[#FFD000] hover:-translate-y-0.5 hover:shadow-[0_12px_34px_rgba(240,190,0,0.22)] transition-all duration-[220ms]"
+      >
+        Continue to Lesson {index + 2}
+        <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
+      </Link>
+    </div>
   );
 }

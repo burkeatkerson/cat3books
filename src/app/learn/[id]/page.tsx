@@ -75,7 +75,7 @@ export default function LearningPathPage({ params }: Props) {
               <span>/</span>
               <Link href="/field-notes" className="hover:text-c3-yellow transition-colors duration-200">Field Notes</Link>
               <span>/</span>
-              <span className="text-c3-mid">Guided Path</span>
+              <span className="text-c3-mid">Free Course</span>
             </nav>
 
             <div className="max-w-[820px]">
@@ -117,7 +117,7 @@ export default function LearningPathPage({ params }: Props) {
                   </div>
                   <div>
                     <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim mb-2">
-                      {i === 0 ? "Start here" : `Step ${i + 1}`}
+                      {i === 0 ? "Lesson 1 · Start here" : `Lesson ${i + 1}`}
                       {" · "}
                       {s.post!.categoryLabel}
                       {" · "}
@@ -130,7 +130,7 @@ export default function LearningPathPage({ params }: Props) {
                       {s.hook}
                     </p>
                     <span className="inline-flex items-center gap-2 font-mono text-[10px] tracking-[0.16em] uppercase text-c3-yellow mt-4 group-hover:translate-x-0.5 transition-transform duration-200">
-                      {i === 0 ? "Begin →" : "Read this step →"}
+                      {i === 0 ? "Begin →" : "Read this lesson →"}
                     </span>
                   </div>
                 </Link>
@@ -143,7 +143,7 @@ export default function LearningPathPage({ params }: Props) {
                 Rather we just find it for you?
               </p>
               <p className="font-body font-light text-[14.5px] text-c3-mid leading-[1.7] max-w-[620px] mx-auto mb-6">
-                Book a free 30-minute Books Audit. We&rsquo;ll run this exact path on your
+                Book a free 30-minute Books Audit. We&rsquo;ll run this exact course on your
                 real numbers and name three specific leaks before you decide anything.
               </p>
               <Link

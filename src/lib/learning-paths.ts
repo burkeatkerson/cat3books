@@ -1,11 +1,13 @@
 /**
- * Guided learning paths — curated, ordered sequences of Field Notes posts that
- * walk a reader from a problem they feel to the answer, one step at a time.
+ * Free courses — curated, ordered sequences of Field Notes posts (each post is a
+ * "lesson") that walk a reader from a problem they feel to the answer, one lesson
+ * at a time. ("Path"/"step" survive only as internal type names; everything the
+ * reader sees says "course" and "lesson".)
  *
- * Each step points at an existing post (by slug) and carries an owner-facing
+ * Each lesson points at an existing post (by slug) and carries an owner-facing
  * "hook" — an open loop / problem / benefit line that pulls the reader to the
- * next step. The post route reads this config to render the in-post "Step N of M"
- * banner and the "Next in this path" card, and `/learn/[id]` renders the overview.
+ * next lesson. The post route reads this config to render the in-post "Lesson N
+ * of M" banner and the "Next lesson" card, and `/learn/[id]` renders the overview.
  */
 
 export interface PathStep {
@@ -28,10 +30,10 @@ export interface LearningPath {
 export const LEARNING_PATHS: LearningPath[] = [
   {
     id: "hidden-profit",
-    title: "The Hidden Profit Path",
-    eyebrow: "Guided Path · 7 Steps · ~70 min",
+    title: "The Hidden Profit Course",
+    eyebrow: "Free Course · 7 Lessons · ~70 min",
     promise:
-      "The average restoration company leaks $50,000–$500,000 a year — and the owner can't see it on the P&L. This 7-step path takes you from \"am I actually profitable?\" to the exact money you're leaving on the table, and how to take it back.",
+      "The average restoration company leaks $50,000–$500,000 a year — and the owner can't see it on the P&L. This free 7-lesson course takes you from \"am I actually profitable?\" to the exact money you're leaving on the table, and how to take it back.",
     steps: [
       {
         slug: "is-your-restoration-company-profitable",

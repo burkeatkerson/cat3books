@@ -36,7 +36,7 @@ export default function LearningPathFeature({ pathId }: { pathId: string }) {
           <div>
             <div className="inline-flex items-center gap-3 font-mono text-[10px] tracking-[0.28em] uppercase text-c3-yellow mb-5">
               <span className="w-7 h-px bg-c3-yellow" />
-              Free Guided Path · No Sign-Up
+              Free Course · No Sign-Up
             </div>
 
             <h2 className="font-disp text-[clamp(40px,5.5vw,72px)] leading-[0.9] tracking-[0.025em]">
@@ -56,13 +56,13 @@ export default function LearningPathFeature({ pathId }: { pathId: string }) {
                 href={`/field-notes/${firstSlug}`}
                 className="inline-flex items-center gap-2 font-cond font-bold text-[14px] tracking-[0.10em] uppercase px-[22px] py-[14px] bg-c3-yellow text-[#111] hover:bg-[#FFD000] hover:-translate-y-0.5 hover:shadow-[0_10px_32px_rgba(240,190,0,0.15)] transition-all duration-[220ms]"
               >
-                Start the path →
+                Start the course →
               </Link>
               <Link
                 href={`/learn/${path.id}`}
                 className="inline-flex items-center gap-2 font-cond font-bold text-[14px] tracking-[0.10em] uppercase px-[22px] py-[14px] border border-c3-b2 text-c3-mid hover:border-c3-yellow hover:text-c3-yellow transition-all duration-200"
               >
-                See all {steps.length} steps →
+                See all {steps.length} lessons →
               </Link>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function LearningPathFeature({ pathId }: { pathId: string }) {
                 {path.title}
               </span>
               <span className="font-mono text-[9px] tracking-[0.18em] uppercase text-c3-dim">
-                {steps.length} steps
+                {steps.length} lessons
               </span>
             </div>
 
