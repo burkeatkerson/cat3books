@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { AccountingService, WithContext } from "schema-dts";
 import { generateMetadata } from "@/lib/metadata";
 import { site } from "@/lib/site";
+import { PRICING_TIERS } from "@/lib/pricing";
 import JsonLd from "@/components/JsonLd";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -48,26 +49,16 @@ const businessSchema: WithContext<AccountingService> = {
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Restoration Bookkeeping Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Core Bookkeeping",
-          description:
-            "Full monthly bookkeeping at 0.85% of revenue, $750 floor, $3,200 cap. No annual contract.",
-        },
+    itemListElement: PRICING_TIERS.map((tier) => ({
+      "@type": "Offer",
+      price: String(tier.monthly),
+      priceCurrency: "USD",
+      itemOffered: {
+        "@type": "Service",
+        name: tier.fullName,
+        description: `${tier.tagline} Flat $${tier.monthly}/month — billed the same regardless of revenue or job volume. No annual contract.`,
       },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Books + Fractional CFO",
-          description:
-            "Full bookkeeping plus fractional CFO services at 1.85% of revenue, $2,000 floor, $6,800 cap. No annual contract.",
-        },
-      },
-    ],
+    })),
   },
 };
 

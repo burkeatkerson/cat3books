@@ -5,6 +5,7 @@ import Link from "next/link";
 import Container from "../Container";
 import Overline from "../Overline";
 import FadeUp from "../motion/FadeUp";
+import { getTier } from "@/lib/pricing";
 
 function fmt(n: number): string {
   return Math.round(n).toLocaleString("en-US");
@@ -69,8 +70,9 @@ export default function LeakCalculator() {
   const monthlyLeak = annualLeak / 12;
   const maxLever = Math.max(...levers.map((l) => annual * l.rate), 1);
 
-  // Same transparent formula as our pricing — for an honest ROI comparison.
-  const cat3Monthly = Math.min(3200, Math.max(750, Math.round((annual / 12) * 0.0085)));
+  // Anchor the ROI comparison to the package that plugs exactly these gaps:
+  // flat-rate bookkeeping + job costing, the same price at any revenue.
+  const cat3Monthly = getTier("job-costing").monthly;
 
   return (
     <section
@@ -225,10 +227,12 @@ export default function LeakCalculator() {
                       <strong className="text-c3-yellow font-medium">
                         ${fmt(monthlyLeak)}/mo.
                       </strong>{" "}
-                      Full Cat3 bookkeeping for a shop your size runs about{" "}
+                      Cat3 bookkeeping with full job costing &mdash; the package
+                      built to plug exactly these gaps &mdash; is a flat{" "}
                       <strong className="text-c3-text font-medium">
-                        ${fmt(cat3Monthly)}/mo.
+                        ${fmt(cat3Monthly)}/mo,
                       </strong>{" "}
+                      whatever your revenue.{" "}
                       {monthlyLeak > cat3Monthly
                         ? "Plugging even part of this more than pays for us."
                         : "And we go looking for leaks you haven't even listed here."}

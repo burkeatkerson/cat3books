@@ -6,7 +6,7 @@ const items = [
   "ERP Integration",
   "Expense Management",
   "Restoration Exclusive",
-  "0.85% of Revenue",
+  "Flat Monthly Pricing",
   "No Annual Contract",
 ];
 
