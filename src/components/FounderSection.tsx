@@ -74,33 +74,34 @@ export default function FounderSection() {
           <div>
             <FadeUp>
               <Overline>Who&rsquo;s In Your Corner</Overline>
-              <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
-                I&rsquo;m the bookkeeper
+              <h2 className="font-disp text-[clamp(38px,4.6vw,64px)] tracking-[0.025em] leading-[0.95]">
+                The fractional CFO
                 <br />
-                who&rsquo;s actually
+                who works in restoration.
                 <br />
-                <span className="text-c3-yellow">run the company.</span>
+                <span className="text-c3-yellow">Only restoration.</span>
               </h2>
             </FadeUp>
 
             <FadeUp delay={0.08}>
               <p className="font-body font-light text-[15px] text-c3-mid mt-5 leading-[1.85]">
-                I&rsquo;m Burke. I&rsquo;ve built and sold businesses across
-                several industries, job-costed 100+ construction projects, and
-                most recently sat in the Financial Controller and CFO seat of a
-                restoration company running 400+ jobs a year. I&rsquo;ve stood
-                where you&rsquo;re standing.
+                I&rsquo;m Burke — a fractional CFO. I&rsquo;ve built and sold
+                businesses, job-costed 100+ construction projects, and sat in the
+                CFO seat of a restoration company running 400+ jobs a year.
+                I&rsquo;ve stood where you&rsquo;re standing.
               </p>
             </FadeUp>
 
             <FadeUp delay={0.12}>
               <p className="font-body font-light text-[15px] text-c3-mid mt-4 leading-[1.85]">
-                My job isn&rsquo;t to take the wheel. It&rsquo;s to hand you the
-                numbers — real job margin, real cash, real tax position — so the
-                calls you make are the right ones. You don&rsquo;t have to become
-                a numbers person.{" "}
+                I could take CFO work in any industry. I don&rsquo;t. Restoration
+                is the only place I work — because ACV vs. RCV, supplements, TPA
+                timing, and equipment billing add up to their own discipline, and
+                you deserve a CFO who thinks about nothing else. My job is to hand
+                you the numbers so the calls stay yours.{" "}
                 <strong className="text-c3-text font-medium">
-                  You just need one on your side of the table.
+                  You don&rsquo;t have to become a numbers person — you just need
+                  one on your side of the table.
                 </strong>
               </p>
             </FadeUp>
