@@ -75,11 +75,11 @@ export default function FounderSection() {
             <FadeUp>
               <Overline>Who&rsquo;s In Your Corner</Overline>
               <h2 className="font-disp text-[clamp(40px,5vw,68px)] tracking-[0.025em] leading-[0.95]">
-                I&rsquo;m not the hero
+                I&rsquo;m the bookkeeper
                 <br />
-                of your story.
+                who&rsquo;s actually
                 <br />
-                <span className="text-c3-yellow">You are.</span>
+                <span className="text-c3-yellow">run the company.</span>
               </h2>
             </FadeUp>
 

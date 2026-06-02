@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Clean Books", href: "/restoration-bookkeeping" },
   { label: "Services", href: "/#services" },
   { label: "Pricing", href: "/#pricing" },
-  { label: "About", href: "/#about" },
+  { label: "About", href: "/#founder" },
   { label: "Field Notes", href: "/field-notes" },
   { label: "Contact", href: "/#contact" },
 ];

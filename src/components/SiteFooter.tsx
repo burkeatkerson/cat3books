@@ -174,7 +174,7 @@ export default function SiteFooter() {
                 ["Restoration Bookkeeping", "/restoration-bookkeeping"],
                 ["Services", "/#services"],
                 ["Pricing", "/#pricing"],
-                ["About", "/#about"],
+                ["About", "/#founder"],
                 ["Contact", "/#contact"],
               ].map(([label, href]) => (
                 <Link
