@@ -17,6 +17,7 @@ import PricingSection from "@/components/PricingSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import CaseStudySection from "@/components/CaseStudySection";
+import FounderSection from "@/components/FounderSection";
 import AboutSection from "@/components/AboutSection";
 import FinalCTA from "@/components/FinalCTA";
 
@@ -88,6 +89,7 @@ export default function HomePage() {
         <TestimonialSection />
         <ReviewsSection />
         <CaseStudySection />
+        <FounderSection />
         <AboutSection />
         <FinalCTA />
       </main>
