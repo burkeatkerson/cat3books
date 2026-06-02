@@ -78,8 +78,9 @@ export const PRICING_TIERS: PricingTier[] = [
     tagline: "Everything in Job Costing, plus a fractional CFO in your corner.",
     features: [
       "Everything in Job Costing, plus —",
-      "AP management — vendor bills & payment scheduling",
-      "AR management — collections, aging & follow-up",
+      "Automated AP intake — systems to drop bills into QuickBooks the easy way (no bill pay)",
+      "Biweekly AP recommendations to maximize cash flow efficiency",
+      "AR aging & cash-position reporting (reporting, not collections servicing)",
       "13-week rolling cash flow forecast",
       "CEO dashboard — KPIs, job mix, TPA performance",
       "Budget vs. actual & quarterly reporting package",

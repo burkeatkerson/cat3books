@@ -199,7 +199,7 @@ Pricing is a flat monthly fee — billed the same regardless of a company's reve
 
 - **Bookkeeping** (Tier 1): Flat $1,000/month. Full monthly bookkeeping and bank reconciliation, restoration-specific chart of accounts, supplement recovery tracking, TPA channel AR aging by program, subcontractor W-9/COI/1099 management, equipment revenue and asset tracking, monthly close by the 15th, CPA-ready financials, and a monthly review call.
 - **Bookkeeping + Job Costing** (Tier 2): Flat $2,000/month. Everything in Bookkeeping plus full job costing on every project (labor, materials, equipment, subs, overhead), job-level P&L every month, estimate-to-books mapping (Xactimate, Albi, Dash, JobNimbus), margin by job type/carrier/TPA program, and true job margin before the invoice goes out.
-- **Bookkeeping + Job Costing + Fractional CFO** (Tier 3): Flat $5,000/month. Everything in Tier 2 plus AP management, AR management, 13-week rolling cash flow forecast, CEO dashboard, budget vs. actual, quarterly reporting, banking/lending/bonding support, monthly CFO advisory call, and tax strategy coordination.
+- **Bookkeeping + Job Costing + Fractional CFO** (Tier 3): Flat $5,000/month. Everything in Tier 2 plus automated AP intake systems (easy bill entry into QuickBooks — not bill pay), biweekly AP recommendations to maximize cash-flow efficiency, AR aging and cash-position reporting (reporting, not collections servicing), 13-week rolling cash flow forecast, CEO dashboard, budget vs. actual, quarterly reporting, banking/lending/bonding support, monthly CFO advisory call, and tax strategy coordination.
 - **Payroll Processing**: Optional add-on to any package. $400 per pay cycle.
 
 ## Industry Specializations

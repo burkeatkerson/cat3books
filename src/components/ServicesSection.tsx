@@ -125,10 +125,11 @@ export default function ServicesSection() {
           <div>
             <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim">Not Included in Core Bookkeeping</div>
             <p className="font-body font-light text-[13.5px] text-c3-mid leading-[1.8] mt-2">
-              AP management, AR management, cash flow planning, quarterly
-              reporting, CEO dashboard, and payroll are not part of the standard
-              bookkeeping package. These require strategic financial oversight that
-              goes beyond bookkeeping. All of them are included in our{" "}
+              Cash flow planning, AP cash-flow recommendations, AR and
+              cash-position reporting, quarterly reporting, CEO dashboard, and
+              payroll are not part of the standard bookkeeping package. These
+              require strategic financial oversight that goes beyond bookkeeping.
+              All of them are included in our{" "}
               <Link href="#pricing" className="text-c3-yellow border-b border-c3-yellow-dim hover:border-c3-yellow transition-colors duration-200">
                 Fractional CFO Package
               </Link>
