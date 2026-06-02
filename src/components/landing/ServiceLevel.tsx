@@ -16,6 +16,8 @@ interface LevelContent {
   problems: string[];
   mechanism: string[];
   benefits: string[];
+  /** Open-loop closing line that creates curiosity for the next level. */
+  bridge: string;
 }
 
 /** Page-specific marketing narrative. Price, name, and CTA come from pricing.ts. */
@@ -46,6 +48,8 @@ export const DFY_LEVELS: LevelContent[] = [
       "Tax season turns into a non-event.",
       "Money you already earned actually shows up in the account.",
     ],
+    bridge:
+      "Now the number on the page is real. But clean books still can't tell you which jobs earned it — and which ones quietly lost money.",
   },
   {
     id: "job-costing",
@@ -72,6 +76,8 @@ export const DFY_LEVELS: LevelContent[] = [
       "You double down on profitable lanes and drop the ones that bleed.",
       "You bid the next job from data, not hope.",
     ],
+    bridge:
+      "Now you can see every job's true margin. Seeing it isn't the same as steering it, though — that takes a hand on the cash and the strategy.",
   },
   {
     id: "cfo",
@@ -100,6 +106,8 @@ export const DFY_LEVELS: LevelContent[] = [
       "You make hiring, pricing, and growth calls with certainty.",
       "You build a company that's actually worth selling.",
     ],
+    bridge:
+      "That's the full ladder — books, costing, command. Here's all three side by side, so you can see exactly where you'd start.",
   },
 ];
 
@@ -298,6 +306,12 @@ export default function ServiceLevel({
   const flip = index % 2 === 1; // alternate the visual side for rhythm
   const dark = index % 2 === 1;
 
+  const next = DFY_LEVELS[index + 1];
+  const nextHref = next ? `#${next.anchor}` : "#compare";
+  const nextLabel = next
+    ? `Level 0${index + 2}: ${getTier(next.id).name.replace("+ ", "")}`
+    : "Compare all three, side by side";
+
   return (
     <section
       id={level.anchor}
@@ -309,11 +323,12 @@ export default function ServiceLevel({
       <Container>
         {/* Header */}
         <FadeUp>
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <span className="font-disp text-[44px] leading-none text-c3-yellow tracking-[0.02em]">
               0{index + 1}
             </span>
-            <span className="font-mono text-[10px] tracking-[0.28em] uppercase text-c3-yellow">
+            <span className="font-mono text-[12px] tracking-[0.18em] text-c3-dim">/ 03</span>
+            <span className="font-mono text-[10px] tracking-[0.28em] uppercase text-c3-yellow ml-1">
               {level.subtitle} · {tier.fullName}
             </span>
           </div>
@@ -390,6 +405,21 @@ export default function ServiceLevel({
             </div>
           </div>
         </div>
+
+        {/* Open-loop bridge into the next level */}
+        <FadeUp>
+          <div className="mt-14 border-l-[3px] border-c3-yellow pl-5 sm:pl-6 max-w-[860px]">
+            <p className="font-cond font-semibold text-[21px] lg:text-[26px] text-c3-text leading-[1.4]">
+              {level.bridge}
+            </p>
+            <Link
+              href={nextHref}
+              className="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] uppercase text-c3-yellow mt-4 hover:gap-3 transition-all duration-200"
+            >
+              {nextLabel} ↓
+            </Link>
+          </div>
+        </FadeUp>
       </Container>
     </section>
   );

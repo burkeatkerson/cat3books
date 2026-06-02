@@ -217,8 +217,15 @@ export default function LevelComparison() {
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-c3-dim mt-5 text-center">
-            Not sure which level? The free books audit tells you exactly where to start.
+          <p className="font-cond font-semibold text-[20px] lg:text-[24px] text-c3-text mt-8 leading-[1.4] max-w-[760px] mx-auto text-center">
+            Got a level in mind? Here&rsquo;s exactly what each one costs &mdash;
+            flat, every month.{" "}
+            <Link
+              href="#pricing"
+              className="text-c3-yellow border-b border-c3-yellow-dim hover:border-c3-yellow transition-colors duration-200"
+            >
+              See the pricing ↓
+            </Link>
           </p>
         </FadeUp>
       </Container>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../Container";
 import Overline from "../Overline";
 import FadeUp from "../motion/FadeUp";
@@ -33,6 +34,18 @@ export default function LandingPricing() {
         <FadeUp delay={0.1}>
           <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-c3-dim mt-6 text-center">
             Optional payroll processing · +${formatUsd(PAYROLL_ADDON.amount)} / {PAYROLL_ADDON.unit} · any package
+          </p>
+        </FadeUp>
+
+        <FadeUp delay={0.1}>
+          <p className="font-cond font-semibold text-[20px] lg:text-[24px] text-c3-text mt-10 leading-[1.4] max-w-[760px] mx-auto text-center">
+            Only one question left: how hard is it to switch? Almost not at all.{" "}
+            <Link
+              href="#how-it-works"
+              className="text-c3-yellow border-b border-c3-yellow-dim hover:border-c3-yellow transition-colors duration-200"
+            >
+              See how onboarding works ↓
+            </Link>
           </p>
         </FadeUp>
       </Container>

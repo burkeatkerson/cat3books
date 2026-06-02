@@ -257,7 +257,20 @@ export default function LeakCalculator() {
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-c3-dim mt-5 max-w-[720px] leading-[1.7]">
+          <p className="font-cond font-semibold text-[20px] lg:text-[24px] text-c3-text mt-10 leading-[1.4] max-w-[860px] border-l-[3px] border-c3-yellow pl-5">
+            Seeing the number is the easy part. Plugging it is the job &mdash; and
+            it happens in three done-for-you levels.{" "}
+            <Link
+              href="#levels"
+              className="text-c3-yellow border-b border-c3-yellow-dim hover:border-c3-yellow transition-colors duration-200"
+            >
+              Show me how ↓
+            </Link>
+          </p>
+        </FadeUp>
+
+        <FadeUp delay={0.1}>
+          <p className="font-mono text-[10px] tracking-[0.16em] uppercase text-c3-dim mt-6 max-w-[720px] leading-[1.7]">
             Estimate only — based on margin recovery across real restoration
             cleanups. Your actual number comes from your actual books, in the audit.
           </p>

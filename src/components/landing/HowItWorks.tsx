@@ -27,7 +27,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="relative py-16 xl:py-[108px] bg-c3-dark border-t border-c3-border">
+    <section id="how-it-works" className="relative py-16 xl:py-[108px] bg-c3-dark border-t border-c3-border">
       <Container>
         <FadeUp>
           <Overline>How It Works · No Surprises</Overline>

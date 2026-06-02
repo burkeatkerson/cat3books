@@ -81,6 +81,19 @@ export default function LevelsIntro() {
             </StaggerItem>
           ))}
         </StaggerGroup>
+
+        <FadeUp delay={0.1}>
+          <p className="font-cond font-semibold text-[20px] lg:text-[24px] text-c3-text mt-10 leading-[1.4] max-w-[860px] border-l-[3px] border-c3-yellow pl-5">
+            Almost every shop starts at the foundation &mdash; so that&rsquo;s
+            where we&rsquo;ll start too.{" "}
+            <Link
+              href="#level-bookkeeping"
+              className="text-c3-yellow border-b border-c3-yellow-dim hover:border-c3-yellow transition-colors duration-200"
+            >
+              Begin with Level 01 ↓
+            </Link>
+          </p>
+        </FadeUp>
       </Container>
     </section>
   );
