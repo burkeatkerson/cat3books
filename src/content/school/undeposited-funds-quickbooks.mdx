@@ -1,0 +1,138 @@
+---
+title: "Undeposited Funds Keeps Growing in QuickBooks — Here Is the Fix"
+subject: "troubleshooting"
+level: "intermediate"
+type: "fix"
+excerpt: "A swelling Undeposited Funds balance means payments were recorded twice: once as a payment and again as a deposit. Here is how to confirm it, clear it, and stop it recurring."
+question: "Why is my Undeposited Funds balance so high in QuickBooks?"
+date: "2026-07-22"
+priority: 0.8
+tags:
+  - "quickbooks"
+  - "undeposited funds"
+  - "common problems"
+  - "cleanup"
+keywords:
+  - "undeposited funds quickbooks fix"
+  - "why is undeposited funds so high"
+  - "clear undeposited funds account"
+  - "quickbooks duplicate income"
+prerequisites:
+  - "how-to-reconcile-bank-account"
+faqItems:
+  - question: "What is Undeposited Funds supposed to be?"
+    answer: "It is a holding account for payments you have received but not yet taken to the bank. It exists so several customer payments can be grouped into one deposit that matches the single lump sum your bank statement shows."
+  - question: "Can I just delete the Undeposited Funds balance?"
+    answer: "No. Deleting the balance without tracing the underlying payments will change income or receivables in ways you cannot see. Each stranded payment has to be either included in a real deposit or matched to the duplicate that replaced it."
+  - question: "Does a high Undeposited Funds balance overstate my income?"
+    answer: "Usually yes. The classic cause is a payment recorded against an invoice and then the bank deposit categorized straight to an income account as well, which counts the same revenue twice."
+---
+
+You open the balance sheet and there it is: **Undeposited Funds, $84,312.** You
+have never had $84,312 sitting in a drawer. Nothing is missing from the bank —
+so where did it come from?
+
+<QuickAnswer question="Why is my Undeposited Funds balance so high in QuickBooks?">
+Because payments were recorded twice. A customer payment was applied to an
+invoice — which parks the money in Undeposited Funds until you record the
+deposit — and then the matching deposit from the bank feed was added separately
+instead of being matched to it. The payment never leaves the holding account, and
+income is often counted twice as well.
+</QuickAnswer>
+
+## What the account is for
+
+<KeyTerm term="Undeposited Funds" also="Payments to deposit">
+A holding account for money received but not yet deposited. It exists so five
+customer checks totalling $6,200 can be grouped into a single $6,200 deposit that
+matches the one line on your bank statement.
+</KeyTerm>
+
+Used correctly, the balance goes up during the week and back to zero every time
+you record a deposit. A balance that only grows is the symptom.
+
+## Confirm the diagnosis
+
+<Checklist
+  title="Signs it is the duplicate-deposit problem"
+  items={[
+    "The Undeposited Funds balance rises every month and never falls",
+    "The oldest entries in the account are months or years old",
+    "Income on your P&L is higher than the total you actually banked",
+    "Bank accounts still reconcile — the bank side is fine, so the error is invisible there",
+    "Customers show as paid, yet their payments are still sitting in the holding account",
+  ]}
+/>
+
+The reconciliation detail matters: bank reconciliation cannot catch this, because
+the bank side is correct. The duplicate lives entirely inside your books.
+
+<Compare
+  leftTitle="What happened"
+  rightTitle="What should have happened"
+  left="Receive Payment against the invoice → money sits in Undeposited Funds. Then the bank feed brings in the deposit, and it is Added as new income. Income counted twice, holding account never clears."
+  right="Receive Payment against the invoice → money sits in Undeposited Funds. Then Bank Deposit selects that payment, producing a deposit the feed can Match. Holding account returns to zero, income counted once."
+/>
+
+## The fix
+
+<Step n={1} title="Run the account detail report" id="step-1">
+Open the Undeposited Funds register and list every transaction still sitting in
+it, oldest first. Sort by amount as well — you will use that in a moment. Export
+it if the list is long; you will be working through it item by item.
+</Step>
+
+<Step n={2} title="Match each stranded payment to its real deposit" id="step-2">
+For each payment in the holding account, find the deposit on the bank side for
+the same amount and approximate date. When you find the pair, you have confirmed
+a duplicate: the money reached the bank by a second route.
+
+Delete the incorrectly categorized bank-side deposit and re-record it as a Bank
+Deposit that *selects* the stranded payment. The holding account clears, the bank
+balance is unchanged, and the double-counted income disappears.
+</Step>
+
+<Step n={3} title="Handle payments with no matching deposit" id="step-3">
+Some entries will have no partner. Two possibilities:
+
+- **The payment really was never deposited** — a check that was lost, voided or never taken to the bank. Reverse the payment so the invoice returns to open, then handle it as a genuine receivable.
+- **The payment was deposited as part of a lump sum** — record a Bank Deposit that groups it with the others in that lump, so the total matches the bank line.
+</Step>
+
+<Step n={4} title="Correct the affected periods, carefully" id="step-4">
+<Callout variant="warning" title="Do not edit a closed or filed period">
+If the duplicates fall in a year you have already filed a tax return for, stop
+and talk to your accountant before changing anything. Correcting prior-year
+income changes a return that has been filed. The usual answer is a current-period
+adjusting entry rather than editing history.
+</Callout>
+</Step>
+
+<Step n={5} title="Stop it recurring" id="step-5">
+The habit that prevents all of it: in the bank feed, use **Match** rather than
+**Add** for any deposit that corresponds to a customer payment you already
+recorded. Add is for transactions that do not exist in your books yet. Match is
+for ones that do.
+
+<Callout variant="tip" title="A two-minute monthly check">
+Add Undeposited Funds to your month-end close checklist. Its balance should be
+zero, or equal to exactly the payments received in the last few days and not yet
+banked. Any older entry is an error you can catch in the same month it happened.
+</Callout>
+</Step>
+
+<Takeaways
+  items={[
+    "A growing Undeposited Funds balance means customer payments were recorded twice — once as a payment, once as a bank deposit.",
+    "Bank reconciliation will not catch it, because the bank side is correct.",
+    "Fix it by re-recording each bank deposit so it selects the stranded payment rather than creating new income.",
+    "Never edit a period covered by a filed tax return without your accountant.",
+    "Prevent it permanently by using Match, not Add, for deposits that correspond to recorded payments.",
+  ]}
+/>
+
+<ServiceNote>
+Cleanups like this are most of what a bookkeeping firm does in month one.
+[Cat3 Books](/) untangles them for small businesses — but every step above is
+here for free if you would rather do it yourself.
+</ServiceNote>

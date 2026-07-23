@@ -1,0 +1,155 @@
+---
+title: "Debits and Credits, Finally Explained"
+subject: "foundations"
+level: "beginner"
+type: "concept"
+excerpt: "Debit does not mean money out and credit does not mean money in. Here is what the two words actually mean, and the one sentence that lets you work out any entry without memorizing a table."
+question: "What do debit and credit actually mean in bookkeeping?"
+date: "2026-07-22"
+featured: true
+priority: 0.9
+tags:
+  - "double-entry bookkeeping"
+  - "debits and credits"
+  - "bookkeeping basics"
+keywords:
+  - "debits and credits explained simply"
+  - "what is a debit in accounting"
+  - "double entry bookkeeping for beginners"
+  - "debit credit rules small business"
+prerequisites:
+  - "what-is-bookkeeping"
+related:
+  - "chart-of-accounts-small-business"
+  - "cash-vs-accrual-accounting"
+faqItems:
+  - question: "Is a debit money going out?"
+    answer: "No. In bookkeeping, debit simply means the left side of an entry. A debit increases assets and expenses, and decreases liabilities, equity and income. Your bank uses the word the opposite way because the bank is describing its own books, where your deposit is a liability it owes you."
+  - question: "Do I need to know debits and credits if I use QuickBooks?"
+    answer: "You never have to type them — QuickBooks builds the entries behind the forms. But you need to understand them to read a report that looks wrong, fix a miscategorized transaction, or make sense of anything your accountant sends back."
+---
+
+Almost every beginner gets stuck in the same place, for the same reason: your
+bank taught you the words backwards.
+
+On a bank statement, a *debit* takes money out of your account. In bookkeeping,
+debit means something entirely different — and until you separate the two
+meanings, none of it will click.
+
+<QuickAnswer question="What do debit and credit actually mean in bookkeeping?">
+Debit means the left side of an entry. Credit means the right side. That is all
+they mean. Whether a debit increases or decreases something depends on what kind
+of account it is — and every transaction has at least one of each, in equal
+amounts, so the two sides always balance.
+</QuickAnswer>
+
+## Why your bank uses the words backwards
+
+When you deposit $1,000, your bank credits your account. That is because the
+bank is describing *its* books, not yours. Your deposit is money the bank now
+owes you — a liability on its balance sheet — and liabilities increase with
+credits.
+
+On your books, that same deposit is an asset increasing, which is a debit. Same
+event, two sets of books, opposite words. Nobody is wrong; you are just reading
+someone else's ledger.
+
+<Callout variant="rule" title="The one sentence to remember">
+Debit means left. Credit means right. Every entry has both, and the two sides
+must be equal.
+</Callout>
+
+## The five account types
+
+Everything in your books is one of five things. Which one it is determines what
+a debit does to it.
+
+| Account type | Examples | Increases with | Decreases with |
+| --- | --- | --- | --- |
+| Assets | Bank, receivables, equipment, inventory | Debit | Credit |
+| Liabilities | Credit cards, loans, unpaid bills, sales tax owed | Credit | Debit |
+| Equity | Owner contributions, retained earnings | Credit | Debit |
+| Income | Sales, service revenue, interest earned | Credit | Debit |
+| Expenses | Rent, payroll, materials, software | Debit | Credit |
+
+Most people try to memorize that grid. Do not. Derive it instead.
+
+## Deriving the grid instead of memorizing it
+
+The whole thing follows from one equation, which is just a statement of the
+obvious: everything the business owns was funded either by borrowing or by the
+owner's stake.
+
+<Formula name="The accounting equation" expression="Assets  =  Liabilities  +  Equity">
+Whatever you own sits on the left. Whoever has a claim on it — lenders, then you —
+sits on the right. Income and expenses are just equity changing during the year.
+</Formula>
+
+Assets are on the *left* of the equation, so assets increase on the *left* —
+with debits. Liabilities and equity are on the right, so they increase on the
+right — with credits. Expenses reduce equity, so they move opposite to equity:
+they increase with debits. Income increases equity, so it increases with credits.
+
+That is the entire grid, rebuilt from one line. You will never need the table again.
+
+## Three entries, worked
+
+<Example title="You buy a $600 laptop with the business debit card">
+An asset (equipment) goes up, and another asset (bank) goes down. Two assets,
+opposite directions.
+
+<JournalEntry
+  entries={[
+    ["Computer equipment", "600.00", ""],
+    ["Bank account", "", "600.00"],
+  ]}
+/>
+</Example>
+
+<Example title="You invoice a customer $2,400 for work already done">
+You have not been paid, but you have earned it. Income goes up; what you are
+owed goes up.
+
+<JournalEntry
+  entries={[
+    ["Accounts receivable", "2,400.00", ""],
+    ["Sales income", "", "2,400.00"],
+  ]}
+/>
+</Example>
+
+<Example title="You put $500 of fuel on the business credit card">
+An expense goes up, and what you owe the card company goes up.
+
+<JournalEntry
+  entries={[
+    ["Fuel expense", "500.00", ""],
+    ["Credit card payable", "", "500.00"],
+  ]}
+/>
+</Example>
+
+Notice that in all three, the debits equal the credits. If they did not, the
+books would not balance — and every accounting system will simply refuse to save
+the entry.
+
+<Callout variant="mistake" title="Where this bites people in QuickBooks">
+QuickBooks hides debits and credits behind friendly forms, so a miscategorized
+transaction never looks wrong on screen. It only shows up later as a P&L line
+that makes no sense. Knowing which side an account lives on is how you find the
+culprit in thirty seconds instead of an afternoon.
+</Callout>
+
+<Takeaways
+  items={[
+    "Debit means left, credit means right. Nothing more.",
+    "Your bank uses the words from its own perspective, which is why they seem inverted.",
+    "Assets and expenses increase with debits; liabilities, equity and income increase with credits.",
+    "You can derive all of that from Assets = Liabilities + Equity rather than memorizing it.",
+  ]}
+/>
+
+<NextUp slug="cash-vs-accrual-accounting">
+Next: the single setup choice that decides whether your P&L tells the truth
+about a good month.
+</NextUp>

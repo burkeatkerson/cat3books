@@ -4,6 +4,7 @@ import {
   Barlow_Condensed,
   Barlow,
   Share_Tech_Mono,
+  Source_Serif_4,
 } from "next/font/google";
 import type { Organization, WebSite, WithContext } from "schema-dts";
 import JsonLd from "@/components/JsonLd";
@@ -31,6 +32,15 @@ const barlow = Barlow({
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-barlow",
+  display: "swap",
+});
+
+/** Reading face for the Bookkeeping School — long-form, light background. */
+const sourceSerif = Source_Serif_4({
+  weight: ["300", "400", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-source-serif",
   display: "swap",
 });
 
@@ -116,7 +126,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bebasNeue.variable} ${barlowCondensed.variable} ${barlow.variable} ${shareTechMono.variable} bg-c3-black text-c3-text font-body font-light leading-relaxed min-h-screen overflow-x-hidden`}
+        className={`${bebasNeue.variable} ${barlowCondensed.variable} ${barlow.variable} ${shareTechMono.variable} ${sourceSerif.variable} bg-c3-black text-c3-text font-body font-light leading-relaxed min-h-screen overflow-x-hidden`}
       >
         <JsonLd schema={websiteSchema} />
         <JsonLd schema={organizationSchema} />

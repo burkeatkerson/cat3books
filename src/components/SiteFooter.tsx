@@ -2,6 +2,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { getAllPosts } from "@/lib/field-notes";
 import { THEMES } from "@/lib/field-notes-taxonomy";
+import { carryforward } from "@/lib/companion";
 import Container from "./Container";
 
 /** Curated, binge-able collections surfaced under "Series" (counts are dynamic). */
@@ -172,6 +173,7 @@ export default function SiteFooter() {
               </h5>
               {[
                 ["Restoration Bookkeeping", "/restoration-bookkeeping"],
+                ["Bookkeeping School ↗", "/school"],
                 ["Services", "/#services"],
                 ["Pricing", "/#pricing"],
                 ["About", "/#founder"],
@@ -221,6 +223,42 @@ export default function SiteFooter() {
                 RIA Member ↗
               </a>
             </div>
+          </div>
+
+          {/* Companion publications — the two free, independent references we
+              publish. Association with a primary-source tax reference and a
+              plain-English bookkeeping school signals editorial seriousness. */}
+          <div className="mt-12 pt-8 border-t border-c3-border grid sm:grid-cols-2 gap-6">
+            <a
+              href="/school"
+              className="group block border border-c3-border hover:border-c3-yellow/50 transition-colors duration-200 p-5"
+            >
+              <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim mb-2">
+                Free companion · Education
+              </div>
+              <div className="font-cond font-bold text-[16px] uppercase tracking-[0.02em] text-c3-text group-hover:text-c3-yellow transition-colors duration-200">
+                Small Business Bookkeeping School ↗
+              </div>
+              <p className="mt-1.5 font-body text-[12.5px] leading-[1.6] text-c3-mid">
+                Plain-English lessons on bookkeeping, QuickBooks and reading your own numbers.
+              </p>
+            </a>
+            <a
+              href={carryforward.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block border border-c3-border hover:border-c3-yellow/50 transition-colors duration-200 p-5"
+            >
+              <div className="font-mono text-[9px] tracking-[0.22em] uppercase text-c3-dim mb-2">
+                Companion publication · Tax
+              </div>
+              <div className="font-cond font-bold text-[16px] uppercase tracking-[0.02em] text-c3-text group-hover:text-c3-yellow transition-colors duration-200">
+                {carryforward.name} ↗
+              </div>
+              <p className="mt-1.5 font-body text-[12.5px] leading-[1.6] text-c3-mid">
+                {carryforward.tagline} An independent reference for tax professionals and investors.
+              </p>
+            </a>
           </div>
 
           {/* Bottom bar */}

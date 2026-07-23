@@ -22,12 +22,35 @@ const config: Config = {
           mid: "#A09888",
           dim: "#484640",
         },
+        /**
+         * Bookkeeping School palette. The School is a deliberately separate
+         * property: ink-on-paper, calm, textbook-like — the inverse of the dark
+         * marketing site. `sun` is the one Cat3 yellow tie-back.
+         */
+        school: {
+          paper: "#FAF8F3",
+          raised: "#FFFFFF",
+          sand: "#F2EFE6",
+          ink: "#14161A",
+          body: "#454B55",
+          muted: "#767C87",
+          faint: "#9BA1AC",
+          line: "#E4DFD3",
+          line2: "#CFC8B7",
+          navy: "#2C4A6E",
+          navy2: "#1E3652",
+          wash: "#EDF1F6",
+          green: "#2F6B4F",
+          red: "#A8391E",
+          sun: "#F0BE00",
+        },
       },
       fontFamily: {
         mono: ["var(--font-share-tech-mono)", "monospace"],
         cond: ["var(--font-barlow-condensed)", "sans-serif"],
         body: ["var(--font-barlow)", "sans-serif"],
         disp: ["var(--font-bebas-neue)", "sans-serif"],
+        serif: ["var(--font-source-serif)", "Georgia", "serif"],
       },
       keyframes: {
         blink: {

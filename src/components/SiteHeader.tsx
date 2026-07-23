@@ -4,12 +4,15 @@ import { useState } from "react";
 import Link from "next/link";
 import Container from "./Container";
 
-const navLinks = [
+const navLinks: { label: string; href: string; external?: boolean }[] = [
   { label: "Done For You", href: "/restoration-bookkeeping" },
   { label: "Services", href: "/#services" },
   { label: "Pricing", href: "/#pricing" },
   { label: "About", href: "/#founder" },
   { label: "Field Notes", href: "/field-notes" },
+  // The School is a separate property (its own header, light theme). Flagged
+  // here so the nav reads as a destination rather than another marketing page.
+  { label: "School", href: "/school", external: true },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -34,13 +37,18 @@ export default function SiteHeader() {
 
       {/* Desktop nav */}
       <nav className="hidden md:flex gap-[22px] ml-6" aria-label="Primary">
-        {navLinks.map(({ label, href }) => (
+        {navLinks.map(({ label, href, external }) => (
           <Link
             key={href}
             href={href}
-            className="font-mono text-[11px] tracking-[0.14em] uppercase text-c3-dim hover:text-c3-yellow transition-colors duration-200"
+            className={`font-mono text-[11px] tracking-[0.14em] uppercase transition-colors duration-200 ${
+              external
+                ? "text-c3-yellow/80 hover:text-c3-yellow"
+                : "text-c3-dim hover:text-c3-yellow"
+            }`}
           >
             {label}
+            {external && <span className="ml-1 text-[9px] align-super">↗</span>}
           </Link>
         ))}
       </nav>
@@ -84,14 +92,17 @@ export default function SiteHeader() {
           id="mobile-nav"
           className="md:hidden absolute top-[60px] left-0 right-0 bg-[rgba(9,9,8,0.97)] backdrop-blur-[14px] border-b border-c3-border flex flex-col z-50"
         >
-          {navLinks.map(({ label, href }) => (
+          {navLinks.map(({ label, href, external }) => (
             <Link
               key={href}
               href={href}
-              className="font-mono text-[12px] tracking-[0.16em] uppercase text-c3-dim hover:text-c3-yellow px-5 py-4 border-b border-c3-border transition-colors duration-200 min-h-[52px] flex items-center"
+              className={`font-mono text-[12px] tracking-[0.16em] uppercase px-5 py-4 border-b border-c3-border transition-colors duration-200 min-h-[52px] flex items-center ${
+                external ? "text-c3-yellow/80 hover:text-c3-yellow" : "text-c3-dim hover:text-c3-yellow"
+              }`}
               onClick={() => setMenuOpen(false)}
             >
               {label}
+              {external && <span className="ml-1 text-[9px] align-super">↗</span>}
             </Link>
           ))}
           <div className="px-5 py-4">

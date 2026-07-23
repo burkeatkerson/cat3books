@@ -26,6 +26,32 @@
     color: #111;
   }
 
+  /* ── Bookkeeping School: light "paper" mode ──────────────────────────────
+     The School is its own property. The root <body> is locked to the dark
+     marketing palette, so the School layout marks itself with `.school-root`
+     and these `:has()` rules repaint the shell around it: paper background,
+     a much lighter grain, and an ink-on-paper selection colour. */
+  body:has(.school-root) {
+    background: #faf8f3;
+    color: #14161a;
+  }
+
+  /* No film grain in the School. The overlay reads as colour noise on top of
+     dark text on a light background, which measurably hurts body-copy
+     legibility — and legibility is the whole point of this section. */
+  body:has(.school-root)::after {
+    content: none;
+  }
+
+  body:has(.school-root) ::selection {
+    background: #2c4a6e;
+    color: #faf8f3;
+  }
+
+  .school-root [id] {
+    scroll-margin-top: 88px;
+  }
+
   /* Offset sticky nav from anchor targets */
   section[id],
   [id="top"],
@@ -346,5 +372,269 @@
     background: #f0be00;
     border: 2px solid #111;
     cursor: pointer;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Small Business Bookkeeping School
+   A separate, light "paper" property. Scoped entirely under .prose-school /
+   .school-root so nothing here can leak into the dark marketing site.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+@layer utilities {
+  /* Ruled-paper and grid backgrounds for School headers and cards */
+  .sc-ruled {
+    background-color: #faf8f3;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0 31px,
+      rgba(44, 74, 110, 0.07) 31px 32px
+    );
+  }
+
+  .sc-grid {
+    background-color: #faf8f3;
+    background-image: linear-gradient(rgba(44, 74, 110, 0.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(44, 74, 110, 0.055) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+
+  .sc-dots {
+    background-color: #faf8f3;
+    background-image: radial-gradient(rgba(44, 74, 110, 0.18) 1px, transparent 1.5px);
+    background-size: 16px 16px;
+  }
+
+  /* Hand-underline used behind key phrases in School headings */
+  .sc-underline {
+    background-image: linear-gradient(transparent 62%, rgba(240, 190, 0, 0.55) 62%);
+    padding: 0 0.08em;
+  }
+
+  /* ── Lesson body prose ──────────────────────────────────────────────── */
+  .prose-school {
+    font-family: var(--font-source-serif), Georgia, serif;
+    color: #454b55;
+  }
+
+  .prose-school > * + * {
+    margin-top: 1.15rem;
+  }
+
+  .prose-school p {
+    font-size: 18px;
+    line-height: 1.78;
+    color: #454b55;
+  }
+
+  .prose-school .lead,
+  .prose-school > p:first-of-type {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #2b313a;
+  }
+
+  .prose-school h2 {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 2.6vw, 32px);
+    letter-spacing: 0.005em;
+    color: #14161a;
+    margin-top: 3rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.15;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e4dfd3;
+  }
+
+  .prose-school h3 {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 600;
+    font-size: clamp(19px, 2vw, 24px);
+    color: #14161a;
+    margin-top: 2.25rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+  }
+
+  .prose-school h4 {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #2c4a6e;
+    margin-top: 1.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .prose-school a {
+    color: #2c4a6e;
+    text-decoration: underline;
+    text-decoration-color: rgba(44, 74, 110, 0.35);
+    text-underline-offset: 3px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  }
+
+  .prose-school a:hover {
+    color: #1e3652;
+    text-decoration-color: #f0be00;
+  }
+
+  .prose-school strong {
+    color: #14161a;
+    font-weight: 700;
+  }
+
+  .prose-school em {
+    font-style: italic;
+  }
+
+  .prose-school ul,
+  .prose-school ol {
+    margin: 1.1rem 0 1.5rem 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .prose-school ul li {
+    font-size: 17px;
+    line-height: 1.7;
+    list-style: none;
+    padding-left: 1.4rem;
+    position: relative;
+  }
+
+  .prose-school ul li::before {
+    content: "";
+    position: absolute;
+    left: 0.25rem;
+    top: 0.72em;
+    width: 6px;
+    height: 6px;
+    background: #f0be00;
+    border: 1px solid #c79c00;
+  }
+
+  .prose-school ol {
+    counter-reset: sc-ol;
+  }
+
+  .prose-school ol li {
+    font-size: 17px;
+    line-height: 1.7;
+    list-style: none;
+    padding-left: 2.1rem;
+    position: relative;
+    counter-increment: sc-ol;
+  }
+
+  .prose-school ol li::before {
+    content: counter(sc-ol);
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 11px;
+    color: #2c4a6e;
+    background: #edf1f6;
+    border: 1px solid #d7dfe9;
+  }
+
+  .prose-school blockquote {
+    border-left: 3px solid #f0be00;
+    background: #fffdf5;
+    padding: 1rem 1.35rem;
+    margin: 1.85rem 0;
+  }
+
+  .prose-school blockquote p {
+    font-size: 18px;
+    font-style: italic;
+    color: #2b313a;
+    margin: 0;
+  }
+
+  .prose-school hr {
+    border: 0;
+    border-top: 1px solid #e4dfd3;
+    margin: 2.5rem 0;
+  }
+
+  .prose-school code {
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 13px;
+    color: #1e3652;
+    background: #edf1f6;
+    border: 1px solid #dde4ec;
+    padding: 1px 6px;
+  }
+
+  .prose-school pre {
+    background: #14161a;
+    color: #eae6d8;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    font-size: 13px;
+    margin: 1.5rem 0;
+  }
+
+  .prose-school pre code {
+    background: none;
+    border: 0;
+    color: inherit;
+    padding: 0;
+  }
+
+  /* ── Lesson tables ──────────────────────────────────────────────────── */
+  .prose-school table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-barlow), sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 1.75rem 0;
+    background: #ffffff;
+    border: 1px solid #e4dfd3;
+  }
+
+  .prose-school thead th {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #767c87;
+    padding: 11px 16px;
+    border-bottom: 1px solid #e4dfd3;
+    background: #f7f5ef;
+    text-align: left;
+  }
+
+  .prose-school tbody td {
+    padding: 11px 16px;
+    border-bottom: 1px solid #f0ece2;
+    color: #454b55;
+    vertical-align: top;
+  }
+
+  .prose-school tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .prose-school tbody td:first-child {
+    font-weight: 600;
+    color: #14161a;
+  }
+
+  /* Wide tables scroll instead of breaking the column */
+  .prose-school .table-scroll {
+    overflow-x: auto;
   }
 }

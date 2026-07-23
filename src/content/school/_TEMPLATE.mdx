@@ -1,0 +1,103 @@
+---
+# ── Required ────────────────────────────────────────────────────────────────
+title: "The lesson title, written as the thing the reader wants to know"
+subject: "foundations" # foundations | quickbooks | daily-books | reading-numbers |
+                       # cash-flow | payroll-taxes | troubleshooting | business-decisions
+level: "beginner" # beginner | intermediate | advanced
+type: "concept" # concept | walkthrough | fix | checklist | reference | example
+excerpt: "One or two sentences. Shows on cards, in search results and in the meta description — write it to be read cold, out of context."
+
+# ── Strongly recommended ────────────────────────────────────────────────────
+# The question an owner would actually type. Powers search matching and is the
+# line an AI engine is most likely to quote back.
+question: "What is the plain-English question this lesson answers?"
+date: "2026-07-22"
+tags:
+  - "chart of accounts"
+  - "small business bookkeeping"
+keywords:
+  - "long tail search phrase one"
+  - "long tail search phrase two"
+
+# ── Optional ────────────────────────────────────────────────────────────────
+# updatedDate: "2026-08-01"
+# readTime: "7 min"          # omit — it is computed from word count
+# priority: 0.8              # 0–1, sorts within a subject. Default 0.5
+# featured: true             # surfaces on the School home page
+# draft: true                # hidden from every listing and from production
+# prerequisites:             # slugs the reader should understand first
+#   - "what-is-bookkeeping"
+# related:                   # hand-picked; otherwise chosen automatically
+#   - "cash-vs-accrual-accounting"
+# defines:                   # terms this lesson is the canonical definition for
+#   - "Chart of accounts"
+
+# Numbered steps for walkthrough/checklist lessons. Drives HowTo schema — the
+# `url` anchors must match the <Step id="…"> values in the body.
+# steps:
+#   - name: "Open the reconciliation screen"
+#     text: "From the gear menu choose Reconcile, then pick the account."
+#     url: "#step-1"
+
+# Rendered at the foot of the lesson AND emitted as FAQPage schema.
+# faqItems:
+#   - question: "Do I need an accountant if I do this myself?"
+#     answer: "One or two sentences, self-contained. Written to be quoted."
+---
+
+Open with the reader's situation, not a definition. One short paragraph that
+says: here is the thing you are looking at, here is why it is confusing, here is
+what you will be able to do at the end.
+
+<QuickAnswer question="What is the plain-English question this lesson answers?">
+Two or three sentences that fully answer the question on their own. If a reader
+only reads this box, they should still leave with the right answer.
+</QuickAnswer>
+
+## The first section heading is a statement, not a label
+
+Body copy. Keep paragraphs to three or four lines. Define every term the first
+time it appears — assume no accounting background.
+
+<KeyTerm term="Chart of accounts" also="COA">
+The list of every category your transactions can be filed into. It is the
+outline of every report you will ever read.
+</KeyTerm>
+
+<Callout variant="mistake" title="What most owners do here">
+The classic error, stated plainly, and the cost of making it.
+</Callout>
+
+## Show the mechanics
+
+<JournalEntry
+  caption="Customer pays a $2,400 invoice"
+  entries={[
+    ["Bank account", "2,400.00", ""],
+    ["Accounts receivable", "", "2,400.00"],
+  ]}
+/>
+
+<Example title="Worked example">
+Carry one concrete scenario all the way through the numbers. Real amounts, not
+placeholders — this is the part readers remember.
+</Example>
+
+## Component kit available in every lesson
+
+`<QuickAnswer>` · `<KeyTerm>` · `<Callout variant="note|tip|warning|mistake|rule">` ·
+`<Step n={1} title="…">` · `<Example>` · `<JournalEntry>` · `<Formula>` ·
+`<Checklist items={[…]}>` · `<Compare left={…} right={…}>` · `<Takeaways items={[…]}>` ·
+`<NextUp slug="…">` · `<ServiceNote>` · `<Contents items={[…]}>` · `<TableScroll>`
+
+<Takeaways
+  items={[
+    "The single sentence you want them to remember.",
+    "The action to take this week.",
+    "The thing to stop doing.",
+  ]}
+/>
+
+<NextUp slug="debits-and-credits-explained">
+The next lesson, and the open loop that makes them click it.
+</NextUp>
