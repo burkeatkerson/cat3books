@@ -638,3 +638,163 @@
     overflow-x: auto;
   }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Legal pages (Privacy, Terms, Disclaimers)
+   Long-form, high-legibility prose on the dark marketing theme.
+   ══════════════════════════════════════════════════════════════════════════ */
+@layer utilities {
+  .prose-legal p {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 300;
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: #b8b3a4;
+    margin-bottom: 1.15rem;
+  }
+
+  .prose-legal h3 {
+    font-family: var(--font-barlow-condensed), sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #eae6d8;
+    margin-top: 1.75rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .prose-legal strong {
+    color: #eae6d8;
+    font-weight: 600;
+  }
+
+  .prose-legal em {
+    color: #d8d3c4;
+    font-style: italic;
+  }
+
+  .prose-legal a {
+    color: #f0be00;
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 190, 0, 0.35);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s ease;
+  }
+
+  .prose-legal a:hover {
+    text-decoration-color: #f0be00;
+  }
+
+  .prose-legal ul,
+  .prose-legal ol {
+    margin: 0.5rem 0 1.4rem 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .prose-legal ul li {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #b8b3a4;
+    list-style: none;
+    padding-left: 1.35rem;
+    position: relative;
+  }
+
+  .prose-legal ul li::before {
+    content: "";
+    position: absolute;
+    left: 0.15rem;
+    top: 0.72em;
+    width: 6px;
+    height: 6px;
+    background: #f0be00;
+    opacity: 0.75;
+  }
+
+  .prose-legal ol {
+    counter-reset: legal-ol;
+  }
+
+  .prose-legal ol li {
+    font-family: var(--font-barlow), sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #b8b3a4;
+    list-style: none;
+    padding-left: 2rem;
+    position: relative;
+    counter-increment: legal-ol;
+  }
+
+  .prose-legal ol li::before {
+    content: counter(legal-ol);
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 11px;
+    color: #f0be00;
+  }
+
+  .prose-legal li strong {
+    color: #eae6d8;
+  }
+
+  /* Definition-style rows used for the "data we collect" tables */
+  .prose-legal table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-barlow), sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 1.25rem 0 1.75rem;
+    border: 1px solid #222220;
+  }
+
+  .prose-legal thead th {
+    font-family: var(--font-share-tech-mono), monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6a675e;
+    text-align: left;
+    padding: 11px 14px;
+    border-bottom: 1px solid #222220;
+    font-weight: 400;
+  }
+
+  .prose-legal tbody td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #1a1a18;
+    color: #b8b3a4;
+    vertical-align: top;
+  }
+
+  .prose-legal tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .prose-legal tbody td:first-child {
+    color: #eae6d8;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* Callout used for the "not advice" notices */
+  .prose-legal .legal-note {
+    border-left: 3px solid #f0be00;
+    background: rgba(240, 190, 0, 0.04);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+
+  .prose-legal .legal-note p:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -261,11 +261,39 @@ export default function SiteFooter() {
             </a>
           </div>
 
+          {/* Legal */}
+          <div className="mt-12 pt-6 border-t border-c3-border flex flex-wrap items-center gap-x-5 gap-y-2">
+            {[
+              ["Privacy Policy", "/privacy"],
+              ["Terms of Use", "/terms"],
+              ["Disclaimers", "/disclaimer"],
+            ].map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="font-mono text-[10px] tracking-[0.18em] uppercase text-c3-mid hover:text-c3-yellow transition-colors duration-200"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+
           {/* Bottom bar */}
-          <div className="mt-12 pt-6 border-t border-c3-border flex justify-between flex-wrap gap-6 font-mono text-[10px] tracking-[0.18em] text-c3-dim uppercase">
+          <div className="mt-6 pt-6 border-t border-c3-border flex justify-between flex-wrap gap-6 font-mono text-[10px] tracking-[0.18em] text-c3-dim uppercase">
             <div>© 2026 Cat3 Books · All Rights Reserved · Restoration Bookkeeping Specialists</div>
             <div>QuickBooks ProAdvisor · Xactimate Fluent · RIA Member</div>
           </div>
+
+          {/* Standing disclaimer — the whole site is educational unless engaged */}
+          <p className="mt-6 font-body font-light text-[11px] leading-[1.7] text-c3-dim max-w-[880px]">
+            The information on this website is provided for general educational
+            purposes only and is not tax, legal, accounting, or financial advice. Using
+            this site does not create a professional relationship. See our{" "}
+            <Link href="/disclaimer" className="text-c3-mid hover:text-c3-yellow transition-colors duration-200">
+              Disclaimers
+            </Link>{" "}
+            for details.
+          </p>
         </Container>
       </div>
     </footer>

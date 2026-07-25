@@ -3,6 +3,7 @@ import { site } from "@/lib/site";
 import { getAllPosts } from "@/lib/field-notes";
 import { getAllLessons, getCourses } from "@/lib/school/lessons";
 import { SUBJECTS, schoolPaths } from "@/lib/school/taxonomy";
+import { LEGAL_PAGES, legal } from "@/lib/legal";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
@@ -71,6 +72,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(lesson.updatedDate ?? lesson.date),
       changeFrequency: "monthly" as const,
       priority: lesson.priority ?? 0.6,
+    })),
+
+    // ── Legal ──────────────────────────────────────────────────────────────
+    ...LEGAL_PAGES.map((page) => ({
+      url: `${site.url}/${page.slug}`,
+      lastModified: new Date(legal.effectiveDateISO),
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
     })),
   ];
 }

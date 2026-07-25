@@ -126,14 +126,36 @@ export default function SchoolFooter() {
           </span>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] tracking-[0.14em] uppercase text-school-faint">
-          <span>
+        <div className="mt-10 pt-6 border-t border-school-line flex flex-wrap items-center justify-between gap-4">
+          <span className="font-mono text-[10px] tracking-[0.14em] uppercase text-school-faint">
             © {new Date().getFullYear()} {site.name} · {total} lessons
           </span>
-          <span>
-            Educational content only — not tax, legal or accounting advice.
-          </span>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
+            {[
+              ["Privacy", "/privacy"],
+              ["Terms", "/terms"],
+              ["Disclaimers", "/disclaimer"],
+            ].map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="font-mono text-[10px] tracking-[0.14em] uppercase text-school-muted hover:text-school-navy transition-colors duration-150"
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
+
+        <p className="mt-5 font-body text-[12px] leading-[1.65] text-school-faint max-w-[760px]">
+          The School is educational content only — not tax, legal, accounting, or
+          financial advice, and no substitute for a professional who knows your
+          situation. See our{" "}
+          <Link href="/disclaimer" className="text-school-muted hover:text-school-navy transition-colors duration-150 underline">
+            Disclaimers
+          </Link>
+          .
+        </p>
       </SchoolContainer>
     </footer>
   );
