@@ -7,6 +7,7 @@ import {
   Source_Serif_4,
 } from "next/font/google";
 import type { Organization, WebSite, WithContext } from "schema-dts";
+import { Analytics } from "@vercel/analytics/next";
 import JsonLd from "@/components/JsonLd";
 import MotionProvider from "@/components/motion/MotionProvider";
 import { site } from "@/lib/site";
@@ -131,6 +132,7 @@ export default function RootLayout({
         <JsonLd schema={websiteSchema} />
         <JsonLd schema={organizationSchema} />
         <MotionProvider>{children}</MotionProvider>
+        <Analytics />
       </body>
     </html>
   );
